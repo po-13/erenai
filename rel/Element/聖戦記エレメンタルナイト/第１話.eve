@@ -1,0 +1,1586 @@
+プロローグ:
+If Not かむひあ Then
+InterMissionCommand なぜナイ２！！ Event\なぜナイ２.eve
+Endif
+StartBGM AnotherWorld.mid
+Wait 20
+Talk ラカウティス
+…グランチェスタへ送った和解の文は？
+Talk 大臣
+やはり返事は戻ってきません。
+Talk ラカウティス
+…何を考えているというのだ;…グランチェスタは……ッ！
+Suspend
+PlaySound Punch.wav
+Talk ラカウティス
+破壊神デュクラシスの復活まで;あと幾許の時も無いと言うに…
+Talk 大臣
+お気を静めなさいませ、ラカウティス様。
+ここでラカウティス様が憤り、;どうにかなるというものでも無いでしょう…
+Talk ラカウティス
+そんなことは解っている…だが…！！
+Talk 大臣
+………
+End
+PlaySound Stairs.wav
+Wait 10
+Talk ラグナプール騎士
+ラカウティス様。
+Talk ラカウティス
+む…どうした？
+Talk ラグナプール騎士
+エリス様が;こちらにいらっしゃっておりますが…
+Talk ラカウティス
+…エリスが？;:…通せ。
+Talk ラグナプール騎士
+はっ。
+End
+Wait 10
+Talk エリス
+お父様。
+Talk ラカウティス
+…エリス、どうかしたのか？
+Talk エリス
+どうかしたのか？:ではありません
+大神官様の所へ啓示を受けに行く役。;私にやらせて貰いたいと;昨日より何度も申しているではありませんか！
+Talk ラカウティス
+…何度も言ったはずだ。
+否、:とな。
+Talk エリス
+私も何かしたいのです！
+お父様は剣を振るい戦うことが出来る…;でも私にはなにもできません…
+ただ守られるだけのお飾り…;そんなのはもう嫌なんです！
+些細なことだろうと…私も何かやりたいのです…
+Talk ラカウティス
+………
+Talk エリス
+お願いします…お父様…。
+Talk ラカウティス
+解った…好きにしろ…
+Talk エリス
+お父様！ありがとうございます！
+Talk ラカウティス
+ああ…くれぐれも気を付けて行くのだぞ…。
+End
+Wait 20
+Talk 大臣
+…やはり一人娘にはお甘いようで…。
+Talk ラカウティス
+…それを言ってくれるな…。
+…だがな、今まであの娘は;ほとんどこの町から外へ出たことは無い…
+魔族が跋扈するこの時勢、;仕方のないことやもしれぬ…
+Talk 大臣
+………
+お気持ちはわかります…;マリー様も外で魔族にやられたのでしたな
+Talk ラカウティス
+あぁ…もう15年にもなる…。
+エリスを死なせたとなれば…;私はマリーに顔向けができん…
+だが…な。;まだ美しいこの国を見せてやりたいと思った…。
+戦乱に塗れ、;魔族が跋扈する国なれど…;まだ、美しいままのこの国を…
+Talk 大臣
+…確かに…破壊神が復活すれば…;小なりともこの国は…
+Talk ラカウティス
+…今まで大して;父親らしいこともしてやれなかったのでな…
+Talk 大臣
+…剣聖と言えど、人の親だったと言うことですか…
+End
+PlaySound Punch.wav
+StopBGM
+Wait 20
+PlaySound Phone.wav
+Wait 9
+Talk システム
+ジリリリリリリリ！
+End
+Wait 10
+Talk 龍也(眠り)
+ん……。
+End
+PlaySound Phone.wav
+Wait 10
+Talk システム
+ジリリリリリリリ！
+End
+Wait 10
+Talk 龍也(眠り)
+へ……？
+End
+PlaySound Phone.wav
+Wait 10
+Talk システム
+ジリリリリリリリ！
+Talk 龍也(自責)
+う
+うる
+Talk 龍也(憤り)
+うるせぇぇぇぇぇぇぇぇ！！
+End
+PlaySound Phone.wav
+Wait 6
+PlaySound Explode.wav
+Talk システム
+ジリリ……チュドーン！
+End
+StartBGM moon.mid
+Wait 10
+Talk 龍也
+んあ……何だ…朝かよ……。
+Talk 龍也(憤り)
+ん……げっ！また目覚まし殺っちまった！
+って…今この時計ぶっ飛ばして…
+「０８：３０」
+…で…止まってるだろ…ってことは
+Talk 龍也(攻撃)
+遅刻だぁぁぁぁぁぁぁぁぁ！！！
+End
+PlaySound Door(Open).wav
+Wait 4
+PlaySound Ranbu.wav
+Wait 20
+PlaySound Door(Close).wav
+Wait 4
+PlaySound Noise.wav
+Wait 2
+PlaySound MachineGun.wav
+Wait 10
+PlaySound Explode.wav
+Wait 18
+PlaySound Cat.wav
+Wait 7
+Talk 龍也
+うっしゃ！用意完了！
+では気合を入れて……ダァァァァァァッシュ！！
+End
+PlaySound Stairs(Run).wav
+Wait 10
+Talk 龍也(焦り)
+くっそ～っ！また目覚まし買わなきゃなんねーっ！？
+目覚ましも月に何個も買ってると;ホント、バカになんねーぜ…
+…タダでさえ貧乏生活だってのに…！！
+Talk 龍也(自責)
+<big><b>俺のバカ～～～～ッ！！</b></big>
+Suspend
+StartBGM Sweet.mid
+Wait 15
+Talk 涼子(余裕)
+まぁ、確かにあんたはバカよね
+Talk 龍也(疑惑)
+…あぁん？
+Talk 龍也
+…なんだ、涼子か…
+Talk 涼子
+なんだじゃないでしょ。
+この時間にこんなところ走ってる;ってことは、アンタも遅刻しそうなワケ？
+Talk 龍也
+アンタも…ってお前もか。;お前も毎日飽きねぇなぁ…。
+Talk 涼子
+…あんたに人のことは言えないでしょ…。
+ま、このペースで;全力疾走していけばなんとか間に合うでしょ。
+Talk 龍也
+くぅ…俺を朝、優しくゆり起こして;くれるよーな可愛い子どっかに居ねぇかなぁ…！
+Talk 涼子
+朝早くから寝言言ってんじゃないわよ。;それともアンタ、まだ寝てる？
+Talk 龍也
+…やっぱお前じゃ無理だな…
+Talk 涼子
+それ以前にあたしが;あんた起こしに行っても結局遅刻で全力疾走よ？
+Talk 龍也(焦り)
+それもそーか…
+End
+StopBGM
+Talk 謎の声
+はーっはっはっはっはっはっはっは！
+Talk 涼子
+龍也…これって…
+Talk 龍也(自責)
+…無視して行くぞ…。
+Talk 鳳(キラリ)
+<size=20><b>ハ～ッハッハッハッハッハ！</b></size>
+ミュージックスタートッッ！！
+suspend
+StartBGM Ootori Attack!.mid
+Wait 20
+Talk 鳳(キラリ)
+電柱の上からこんにちわ！
+Suspend
+PlaySound Sword.wav
+Talk 鳳(キラリ)
+天知る
+Suspend
+playSound SwordB@22.wav
+Talk 鳳
+天知る地知る
+Suspend
+playSound Explode(Far).wav
+Talk 鳳(ダメージ)
+天知る地知る人が知る！
+Suspend
+PlaySound ChakiC@22.wav
+Talk 鳳(キラリ)
+悪を倒せと私を…
+Suspend
+playSound Gabi-n.wav
+Talk 鳳
+…っておいコラ！！無視するなっ！！
+Talk 涼子
+……鳳はアンタの管轄よ。;あたし一足先に行くから…任せたわ。
+じゃね。
+End
+PlaySound Stairs(Run).wav
+Wait 20
+Talk 龍也(攻撃２)
+勝手に俺の管轄にするなぁーーーーーッッ！！！
+Suspend
+playSound Gabi-n.wav
+Talk 龍也(焦り)
+ってもういねぇし！！
+Suspend
+Wait 10
+Talk 鳳
+とにかく聞けっ！桜龍也！;今日は学校までどっちが早く着くか勝負を…
+Suspend
+PlaySound Stairs(Run).wav
+Talk 鳳
+…コラ！待たぬかッ！！
+Talk 龍也(攻撃)
+コラじゃねぇっ！この電柱搭乗馬鹿野郎！
+テメーにいちいち関わってたら;間に合うモンも間に合わねえよ！
+Talk 鳳
+聞くだけ聞けと言うておろうッ！！
+Talk 龍也(攻撃)
+…効く耳持たんッッ！！
+Talk 鳳
+待てェィ！お前が勝ったら昼飯奢る！！
+Suspend
+playSound Beep010@22.wav
+Talk 龍也(自責)
+『大全力疾走＜昼飯』
+Talk 龍也
+で！お前が勝ったら！？
+Talk 鳳
+む、やる気になりおったな！
+私が勝ったら…そうだな…。
+Talk 鳳(キラリ)
+お前が私のしもべ(犬)に…
+Suspend
+playSound Gabi-n.wav
+Talk 龍也(憤り)
+……なにぃ！？
+Talk 鳳(キラリ)
+それじゃスタートォゥ！
+トゥッ！
+End
+PlaySound Bomb.wav
+Wait 5
+PlaySound FallDown.wav
+Wait 3
+Talk 鳳(血)
+<size=25><color=red><b><i>へぷしっ！？</color></b></i></size>
+Talk 龍也(焦り)
+まぁ、普通電柱から飛び降りたらそうなるわな。
+先に行くぞ。
+Talk 鳳(血)
+お…:鳳飛翔は…不滅…ゥゥゥ！！
+Suspend
+PlaySound gabi-n.wav
+Talk 龍也(自責)
+…お前それ怖ッッ！折れてるし！吐いてるし！
+End
+PlaySound Stairs(run).wav
+Wait 20
+StopBGM
+PlaySound SchoolBell.wav
+Wait 20
+Talk システム
+少年二人の疾走と共に;時は流れ、あっというまに昼休み。;学生達のつかの間の休息にございます
+End
+Wait 10
+StartBGM moon.mid
+Talk 龍也
+………。
+Talk 涼子
+大丈夫？龍也。;酸欠で倒れて大変だったってね。
+Talk 龍也
+…あぁ…まぁ…な。
+少しばかり本気で走っちまってな…
+Talk 涼子
+少しばかりで酸欠になるなら;あんたがしっかり本気で走ったらどーなるのよ？
+Talk 龍也
+…そりゃ死ぬんじゃねーの？
+Talk 涼子
+しっかり本気で走ってきなさい。
+Talk 龍也
+イヤデス。
+End
+Playsound Door(Open).wav
+wait 3
+Talk 龍也
+おぉ、来たな。昼飯配達員Ｏ！
+Talk 鳳(ダメージ)
+…く…屈辱…ッ！
+Talk 鳳
+桜龍也…次はこうは行かぬと思え…！
+Talk 龍也
+解った解った。;解ったから焼そばパンとカツサンドとコーヒー牛乳。
+Talk 鳳
+５１０円になります
+Suspend
+PlaySound Punch.wav
+Wait 3
+Talk 龍也
+５１０円？
+Talk 鳳(ダメージ)
+冗談だ馬鹿者！;:鳳飛翔は一度交わした約束は;しっかりと守る、義に厚い男ぞ！
+Talk 鳳
+まったく…;ポンポンと人の頭を叩くでないわ！;阿呆になったらどうしてくれる…
+Talk 涼子
+(…既に手遅れね。)
+Talk 龍也
+(…既に手遅れだな…)
+Talk 鳳
+どうした？二人して私を見て？
+惚れたか？
+Talk 龍也(疑惑)
+メシが不味くなる冗談言うんじゃねぇ…
+Talk 鳳(キラリ)
+フ、自分でも後悔しているさ。
+End
+Wait 10
+stopBGM
+PlaySound SchoolBell.wav
+Wait 20
+Talk システム
+楽しい苦しい勉学の時は終わり、;明日までの骨休め。放課後にございます
+End
+StartBGM moon.mid
+Wait 20
+Talk システム
+～剣道場～
+suspend
+Wait 10
+PlaySound door.wav
+Talk 龍也
+ちぃーす。
+Talk 剣道部員
+む、龍也か。珍しいな。
+Talk 龍也
+ま、たまにゃ顔出しとかねーとな。
+Talk 剣道部三面剣
+Talk
+織手「桜っ！」
+摩周「今日こそは！」
+貝亜「われらと決着を…」
+Suspend
+PlaySound Whip.wav
+Wait 2
+PlaySound Punch.wav
+Wait 2
+PlaySound Crash.wav
+Wait 10
+Talk 龍也
+今日も俺の勝ちでいいな？
+Talk 剣道部三面剣
+Talk
+織手「おのれ…卑怯なり…！」
+摩周「こ…この外道め！」
+貝亜「俺を踏み台にするな…ぁ…！？」
+Talk 龍也
+誰も踏み台になんてしてねぇよ…。
+Talk 剣道部員
+そうだ、龍也、客が来てるぞ
+Talk 龍也
+客…？
+suspend
+StopBGM
+PlaySound Cannon.wav
+Wait 10
+PlaySound Cannon.wav
+Wait 10
+StartBGM Ootori Attack!.mid
+PlaySound warship.wav
+Wait 10
+Talk 鳳(キラリ)
+ふはーっはっはっは！
+遅かったな桜龍也ッ！！
+Talk 龍也(自責)
+…またお前かよ…
+しかも無意味に天井に張り付いてるし…。
+Talk 龍也(攻撃)
+で！？今度は何のようだ！？
+Talk 鳳
+何のようかだと…？
+決まっておろう！;今朝！そして昼のリベンジ！
+頭の悪いお前にも分かりやすく言うと…
+Suspend
+PlaySound Warship.wav
+Talk 鳳(キラリ)
+<size=20><b>復</b></size>
+Suspend
+PlaySound Warship.wav
+Talk 鳳(キラリ)
+<size=20><b>復讐</b></size>
+Talk 鳳
+と、言うやつだ。
+Talk 龍也
+あーあー。頭悪くて悪ぅござんしたねぇ…
+Talk 鳳
+そう言う訳だ！いくぞ！
+Talk 鳳(キラリ)
+トうっ！
+End
+PlaySound Bomb.wav
+Wait 5
+StopBGM
+PlaySound FallDown.wav
+Wait 3
+Talk 鳳(血)
+<size=25><color=red><b><i>へぷしっ！？</color></b></i></size>
+Talk 龍也(焦り)
+…キミに学習能力は無いのかね？;学年主席の鳳飛翔クン…。
+Suspend
+StartBGM Ootori Attack!.mid
+Wait 20
+Talk 鳳(血)
+お…:鳳飛翔は…不滅…ゥゥゥ！！
+Talk 龍也(自責)
+…だからお前それ怖いって…折れてるし吐いてるし…
+Talk 鳳(ダメージ)
+とにかくゥ…！我が剣技をとくと見よォ…！
+我流剣！天牙空刃流…飛翔…
+suspend
+StopBGM
+Talk 鳳(血)
+<size=20><color=red><b>ガフッ！</b></size></color>
+End
+Wait 30
+Talk 龍也
+さすがに一日二度は厳しかったか…。
+おい、鳳、大丈夫か？
+Suspend
+StartBGM Ootori Attack!.mid
+Wait 10
+PlaySound Whiz.wav
+Wait 2
+PlaySound Whiz.wav
+Talk 鳳(キラリ)
+<size=20><b>大丈夫麗裂ゥ～！！</b></size>
+Talk 龍也(驚愕)
+なにぃぃぃぃーーーー！？
+(しまった…このままでは…殺られる…)
+Talk 龍也(見切り)
+(何か…何か…)
+Talk 剣道部員
+ーーーーー！
+Talk 龍也(見切り)
+(これだッッッッ！！);　　　　　　　　　　　　この間０．１秒。
+End
+
+PlaySound Warship.wav
+AutoTalk 鳳(キラリ)
+5;<size=20><b>麗裂！</b></size>
+AutoTalk システム
+<size=20><color=red><b>へぶっ！？</color></b></size>
+Suspend
+PlaySound Warship.wav
+AutoTalk 鳳(キラリ)
+5;<size=20><b>麗裂！麗裂！</b></size>
+AutoTalk システム
+<size=20><color=red><b>ごぶっ！！？</color></b></size>
+Suspend
+PlaySound Crash.wav
+AutoTalk 鳳(キラリ)
+5;<size=20><b>れーいーれーつゥゥゥゥ！</b></size>
+AutoTalk システム
+<size=20><color=red><b>ごべでろぱぁぁぁーーーっ！！？</color></b></size>
+End
+PlaySound Swing.wav
+Wait 3
+PlaySound Swing.wav
+Wait 3
+PlaySound ChakiC@22.wav
+Wait 10
+StopBGM
+Wait 10
+playSound wind.wav
+Wait 5
+Talk 鳳
+つまらぬものを斬ってしまった…
+Talk 龍也
+…つまんねーものだってよ…;哀れ剣道部員Ａ。昇天してくれ。
+いや、その功績に感謝して;お前には名前をやろうじゃないか。
+さらば、斎藤。
+Talk 剣道部員
+Talk
+斎藤「<color=red>…地獄に落ちろ…この外道め…</color>」
+End
+PlaySound FallDown.wav
+Wait 10
+Talk 鳳
+…どういうことだ…！？
+Talk 龍也
+俺が、盾にした。
+Talk 鳳
+…！！
+Talk 龍也
+…斎藤…惜しい男だった…。
+Talk 鳳(キラリ)
+…くぅ！やってくれるわ！
+だが、もうキサマに盾はないぃぃぃーーーっ！
+Talk 龍也(見切り)
+盾？必要ないね…そんなもん…！
+Talk 鳳(キラリ)
+強がりはそれぐらいに…！
+Talk 龍也
+<i>四星</i>
+Suspend
+PlaySound SwordB@22.wav
+Talk 龍也(見切り)
+<i>四星桜花流…</i>
+Suspend
+PlaySound Whiz.wav
+Wait 2
+PlaySound Bow.wav
+Wait 2
+PlaySound Swing.wav
+Wait 2
+PlaySound Saber.wav
+Wait 2
+PlaySound Punch.wav
+Wait 2
+PlaySound Whiz.wav
+Wait 2
+PlaySound Crash.wav
+AutoTalk 鳳(血)
+…ッ…は…おごぉ…っ！
+End
+PlaySound kabuki.wav
+Wait 50
+Talk 龍也(儚げ)
+<i>黒破無双蓮華…</i>
+End
+PlaySound FallDown.wav
+Wait 20
+Talk  龍也(儚げ)
+<i>…わが道に…敵無し…</i>
+End
+PlaySound Wind.wav
+Wait 30
+PlaySound Punch.wav
+Talk 龍也(自責)
+あだっ！
+Suspend
+StartBGM Sweet.mid
+wait 20
+Talk 涼子
+なにカッコつけてんのよあんたは…
+Talk 龍也
+りょ、涼子…いつの間に！？
+Talk 涼子
+それより、;ソレなんとかしないと…ヤバそうよ？
+Talk 鳳(キラリ)
+Talk
+←ソレ
+Talk 龍也
+…人間って、ここまでケイレンするんだな。
+Talk 涼子
+妙なことに感心してないで！;ほら！保健室まで持っていくわよ！
+その年で殺人者にはなりたくないでしょ？
+Talk 龍也
+こいつがこの程度で死ぬとは考えられねーが…;まぁ、仕方ねぇか…
+End
+Playsound Breakoff.wav
+Wait 3
+Playsound Breakoff.wav
+Wait 5
+Playsound Stairs.wav
+Wait 40
+Talk 涼子
+それじゃお願いしますね～
+Talk 美作憂美
+えぇ、任せておいて。
+それにしても…貴方達も毎日飽きないわね…
+Talk 龍也
+…好きでやってんじゃないですけどね…
+Talk 龍也(自責)
+少なくとも俺は…
+Talk 涼子
+…本当にそうなのかしらねぇ？
+…鳳倒した自分に酔ってたクセに。
+Talk 龍也
+うぐっ！！
+Talk 美作憂美
+…ふふ…それじゃ、;鳳君は私に任せて貴方達はもう帰りなさい
+Talk 龍也
+へ～い。よろしく頼むぜ、憂美さん。
+Talk 涼子
+それじゃ失礼しますね～。
+End
+Wait 10
+Talk 龍也
+全く…今日もとんだ一日だったぜ…
+Talk 涼子
+いいじゃない、楽しい学園生活で。
+Talk 龍也(憤り)
+どこがだよっ！？
+Talk 龍也(攻撃)
+こんな日常そうそう起こりうることの無いことが;日常茶飯事になってる上にその環境に適応してる;自分がだんだん怖くなって来るんだよ！！
+Talk 龍也(攻撃２)
+だーっ！！;コレもソレもぜーんぶ鳳のせいだぁぁぁ！
+Talk 涼子
+鳳は中学時代から変質者だったらしいわねー。
+鳳が中学在学中に;学校に降ってきた隕石の数は４８個。
+科学の実験中の爆発事件２１回。
+とどめに学校半壊２回と来たもんだ。
+これ立派にギネス物よ。
+Talk 龍也(自責)
+…それだけの不幸が;今は俺だけに降りかかって来てるってか…。
+Talk 涼子
+大丈夫よ。いくつかいいこともあるから。
+校庭から徳川の埋蔵金が出たり…。
+鳳に不良が絡んできた次の日に;学校中の不良全員が７・３分けで;真面目に授業受けるようになったとか…。
+Talk 龍也
+くそっ！！あいつのおかげで;俺のハッピーラッキーハーレム学園生活が…
+End
+PlaySound Shock(Low).wav
+Wait 10
+Talk 涼子(余裕)
+…はーれむ？
+Talk 龍也(自責)
+涼子さん…素手で塀を砕いて;…にっこり笑顔は怖いんで…止め
+…いや…すいません…許して下さい…。
+Talk 涼子
+ったく…;アンタのその節操無いトコどうにかしなさいよ。
+そろそろ一人の子に絞ったら？
+Talk 龍也
+一人の子…ねぇ…。
+Talk 涼子
+………？
+Talk 龍也
+…いや…別に。
+Talk 涼子
+気になるけど…ま…いいわ。
+じゃ…また明日。
+Talk 龍也
+ああ…またな。
+(…涼子…か。)
+(…生まれた日付に病院も一緒で;さらには家が隣同士…)
+(ここまで来ると;何か陰謀めいたものすら感じるが…)
+(…ただの、幼馴染。;:…そう、ただの…幼馴染の…はず…なんだ:けどなぁ？)
+End
+StopBGM
+PlaySound Door(Open).wav
+Talk 龍也
+ただいまー…。
+(なんて言っても誰もいねーんだよな。;親父にお袋それに奈美姉も巴もまとめて海外だし。）
+(寂しい…って事はねーんだけどなんかな…)
+Talk 龍也(自責)
+(…やっぱ寂しいのか…。）
+End
+PlaySound Door(Open).wav
+Wait 10
+Talk 龍也
+ん…？
+Talk 源三郎
+よぅ、久しぶりじゃの。龍也。
+Talk 龍也
+…
+Suspend
+StartBGM THE NAZENAI.mid
+Wait 50
+Talk 龍也(驚愕)
+だぁっ！！だ…誰だてめーわっ！？
+Talk 源三郎
+なんじゃ…忘れてもうたのか…？
+Talk 龍也
+忘れてもうたのか…って…。
+Talk 龍也(自責)
+…
+Talk 龍也(疑惑)
+……
+Talk 龍也(憤り)
+！！！
+曾じいさん！？
+Talk りゅーたん
+ぼ、ぼくのひいおじいちゃんは;１０さいのときにしんだはずだヨ。
+Talk 源三郎
+まあ確かに本体は;お前が１０の頃に死んでおるが…。
+Talk 龍也
+…曾じーさん、何をやり残した？;…秘蔵のエロ本の処分か？
+大丈夫！それなら俺がしっかりとやっといたからさ！
+ギュードン一杯分ぐらいにはなったぞ！
+Talk 源三郎
+ゎ、わしのコレクショォンを売ったのか…！？
+Talk 龍也
+おうよ
+Suspend
+playSound Gabi-n.wav
+Talk 源三郎
+…ぉぉぉーーー！？
+Talk 龍也
+い、いや、すまねぇ。;最近食うにも困っててよ…
+Talk 源三郎
+…くぅぅぅーーー
+Suspend
+StartBGM Moon.mid
+Wait 10
+Talk 龍也
+っつーか、よ。;何だてめーは？霊…じゃねぇよな？
+そういう感じはしねぇし…。
+End
+PlaySound Bow.Wav
+Wait 5
+Talk 龍也
+手はすり抜けるから人間でもねぇ…。
+Talk 源三郎
+…意外と冷静じゃな。
+Talk 龍也
+まぁな。最近こーいう超常現象の類にゃ慣れててよ。
+それに、どんなときも;冷静さを失うなってのはあんたの教えだぜ？
+Talk 源三郎
+…流石は、我が曾孫じゃ。話が早くて助かるわ。
+Talk 龍也
+感謝の極みで。
+Talk 源三郎
+わしは…まぁ、早い話が幻影じゃ。
+Talk 龍也(疑惑)
+幻影…？
+Talk 源三郎
+幻影…と言うのはだな。;幻影投影機による立体映像だ。
+Talk 龍也
+幻影投影機？;そんなモン俺の部屋に…。
+Talk 源三郎
+それだ。
+Talk 龍也
+…テレビ…？;あ、この古いテレビ、曾じいさんのだったのか？
+…だがよ、曾じいさん。;今でも立体映像なんてそんな技術は存在しねぇ。
+あんたの時代に…どうやって…
+Talk 源三郎
+…現にココにワシは存在しておる。
+Talk 龍也
+………。
+Talk 源三郎
+異世界の技術じゃよ。
+Talk 龍也
+…異世界？
+Talk 源三郎
+そう…異世界。
+イシュメリアと言う世界じゃ…
+Talk 龍也
+イシュメリア…だと？;１００歩譲って異世界があるとしても何で曾じーさん;…アンタがそんな技術もってんだ？
+Talk 源三郎
+…分かるだろう？ここまで言えば、な
+Talk 龍也
+…まさか…曾じいさん…あんたは…
+Talk 源三郎
+そう…お前の曾祖父;…桜源三郎は異世界…イシュメリアの人間だ。
+Talk 龍也
+…信じられねぇことだが…
+どうやら信じるしかねえようだな…。;テメーと言う証拠がいる。
+Talk 源三郎
+なかなか飲み込みがいいな。;流石は我が曾孫じゃ。
+Talk 龍也
+…いくつか質問がしてーが…いいか…？
+Talk 源三郎
+ああ…かまわんよ。
+Talk 龍也
+…どうやってこっちに来たんだ？
+Talk 源三郎
+…強大な力と力がぶつかり合う際に発生する;『時空の歪み』に巻き込まれてな…。
+Talk 龍也
+その時空の歪みって奴が;異世界とこっちを結ぶ扉な訳だな。
+Talk 源三郎
+そうじゃ。
+Talk 龍也
+ふむ…じゃ…次。
+そのイシュメリアって世界はどんな所なんだ？
+Talk 源三郎
+お前にわかりやすく言えば;剣と魔法と…<b>美女</b>のファンタジー世界…と言うところかのう…。
+Talk 龍也(見切り)
+(要、チェックやで。今のは)
+Talk 源三郎
+まだ何か質問は？
+Talk 龍也
+じゃ…最後の質問だ。
+曾じいさん、あんたは俺に何をさせたい？
+Talk 源三郎
+異世界イシュメリアを救う勇者となれ。
+Suspend
+StartBGM THE NAZENAI.mid
+Wait 10
+Talk 龍也
+黙って帰れ。;すぐ帰れ。;窓から帰れ。
+Talk 源三郎
+…は？
+Talk 龍也(攻撃)
+帰れ！っつってんだよっ！！
+俺には異世界なんて関係ねぇっ！
+Talk 源三郎
+ちょ…ちょっと待て！
+こういう時は;パターンとして行ってやるってことに…！
+Talk 龍也(攻撃)
+何処の世界のパターンか知らねえが！;そんなモン本気で俺には関係ねえ！
+消えろ！！
+Talk 源三郎
+のわーっ！;ちょっと待て！待てったら待てーっ！
+Talk 龍也(攻撃)
+うるせえ！！;このまま投影機斬り捨ててやるーっ！！
+Suspend
+PlaySound SwordB@22.wav
+Talk 源三郎
+待て待て待て待てーっ！！
+suspend
+StartBGM Moon.mid
+Wait 10
+Talk 龍也
+…冗談だけどな
+Talk 源三郎
+こ、この……お、驚かせよって…
+Talk 龍也
+ま、関係ねぇ、と言いたいところだが…。
+…さっき、お前は、とても気になることを言った
+Talk 源三郎
+(よし、かかった)
+気になること、とは？
+Talk 龍也
+美女？
+Talk 源三郎
+美女じゃ
+Talk 龍也
+ウハウハか？
+Talk 源三郎
+ウッハウハじゃ
+Talk 龍也
+曾お爺様、この不肖私めにお任せを。
+Talk 源三郎
+クックック…流石は我が孫じゃ。
+Talk 龍也
+クックックック
+Talk 源三郎
+クックックックックック
+Talk 龍也(攻撃２)
+いざ行かん！！異世界の乙女を守るために！！！
+それで曾じいさん、異世界の状況や、;敵なんかが分かってるなら教えてくれ！
+Talk 源三郎
+ふむ…そうじゃの。
+今頃はたぶん１００年の時を経て蘇る;破壊神デュクラシスへの対策として兵を集めている頃じゃな。
+Talk 龍也
+デュクラシス？それが敵のボスか？
+Talk 源三郎
+あぁ、そうじゃ。
+Talk 龍也
+そいつを倒せばオッケーなんだな！？
+Talk 龍也(攻撃)
+よし！この俺に！任せろぉぉーーーっ！！
+Talk 源三郎
+ちょっと待て…。
+Talk 龍也(攻撃２)
+うおぉぉぉぉ！！美女が俺を呼んでいるーっ！！
+Talk 龍也(攻撃)
+ハァァァァレムゥゥゥゥゥ！！！
+Talk 源三郎
+(…認めたくない、認めたくないが…)
+Suspend
+PlaySound Explode(Far).wav
+Talk 源三郎
+<size=18><b>(こいつは確かにわしの孫だ！)</size></b>
+Talk 源三郎
+…それはいいがの;…お前は武器も無しに行くつもりか？
+Talk 龍也
+…武器？
+俺にはこのカタナさえありゃ上等だけど…？
+Talk 源三郎
+…そんなカタナ一本で;どうにかなる敵ではないわ。
+ついてこい。
+End
+Wait 10
+Talk システム
+桜家地下隠し格納庫…
+Talk 源三郎
+ここじゃ。
+Talk 龍也
+ふへー…;俺の家の地下にこんなモンがあったなんてな…。
+…って！！;電気代がクソのようにかかるのってこいつのせいか！？
+Talk 源三郎
+…じゃろうな。
+Talk 龍也(自責)
+くぉぉぉぉぉぉ！俺の貧乏の原因がいまここにっ！！
+Suspend
+PlaySound Explode(Far).wav
+Talk 龍也(攻撃)
+くぉのクソジジイがぁぁぁぁーーー！！
+Talk 源三郎
+ほっほっほ。幻影は死な～ない～♪
+Talk 龍也(自責)
+(今度墓石蹴っ飛ばしてやろう…)
+Talk 源三郎
+ま、それでじゃな…武器とは…コレじゃ！！
+End
+PlaySound Whiz.wav
+Wait 10
+Talk 龍也
+コイツは…ロボッ…ト！？
+Talk 源三郎
+うむ。お前達に分かりやすい言葉でいえばな。
+正確に言うならば。
+Talk システム
+<size=15><b>エレメンタルナイト;　　　　　　ヴァル＝セリエ</b></size>
+Talk 龍也
+ヴァル…セリエ…。
+な、なあ…何で動くんだコイツ…;ヴァル＝セリエって言ったっけ？
+Talk 源三郎
+エーテル…ま…要するに魔力じゃ。
+Talk 龍也
+魔力？
+…魔力ってーと;ＲＰＧとかで魔法使うときとかにいる魔力か？
+Talk 源三郎
+まあ…そうじゃな。
+Talk 龍也
+…俺にも動かせるのか？;俺は魔法なんて使えないぜ？
+Talk 源三郎
+誰にでも魔力という物はある。;使い方を知らぬだけだ。
+もう一つ言っておくと…;お前の持っている魔力は強い…の部類に入るぞ。
+Talk 龍也
+ふーん…俺にも…ねぇ…。;…説明書とか読まなくてもすぐ動かせるのか？
+Talk 源三郎
+あぁ、こいつについては;自分の好きな操縦法で動かせる。心配はいらん。
+Talk 龍也
+じゃ…ちょっと乗って試してみ…
+Talk 源三郎
+…そう、したいところなのじゃがな。
+そうもいかん。時間じゃ。
+Talk 龍也
+時間って…！！
+End
+PlaySound Thunder.wav
+Wait 10
+Talk 龍也
+空間が…裂けた…のか？
+Talk 源三郎
+その通り。コレが時空の歪みじゃ。
+数年に一度ある、時の揺らぐ日。;その日にしか開くことの出来ない…。
+異世界への、扉じゃ。
+Talk 龍也
+…異世界…か…。
+Talk 龍也(攻撃)
+っしゃぁ！！待ってろよ;異世界の美女美少女達ぃぃぃーーーっ！！
+行ってくるぜ！じいさん！！
+End
+playSound Storm.wav
+Wait 5
+playSound Storm.wav
+Wait 5
+playSound Storm.wav
+Wait 20
+PlaySound Sword.wav
+Wait 20
+StopBGM
+Talk 源三郎
+最後までそれか…。
+…流石は…我が、曾孫…じゃな。
+認めたくは、無いが。
+End
+Exit
+
+スタート :
+ChangeMap Black.map
+PlayMIDI AnotherWorld.mid
+PaintPicture Black.jpg 0 0 1000 1000
+Refresh
+Talk システム
+こうして一人の高校生が異世界へと旅立った…。
+少年は…異世界で何を見、何を聞き、何を思うのか…。
+…聖戦の扉は、開かれた。
+End
+
+
+Wait 20
+Font 30pt Ｐゴシック Regular
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString -  - 聖戦記エレメンタルナイト
+Wait 1
+Refresh
+Next
+Wait 20
+Font 30pt Ｐゴシック Regular
+For i = 1 To 10
+Font  RGB(255 - 25 * i, 255 - 25 * i, 255 - 25 * i)
+PaintString -  - 聖戦記エレメンタルナイト
+Wait 1
+Refresh
+Next
+
+PlayMIDI Fight!.mid
+Wait 20
+Font
+Font 26pt Ｐゴシック
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 200 第１話
+Refresh
+Wait 2
+Next
+Font
+Wait 20
+Font
+Font 26pt Ｐゴシック
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 280 異境
+Refresh
+Wait 1
+Next
+Font
+Wait 35
+ChangeMap 第１話.Map
+Cls
+Redraw
+Wait 10
+Create ＮＰＣ 魔導車 0 ラグナプール兵 3 8 13 馬
+Create ＮＰＣ ソーディア 0 ラグナプール兵 3 8 12 ザコ１
+Create ＮＰＣ ガンナーズ 0 ラグナプール兵 3 8 14 ザコ２
+Create ＮＰＣ ナイト 0 ラグナプール騎士 5 7 13 隊長
+Talk 隊長
+くっ…;聖地に近いここまで魔物が出るとは！
+Talk ザコ１
+姫を神殿に内密に送り届けるため;少数で来たのが仇になりましたね…。
+Talk 隊長
+姫様…;すみません…私たちの力が至らぬ為に…。
+Talk エリス 8 13
+良いのです;…あなた達は良くやってくれました…。
+ここで私が死ぬというのなら;それも天命なのでしょう…。
+Talk ザコ２
+き…来ました！魔物です！！
+End
+StartBGM laz_crzy.mid
+Wait 20
+Create 敵 ゴブリン -1 下級魔族 3 6 12 １
+Create 敵 ゴブリン -1 下級魔族 3 6 13 ザ２
+Create 敵 ゴブリン -1 下級魔族 3 6 14 ３
+Create 敵 ゴブリン -1 下級魔族 3 4 12
+Create 敵 ゴブリン -1 下級魔族 3 4 14
+Create 敵 ゴブリン -1 下級魔族 3 4 13
+Create 敵 オーガ -1 中級魔族 4 3 13 敵隊長
+Talk 敵隊長
+グガァァァァァ！！
+Talk 隊長
+お前達はエリス様をつれて逃げろ！;私が敵を引きつける！！
+Talk 馬
+ですが…それでは…隊長が……。
+Talk 隊長
+いいのだ…;私はラグナプールの騎士。
+敬愛する姫様のために;命を捨てることなど当然のことだ。
+Talk エリス 8 13
+いけません！！私のために命を捨てるなど…。
+Talk 隊長
+エリス様……お優しいですな……。
+行け！！お前達！！
+Talk ザコ２
+……隊長……。
+Talk 隊長
+行けぇぇぇぇぇ！！
+Talk 馬
+くっ……。
+End
+Move 馬 10 13
+Move ザコ１ 10 12
+Move ザコ２ 10 14
+Talk エリス 10 13
+ああっ………。
+End
+Wait 20
+Talk 隊長
+うおぉぉぉぉぉぉ！！
+End
+Move 隊長 7 12
+Mind 隊長 必殺
+Attack 隊長 ナイトソード １ 無抵抗
+Talk １
+グギャァァァァ！！
+Talk 隊長
+魔族がっ！好きにはさせん！
+End
+Move ザ２ 7 13 アニメ表示
+
+SetMessage 隊長 攻撃 魔族め！行かせぬぞ！！
+Move 隊長 7 13 アニメ表示
+Mind 隊長 必殺
+Attack 隊長 ハンドブラスター ザ２ 無抵抗
+Talk ザ２
+ギュォォォォォォ！！
+Talk 隊長
+…２機…残りは…！！
+End
+Move 隊長 7 14 アニメ表示
+Mind 隊長 必殺
+Attack 隊長 ナイトソード ３ 無抵抗
+Talk ３
+ギシャァァァァァ！！
+Talk 隊長
+これで…あと、４…
+End
+Move 敵隊長 6 14 アニメ表示
+Talk 隊長
+！？
+Suspend
+Talk 敵隊長
+ゴォォォォォッ！！
+end
+PlaySound Whiz.wav
+AutoTalk 隊長
+5;しまっ…
+End
+Explode LL 7 14
+Escape 隊長
+Talk ザコ１
+た…隊長ぉぉぉぉぉぉ！！
+隊長を……よくも……よくもぉぉぉぉっ！！
+End
+Move ザコ１ 7 14 アニメ表示
+Talk ザコ２
+ば…バカっ！！よせっ！！
+Talk ザコ１
+お前が隊長をーーーー！！
+End
+Mind 敵隊長 ひらめき
+Attack ザコ１ メタルソード 敵隊長 無抵抗
+Talk ザコ１
+な…避け…
+Talk 馬
+あ…危ないっ！！
+Talk 敵隊長
+ギシャァァァァァァーッ！
+End
+SetMessage ザコ１ 破壊 うわぁぁぁぁぁぁぁぁぁぁ！！！
+Mind 敵隊長 必殺
+Attack 敵隊長 棍棒 ザコ１ 無抵抗
+Talk エリス 10 13
+あ…あああああ……。
+そんな……そんな……。
+Talk 馬
+早く行きましょう…姫様…。
+Talk エリス
+……ですが…彼らは……彼らは……。
+Talk ザコ２
+早く逃げましょう！！
+隊長とアイツの死を;無駄にしないためにも！！
+Talk エリス
+…う…うぅ…。
+End
+Move 馬 14 13 アニメ表示
+Move ザコ２ 14 14 アニメ表示
+Talk ザコ２
+後もう少しで……！！
+End
+Create 敵 ゴブリン 0 下級魔族 3 15 14 ４
+Talk 馬
+は…挟み撃ち！？
+Talk ザコ２
+一機程度なら！！！
+End
+Mind ザコ２ 必殺
+Attack ザコ２ エーテルライフル ４ 無抵抗
+Talk ザコ２
+や…やった！
+End
+Wait 12
+Center 10 5
+Wait 10
+PlaySound Thunder.wav
+PaintPicture White.jpg 0 0 480 480
+Refresh
+Wait 1
+Redraw
+Wait 1
+PaintPicture White.jpg 0 0 480 480
+Refresh
+Wait 1
+Redraw
+Wait 1
+PaintPicture White.jpg 0 0 480 480
+Refresh
+Wait 1
+Redraw
+Wait 1
+Wait 20
+Talk エリス 14 13
+……何が……。
+Talk ザコ２
+……光？
+End
+Create 敵 ゴブリン 0 下級魔族 3 13 14 ５
+Talk 馬
+よそ見するな！！後ろだ！！
+Talk ザコ２
+え……。
+End
+Mind ５ 必殺
+Attack ５ 格闘 ザコ２ 無抵抗
+Talk ザコ２
+うわぁぁぁぁぁ！！
+Talk 馬
+……く…くそ……どうする……。
+Talk エリス
+ここまで…ですか……。
+本当に…あなた達は良くやってくれました……。
+Talk 馬
+姫様…車を降りて森へお逃げ下さい…。
+Talk エリス
+……あなたは……？
+Talk 馬
+……。
+End
+PlaySound Punch.wav
+Wait 5
+Talk エリス 14 12
+きゃあっ！
+Talk 馬
+姫様……森へ！！
+うおぉぉぉぉぉぉぉ！！
+End
+Move 馬 14 14
+Mind 馬 必殺
+Attack 馬 突撃 ５ 無抵抗
+Talk エリス 14 12
+あ…ああ…そんな…。
+………。
+……逃げなければ……。
+皆の気持ちを無駄にしないためにも……。
+…さっき音がした辺りまで行ってみましょう…
+……何か……予感がする…。
+End
+Hide
+StopBGM
+Wait 30
+PlaySound Thunder.wav
+Wait 20
+Talk 龍也
+う……うーん……。
+……？
+……ここは……森？
+…どうやら異世界に着いたらしいな……。
+見た所…地球と全然かわらねえな…。;重力も空気も…。
+ん…ヴァル＝セリエは;……俺の横にちゃんとあるな。
+曾じーさんは世界を救う勇者になれ;…って言ってたが……。
+どうしろと言うのだ…;右も左も解らない異世界に;ほとんど予備知識ナシにぶち込まれて…。
+そうだ…そう言えば金もねえ……。
+…美女も、居ねぇ…。
+Talk 龍也(自責)
+こりゃ、上手い具合に乗せられちまったか…？
+End
+PlaySound Explode(Far).wav
+Wait 20
+Talk 龍也(憤り)
+なんだ…爆発音！？
+End
+Show
+Center 10 5
+Wait 20
+Center 敵隊長
+Wait 30
+Talk 龍也 10 5
+あ、あれが…敵…か！？
+しゃ、シャレになんねぇって！！
+とりあえずヴァル＝セリエに乗らねぇとっっ！！
+Talk りゅーたん 
+こーくぴっとはどこだーーーっ！！
+End
+PlaySound Computer.wav
+Wait 30
+Talk システム
+ぷしゅー…
+Talk 龍也
+ここか！よっ……と。
+End
+Wait 10
+Talk 龍也
+…本当にコクピットか…ここ……。;何もねえ……あるのは暗闇だけ……。
+外も見えねえのにどうやって戦えと…。
+End
+PlaySound Sword.wav
+Talk システム
+パアッ
+Talk 龍也
+な…コイツは…;３６０度どころじゃねえ…全方向が見えるモニターか？
+凄い……凄いじゃねえか！;異世界の技術ってのは大したもんだな！
+さぁて…では早速動かすとするか…。
+自分の好きな動かし方で;動かせるんだったな…なら…。
+Talk 龍也(攻撃２)
+動けーっ！！ヴァル＝セリエ！！
+End
+PlaySound Whiz.wav
+Wait 5
+playSound Doukoku.wav
+Create 味方 ヴァル＝セリエ(初期) 0 桜龍也 1 10 5
+Wait 20
+Talk 龍也(焦り)
+…な、なんとか…動いた…か…？
+Talk エリス 10 7
+……！！！
+あ、新手…！？
+End
+Create 敵 ゴブリン 0 下級魔族 1 10 8 ザ６
+Talk 龍也
+…敵！？こっちに…
+(…いや、何か様子がおかしい…)
+Talk ザ６
+グォォォォ！！
+Talk エリス 10 7
+きゃあっ！後ろからも…！？
+に、逃げなければ…
+End
+PlaySound Falldown.wav
+Wait 10
+Talk エリス
+あ…足が……。
+Talk ザ６
+ギシャァァァァ！
+Talk エリス 10 7
+ここまで……？
+みなさん…すいません…私は…っ…。
+Talk ザ６
+グシャァァァァァ！！
+Talk 龍也(見切り)
+！！！
+(人が…狙われてる…っ！！)
+end
+
+PlayMIDI Darkness Wing Spread.mid
+KeepBGM
+Move 龍也 10 7 アニメ表示
+
+Talk 龍也(攻撃)
+っらぁぁぁぁぁぁーーーーーーーっっ！！
+suspend
+PlaySound Breakoff.wav
+Move ザ６ 10 9 アニメ表示
+Move 龍也 10 8 アニメ表示
+PlaySound Shock(Low).wav
+Move ザ６ 10 10 アニメ表示
+Move 龍也 10 9 アニメ表示
+PlaySound Shock(Low).wav
+Move ザ６ 10 11 アニメ表示
+Move 龍也 10 10 アニメ表示
+PlaySound Shock(Low).wav
+Talk エリス
+……！！
+End
+Move ザ６ 10 11 アニメ表示
+Move 龍也 10 10 アニメ表示
+PlaySound Shock(Low).wav
+Move ザ６ 10 12 アニメ表示
+Move 龍也 10 11 アニメ表示
+PlaySound Shock(Low).wav
+Talk ザ６
+ギィィィィィ！？
+Talk 龍也(攻撃)
+とどめっ！！
+Talk 龍也(攻撃２)
+逝っちまいなぁぁっ！！
+End
+PlaySound whiz.wav
+Move 龍也 10 10 アニメ表示
+Move 龍也 10 11 アニメ表示
+PlaySound Crash.wav
+Move ザ６ 10 15
+Explode L 10 15
+Talk ザ６
+ギアァァァァァァーーーーッ！
+End
+Explode M 10 15
+Explode M 10 15
+Explode LL 10 15
+Escape ザ６
+
+Wait 10
+Talk エリス 10 7
+…！？
+…守って…くれたの…？
+Talk 龍也
+おい、大丈夫か！あんた！
+Talk エリス 10 7
+あ…あなたは…？;魔族じゃ…ないんですか…？
+Talk 龍也
+…え～っと…あんたはあいつらに狙われてるのか…？
+Talk エリス 10 7
+は、はい。
+Talk 龍也
+それで…あいつらは、悪いヤツ…なのか？
+Talk エリス 10 7
+は、はい！そうです！;…人の敵、破壊の権化…魔族！
+Talk 龍也
+魔族…。
+なるほどな、分かり易いわ。
+Talk エリス 10 7
+…？
+Talk 龍也
+いや、こっちの話だ！
+とっとと終わらせるから、;あんたはその辺に隠れててくれ！
+Talk エリス 10 7
+わ、わかりました！
+Talk 龍也
+…さ～てと…
+(とっさのことで;思わず体が動いちまったが…。)
+(こいつはしっかり;俺の思い通りに動いてくれるらしいや)
+Talk 龍也(見切り)
+(これなら…なんとか…なるっ！)
+End
+Exit
+
+全滅 味方 :
+Talk 龍也(ダメージ)
+いきなり……かよ…。マンガみてぇには…いかねぇもんだな…。
+End
+GameOver
+Exit
+
+勝利条件:
+Talk 龍也
+異世界に来ていきなりかよ…。;ま…やるだけやってみるか！
+Talk システム
+勝利条件:敵の全滅;敗北条件:味方の全滅
+End
+Exit
+
+破壊 敵:
+Talk 龍也
+パワー、スピード…。
+どれを取ってもこっちが上…ってか。;なるほどな、こいつはいい武器だ…曾じいさんよ！
+さぁて…お次はどいつだっ！？
+End
+IncreaseMorale 龍也 20
+Clearevent
+Exit
+
+全滅 敵:
+Talk 龍也
+Talk エリス 10 7
+凄い…たった一機;…しかも素手…で…。
+Talk 龍也
+アンタ！大丈夫……か……？
+(…って…なんだよ…)
+Talk エリス 10 7
+…？
+Talk 龍也
+…曾じいさんの言ってたこと;…嘘ってワケでも無さそうだな
+Talk エリス 10 7
+…ぇ？
+Talk 龍也
+いやいや！こっちの話だ！
+それより…大丈夫か
+Talk エリス 10 7
+あ、はい…大丈夫です
+End
+StopBGM
+Continue 第２話.eve
+Exit
+
+エピローグ:
+StartBGM moon.mid
+Talk エリス
+あの…ありがとうございました…。
+Talk 龍也
+…あぁ、例を言われるほどのことでもねぇさ。
+こっちは初めからそのつもりで来たんだからな
+Talk エリス
+…そのつもり…で？
+Talk 龍也
+あぁ、俺は…なんつーか。;異世界から来たんだよ
+Talk エリス
+異世界…ですか？
+Talk エリス(はわわ)
+え…異世界…から！？
+Talk 龍也
+…そんなに驚くことか…？
+…いや、普通は驚くか。
+Talk エリス
+…そ、それじゃ貴方は異世界から来た勇者様…
+Talk エリス(はわわ)
+はわわーーーーっ！！
+Talk 龍也
+…は、はわわ～って…
+(…可愛いから、いいんだけどさ…)
+Talk エリス(はわわ)
+勇者さま！お名前をお聞かせください！
+Talk 龍也
+ゆ、<b>ゆうしゃ</b>…ぁ！？
+あー。俺の名前は…桜 龍也ってんだけども…
+Talk エリス(はわわ)
+龍也様ですね！
+Talk 龍也
+龍也…<b>様</b>ぁ！？
+Talk エリス(はわわ)
+あ、私ったら自分の名前も名乗らずに…
+Talk エリス
+私の名はエリキュンデス。エリスとお呼びください。
+Talk 龍也
+(見てて飽きない娘だなぁ…)
+…そういえば、こんなところで何をしてたんだ…？
+Talk エリス
+はい…ダレクシア大神殿に;啓示を受けに行く途中で魔族に襲撃を受け…
+護衛のものは皆…
+Talk 龍也(自責)
+そうか…。
+………
+Talk 龍也
+よし、決めた。
+エリス、俺が君を護衛してやるよ。
+Talk エリス(はわわ)
+え…！？
+Talk 龍也
+まだこっちに来たての頼りない護衛だけどな。
+Talk エリス(はわわ)
+そ、そんなことはありません！
+Talk 龍也
+道中この世界のことも色々と聞いておきたいしな…。
+よろしく頼むぜ。エリス。
+Talk エリス(はわわ)
+は、はい！こちらこそよろしくお願いします！
+End
+Changemap "".map
+Redraw
+Show
+PlayMIDI Darkness Wing Spread.mid
+Wait 20
+Font 24pt Ｐゴシック Bold
+PlaySound FightHit(1).wav
+PaintString - - 次
+Refresh
+Wait 0.5
+ClearPicture
+PlaySound FightHit(1).wav
+PaintString - - 次回
+Refresh
+Wait 0.5
+ClearPicture
+PlaySound FightHit(1).wav
+PaintString - - 次回予
+Refresh
+Wait 0.5
+ClearPicture
+PlaySound FightHit(1).wav
+PaintString - - 次回予告
+Refresh
+Wait 10
+Fadeout
+
+Talk ナレーター
+ピンチの少女「エリス」を助けた;龍也は彼女を護衛し神殿へと向かう。
+神殿で明かされる新たなる真実！;そして２人が出会った黒い機体とは！？
+次回！聖戦記エレメンタルナイト！
+End
+PlaySound Whiz.wav
+
+
+Call 次回予告 第２話 20 黒の団
+
+Wait 40
+AutoTalk ナレーター
+20;黒き影が闇へと忍び寄る…。
+end
+Fadeout
+PlaySound Mirage.wav
+Wait 20
+Set 龍也編進行度 2
+Call セーブデータ処理
+Exit

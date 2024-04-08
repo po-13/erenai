@@ -1,0 +1,155 @@
+プロローグ:
+Exit
+
+スタート:
+ChangeMap "".map
+Redraw
+
+StartBGM AnotherWorld.mid
+Wait 30
+
+Talk 鳳(ダメージ)
+どこだ…ここは…。
+暗い…何も見えない…。
+いや…暗いのでは…ない…？
+何も…ないのか…？これが…無…？
+あぁ、そうか…。
+End
+Wait 20
+Talk システム
+私は…消えるのか
+何も遺さず…塵すらもなく…
+消える…のだな
+End
+Wait 50
+
+文章表示表 でも姉さん…これで…いいんだよね…。
+Wait 40
+Fadeout
+Wait 10
+文章表示表 僕は…守ることが…出来たんだから…。
+Wait 40
+Fadeout
+Wait 10
+文章表示表 これで…いいんだよね…。
+Wait 50
+Fadeout
+Wait 40
+WhiteOut
+Wait 20
+
+文章表示裏 バカね、貴方は…いつまで経っても。
+Wait 40
+Whiteout
+Wait 10
+文章表示裏 誰も泣かなくていい。
+Wait 30
+Whiteout
+Wait 10
+文章表示裏 そう言った貴方が人を泣かせてどうするの？
+Wait 40
+WhiteOut
+Wait 20
+文章表示裏 戻りなさい、貴方は…貴方の居るべき場所に。
+Wait 50
+WhiteOut
+StopBGM
+Wait 50
+
+Hide
+
+StartBGM Oosima30.mid
+
+Wait 20
+
+Talk システム
+………りさん！？
+Talk 鳳(ダメージ)
+う…ん？
+Talk システム
+お…とりさん！？
+Talk レヴィン
+鳳さん！？よか…良かった…！
+Talk レヴィン(涙)
+本当に…良かった…
+Talk 鳳
+…私は…:そうか…。
+レヴィン、私は大丈夫…:大丈夫だ。
+だから…貴方は泣かないでいい…。
+Talk レヴィン(涙)
+…はい…っ…！
+End
+Wait 10
+Talk シャイナ
+ありがとう…鳳さん…
+私、私…とんでもない過ちを…
+Talk 鳳
+あぁ、そうだな。:二度は…ない。
+別に姉妹喧嘩を止めはせん。度をわきまえる事だな
+Talk シャイナ
+…くすっ…:そうだね…もう…絶対に…。
+Talk レヴィン
+シャイナ…。
+鳳さん、貴方には…;どれだけお礼を言っても足りませんわ…
+Talk 鳳
+構わん。礼を言いたいのは…こっちの方だ。
+Talk レヴィン
+えっ…
+Talk 鳳
+お前を助けられた…。;そのお陰で…ようやく吹っ切れそうだ…。
+姉さん…。
+Talk シャイナ
+おねえ…さん…？
+Talk 鳳
+行くぞ。ルディアとリィスが心配だ。
+Talk レヴィン
+動いて大丈夫なんですの…？
+Talk 鳳
+少しは、な。無理はせんさ。
+お互い…せっかく助かった命だからな…。
+Talk レヴィン
+は…はぁ…？
+Talk 鳳
+往くぞ。
+End
+Wait 50
+PlaySound Wind.wav
+Wait 30
+Talk 天馬
+Talk
+「…全く…手のかかる弟を持つと…大変だわ。」
+「オチオチ眠ってもいられやしない…」
+Suspend
+PlaySound Door(Open).wav
+Wait 5
+Talk 看護婦
+…え…っ？
+Talk 天馬
+Talk
+「あら、おはよう。」
+End
+PlaySound Crash.wav
+Talk 看護婦
+…な…！
+End
+PlaySound Stairs(Run).wav
+Wait 5
+Talk システム
+先生！:先生！！;:３０４号室の鳳さんが！鳳さんがぁーーーっ！！
+End
+Wait 5
+Talk 天馬
+…はぁ…:少し騒がしくなりそうね…
+頑張りなさい…飛翔。
+End
+Wait 10
+PlaySound Door(Close).wav
+Wait 30
+IntermissionCommand 視点切り替え Event\視点切り替え.eve
+IntermissionCommand なぜナイ２ Event\なぜナイ２.eve
+Set 鳳編進行度 5
+鳳処理
+Continue EK-01.eve
+Exit
+
+

@@ -1,0 +1,13 @@
+
+スタート:
+ChangeMap エレナイサンプルその一.map
+
+Create 敵 ソーディアアサルト 50 トキア＝レンガー 10 20 20
+Bossrank トキア＝レンガー 5
+Create 味方 ヴァル＝セリエ改 20 桜龍也 99 15 20
+IncreaseMorale 桜龍也 50
+Item 四星桜花流・暗黒閃
+Equip 四星桜花流・暗黒閃
+
+Exit
+

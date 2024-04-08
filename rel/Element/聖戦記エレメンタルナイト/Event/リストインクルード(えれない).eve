@@ -1,0 +1,1111 @@
+#▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲
+#▲                                                                            ▽
+#▽     ＳＲＣサブルーチン　リストインクルード                                 ▲
+#▲                                                                            ▽
+#▲                             エレメンタルナイト用カスタマイズ版             ▽
+#▲                                                                            ▽
+#▽                              Ver 2.04  LastUpdate : 2000-09-14  【通】     ▲
+#▲                                                                            ▽
+#▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+
+# 現在のシナリオ進行度を２桁の半角数値で返す関数として使用。
+# 次ステージで呼び出されるシナリオ名の末尾2桁が半角の数値である事が必須。
+
+現在進行度:
+
+# Out   :   現在クリアしているシナリオの話数を返す。
+#           （例：５話までクリアしているセーブデータなら"05"が返る）
+
+Local 進行度
+進行度 = MID(次ステージ, (InStr(次ステージ, ".") - 2), 2)
+進行度 = Right("00$(進行度 - 1)", 2)
+
+Return 進行度
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+
+一覧表選択:
+
+# In    ：           要素数         一覧表の要素数
+#           Args(1) データタイプ    "パイロット"or"キャラクター"　＝　キャラクターデータ
+#                                   "ユニット"                  　＝　ユニットデータ
+#                                   その他                      　＝　アイコン画像ファイル名
+#           Args(2) 一覧項目数      少　or  指定無し    ＝  ６行表示
+#                                   多                  ＝  １２段行表示
+#           Args(3) 文字ピッチ      （デフォルト 14pt）
+#           Args(4) タイトル表示用ラベル
+
+
+# 画面初期化
+Redraw
+
+# 一覧画面の現在ページ数
+Set 現在ページ数 1
+
+# パイロット、ユニット、その他の分岐
+Local データタイプ
+If Args(1) != "" Then
+    データタイプ = Args(1)
+Else
+    データタイプ =  ""
+Endif
+
+# 一覧項目数設定
+Local 一覧項目数
+If Args(2) = "多" Then
+    一覧項目数 = 24
+ElseIf Args(2) != "" Then
+    一覧項目数 = Args(2)
+Else
+    一覧項目数 = 12
+Endif
+
+# 文字ピッチ
+Local 一覧表文字ピッチ
+If (Args(3) != "") And (Args(3) != "-") Then
+    一覧表文字ピッチ = Args(3)
+Else
+    一覧表文字ピッチ = "14"
+Endif
+
+# タイトル部表示ラベル名
+Local 一覧表タイトル
+If Args(4) != "" Then
+    一覧表タイトル = Args(4)
+Else
+    一覧表タイトル = ""
+Endif
+
+
+Call 紹介インデックス作成
+Call 一覧表画面表示 データタイプ 一覧項目数 一覧表文字ピッチ 一覧表タイトル
+
+Do While (1)
+
+    Do
+        Wait Click
+    Loop While (選択 = "")
+
+    Switch 選択
+      # 一覧画面
+      Case "戻る"
+        Call 戻る
+        Break
+      Case "前ページ"
+        Call 前ページ 一覧項目数
+        Call 一覧表画面表示 データタイプ 一覧項目数 一覧表文字ピッチ 一覧表タイトル
+      Case "次ページ"
+        Call 次ページ 一覧項目数
+        Call 一覧表画面表示 データタイプ 一覧項目数 一覧表文字ピッチ 一覧表タイトル
+
+      # 個別紹介画面
+      Case "個別紹介・前ページ"
+        Call 個別紹介・前ページ
+        Call 個別紹介画面表示
+      Case "個別紹介・次ページ"
+        Call 個別紹介・次ページ
+        Call 個別紹介画面表示
+      Case "個別紹介・戻る"
+        Call 個別紹介・戻る
+        Call 一覧表画面表示 データタイプ 一覧項目数 一覧表文字ピッチ 一覧表タイトル
+      Case "表情変更"
+        Call 表情表示
+      Case "形態変更"
+        Call 他形態表示
+      Case "解説・前ページ"
+        Call 解説・前ページ
+        Call 解説・台詞表示
+      Case "解説・次ページ"
+        Call 解説・次ページ
+        Call 解説・台詞表示
+
+      # カットイン画面
+      Case "カットイン表示"
+        Call カットイン表示
+      Case "カットイン・前ページ"
+        Call カットイン・前ページ
+        Call カットイン表示
+      Case "カットイン・次ページ"
+        Call カットイン・次ページ
+        Call カットイン表示
+      Case "カットイン・戻る"
+        Call カットイン・戻る
+        Call 個別紹介画面表示
+
+      # テーマ曲演奏
+      Case "テーマ曲演奏"
+        Call テーマ曲演奏
+
+      Case Else
+        Call 個別紹介画面表示 選択
+    EndSw
+
+Loop
+Redraw
+
+Return
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+
+進行度別一覧表作成:
+
+# In : 一覧用ファイル名     .LST ファイルの名称
+
+# シナリオ進行度別に、指定のフォーマット表を元に一覧を作成。
+# 選択された項目の一覧名、ラベル名をそれぞれ、「表示名称」「表示ラベル」の
+# 配列に格納して返す。
+
+# 進行表のフォーマットは、「シナリオ進行度」と「インデックス,名称,ラベル名」
+# の２パターンがあり、リストの数で判断する。ラベル名に「削除」が指定されていれば、
+# その要素の配列をUnSetする。（事前にその要素が定義されている必要有り）
+# 名称はパイロットやユニットの正式名称を設定する事。
+
+
+# 配列削除
+UnSet 表示順
+UnSet 表示名称
+UnSet 表示ラベル
+UnSet 表示備考
+
+# 配列設定
+Set 表示順
+Set 表示名称
+Set 表示ラベル
+Set 表示備考
+Set 要素数 0
+
+# ローカル変数設定
+Local シナリオ進行度
+Local TMP
+Local 表示順
+Local 読込名称
+Local 読込ラベル名
+Local 読込備考
+Local 進行度
+
+# 現在進行度設定
+進行度 = 現在進行度()
+
+# ループ開始
+OPEN "$(Args(1))" For 入力 As F
+
+Do While (EOF(F) = 0)
+
+    LineRead F TMP
+
+    # シナリオ進行度格納
+    If LLength(TMP) = 1 Then
+        シナリオ進行度 = TMP
+
+    # 名称・ラベル名格納
+    Else
+
+        読込順 = LIndex(TMP, 1)
+        読込名称 = LIndex(TMP, 2)
+        読込ラベル名 = LIndex(TMP, 3)
+        読込備考 = LIndex(TMP, 4)
+
+        If (龍也編進行度 > シナリオ進行度 And 読込備考 = "龍也") Or (涼子編進行度 > シナリオ進行度 And 読込備考 = "涼子") Then
+            # 表示名称、ラベル名格納
+            If 読込ラベル名 <> 削除 Then
+                表示順[読込名称] = 読込順
+                表示名称[読込名称] = 読込名称
+                表示ラベル[読込名称] = 読込ラベル名
+                表示備考[読込名称] = 読込備考
+            # 配列削除
+            Else
+                UnSet 表示順[読込名称]
+                UnSet 表示名称[読込名称]
+                UnSet 表示ラベル[読込名称]
+                UnSet 表示備考[読込備考]
+            EndIf
+        EndIf
+    EndIf
+
+    If (龍也編進行度 <= シナリオ進行度) And (涼子編進行度 <= シナリオ進行度) Then
+        Break
+    EndIf
+
+Loop
+
+CLOSE F
+
+# 要素数
+要素数 = Count(表示順)
+
+Return
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+
+# 一覧表、ソート機能付き --------------------------------------------
+
+# 内容は全て一覧表で指定された順に昇順ソートされる。
+
+ソート機能付き進行度別一覧表作成:
+
+# 配列削除
+UnSet 表示順
+UnSet 表示名称
+UnSet 表示ラベル
+UnSet 表示備考
+UnSet 表示順ワーク
+UnSet 表示名称ワーク
+UnSet 表示ラベルワーク
+UnSet 表示備考ワーク
+
+# 配列設定
+Set 表示順
+Set 表示名称
+Set 表示ラベル
+Set 表示備考
+Set 表示順ワーク
+Set 表示名称ワーク
+Set 表示ラベルワーク
+Set 表示備考ワーク
+Set 要素数 0
+
+# ローカル変数設定
+Local シナリオ進行度
+Local TMP
+Local 表示順
+Local 読込名称
+Local 読込ラベル名
+Local 読込備考
+Local ソート
+Local 進行度
+
+# 現在進行度設定
+進行度 = 現在進行度()
+
+# ループ開始
+OPEN "$(Args(1))" For 入力 As F
+
+Do While (EOF(F) = 0)
+
+    LineRead F TMP
+
+    # シナリオ進行度格納
+    If LLength(TMP) = 1 Then
+        シナリオ進行度 = TMP
+
+    # 名称・ラベル名格納
+    Else
+        読込順 = LIndex(List(TMP), 1)
+        読込名称 = LIndex(List(TMP), 2)
+        読込ラベル名 = LIndex(List(TMP), 3)
+        読込備考 = LIndex(TMP, 4)
+
+        If (龍也編進行度 > シナリオ進行度 And 読込備考 = "龍也") Or (涼子編進行度 > シナリオ進行度 And 読込備考 = "涼子") Then
+            # 表示名称、ラベル名格納
+            If 読込ラベル名 <> 削除 Then
+                表示順[読込名称] = 読込順
+                表示名称[読込名称] = 読込名称
+                表示ラベル[読込名称] = 読込ラベル名
+                表示備考[読込名称] = 読込備考
+            # 配列削除
+            Else
+                UnSet 表示順[読込名称]
+                UnSet 表示名称[読込名称]
+                UnSet 表示ラベル[読込名称]
+                UnSet 表示備考[読込備考]
+            EndIf
+        EndIf
+    EndIf
+
+    # シナリオ進行度確認
+    If (龍也編進行度 <= シナリオ進行度) And (涼子編進行度 <= シナリオ進行度) Then
+        Break
+    EndIf
+
+Loop
+
+CLOSE F
+
+# 名称ソート
+Local Cnt 
+Local Sort_x 
+Local Sort_y 
+Local Sort_Work1
+Local Sort_Work2
+Local Sort_Work3
+Local Sort_Work4
+Local ソート
+
+Cnt = 0
+Sort_x = 0
+Sort_y = 0
+Sort_Work1 = ""
+Sort_Work2 = ""
+Sort_Work3 = ""
+Sort_Work4 = ""
+
+# 要素が数値の配列に保存
+ForEach ソート In 表示順
+    Incr Cnt
+    Set 表示順ワーク[Cnt] 表示順[ソート]
+    Set 表示名称ワーク[Cnt] 表示名称[ソート]
+    Set 表示ラベルワーク[Cnt] 表示ラベル[ソート]
+Next
+
+# ソート
+For Sort_x = 1 to Cnt
+    For Sort_y = 1 to (Cnt - Sort_x)
+        If StrComp(表示順ワーク[Sort_y],表示順ワーク[(Sort_y + 1)]) = 1 Then
+            Sort_Work1 = 表示順ワーク[Sort_y]
+            表示順ワーク[Sort_y] = 表示順ワーク[(Sort_y + 1)]
+            表示順ワーク[(Sort_y + 1)] = Sort_Work1
+            Sort_Work2 = 表示名称ワーク[Sort_y]
+            表示名称ワーク[Sort_y] = 表示名称ワーク[(Sort_y + 1)]
+            表示名称ワーク[(Sort_y + 1)] = Sort_Work2
+            Sort_Work3 = 表示ラベルワーク[Sort_y]
+            表示ラベルワーク[Sort_y] = 表示ラベルワーク[(Sort_y + 1)]
+            表示ラベルワーク[(Sort_y + 1)] = Sort_Work3
+            Sort_Work4 = 表示備考ワーク[Sort_y]
+            表示備考ワーク[Sort_y] = 表示備考ワーク[(Sort_y + 1)]
+            表示備考ワーク[(Sort_y + 1)] = Sort_Work4
+        EndIf
+    Next
+Next
+
+# 配列削除
+UnSet 表示順
+UnSet 表示名称
+UnSet 表示ラベル
+UnSet 表示備考
+
+# 配列再設定
+Set 表示順
+Set 表示名称
+Set 表示ラベル
+Set 表示備考
+
+# 要素がパイロット名の配列に再格納
+ForEach ソート In 表示順ワーク
+    Set 表示順[表示名称ワーク[ソート]] 表示順ワーク[ソート]
+    Set 表示名称[表示名称ワーク[ソート]] 表示名称ワーク[ソート]
+    Set 表示ラベル[表示名称ワーク[ソート]] 表示ラベルワーク[ソート]
+    Set 表示備考[表示名称ワーク[ソート]] 表示備考ワーク[ソート]
+    Incr 要素数
+Next
+Return 
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+
+紹介インデックス作成:
+
+UnSet 紹介インデックス
+Set 紹介インデックス
+
+Local Idx_Cnt
+Idx_Cnt = 0
+ForEach S_Ver In 表示名称
+    Incr Idx_Cnt
+    紹介インデックス[Idx_Cnt] = 表示名称[S_Ver]
+Next
+
+Return
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+
+一覧表画面表示:
+
+# In    ：  Args(1) データタイプ    "パイロット"or"キャラクター"　＝　キャラクターデータ
+#                                   "ユニット"                  　＝　ユニットデータ
+#                                   その他                      　＝　アイコン画像ファイル名
+#           Args(2) 一覧項目数      少　or  指定無し    ＝  ６行表示
+#                                   多                  ＝  １２段行表示
+#           Args(3) 文字ピッチ      （デフォルト 14pt）
+#           Args(4) タイトル表示用ラベル
+
+If Not 現在ページ数 Then
+    Set 現在ページ数 1
+EndIf
+
+# パイロット、ユニット、その他の分岐
+Local データタイプ
+If Args(1) != "" Then
+    データタイプ = Args(1)
+Else
+    データタイプ =  ""
+Endif
+
+# 一覧項目数設定
+Local 一覧項目数
+If Args(2) != "" Then
+    一覧項目数 = Args(2)
+Else
+    一覧項目数 = 12
+Endif
+
+# 文字ピッチ
+Local 一覧表文字ピッチ
+If (Args(3) != "") And (Args(3) != "-") Then
+    一覧表文字ピッチ = Args(3)
+Else
+    一覧表文字ピッチ = "14"
+Endif
+
+# タイトル部表示ラベル名
+Local 一覧表タイトル
+If Args(4) != "" Then
+    一覧表タイトル = Args(4)
+Else
+    一覧表タイトル = ""
+Endif
+
+
+# ローカル変数定義
+Local page_cnt
+page_cnt = 0
+Local cnt
+cnt = 0
+Local x
+Local y
+Local S_Ver
+Local I_Path
+
+Local OrgName = ""
+Local OrgNcNm = ""
+Local OrgPict = ""
+Local FstName = ""
+Local SndName = ""
+
+Local SPage
+
+# 画面初期化
+Font
+Color RGB(255, 255, 255)
+ClearObj
+ClearPicture
+Refresh
+
+# タイトル部があれば表示
+If 一覧表タイトル != "" Then
+    Call "$(一覧表タイトル)"
+Endif
+
+# メインループ
+ForEach S_Ver In 表示名称
+
+    page_cnt = page_cnt + 1
+
+    If ((((現在ページ数 - 1) * 一覧項目数) + 1) <= page_cnt) And (page_cnt <= (現在ページ数 * 一覧項目数)) Then
+        # 座標決め　Ｘ座標
+        cnt = cnt + 1
+        If (cnt MOD 2) > 0 Then
+            x   = 1
+        Else
+            x   = 241
+        EndIf
+
+        # 座標決め　Ｙ座標
+        If (一覧項目数 = "12") And (一覧表タイトル = "") Then
+            y = (Int(cnt / 2 + 0.5) - 1) * 67 + 1
+        ElseIf (一覧項目数 = "12") And (一覧表タイトル != "") Then
+            y = (Int(cnt / 2 + 0.5) - 1) * 66 + 34
+        ElseIf (一覧表タイトル = "") Then
+            y = (Int(cnt / 2 + 0.5) - 1) * 35 + 1
+        Else
+            y = (Int(cnt / 2 + 0.5) - 1) * 33 + 34
+        Endif
+
+        # キャラクター、ユニット表示 ------------------------------------------
+
+        If (データタイプ = "キャラクター") Or (データタイプ = "パイロット") Or (データタイプ = "ユニット") Then
+
+            # パイロットの場合は正式名称を表示
+            If (データタイプ = "キャラクター") Or (データタイプ = "パイロット") Then
+                OrgName = Info(パイロットデータ, 表示名称[S_Ver], 名称)
+                OrgNcNm = Info(パイロットデータ, 表示名称[S_Ver], 愛称)
+                OrgPict = Info(パイロットデータ, 表示名称[S_Ver], グラフィック)
+                # ノンパイロットの場合
+                If (OrgName = "") Then
+                    OrgName = Info(表示名称[S_Ver], 名称)
+                    OrgNcNm = Info(表示名称[S_Ver], 愛称)
+                    OrgPict = Info(表示名称[S_Ver], グラフィック)
+                Endif
+            # ユニットの場合は愛称を表示
+            Else
+                OrgName = Info(ユニットデータ, 表示名称[S_Ver], 愛称)
+                OrgNcNm = OrgName
+                OrgPict = Info(ユニットデータ, 表示名称[S_Ver], グラフィック)
+            Endif
+
+            # アイコン64x64表示
+            If (一覧項目数 = "12") Then
+
+                # 画像ファイルが無い場合を想定し、一端「Now Printing」を書き込み
+                Color RGB(255, 255, 255)
+                Line x y (x + 63) (y + 63) BF
+                Font 8pt RGB(0, 0, 0)
+                PaintString (x + 19) (y + 17) "Now"
+                PaintString (x + 10) (y + 32) "Printing"
+
+                # 画像表示
+                PaintPicture OrgPict x y 64 64
+
+                # ホットポイント作成
+                HotPoint 表示名称[S_Ver] x y 64 64 解説
+
+                # ネームに()がある場合、取り除く
+                If InStr(OrgName, "(") > 0 Then
+                    OrgName = Left(OrgName, (InStr(OrgName, "(") - 1))
+                EndIf
+
+                # ネーム分割表示
+                Font "$(一覧表文字ピッチ)pt" RGB(255, 255, 255)
+                If InStr(OrgName, "＝") > 0 And (Len(OrgName) >= 7) Then
+                    FstName = Left(OrgName, (InStr(OrgName, "＝") - 1))
+                    SndName = Mid(OrgName, (InStr(OrgName, "＝") + 1))
+                    # 長さが足りていれば表示
+                    If (Len(FstName) < 10) And (Len(SndName) < 10) Then
+                        PaintString (x + 70) y FstName
+                        PaintString (x + 70) (y + 24) SndName
+                    # 長さが足りなければ愛称を表示
+                    Else
+                        PaintString (x + 70) y OrgNcNm
+                    Endif
+                # "＝"が無いか、名前が短い場合はそのまま表示
+                Else
+                    # 長さが足りていれば表示
+                    If (Len(OrgName) < 10) Then
+                        PaintString (x + 70) y OrgName
+                    # 長さが足りなければ愛称を表示
+                    Else
+                        PaintString (x + 70) y OrgNcNm
+                    Endif
+                EndIf
+
+            # アイコン32x32表示
+            Else
+                # 画像ファイルが無い場合を想定し、一端白字を描く
+                Color RGB(255, 255, 255)
+                Line x y (x + 31) (y + 31) BF
+
+                # 画像表示
+                PaintPicture OrgPict x y 32 32
+
+                # ホットポイント作成
+                HotPoint 表示名称[S_Ver] x y 32 32 解説
+
+                # 愛称を表示
+                Font "$(一覧表文字ピッチ)pt" RGB(255, 255, 255)
+                PaintString (x + 38) (y + 2) OrgNcNm
+            Endif
+
+
+        # その他 --------------------------------------------------------------
+        Else
+            OrgName = 表示名称[S_Ver]
+            OrgPict = データタイプ
+
+            # 画像表示
+            PaintPicture OrgPict x y (64 * 一覧項目数 / 12) (64 * 一覧項目数 / 12) 透過
+
+            # ホットポイント作成
+            HotPoint 表示名称[S_Ver] x y (64 * 一覧項目数 / 12) (64 * 一覧項目数 / 12) 解説
+
+            # アイコン64x64表示
+            If (一覧項目数 = "12") Then
+
+                # ネーム分割表示
+                Font "$(一覧表文字ピッチ)pt" RGB(255, 255, 255)
+                If InStr(OrgName, ";") > 0 Then
+                    FstName = Left(OrgName, (InStr(OrgName, ";") - 1))
+                    SndName = Mid(OrgName, (InStr(OrgName, ";") + 1))
+                    PaintString (x + 70) (y + 7) FstName
+                    PaintString (x + 70) (y + 27) SndName
+                # ";"が無い場合はそのまま表示
+                Else
+                    PaintString (x + 70) (y + 7) OrgName
+                EndIf
+
+            # アイコン32x32表示
+            Else
+                Font "$(一覧表文字ピッチ)pt" RGB(255, 255, 255)
+                PaintString (x + 38) (y + 5) OrgName
+            Endif
+
+        EndIf
+
+    EndIf
+
+Next
+
+# 矢印・戻るボタン設定
+If 要素数 > 一覧項目数 Then
+    PaintPicture Back.bmp 5 430
+    HotPoint 前ページ   5 430 96 32 前ページへ
+    PaintPicture Next.bmp 388 430
+    HotPoint 次ページ 388 430 96 32 次ページへ
+    Font 10pt RGB(255, 255, 255)
+    PaintString - 464 "$(現在ページ数) ／ $((Int(要素数 / 一覧項目数) + ((要素数 Mod 一覧項目数) != 0)))"
+EndIf
+PaintPicture Return.bmp 196 420
+HotPoint 戻る 196 420 96 32 メニューへ
+
+# 画面表示
+Refresh
+Font
+Color RGB(255, 255, 255)
+
+Return
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+前ページ:
+    PlaySound Page.wav
+    現在ページ数 = 現在ページ数 - 1
+    If (現在ページ数 <= 0) Then
+        現在ページ数 = Int(要素数 / Args(1)) + ((要素数 Mod Args(1)) != 0)
+    EndIf
+    ClearObj
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+次ページ:
+    PlaySound Page.wav
+    現在ページ数 = 現在ページ数 + 1
+    If (現在ページ数 > (Int(要素数 / Args(1)) + ((要素数 Mod Args(1)) != 0))) Then
+        現在ページ数 = 1
+    EndIf
+    ClearObj
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+戻る:
+    PlaySound Type.wav
+    ClearObj
+Return
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+
+個別紹介画面表示:
+
+# 画面クリア
+ClearObj
+ClearPicture
+Refresh
+
+# 解説＆台詞表示ルーチンで必要
+Set 現在解説ページ数 1
+
+# ワーク用変数削除
+UnSet S_名称
+UnSet S_画像
+UnSet S_表情
+UnSet S_他形態
+UnSet S_カットイン
+UnSet S_テーマ曲
+UnSet S_身長
+UnSet S_体重
+UnSet S_年齢
+UnSet S_３サイズ
+UnSet S_全長
+UnSet S_全高
+UnSet S_全重
+UnSet S_備考
+UnSet S_解説
+UnSet S_台詞
+
+# ワーク用変数設定
+Local S_Cnt
+Set 表情ポインター 0
+Set 他形態ポインター 0
+Set カットインポインター 1
+
+# 変数設定
+If Not 表示ポインター Then
+    Set 表示ポインター
+Endif
+
+# 引数があればそれを表示
+If Args(1) != "" Then
+    Idx_Cnt = 0
+    表示ポインター = 1
+    ForEach S_Ver In 紹介インデックス
+        If 紹介インデックス[S_Ver] = Args(1) Then
+            表示ポインター = S_Ver
+            Break
+        Endif
+    Next
+Endif
+
+
+# キャラデータ取得
+Call 表示ラベル[紹介インデックス[表示ポインター]] 表示ラベル[紹介インデックス[表示ポインター]]
+
+If S_名称 != "S_名称" Then
+    Font 24pt Italic
+    PaintString 10 5 S_名称
+Endif
+
+Font
+
+# 画像表示
+If S_画像 != "S_画像" Then
+    # 画像ファイルが無い場合を想定し、一端「Now Printing」を書き込み
+    Line 28 48 127 147 BF #FFFFFF
+    Font 12pt RGB(0, 0, 0)
+    PaintString 60 70 "Now"
+    PaintString 48 100 "Printing"
+
+    PaintPicture S_画像 30 50 96 96
+
+    If S_表情[1] != "" Then
+        HotPoint 表情変更 30 50 96 96 表情変更
+    Endif
+    If S_他形態[1] != "" Then
+        HotPoint 形態変更 30 50 96 96 形態変更
+    Endif
+    Font
+Endif
+
+# カットインがある場合、HotPoint設定
+If S_カットイン[1] != "" Then
+    Font 10pt RGB(100, 255, 255)
+    PaintPicture Button_Cutin.bmp 45 155
+    HotPoint カットイン表示 45 155 80 30 カットイン表示
+    Font
+Endif
+
+If S_テーマ曲 != "S_テーマ曲" Then
+
+    Font 10pt RGB(100, 255, 255)
+    PaintPicture MG.bmp 45 155
+    HotPoint テーマ曲演奏 45 155 25 25 テーマ曲演奏
+    Font
+
+EndIf
+# ここで曲のボタン設定
+
+
+
+Font 14pt
+S_Cnt = 0
+
+# キャラクター用
+If S_年齢 != "S_年齢" Then
+    PaintString 180 (48 + S_Cnt * 22) "年齢　：　$(S_年齢)"
+    Incr S_Cnt
+Endif
+
+If S_身長 != "S_身長" Then
+    PaintString 180 (48 + S_Cnt * 22) "身長　：　$(S_身長)"
+    Incr S_Cnt
+Endif
+
+If S_体重 != "S_体重" Then
+    PaintString 180 (48 + S_Cnt * 22) "体重　：　$(S_体重)"
+    Incr S_Cnt
+Endif
+
+If S_３サイズ != "S_３サイズ" Then
+    PaintString 180 (48 + S_Cnt * 22) "B/W/H ：　$(S_３サイズ)"
+    Incr S_Cnt
+Endif
+
+# ユニット用
+If S_全長 != "S_全長" Then
+    PaintString 180 (48 + S_Cnt * 22) "全長　：　$(S_全長)"
+    Incr S_Cnt
+Endif
+If S_全高 != "S_全高" Then
+    PaintString 180 (48 + S_Cnt * 22) "全高　：　$(S_全高)"
+    Incr S_Cnt
+Endif
+If S_全重 != "S_全重" Then
+    PaintString 180 (48 + S_Cnt * 22) "全重　：　$(S_全重)"
+    Incr S_Cnt
+Endif
+
+# 備考
+If S_備考[1] != "" Then
+    ForEach S_Ver In S_備考
+        PaintString 180 (48 + S_Cnt * 22) "$(S_備考[S_Ver])"
+        Incr S_Cnt
+    Next
+Endif
+
+Font
+
+# 解説文・台詞表示
+If (S_解説[1] != "") Or (S_台詞[1] != "") Then
+
+    Call 解説・台詞表示 
+
+Endif
+
+
+# 矢印・戻るボタン設定
+If 要素数 > 1 Then
+    PaintPicture Back.bmp 5 430
+    HotPoint 個別紹介・前ページ   5 430 96 32 前ページへ
+    PaintPicture Next.bmp 388 430
+    HotPoint 個別紹介・次ページ 388 430 96 32 次ページへ
+    Font 10pt RGB(255, 255, 255)
+    PaintString - 464 "$(表示ポインター) ／ $(要素数)"
+EndIf
+PaintPicture Return.bmp 196 420
+HotPoint 個別紹介・戻る 196 420 96 32 一覧表へ
+
+# 画面表示
+Refresh
+Font
+Color RGB(255, 255, 255)
+
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+個別紹介・前ページ:
+    PlaySound Page.wav
+    表示ポインター = 表示ポインター - 1
+    If (表示ポインター <= 0) Then
+        表示ポインター = 要素数
+    EndIf
+    ClearObj
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+個別紹介・次ページ:
+    PlaySound Page.wav
+    表示ポインター = 表示ポインター + 1
+    If (表示ポインター > 要素数) Then
+        表示ポインター = 1
+    EndIf
+    ClearObj
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+個別紹介・戻る:
+    PlaySound Type.wav
+    ClearObj
+Return
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+表情表示:
+    PlaySound Type.wav
+    Incr 表情ポインター
+    If 表情ポインター <= Count(S_表情) Then
+        PaintPicture S_表情[表情ポインター] 30 50 96 96
+    Else
+        表情ポインター = 0
+        PaintPicture S_画像 30 50 96 96
+    Endif
+    Refresh
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+他形態表示:
+    PlaySound Type.wav
+    Incr 他形態ポインター
+    If 他形態ポインター <= Count(S_他形態) Then
+        ClearPicture 0 0 480 36
+        Font 24pt Italic
+        PaintString 10 5 Info(S_他形態[他形態ポインター], 愛称)
+        PaintPicture S_他形態[他形態ポインター] 30 50 96 96
+    Else
+        他形態ポインター = 0
+        If S_名称 != "S_名称" Then
+            ClearPicture 0 0 480 36
+            Font 24pt Italic
+            PaintString 10 5 S_名称
+        Endif
+        PaintPicture S_画像 30 50 96 96
+    Endif
+    Refresh
+    Font
+Return
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+
+解説・台詞表示:
+
+# In    :   現在解説ページ数
+
+Local Ks_Cnt
+Local N_Cnt
+Local 全行数
+Local 全表示幅
+Local 表示開始地点
+
+Local 解説改行幅
+Local 台詞改行幅
+Local 最大表示幅
+Local 現在改行幅
+Local 現在処理ページ
+
+全行数 = Count(S_解説) + Count(S_台詞) + (Count(S_台詞) != 0)
+解説改行幅 = 20
+台詞改行幅 = 25
+最大表示幅 = 220
+現在改行幅 = 0
+現在処理ページ = 1
+全表示幅 = (Count(S_解説) * 解説改行幅) + (Count(S_台詞) * 台詞改行幅) + ((Count(S_台詞) != 0) * 解説改行幅)
+表示開始地点 = 185
+
+# 実行要素番号初期化
+N_Cnt = 0
+
+# メッセージ領域クリア
+ClearPicture 430 (表示開始地点 - 20) 480 表示開始地点
+ClearPicture 1 表示開始地点 480 419
+
+# メインループ
+For Ks_Cnt = 1 To 全行数
+
+    # ループ脱出
+    If (現在改行幅 >= 最大表示幅) Then
+        Incr 現在処理ページ
+        現在改行幅 = 0
+        If 現在処理ページ > 現在解説ページ数 Then
+            Break
+        Endif
+    Endif
+
+    # 解説文表示
+    If Ks_Cnt <= Count(S_解説) Then
+        Incr N_Cnt
+        If 現在処理ページ = 現在解説ページ数 Then
+            Font 11pt
+            PaintString 5 (表示開始地点 + 現在改行幅)  "$(S_解説[N_Cnt])"
+        Endif
+        現在改行幅 = 現在改行幅 + 解説改行幅
+    Endif
+    # 解説と台詞の空白
+    If ((Ks_Cnt - Count(S_解説)) = 1) Then
+        N_Cnt = 0
+        現在改行幅 = 現在改行幅 + 解説改行幅
+    Endif
+    # 台詞表示
+    If ((Ks_Cnt - Count(S_解説)) > 1) Then
+        Incr N_Cnt
+        If 現在処理ページ = 現在解説ページ数 Then
+            Font 16pt Italic
+            PaintString  - (表示開始地点 + 現在改行幅) "$(S_台詞[N_Cnt])"
+        Endif
+        現在改行幅 = 現在改行幅 + 台詞改行幅
+    Endif
+
+Next
+
+# ページ切替HotPoint設定
+If (全表示幅 > 最大表示幅) Then
+    Font
+    # 上矢印
+    If (現在解説ページ数 > 1) Then
+        Font RGB(255, 0, 0)
+        PaintString 430 (表示開始地点 - 20) "▲"
+        HotPoint 解説・前ページ 430 (表示開始地点 - 20) 20 20 上へ
+    Endif
+
+    # 下矢印
+    If (Ks_Cnt <= 全行数) Then
+        Font RGB(255, 0, 0)
+        PaintString 460 (表示開始地点 - 20) "▼"
+        HotPoint 解説・次ページ 460 (表示開始地点 - 20) 20 20 下へ
+    Endif
+    Font
+Endif
+
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+解説・前ページ:
+    PlaySound Page.wav
+    現在解説ページ数 = 現在解説ページ数 - 1
+    ClearObj 解説・前ページ
+    ClearObj 解説・次ページ
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+解説・次ページ:
+    PlaySound Page.wav
+    現在解説ページ数 = 現在解説ページ数 + 1
+    ClearObj 解説・前ページ
+    ClearObj 解説・次ページ
+Return
+
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+カットイン表示:
+
+ClearObj
+ClearPicture
+
+PaintPicture S_カットイン[カットインポインター] - -
+
+If S_名称 != "S_名称" Then
+    ClearPicture 0 0 480 36
+    Font 24pt Italic
+    PaintString 10 5 S_名称
+Endif
+
+
+# 矢印・戻るボタン設定
+If Count(S_カットイン) > 1 Then
+    PaintPicture Back.bmp 5 430
+    HotPoint カットイン・前ページ   5 430 96 32 前ページへ
+    PaintPicture Next.bmp 388 430
+    HotPoint カットイン・次ページ 388 430 96 32 次ページへ
+    Font 10pt RGB(255, 255, 255)
+    PaintString - 464 "$(カットインポインター) ／ $(Count(S_カットイン))"
+EndIf
+PaintPicture Return.bmp 196 420
+HotPoint カットイン・戻る 196 420 96 32 戻る
+
+# 画面表示
+Refresh
+Font
+Color RGB(255, 255, 255)
+
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+カットイン・前ページ:
+    PlaySound Page.wav
+    カットインポインター = カットインポインター - 1
+    If (カットインポインター <= 0) Then
+        カットインポインター = Count(S_カットイン)
+    EndIf
+    ClearObj
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+カットイン・次ページ:
+    PlaySound Page.wav
+    カットインポインター = カットインポインター + 1
+    If (カットインポインター > Count(S_カットイン)) Then
+        カットインポインター = 1
+    EndIf
+    ClearObj
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+カットイン・戻る:
+    PlaySound Type.wav
+    ClearObj
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇
+テーマ曲演奏:
+StartBGM S_テーマ曲
+Return
+
+#◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇

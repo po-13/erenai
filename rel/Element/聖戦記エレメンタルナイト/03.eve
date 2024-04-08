@@ -1,0 +1,488 @@
+
+スタート:
+
+If 涼子編進行度 < 17 Then
+Talk システム
+今の状態ではこの話は進められません。
+他編をある程度進ませればこちらも進ませられるようになります。
+End
+Continue 03.eve 
+Exit
+Endif
+
+ChangeMap "".map
+Redraw
+Show
+StartBGM AnotherWorld.mid
+Call 文章表示２ 20 私は嘘をついている
+Wait 10
+Call 文章表示２ 20 私の一番の親友に…
+Wait 10
+Call 文章表示２ 20 …私は嘘をついている…
+Wait 10
+Call 文章表示２ 30 彼女の最も欲している扉の鍵を
+Call 文章表示２ 30 彼女の最も欲している過去の記憶を
+Wait 20
+Call 文章表示２ 50 …私は、嘘を、ついている…
+Wait 20
+PlayMidi north.mid
+Wait 40
+
+
+Font 25pt 明朝 Italic Bold
+For i = 1 To 20
+Font RGB(12.5 * i, 12.5 * i, 12.5 * i)
+PaintString - 200 第三節
+PaintString - 200 第三節
+Refresh
+Next
+Wait 20
+Font 25pt 明朝 Italic Bold
+For i = 1 To 20
+Font RGB(12.5 * i, 12.5 * i, 12.5 * i)
+PaintString - 280 『TYPE-LD-1A』
+Refresh
+Next
+Wait 30
+Font 7pt
+PlaySound Type.wav
+PaintString 170 270 タ
+Refresh
+Wait 5
+PlaySound Type.wav
+PaintString 190 270 イ
+Refresh
+Wait 5
+PlaySound Type.wav
+PaintString 210 270 プ
+Refresh
+Wait 30
+PlaySound Type.wav
+PaintString 255 270 ル
+Refresh
+Wait 10
+PlaySound Type.wav
+PaintString 275 270 デ
+Refresh
+Wait 10
+PlaySound Type.wav
+PaintString 295 270 ィ
+Refresh
+Wait 10
+PlaySound Type.wav
+PaintString 315 270 ア
+Refresh
+
+Wait 40
+
+fadeOut
+
+Wait 30
+
+changemap 03A.map
+Redraw
+
+StartBGM Toki_xg.mid
+
+Launch 鳳 6 14
+
+Launch レヴィン 5 13
+
+Launch リィス 5 15
+
+Launch ルディア 4 14
+
+
+
+Wait 30
+Talk ルディア
+…？
+Talk リィス
+…ルディア…どうしたの…？
+Talk ルディア
+…いや、なんかこの辺り…見たことあると思って…
+Talk リィス
+…そう…？
+Talk ルディア
+…うーん、でもなんだろ…思い出せないな…
+Talk リィス
+…でじゃぶーってやつじゃない…？
+Talk ルディア
+…そうなのかな…
+Talk レヴィン
+二人とも、話はそのぐらいで止めておきましょう。
+ここから先は…
+Talk ルディア
+…わわ、ごめんなさい。
+Talk リィス
+………
+Talk 鳳
+それでは…準備はいいか？
+ルディアとリィスで陽動、;その隙に私とレヴィンが施設へと潜入…
+Talk ルディア
+おっけー！任せといて！
+Talk リィス
+はい、がんばります。
+Talk 鳳
+…では私たちは一足先に;施設の付近へ転移し、潜伏しているぞ。
+Talk レヴィン
+いよいよ…ですのね。;:行きましょう！
+Talk リィス
+お二人とも…気をつけて。
+Talk レヴィン
+あなた達も…ね。
+End
+Move 鳳 25 14 アニメ表示
+Move レヴィン 25 13 アニメ表示
+Center レヴィン
+Wait 10
+Escape レヴィン
+Center 鳳
+Wait 10
+Escape 鳳
+
+Wait 10
+Talk リィス
+…さて、それじゃ私たちも行かなきゃ…
+Talk ルディア
+…待って…リィス…
+Talk リィス
+何…？
+Talk ルディア
+何か…！！
+来るっっ！避けて！リィス！！
+Suspend
+Wait 5
+PlaySound Beam.wav
+StartBGM laz_crzy.mid
+Wait 20
+
+Talk リィス
+！？
+Suspend
+Explode L 5 15
+Move リィス 15 15 アニメ表示
+Explode M 15 15
+Talk リィス
+う…く…あ…
+suspend
+Move ルディア 8 14 アニメ表示
+Talk ルディア
+リィス！だいじょ…
+End
+center 3 14
+wait 5
+PlaySound Beam.wav
+Wait 2
+Move ルディア 9 14 アニメ表示
+Wait 2
+Explode M 8 14
+Talk ルディア
+うわわわ！！
+Suspend
+Move ルディア 15 14 アニメ表示
+Talk ルディア
+…リィス！リィスったら！！
+生きてたら返事なさい！！
+End
+Center 15 15
+Talk リィス
+ぅく…ぁ…ぅ…？
+あいたたた…うー、いたいよぅ…
+Talk ルディア
+リィス…良かった…
+Talk リィス
+あれ…私…撃たれ…ぇ？
+Talk ルディア
+…くっそ…何者よ！姿を見せなさい！！
+End
+Center 3 14
+Wait 10
+Talk システム
+………
+Suspend
+Create 敵 トルーパー 4 TYPE-LD(ザコ) 32 2 14
+Wait 10
+Talk ルディア
+…！？
+Talk リィス
+トルーパー…？ルディアとおなじ…？
+Talk ルディア
+とうとう実戦投入されてきたってワケね…
+Talk リィス
+ルディア！どうする…？
+Talk ルディア
+やるしかないでしょ…逃げられそうにはないわ
+…もう…囲まれてるし
+Talk リィス
+…えっ…！？
+End
+
+Create 敵 トルーパー 4 TYPE-LD(ザコ) 31 2 15 A
+
+
+Create 敵 トルーパー 3 TYPE-LD(ザコ) 30 25 18 B
+Create 敵 トルーパー 3 TYPE-LD(ザコ) 30 25 19 B
+
+Create 敵 トルーパー 3 TYPE-LD(ザコ) 30 14 24 C
+Create 敵 トルーパー 3 TYPE-LD(ザコ) 30 15 24 C
+
+Create 敵 トルーパー 3 TYPE-LD(ザコ) 30 14 2 D
+Create 敵 トルーパー 3 TYPE-LD(ザコ) 30 15 2 D
+
+Talk リィス
+…あの施設からこれだけ離れた場所で会うなんて…
+Talk ルディア
+…たぶん向こうも;こっちを偶然発見しただけだと思うけど…
+Talk リィス
+…こんなときに…！
+Talk ルディア
+でも、やるしかない！
+Talk リィス
+うん…そうだね。;ちょっと早くなっちゃったけど…。
+Talk ルディア
+とりあえず派手にやりますかーっ！！
+End
+wait 10
+Talk A
+<i>…不測の事態だが…</i>
+Talk B
+<i>…あぁ、見られたからには;…生かしてはおけない</i>
+Talk A
+<i>各員総力を以って敵機を撃破せよ。</i>
+Suspend
+AutoTalk B
+5;<i>…了解</i>
+AutoTalk C
+5;<i>…了解</i>
+AutoTalk D
+5;<i>…了解</i>
+End
+Wait 5
+PlaySound Noize.wav
+Talk システム
+<i>…ぁ……ぃ</i>
+Talk ルディア
+…？
+Talk リィス
+ルディア、どうかした？
+Talk ルディア
+ん、いや、何か…変な感じ…？
+あれ？んー？
+Talk リィス
+大丈夫…？
+Talk ルディア
+うん、別に大したことは無いけど…。
+(なんだろ…何か…頭の中に聞こえた…)
+End
+keepbgm
+Exit
+
+攻撃 ルディア 敵:
+Talk ルディア
+…？
+Talk 相手ユニット
+……？
+Talk ルディア
+なに…！？
+(右から…くる…！？)
+Talk 相手ユニット
+(…右…か…？)
+end
+Mind ルディア ひらめき
+Mind 相手ユニット ひらめき
+ClearEvent
+Exit
+
+攻撃後 ルディア 敵:
+Talk ルディア
+…思ったとおりだ…でもなんで…
+Talk 相手ユニット
+(…妙だ…この感覚…)
+Talk システム
+<i>相手の動きが手にとるようにわかる</i>
+Talk ルディア
+…頭の中に…何か…何かが…入ってくる…
+何…なんなのこの感じ…！
+End
+clearEvent
+Exit
+
+攻撃 リィス 敵:
+Talk リィス
+…は、はやい…！
+Talk 相手ユニット
+………
+Talk リィス
+捕らえられる…？私に…！
+end
+Clearevent
+Exit
+
+全滅 敵:
+Wait 10
+Fadeout
+Continue 03B.eve
+Exit
+
+
+エピローグ:
+Wait 20
+StartBGM Ravin'_U.mid
+Wait 20
+PlaySound Breakoff.wav
+Wait 5
+PlaySound Door(Open).wav
+Wait 10
+Talk TYPE-LD
+ち…こんなところで機体を失うとは…
+End
+PlaySound ChakiA@11.wav
+Talk ルディア
+…ちょっとあんた、動かないで貰いましょうか。
+Talk リィス
+…ご、ごめんなさいね～…
+Talk TYPE-LD
+チィ…
+Talk ルディア
+いくつか聞きたいことがあるのよ。;そのままで。振り向かないで。
+動いたら刺すわ。
+Talk TYPE-LD
+………
+Talk ルディア
+まず…あんたの…
+Suspend
+Playsound Nize.wav
+Talk システム
+<i>…所属を…教えて…</i>
+Talk TYPE-LD
+！！！
+…お前は…！？
+Talk ルディア
+…この…振り向くなって！！
+Suspend
+Playsound Swing.wav
+Talk リィス
+ルディア！
+Talk ルディア
+ッッ！！
+Suspend
+PlaySound Saber.wav
+Talk TYPE-LD
+…何故…だ？
+Talk ルディア
+…何故？何が…？
+Talk TYPE-LD
+お前は、仲間ではないのか？
+Talk ルディア
+何を…言ってるの…？
+Suspend
+playSound Nize.wav
+Talk TYPE-LD
+<i>…ナカマでは、ないのか？</i>
+Talk ルディア
+…うぐっ！？
+Talk リィス
+…ル、ルディア…どうしたの！？
+Talk ルディア
+あ…あんた…私に…何を…！！
+Talk TYPE-LD
+仲間でないのなら…;なぜ…その顔で…何故、私達の念波を受信できる…？
+Talk ルディア
+顔…？念波…？
+Talk リィス
+！！！！
+な…なんで…！？;そ、それじゃ…貴方たちは…
+Talk ルディア
+リィス…？
+suspend
+Playsound Page.wav
+stopBGM
+Talk TYPE-LD(素顔)
+…お前は…TYPE-LDではないのか？
+Talk ルディア
+！！！！！
+(私に…そっくり…)
+Talk リィス
+…なんで…なんで貴方たちがまだ残っているの！？
+貴方たちは…TYPE-LDは…私たち青の疾風が…！！
+Talk ルディア
+たいぷ…えるでぃー…？
+Suspend
+PlaySound Noize.wav
+Talk システム
+<i>LD-24、戻れ…</i>
+Talk TYPE-LD(素顔)
+…！！
+Talk ルディア
+LD-24…それが貴方…？
+suspend
+Playsound Page.wav
+Talk TYPE-LD
+………
+End
+PlaySound Saber.wav
+Wait 10
+Talk ルディア
+…ちょ、待っ…
+…行っちゃったか…
+Talk リィス
+………
+Talk ルディア
+ねぇ…リィス…どういうこと！？
+貴方、何か知ってるの…？奴等のこと…！
+なんで、何であいつ…私と同じ顔だったの…！？
+Talk リィス
+それは…
+Talk ルディア
+リィス！教えて！！
+Talk リィス
+…ごめん…ルディア…
+Talk ルディア
+え…？
+Talk リィス
+私…ずっとルディアに…嘘ついてた…
+Talk ルディア
+嘘…？
+Talk リィス
+知ってるの…私…
+Talk ルディア
+え…？
+Talk リィス
+ルディアの…昔を…
+Talk ルディア
+！！！
+Talk リィス
+ルディアが…ルディアじゃなかった頃を…
+Talk ルディア
+………っっ………
+…おし…えて…
+おしえて…その…話…
+Talk リィス
+うん…
+いつかは話さなきゃいけないと思ってた…から…
+Talk ルディア
+………
+Talk リィス
+………
+ルディアは…このグェス＝セルクトの施設で、生まれたのよ
+Talk ルディア
+………！！！
+End
+Wait 20
+PlaySound Beamcoat.wav
+Wait 5
+PlaySound Warship.wav
+Talk システム
+→Sight Change To"Hisyou=Ootori"!
+End
+IntermissionCommand なぜナイ２！！ 削除
+IntermissionCommand 視点切り替え 削除
+Set 鳳編進行度 3.5
+Call 鳳処理
+Exit
+
+
+
+
+

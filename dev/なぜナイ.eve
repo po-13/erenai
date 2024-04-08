@@ -1,0 +1,47 @@
+スタート:
+Changemap "".map
+Redraw
+Show
+PlayMIDI Darkness Wing Spread.mid
+Wait 20
+Font 24pt Ｐゴシック Bold
+PlaySound FightHit(1).wav
+PaintString - - 次
+Refresh
+Wait 0.5
+ClearPicture
+PlaySound FightHit(1).wav
+PaintString - - 次回
+Refresh
+Wait 0.5
+ClearPicture
+PlaySound FightHit(1).wav
+PaintString - - 次回予
+Refresh
+Wait 0.5
+ClearPicture
+PlaySound FightHit(1).wav
+PaintString - - 次回予告
+Refresh
+Wait 10
+Fadeout
+
+Talk ナレーター
+ピンチの少女「エリス」を助けた;龍也は彼女を護衛し神殿へと向かう。
+神殿で明かされる新たなる真実！;そして２人が出会った黒い機体とは！？
+次回！聖戦記エレメンタルナイト！
+End
+PlaySound Whiz.wav
+
+
+Call 次回予告 第２話 20 黒の団
+
+Wait 40
+AutoTalk ナレーター
+1;黒き影が闇へと忍び寄る…。
+Suspend
+Fadeout
+PlaySound Mirage.wav
+Wait 20
+
+Exit

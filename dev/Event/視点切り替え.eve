@@ -1,0 +1,1368 @@
+
+プロローグ:
+
+If 龍也編進行度 > 19 Then
+StartBGM AnotherWorld.mid
+Wait 20
+Talk りゅーたん
+もうしてんはへんこうできないよ～？
+Talk エリス
+英雄達の運命は…今ひとつに束なる時。
+見ていてください、;イシュメリアの英雄達の物語の終局を…
+Talk りょ～こちゃん
+たーんあんでっど！
+Suspend
+PlaySound sharara.wav
+Wait 5
+Talk りゅーたん
+ぎゃー！ひかりがー！
+Suspend
+PlaySound FallDown.wav
+Wait 10
+Talk エリス
+あぁ、光がぁ～！
+Suspend
+PlaySound Falldown.wav
+Wait 10
+Talk りょ～こちゃん
+まったく…でたがりどもめ…。
+End
+
+IntermissionCommand 視点切り替え 削除
+continue
+
+Exit
+
+Endif
+
+If 龍也編進行度 = 18 then
+If 涼子編進行度 = 20 then
+If 鳳編進行度 = 5 then
+
+Global 解除済みですよ！
+Set 解除済みですよ！ 1
+
+ForEach 味方 全て
+Leave
+Next
+
+If 龍也編 = 1 Then
+
+Set 龍也編資金 資金
+Money (0 - 龍也編資金)
+
+Endif
+
+If 涼子編 = 1 Then
+
+Set 涼子編資金 資金
+Money (0 - 涼子編資金)
+
+Endif
+
+If 鳳編 = 1 Then
+
+Set 鳳編資金 資金
+Money (0 - 鳳編資金)
+
+Endif
+
+Money (0 + 龍也編資金 + 涼子編資金 + 鳳編資金)
+
+Join 龍也
+Join 涼子
+Join 鳳
+
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Join レベッカ
+Join ラカウティス
+Join サリア
+Join ウェンディ
+Join グリム
+Join グレイス
+
+Show
+StartBGM AnotherWorld.mid
+Wait 30
+Call 文章表示２ 30 ラグナプールに倒れた黒き英雄
+Wait 20
+Call 文章表示２ 30 グランチェスタを救った炎の乙女
+Wait 20
+Call 文章表示２ 30 一つの運命を変えた時空の覇王
+Wait 40
+Call 文章表示２ 50 ３つの運命が、一つになる。
+Wait 10
+Call 文章表示２ 50 それは、聖戦と呼ばれる戦いの序章
+Wait 50
+
+Fadeout
+
+Set 西部 (聖戦の序章.src)
+Set セーブデータファイル名 西部
+IntermissionCommand 視点切り替え 削除
+
+Set 龍也編進行度 19
+
+Talk システム
+全味方ユニットのアイテムを解除しますか？;(今後数話、龍也編のキャラ以外は;アイテム交換ができなくなります)
+End
+
+Ask 全ユニットのアイテムを解除しますか？
+はい
+いいえ
+End
+
+If 選択 = 1 Then
+
+ForEach 味方 全て
+
+unset B1
+unset B2
+unset B3
+unset B4
+unset B5
+unset B6
+unset B7
+unset B8
+unset B9
+
+if IsEquiped(対象ユニット, フォースバスターソード) then
+B1 = 1
+endif
+if IsEquiped(対象ユニット, 四星桜花流・暗黒閃) then
+B2 = 1
+endif
+if IsEquiped(対象ユニット, 四星桜花流・羅扇天舞) then
+B3 = 1
+endif
+
+if IsEquiped(対象ユニット, 空間断) then
+B4 = 1
+endif
+
+if IsEquiped(対象ユニット, 四星双破・暗気琉桜閃) then
+B5 = 1
+endif
+
+if IsEquiped(対象ユニット, 風迅炎舞・炎風絶破) then
+B6 = 1
+endif
+
+if IsEquiped(対象ユニット,キャンセルアタック) then
+B7 = 1
+endif
+
+if IsEquiped(対象ユニット, カウンターブレイク) then
+B8 = 1
+endif
+
+if IsEquiped(対象ユニット, 紅の機体は実は結構弱かった。しからば強化すべし。) then
+B9 = 1
+endif
+
+RemoveItem
+
+if B1 then
+equip フォースバスターソード
+endif
+if B2 then
+equip 四星桜花流・暗黒閃
+endif
+if B3 then
+equip 四星桜花流・羅扇天舞
+Endif
+
+if B4 then
+equip 空間断
+endif
+if B5 then
+equip 四星双破・暗気琉桜閃
+endif
+if B6 then
+equip 風迅炎舞・炎風絶破
+Endif
+
+if B7 then
+equip キャンセルアタック
+endif
+if B8 then
+equip カウンターブレイク
+endif
+if B9 then
+equip 紅の機体は実は結構弱かった。しからば強化すべし。
+Endif
+
+Next
+Endif
+
+Continue EK-01.eve
+
+
+Exit
+Endif
+Endif
+Endif
+
+Enable 魔剣ブローディア
+Enable 暗黒剣・『閃』
+Enable 暗黒剣・『舞』
+If 龍也編進行度 = 17 Then
+If １７話進行度バグ修正 = 0 Then
+If Level(グレイス＝アルティシア) > 34 Then
+Talk ウェンディ
+龍也編１７話初回特典で付いていた;進行度増加ミスを修正いたします。
+Talk グリム
+…しかし…このシナリオハ;妙に初回特典が多イと思わないカ？
+Talk サリア
+作者が愚鈍だからだろう。;さっさと修正して次へ行くぞ。
+Talk ウェンディ
+了解しました、副隊長。
+End
+Set 龍也編進行度 18
+Global １７話進行度バグ修正
+Set １７話進行度バグ修正 1
+Endif
+Endif
+Endif
+Option ５段階改造
+
+If 龍也編進行度 > 14 Then
+If 涼子編進行度 > 14 Then
+Goto ３編構成
+Endif
+Endif
+
+
+If 龍也編 = 1 Then
+
+PlayMIDI Darkness Wing Spread.mid
+
+Talk 龍也
+おう！;ここは俺と涼子の視点を管理するところだぜ。
+・・・で？;どうするんだ？涼子の方に視点を切り替えるのか？
+End
+Ask 視点を切り替えるか？
+おうよ！
+いや・・・今はいい。
+End
+
+If 選択 = 1 Then
+Talk 龍也
+おう！;じゃ・・・涼子編に視点を切り替えるぜ。
+End
+
+#どっちのシナリオか管理
+
+Set 涼子編 1
+Set 龍也編 0
+
+#資金を・・・・。
+
+Set 龍也編資金 資金
+
+Money (0 - 龍也編資金)
+
+Money (0 + 涼子編資金)
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+#涼子編の人員＆シナリオを・・・。
+
+If 涼子編進行度 = 1 Then
+Continue EN-01.eve
+Endif
+
+If 涼子編進行度 = 2 Then
+Join 涼子
+Continue EN-02.eve
+Endif
+
+If 涼子編進行度 = 3 Then
+Join 涼子
+Join 鳳
+Join レヴィン
+Continue EN-03.eve
+Endif
+
+If 涼子編進行度 = 4 Then
+Join 涼子
+Join 鳳
+Join レヴィン
+Continue EN-04.eve
+
+Endif
+
+If 涼子編進行度 = 5 Then
+Join 涼子
+Join 鳳
+Continue EN-05.eve
+
+Endif
+
+If 涼子編進行度 = 6 Then
+Join 涼子
+Join 鳳
+Join ユキ
+Join ザーム
+Join トキア
+Continue EN-06.eve
+Endif
+
+
+If 涼子編進行度 = 7 Then
+Join 涼子
+Join 鳳
+Join ユキ
+Join ザーム
+Join トキア
+Continue EN-07.eve
+Endif
+
+
+If 涼子編進行度 = 8 Then
+Join 涼子
+Join 鳳
+Join ユキ
+Join ザーム
+Join トキア
+Join ブロード
+Continue 第８話.eve
+
+Endif
+
+If 涼子編進行度 = 9 Then
+Join 涼子
+Join 鳳
+Join ユキ
+Join ザーム
+Join トキア
+Join ブロード
+Continue EN-09.eve
+Endif
+
+If 涼子編進行度 = 10 Then
+Join 涼子
+Join 鳳
+Join ユキ
+Join ザーム
+Join トキア
+Join ブロード
+Continue EN-10.eve
+Endif
+
+If 涼子編進行度 = 11 Then
+Join 涼子
+Join 鳳
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Continue 第１１話.eve
+Endif
+
+If 涼子編進行度 = 12 Then
+Join 涼子
+Join 鳳
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Continue EN-12.eve
+Endif
+
+If 涼子編進行度 = 13 Then
+Join 涼子
+Join 鳳
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Join ティーナ
+Continue EN-13.eve
+Endif
+
+If 涼子編進行度 = 14 Then
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Join ティーナ
+Continue EN-14.eve
+Endif
+
+If 涼子編進行度 = 15 Then
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Join ティーナ
+Continue EN-15.eve
+Endif
+
+Call セーブデータ処理
+Exit
+Endif
+
+If 選択 = 2 Then
+Talk 龍也
+ん？いいのか？;じゃ・・・俺のインターミッション画面へ戻るぜ。
+End
+
+Endif
+Call セーブデータ処理
+Continue
+
+Exit
+
+Endif
+
+
+
+
+If 涼子編 = 1 Then
+PlayMIDI Flame Girl.mid
+Talk 涼子
+はろー！！;ここはあたしと龍也の視点を管理するところよ。
+・・・で？;どうするの？龍也の方に視点を切り替えるの？
+End
+Ask 視点を切り替えるの？
+ああ！
+いや・・・やめとく・・・。
+End
+
+If 選択 = 1 Then
+Talk 涼子
+おっけ！;じゃ・・・龍也編に視点を切り替えるわよ。
+End
+
+#どっちのシナリオか管理
+
+Set 龍也編 1
+Set 涼子編 0
+
+#資金を・・・・。
+
+Set 涼子編資金 資金
+
+Money (0 - 涼子編資金)
+
+Money (0 + 龍也編資金)
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+#龍也編の人員＆シナリオを・・・。
+
+If 龍也編進行度 = 1 Then
+Continue 第１話.eve
+Endif
+
+
+If 龍也編進行度 = 2 Then
+Join 龍也
+Continue 第２話.eve
+Endif
+
+If 龍也編進行度 = 3 Then
+Join 龍也
+Continue 第３話.eve
+Endif
+
+If 龍也編進行度 = 4 Then
+Join 龍也
+Continue 第４話.eve
+Endif
+
+If 龍也編進行度 = 5 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Continue 第５話.eve
+Endif
+
+If 龍也編進行度 = 6 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Continue 第６話.eve
+Endif
+
+If 龍也編進行度 = 7 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Continue 第７話.eve
+Endif
+
+If 龍也編進行度 = 8 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Continue 第８話.eve
+Endif
+
+If 龍也編進行度 = 9 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Continue 第９話.eve
+Endif
+
+If 龍也編進行度 = 10 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Continue 第１０話.eve
+Endif
+
+If 龍也編進行度 = 11 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Continue 第１１話.eve
+Endif
+
+If 龍也編進行度 = 12 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Continue 第１２話.eve
+Endif
+
+If 龍也編進行度 = 13 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Continue 第１３話.eve
+Endif
+
+If 龍也編進行度 = 14 Then
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Continue 第１４話.eve
+Endif
+
+If 龍也編進行度 = 15 Then
+Option ５段階改造 解除
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Continue 第１５話.eve
+Endif
+
+Call セーブデータ処理
+Exit
+
+Endif
+
+
+
+
+
+If 選択 = 2 Then
+Talk 涼子
+ん？いいの？じゃ・・・あたしのインターミッション画面へ戻るわよ。
+End
+Continue
+Endif
+Exit
+
+Call セーブデータ処理
+Endif
+
+３編構成:
+
+If 龍也編 = 1 Then
+
+If 鳳編進行度 = 0 Then
+StartBGM Another Warld.mid
+Wait 20
+Talk システム
+光持ちし闇と荒ぶる炎が物語を紡ぐ…
+だが、物語はそれだけではない…
+…新たなる物語が…幕を開ける…
+空の要素を統べる男の物語が…
+End
+
+
+Global 鳳編
+Global 鳳編資金
+Global 鳳編進行度
+Set 鳳編進行度 1
+
+Set 鳳編 1
+Set 龍也編 0
+Set 涼子編 0
+
+#しなりおせいぎょ
+
+Set 龍也編資金 資金
+
+Money (0 - 龍也編資金)
+
+Money (0 + 鳳編資金)
+
+#しきんせいぎょ
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+Join 鳳
+
+Continue 01.eve
+
+Else
+
+StartBGM Darkness Wing Spread.mid
+
+Talk 龍也
+さて…いつものように視点切り替えだな…
+涼子編、鳳編、どっちに視点を変更する？
+End
+
+Ask 視点変更するか？
+涼子編に視点変更
+鳳編に視点変更
+視点変更しない
+End
+
+Switch 選択
+
+Case 1
+
+Talk 龍也
+よし…;それじゃ…涼子編に視点を切り替えるぜ。
+Talk 涼子(余裕)
+私の出番みたいね！
+End
+
+#どっちのシナリオか管理
+
+Set 涼子編 1
+Set 龍也編 0
+
+#資金を・・・・。
+
+Set 龍也編資金 資金
+
+Money (0 - 龍也編資金)
+
+Money (0 + 涼子編資金)
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+#涼子編の人員＆シナリオを・・・。
+
+If 涼子編進行度 = 15 Then
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Join ティーナ
+Continue EN-15.eve
+Endif
+
+If 涼子編進行度 = 16 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Join ティーナ
+
+If 鳳編進行度 < 3 Then
+Join ルディア
+Join リィス
+Endif
+Continue EN-16.eve
+
+Endif
+
+If 涼子編進行度 = 17 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Join ティーナ
+
+If 鳳編進行度 < 3 Then
+Join ルディア
+Join リィス
+Endif
+
+Continue EN-17.eve
+Endif
+
+If 涼子編進行度 = 18 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join シエラ＝スパークスター
+Join ウォルディ
+Join ルシア
+Join ティーナ
+
+Continue EN-18.eve
+Endif
+
+If 涼子編進行度 = 19 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join シエラ＝スパークスター
+Join ウォルディ
+Join ルシア
+Join ティーナ
+
+Continue EN-19.eve
+Endif
+
+If 涼子編進行度 = 20 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join シエラ＝スパークスター
+Join ウォルディ
+Join ルシア
+Join ティーナ
+Join ラインバルト
+
+Continue EK-01.eve
+Endif
+
+Exit
+
+
+
+Case 2
+
+Talk 龍也
+よし、んじゃ鳳編に視点変更するぜ
+Talk 鳳(キラリ)
+フ…
+End
+
+Set 鳳編 1
+Set 龍也編 0
+
+#しなりおせいぎょ
+
+Set 龍也編資金 資金
+
+Money (0 - 龍也編資金)
+
+Money (0 + 鳳編資金)
+
+#しきんせいぎょ
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+
+If 鳳編進行度 = 1 Then
+
+Join 鳳
+
+If 鳳編資金 > 0 Then
+Set 鳳編進行度 2
+Join レヴィン
+Continue 02.eve
+Endif
+
+Continue 01.eve
+
+
+
+Endif
+
+If 鳳編進行度 = 2 Then
+
+Join 鳳
+Join レヴィン
+
+Continue 02.eve
+
+Endif
+
+If 鳳編進行度 = 3 Then
+
+Join 鳳
+Join レヴィン
+Join ルディア
+Join リィス
+
+Continue 03.eve
+
+Endif
+
+If 鳳編進行度 = 4 Then
+
+Join 鳳
+Join レヴィン
+Join ルディア
+Join リィス
+
+Continue 04.eve
+
+Endif
+
+Case 3
+Talk 龍也
+ん？止めるのか？;ま、それもいいやな
+End
+Continue
+
+Endsw
+
+Exit
+
+Endif
+
+Endif
+
+
+If 涼子編 = 1 Then
+If 鳳編進行度 = 0 Then
+StartBGM Another Warld.mid
+Wait 20
+Talk システム
+光持ちし闇と荒ぶる炎が物語を紡ぐ…
+だが、物語はそれだけではない…
+…新たなる物語が…幕を開ける…
+空の要素を統べる男の物語が…
+End
+
+
+Global 鳳編
+Global 鳳編資金
+Global 鳳編進行度
+Set 鳳編進行度 1
+
+Set 鳳編 1
+Set 龍也編 0
+Set 涼子編 0
+
+#しなりおせいぎょ
+
+Set 涼子編資金 資金
+
+Money (0 - 涼子編資金)
+
+Money (0 + 鳳編資金)
+
+#しきんせいぎょ
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+Join 鳳
+
+Continue 01.eve
+
+Else
+
+StartBGM Flame Girl.mid
+Talk 涼子
+さて、いつも通りにシナリオ切り替えね;どーする？視点変更する？
+End
+Ask 視点を変更するの？
+龍也編に
+鳳編に
+やめとく
+End
+
+Switch 選択
+Case 1
+Talk 涼子
+おっけ！;龍也編に視点を切り替えるのね
+Talk 龍也
+…う～し、やってやろーじゃねーか
+End
+
+#どっちのシナリオか管理
+
+Set 龍也編 1
+Set 涼子編 0
+
+#資金を・・・・。
+
+Set 涼子編資金 資金
+
+Money (0 - 涼子編資金)
+
+Money (0 + 龍也編資金)
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+#龍也編の人員＆シナリオを・・・。
+
+If 龍也編進行度 = 15 Then
+Option ５段階改造 解除
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Continue 第１５話.eve
+Endif
+
+
+If 龍也編進行度 = 16 Then
+Option ５段階改造 解除
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Join レベッカ
+Continue 第１６話.eve
+Endif
+
+If 龍也編進行度 = 17 Then
+Option ５段階改造 解除
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Join レベッカ
+Continue 第１７話.eve
+Endif
+
+If 龍也編進行度 = 18 Then
+Option ５段階改造 解除
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Join レベッカ
+Join ラカウティス
+Join サリア
+Join ウェンディ
+Join グリム
+Continue EK-01.eve
+Endif
+
+Exit
+
+Case 2
+
+Talk 涼子
+鳳編に切り替えるのね、わかったわ
+Talk 鳳(キラリ)
+ふ…
+End
+
+Set 鳳編 1
+Set 龍也編 0
+Set 涼子編 0
+
+#しなりおせいぎょ
+
+Set 涼子編資金 資金
+
+Money (0 - 涼子編資金)
+
+Money (0 + 鳳編資金)
+
+#しきんせいぎょ
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+If 鳳編進行度 = 1 Then
+
+Join 鳳
+
+If 鳳編資金 > 0 Then
+Set 鳳編進行度 2
+Join レヴィン
+Continue 02.eve
+Endif
+
+Continue 01.eve
+
+
+
+Endif
+
+If 鳳編進行度 = 2 Then
+
+Join 鳳
+Join レヴィン
+
+Continue 02.eve
+
+Endif
+
+If 鳳編進行度 = 3 Then
+
+Join 鳳
+Join レヴィン
+Join ルディア
+Join リィス
+
+Continue 03.eve
+
+Endif
+
+If 鳳編進行度 = 4 Then
+
+Join 鳳
+Join レヴィン
+Join ルディア
+Join リィス
+
+Continue 04.eve
+
+Endif
+
+Exit
+
+Case 3
+Talk 涼子
+ん？やめるのね。りょーかい
+End
+Continue
+Endsw
+
+Endif
+
+Exit
+
+Endif
+
+
+If 鳳編 = 1 Then
+
+StartBGM Ootori Attack!.mid
+Talk 鳳
+フ…とうとう視点チェンジの時間か？
+End
+Ask 
+龍也編に
+涼子編に
+やめとく
+End
+
+Switch 選択
+Case 1
+Talk 鳳
+ふむ、龍也編だな…了解した
+Talk 龍也
+…う～し、やってやろーじゃねーか
+End
+
+#どっちのシナリオか管理
+
+Set 龍也編 1
+Set 鳳編 0
+
+#資金を・・・・。
+
+Set 鳳編資金 資金
+
+Money (0 - 鳳編資金)
+
+Money (0 + 龍也編資金)
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+#龍也編の人員＆シナリオを・・・。
+
+If 龍也編進行度 = 15 Then
+Option ５段階改造 解除
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Continue 第１５話.eve
+Endif
+
+
+If 龍也編進行度 = 16 Then
+Option ５段階改造 解除
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Join レベッカ
+Continue 第１６話.eve
+Endif
+
+If 龍也編進行度 = 17 Then
+Option ５段階改造 解除
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Join レベッカ
+Continue 第１７話.eve
+Endif
+
+If 龍也編進行度 = 18 Then
+Option ５段階改造 解除
+Join 龍也
+Join サーティス
+Join フェリーナ
+Join フレア
+Join ヒルダ
+Join ライル
+Join レディ
+Join レベッカ
+Join ラカウティス
+Join サリア
+Join ウェンディ
+Join グリム
+Continue EK-01.eve
+Endif
+
+Exit
+
+Case 2
+
+Talk 鳳
+なるほど、涼子編か。…了解した
+Talk 涼子(余裕)
+私の出番みたいね！
+End
+
+#どっちのシナリオか管理
+
+Set 涼子編 1
+Set 鳳編 0
+
+#資金を・・・・。
+
+Set 鳳編資金 資金
+
+Money (0 - 鳳編資金)
+
+Money (0 + 涼子編資金)
+
+#機体と人員を・・・・。
+
+ForEach 味方 全て
+Leave
+Next
+
+#涼子編の人員＆シナリオを・・・。
+
+If 涼子編進行度 = 15 Then
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Join ティーナ
+Continue EN-15.eve
+Endif
+
+If 涼子編進行度 = 16 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Join ティーナ
+
+If 鳳編進行度 < 3 Then
+Join ルディア
+Join リィス
+Endif
+
+Continue EN-16.eve
+Endif
+
+If 涼子編進行度 = 17 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join ディオ
+Join ウォルディ
+Join ルシア
+Join ティーナ
+
+If 鳳編進行度 < 3 Then
+Join ルディア
+Join リィス
+Endif
+
+Continue EN-17.eve
+Endif
+
+If 涼子編進行度 = 18 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join シエラ＝スパークスター
+Join ウォルディ
+Join ルシア
+Join ティーナ
+
+Continue EN-18.eve
+Endif
+
+If 涼子編進行度 = 19 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join シエラ＝スパークスター
+Join ウォルディ
+Join ルシア
+Join ティーナ
+
+Continue EN-19.eve
+Endif
+
+If 涼子編進行度 = 20 Then
+
+Join 涼子
+Join ザーム
+Join トキア
+Join ブロード
+Join シエラ＝スパークスター
+Join ウォルディ
+Join ルシア
+Join ティーナ
+Join ラインバルト
+
+Continue EK-01.eve
+Endif
+
+Exit
+
+Case 3
+Talk 鳳
+なに？止めるだと？;…チィ…手を煩わせおって
+End
+Continue
+Exit
+
+Endsw
+
+Call 鳳処理
+Exit
+
+Endif
+
+
+スタート :
+Continue
+Exit

@@ -1,0 +1,171 @@
+
+サウンドスタート:
+PaintPicture Sound.jpg 0 0 480 480
+Refresh
+Talk フレア
+サウンドコーナー！
+Talk ティーナ
+ココはいわゆるサウンドテストコーナーです！
+好きに音楽を聴いていって下さい！
+End
+Goto サウンドテスト
+
+サウンドテスト:
+
+Ask サウンドコーナー
+「Darkness Wing Spread」
+「Flame Girl」
+「Ootori Attack!」
+「4th Knight」
+「E-Numbers」
+「Knight of Element」
+「Battle of Destiny」
+「Peace Day」
+「AnotherWorld」
+「HolyGoddes」
+「Fight!」
+「KURAYAMI」
+「Map1」
+「Map2」
+「Ebil Messenger」
+「God of Destruction」
+戻る
+End
+
+If 選択 = 1 Then
+StartBGM Darkness Wing Spread.mid
+Talk システム
+「Darkness Wing Spread」;『闇色の翼広げて』;桜龍也イメージ曲;原曲名「The other side of the eyes」
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 2 Then
+StartBGM Flame girl.mid
+Talk システム
+「Flame girl」;『炎の乙女』;十六夜涼子イメージ曲;原曲名『Laughter』
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 3 Then
+StartBGM Ootori Attack!.mid
+Talk システム
+「Ootori Attack!」;『鳳襲来！』;鳳飛翔イメージ曲;原曲名『YOU TEEL LIES』
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 4 Then
+StartBGM 4th Knight.mid
+Talk システム
+「4th Knight」;『四騎士』;四騎士テーマ曲;原曲名『human erebus』
+作曲者 ＡＯＫＩっくす
+End
+Endif
+
+If 選択 = 5 Then
+StartBGM E-Numbers.mid
+Talk システム
+「E-Numbers」;『エレメンタル＝ナンバーズ』;ナンバーズテーマ曲;原曲名『ENTER』
+作曲者 ＡＯＫＩっくす
+End
+Endif
+
+If 選択 = 6 Then
+StartBGM Knight of Element.mid
+Talk システム
+「Knight of Element」;『エレメンタルナイト』;エレナイメイン戦闘テーマ;原曲名『Folded Wings』
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 7 Then
+StartBGM Battle of Destiny.mid
+Talk システム
+「Battle of Destiny」;『運命の闘い』;ラカウティス＆ヴォルクのテーマ;原曲名『胎動』
+作曲者 ＡＯＫＩっくす
+End
+Endif
+
+If 選択 = 8 Then
+StartBGM Peace Day.mid
+Talk システム
+「Peace Day」;『平和な日』;エレナイテーマその一;原曲名『Boogie 01』
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 9 Then
+StartBGM AnotherWorld.mid
+Talk システム
+「AnotherWorld」;『異世界』;エレナイテーマその二;原曲名『Snow 0 "Desperate"』
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 10 Then
+StartBGM HolyGoddes.mid
+Talk システム
+「HoryGoddes」;『聖なる女神』;エレナイテーマその三;原曲名『Pink Ocean』
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 11 Then
+StartBGM Fight!.mid
+Talk システム
+「Fight!」;『ファイト！』;エレナイテーマその四;原曲名『2300』
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 12 Then
+StartBGM KURAYAMI.mid
+Talk システム
+「KURAYAMI」;『暗闇に染めて』;エレナイテーマその五
+作曲者 Sage
+End
+Endif
+
+If 選択 = 13 Then
+StartBGM Map1.mid
+Talk システム
+「Map1」;『戦士の運命(さだめ)』;エレナイ草原味方マップテーマ
+作曲者 田隣あつし
+End
+Endif
+
+If 選択 = 14 Then
+StartBGM Map2.mid
+Talk システム
+「Map2」;『暗躍』;エレナイ草原敵マップテーマ
+作曲者 田隣あつし
+End
+Endif
+
+If 選択 = 15 Then
+StartBGM Ebil Messenger.mid
+Talk システム
+「Ebil Messenger」;『邪悪なる使者』;魔族のテーマ;原曲名『Meditation 01』
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 16 Then
+StartBGM God of Destruction.mid
+Talk システム
+「God of Destruction」;『破壊神』;デュクラシスのテーマ;原曲名『Graving Underground』
+作曲者 草薙孝司
+End
+Endif
+
+If 選択 = 17 Then
+Talk ティーナ
+じゃ・・・トップにもどるよ！
+End
+Return
+Endif
+
+Goto サウンドテスト
+

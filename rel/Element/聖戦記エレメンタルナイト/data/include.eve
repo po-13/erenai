@@ -1,0 +1,681 @@
+
+
+<Event\リストインクルード.eve>
+<Lib\Ron.eve>
+
+#現在待機状態にあるユニットをリストに格納して返却する。
+#
+#return キャラリスト
+リスト格納:
+
+ local リスト
+
+	ForEach 味方 待機
+
+		set リスト[i] Unit(対象ユニット)
+
+		incr i
+
+	Next
+
+return リスト
+
+
+################勝利条件の表示#############################
+
+勝利条件表示:
+#Call 勝利条件表示 内容(複数指定可能) 敗北条件 内容(複数指定可能)
+#　勝利条件の内容、敗北条件の内容合わせて7つまで指定可能です。
+#　
+
+Cls
+
+
+For n = 1 To 10
+  Font 18pt Ｐ明朝 RGB(25 * n, 30 * n, 6 * n ^ 2)
+
+  PaintString - 30 ──┤勝利条件├───────────
+  k = 0
+  
+  For i = 1 to 8
+    If Args(i) = "" then
+    Break
+    elseif Args(i) = 敗北条件 then
+    Font 18pt
+    PaintString - (40 + i * 30) ──┤敗北条件├───────────
+    k = 10
+    else
+    Font 14pt
+    PaintString 30 (k + 30 + i * 30) "・$(Args(i))"
+    endif
+  next
+  
+  refresh
+  wait 0.1
+next
+
+wait click
+
+For n = 1 To 10
+  Font 18pt Ｐ明朝 RGB(250 - 25 * n,300 - 30 * n,600 - 6 * n ^ 2)
+
+  PaintString - 30 ──┤勝利条件├───────────
+  k = 0
+  
+  For i = 1 to 8
+    If Args(i) = "" then
+    Break
+    elseif Args(i) = 敗北条件 then
+    Font 18pt
+    PaintString - (40 + i * 30) ──┤敗北条件├───────────
+    k = 10
+    else
+    Font 14pt
+    PaintString 30 (k + 30 + i * 30) "・$(Args(i))"
+    endif
+  next
+  
+  refresh
+  wait 0.1
+next
+
+Redraw
+Return
+#######################################################
+##################リーダー指定############################
+リーダー指定:
+#Call リーダー指定 リーダーのパイロット名称
+Center Args(1)
+wait 4
+
+  For i = 1 to 8
+  Line (240 - 30 * i) (240 - 30 * i) (240 + 30 * i) (240 + 30 * i) RGB(0, 0, 0) BF
+  PaintPicture Unit(Args(1)) - - 32 32 透過
+  refresh
+  wait 0.1
+  Next
+
+Cls
+Font 16pt Ｐ明朝 RGB(255, 255, 255)
+Color RGB(255, 255, 255)
+PaintPicture Unit(Args(1)) - - 32 32 透過
+
+  For i = 1 to 8
+  Cls
+  PaintPicture Unit(Args(1)) (218 + 12 * i) (218 - 10 * i) 32 32 透過
+  refresh
+  wait 0.1
+  next
+
+wait 2
+
+PaintString 291 115 ┌
+PaintString 351 115 ┐
+PaintString 291 175 └
+PaintString 351 175 ┘
+refresh
+wait 1
+
+PaintString - 50 ──┤ＴＡＲＧＥＴ├─────────────
+
+refresh
+wait 1
+Font 14pt
+
+PaintString 50 80 Unit.
+refresh
+wait 1
+PaintString 115 80 "$(Info(Unit(Args(1)), 愛称))"
+refresh
+wait 1
+PaintString 50 105 Ｈｐ．
+refresh
+wait 1
+PaintString 115 105 "$(Hp(Args(1)))"
+refresh
+wait 1
+PaintString 50 130 Ｅｎ．
+refresh
+wait 1
+PaintString 115 130 "$(En(Args(1)))"
+refresh
+wait 1
+PaintString 50 155 Ｑｕｉ．
+refresh
+wait 1
+PaintString 115 155 "$(Info(Unit(Args(1)),運動性))"
+refresh
+wait 1
+PaintString 50 180 Ｄｅｆ．
+refresh
+wait 1
+PaintString 115 180 "$(Info(Unit(Args(1)),装甲))"
+refresh
+wait 1
+PaintString 50 205 Move．
+refresh
+wait 1
+PaintString 115 205 "$(Info(Unit(Args(1)),移動力))"
+refresh
+wait 1
+PaintString 50 230 Range．
+refresh
+wait 1
+PaintString 115 230 "$(Info(Unit(Args(1)),最長射程))"
+refresh
+wait 1
+
+PaintPicture NotFound.bmp 40 280 64 64
+PaintPicture Args(1) 40 280 64 64
+Line 36 276 106 346 RGB(255, 255, 255) B
+
+Refresh
+Wait 1
+PaintString 140 280 Pilot.　$(Info(パイロット, Args(1), 愛称))
+refresh
+wait 1
+PaintString 140 310 Level.　$(Level(Args(1)))　　Guts.　$(Info(パイロット, Args(1), 性格))
+refresh
+wait 1
+
+
+
+Wait Click
+
+Font Ｐ明朝 RGB(0, 0, 0)
+
+Color RGB(0, 0, 0)
+
+
+PaintString 50 80 Unit.
+refresh
+wait 1
+PaintString 115 80 "$(Info(Unit(Args(1)), 愛称))"
+refresh
+wait 1
+PaintString 50 105 Ｈｐ．
+refresh
+wait 1
+PaintString 115 105 "$(Hp(Args(1)))"
+refresh
+wait 1
+PaintString 50 130 Ｅｎ．
+refresh
+wait 1
+PaintString 115 130 "$(En(Args(1)))"
+refresh
+wait 1
+PaintString 50 155 Ｑｕｉ．
+refresh
+wait 1
+PaintString 115 155 "$(Info(Unit(Args(1)),運動性))"
+refresh
+wait 1
+PaintString 50 180 Ｄｅｆ．
+refresh
+wait 1
+PaintString 115 180 "$(Info(Unit(Args(1)),装甲))"
+refresh
+wait 1
+PaintString 50 205 Move．
+refresh
+wait 1
+PaintString 115 205 "$(Info(Unit(Args(1)),移動力))"
+refresh
+wait 1
+PaintString 50 230 Range．
+refresh
+wait 1
+PaintString 115 230 "$(Info(Unit(Args(1)),最長射程))"
+refresh
+wait 1
+
+PaintPicture NotFound.bmp 40 280 64 64
+PaintPicture Args(1) 40 280 64 64
+Line 36 276 106 346 RGB(0, 0, 0) B
+
+Refresh
+Wait 1
+PaintString 140 280 Pilot.　$(Info(パイロット, Args(1), 愛称))
+refresh
+wait 1
+PaintString 140 310 Level.　$(Level(Args(1)))　　Guts.　$(Info(パイロット, Args(1), 性格))
+refresh
+wait 1
+
+Font 16pt
+
+PaintString 291 115 ┌
+PaintString 351 115 ┐
+PaintString 291 175 └
+PaintString 351 175 ┘
+refresh
+wait 1
+
+  For i = 1 to 8
+  Cls
+  PaintPicture Unit(Args(1)) (314 - 12 * i) (138 + 10 * i) 32 32 透過
+  refresh
+  wait 0.1
+  next
+
+
+  For i = 1 to 8
+  ClearPicture
+  Line (30 * i) (30 * i) (480 - 30 * i) (480 - 30 * i) RGB(0, 0, 0) BF
+  PaintPicture Unit(Args(1)) - - 32 32 透過
+  refresh
+  wait 0.1
+#  Redraw
+  Next
+
+ClearPicture
+Font
+
+Refresh
+
+
+Redraw
+Return
+
+
+ＯＰ:
+Wait 8
+Font Args(1) Ｐ明朝 Italic Bold
+For i = 1 To 32
+Font RGB(8 * i, 8 * i, 8 * i)
+PaintString - Args(2) Args(3)
+Refresh
+Next
+Return
+
+涼子編タイトルコール:
+PaintPicture Black.jpg 0 0 480 480
+Refresh
+
+PlayMIDI Fight!.mid
+Wait 20
+Font
+Font 26pt 明朝
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 200 Args(1)
+Refresh
+Wait 2
+Next
+Font
+Wait 20
+Font
+Font 26pt 明朝 Italic Bold
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 280 Args(2)
+Refresh
+Wait 1
+Next
+Font
+Wait 30
+
+Cls
+Wait 10
+Redraw
+Return
+
+龍也編タイトルコール:
+PaintPicture Black.jpg 0 0 1000 1000
+Refresh
+PlayMidi Fight!.mid
+Wait 20
+Font
+Font 26pt Ｐゴシック
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 200 Args(1)
+Refresh
+Wait 2
+Next
+Font
+Wait 20
+Font 26pt Ｐゴシック
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 265 Args(2)
+Refresh
+Wait 2
+Next
+Font
+Wait 30
+Cls
+Redraw
+Return
+
+文章表示２:
+
+# (書式) 文章表示 WaitTime 表示文字
+
+Local wi
+For wi = 0 To 26
+    Font RGB(INT(10 * wi), INT(10 * wi), INT(10 * wi))
+    PaintString - - Args(2)
+    Refresh
+    Wait 0.1
+Next
+Wait Args(1)
+For wi = 0 To 28
+    Font RGB((255 - INT(9 * wi)), (255 - INT(9 * wi)), (255 - INT(9 * wi)))
+    PaintString - - Args(2)
+    Refresh
+    Wait 0.1
+Next
+
+Return
+
+セーブデータ処理:
+Set 西部 ("龍" & (龍也編進行度 - 1) & "話 涼" & (涼子編進行度 - 1) & "話までクリア.src")
+Set セーブデータファイル名 西部
+Return
+
+鳳処理:
+Set 西部 ("龍" & (龍也編進行度 - 1) & "話 涼" & (涼子編進行度 - 1) & "話 鳳" & (鳳編進行度 - 1) & "話までクリア.src")
+Set セーブデータファイル名 西部
+Return
+
+文章表示裏:
+Local wi
+For wi = 0 To 25
+    Font RGB((255 - (10 * wi)), (255 - (10 * wi)), (255 - (10 * wi)))
+    PaintString - - Args(1)
+    Refresh
+    Wait 0.1
+Next
+Return
+
+文章表示表:
+Local wi
+For wi = 0 To 26
+    Font RGB(INT(10 * wi), INT(10 * wi), INT(10 * wi))
+    PaintString - - Args(1)
+    Refresh
+    Wait 0.1
+Next
+Return
+
+文章表示二段:
+Local x
+For x = 0 To 50
+    Font RGB(INT(5 * x), INT(5 * x), INT(5 * x))
+    PaintString - 200 Args(1)
+    Refresh
+Next
+Wait Args(2)
+Local x2
+For x2 = 0 To 50
+    Font RGB(INT(5 * x2), INT(5 * x2), INT(5 * x2))
+    PaintString - 240 Args(3)
+    Refresh
+Next
+Return
+
+次回予告A:
+
+Changemap "".map
+Redraw
+Show
+
+if 龍也編 = 1 then
+
+StartBGM Darkness Wing Spread.mid
+
+else if 涼子編 = 1 then
+
+StartBGM Flame Girl.mid
+
+endif
+
+Wait 20
+Font 24pt Ｐゴシック Bold
+PlaySound FightHit(1).wav
+PaintString - - 次
+Refresh
+Wait 0.5
+ClearPicture
+PlaySound FightHit(1).wav
+PaintString - - 次回
+Refresh
+Wait 0.5
+ClearPicture
+PlaySound FightHit(1).wav
+PaintString - - 次回予
+Refresh
+Wait 0.5
+ClearPicture
+PlaySound FightHit(1).wav
+PaintString - - 次回予告
+Refresh
+Wait 10
+Fadeout
+
+return
+
+次回予告:
+Local x
+Font 32pt Bold
+For x = 0 To 50
+    Font RGB(INT(5 * x), INT(5 * x), INT(5 * x))
+    PaintString - 180 Args(1)
+    Refresh
+Next
+Wait Args(2)
+Font 42pt Bold
+Local x2
+For x2 = 0 To 50
+    Font RGB(INT(5 * x2), INT(5 * x2), INT(5 * x2))
+    PaintString - 240 Args(3)
+    Refresh
+Next
+Return
+
+トルコ:
+
+For i = 1 To 45
+Color RGB(0, 0, 0)
+Line 0 (240 + (i * 2)) 480 (240 - (i * 2)) BF
+Refresh
+Wait 0.1
+Next
+Wait 20
+For wi = 0 To 26
+    font 25pt
+    Font RGB(INT(10 * wi), INT(10 * wi), INT(10 * wi))
+    PaintString - 180 Args(1)
+    Refresh
+    Wait 0.1
+Next
+Wait 20
+For wi = 0 To 26
+    font 22pt
+    Font RGB(INT(10 * wi), INT(10 * wi), INT(10 * wi))
+    PaintString - 250 Args(2)
+    Refresh
+    Wait 0.1
+Next
+
+return
+
+ＦＣサブタイコール:
+
+# Record of Holy War Elemental Knight
+
+Fluctus 70 170 "Record of Holy War Elemental Knight"
+
+# Final Chapter
+
+Fluctus 150 280 "Final Chapter"
+
+#枠描画Ａ
+
+Wait Start
+
+Line 0 0 480 480 BF RGB(0,0,0)
+
+For i = 1 to 20
+    # ベーススクエア
+
+    # 赤枠
+        Line 0 0 (24 * i) 20 BF RGB(200,0,0)
+        Line 0 0 20 (24 * i) BF RGB(200,0,0)
+        Line 0 0 (24 * i) 10 BF RGB(100,0,0)
+        Line 0 0 10 (24 * i) BF RGB(100,0,0)
+    # スクエアブラック
+        Line 20 20 460 460 BF RGB(0,0,0)
+    # 赤線
+        Line 30 30 (22.5 * i) 30 RGB(200,0,0)
+        Line 30 30 30 (22.5 * i) RGB(200,0,0)
+    # 文字列１
+        Font 36pt
+        Font RGB((10 * i),(10 * i),(10 * i))
+        PaintString - 105 Args(1)
+    # 文字列２
+        Font 20pt
+        PaintString - 225 Args(2)
+    # 文字列３
+        Font 20pt
+        PaintString - 285 Args(3)
+    Refresh
+    Wait Until (0.2 * i)
+Next
+
+# 枠描画Ｂ
+
+Font RGB(200,0,0)
+
+Wait Start
+
+For i = 1 to 20
+    # 赤枠
+        Line 0 0 480 20 BF RGB(200,0,0)
+        Line 0 0 20 480 BF RGB(200,0,0)
+        Line 0 0 480 10 BF RGB(100,0,0)
+        Line 0 0 10 480 BF RGB(100,0,0)
+    # 赤枠影
+        Line 460 0 480 (24 * i) BF RGB(200,0,0)
+        Line 0 460 (24 * i) 480 BF RGB(200,0,0)
+        Line 470 0 480 (24 * i) BF RGB(100,0,0)
+        Line 0 470 (24 * i) 480 BF RGB(100,0,0)
+    # スクエアブラック
+        Line 20 20 460 460 BF RGB(0,0,0)
+    # 赤線
+        Line 30 30 450 30 RGB(200,0,0)
+        Line 30 30 30 450 RGB(200,0,0)
+        Line 450 30 450 (22.5 * i) RGB(200,0,0)
+        Line 30 450 (22.5 * i) 450 RGB(200,0,0)
+    # 文字列１
+        Font 36pt
+        Font RGB(100,100,100)
+        PaintString - 105 Args(1)
+        Font RGB(255,255,255)
+        PaintString - (105 - 0.25 * i) Args(1)
+    # 文字列２
+        Font 20pt
+        Font RGB(100,100,100)
+        PaintString - 225 Args(2)
+        Font RGB(255,255,255)
+        PaintString - (225 - 0.25 * i) Args(2)
+    # 文字列３
+        Font 20pt
+        Font RGB(100,100,100)
+        PaintString - 285 Args(3)
+        Font RGB(255,255,255)
+        PaintString - (285 - 0.25 * i) Args(3)
+    Refresh
+    Wait Until (0.2 * i)
+Next
+
+# 清書
+
+    # 赤枠影
+        Line 0 0 480 480 BF RGB(100,0,0)
+    # 赤枠
+        Line 10 10 470 470 BF RGB(200,0,0)
+    # スクエアブラック
+        Line 20 20 460 460 BF RGB(0,0,0)
+    # 赤線
+        Line 30 30 450 450 B RGB(200,0,0)
+    # 文字列１
+        Font 36pt
+        Font RGB(100,100,100)
+        PaintString - 105 Args(1)
+        Font RGB(255,255,255)
+        PaintString - 100 Args(1)
+    # 文字列２
+        Font 20pt
+        Font RGB(100,100,100)
+        PaintString - 225 Args(2)
+        Font RGB(255,255,255)
+        PaintString - 220 Args(2)
+    # 文字列３
+        Font 20pt
+        Font RGB(100,100,100)
+        PaintString - 285 Args(3)
+        Font RGB(255,255,255)
+        PaintString - 280 Args(3)
+
+Refresh
+
+Wait Click
+
+WhiteOut 10
+
+#
+Font
+
+Return
+
+
+Fluctus:
+#書式：Fluctus x座標 y座標 文字列
+#例文：Fluctus 240 240 それは刹那の夢
+#効果：文字列が左から段々表示され、段々消えていく
+Local a i t strng Length colour
+Set strng (Args(3) & Args(4) & Args(5) & Args(6) & Args(7) & Args(8))
+Set Length Len(strng) 
+
+Wait Start 
+For i = -7 To Length
+	t = i + 8
+	For a = 1 to t
+		Set colour[a] 0
+	Next
+	Set colour[i + 1] 50
+	Set colour[i + 2] 110
+	Set colour[i + 3] 180
+	Set colour[i + 4] 255
+	Set colour[i + 5] 180
+	Set colour[i + 6] 110
+	Set colour[i + 7] 50
+	PaintString Args(1) Args(2) "";
+	For a = 1 To t
+		Font RGB(colour[a],colour[a],colour[a])
+		PaintString Mid(strng,a,1);	
+	Next
+	Refresh
+	Wait Until t
+Next
+
+Return
+
+
+スキップストップ:
+
+# 右クリックが押されていたら、ラベル冒頭に戻る
+
+If KeyState(2) Then 
+    PaintString - 30 "右クリックを解除してください"
+    Refresh
+    Goto スキップストップ
+EndIf
+
+ClearPicture
+Refresh
+
+Return

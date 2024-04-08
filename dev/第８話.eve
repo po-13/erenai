@@ -1,0 +1,886 @@
+
+プロローグ:
+If Not かむひあ Then
+InterMissionCommand なぜナイ２！！ Event\なぜナイ２.eve
+Endif
+StartBGM AnotherWorld.mid
+If Not 龍也編進行度 > 7 Then
+Talk システム
+今の状態ではこの話は進められません。
+龍也編をある程度進ませればこちらも進ませられるようになります。
+End
+Continue 第８話.eve 
+Exit
+Endif
+If Not 涼子編進行度 > 7 Then
+Talk システム
+今の状態ではこの話は進められません。
+涼子編をある程度進ませればこちらも進ませられるようになります。
+End
+Continue 第８話.eve 
+Exit
+Endif
+LevelUp ヒルダ 2
+LevelUp フレア 2
+LevelUp サーティス 2
+LevelUp フェリーナ 2
+Talk 龍也
+前線・・・に？
+Talk ラカウティス
+・・・あぁ・・・すまないが;・・・我らも戦力が足らぬのだ。
+End
+Wait 20
+Talk 涼子
+前線？
+Talk ユキ
+えぇ。次の指令は前線での戦いよ。
+End
+Wait 10
+Talk 龍也
+ってな訳で・・・前線だ。
+Talk フレア
+激しい戦いに・・・なりそうですね・・・。
+Talk ヒルダ
+フフン・・・腕が鳴るネェ・・・。
+Talk サーティス
+・・・・・。
+Talk フェリーナ
+みゅみゅー。頑張るのー。
+End
+Wait 20
+Talk 涼子
+・・・と言うわけで前線みたいよ。
+Talk 鳳
+前線？;・・・クク・・・時空魔術士の力を見せてやろう・・・。
+Talk ユキ
+・・・・・・。
+Talk ザーム
+ぜ・・・ぜぜぜぜぜ・・・前線・・・・。
+Talk トキア
+フ・・・・・。
+Talk ブロード
+いやはや・・・大変そうですネェ・・・。
+End
+Wait 20
+Talk システム
+そして・・・数刻後・・・。
+End
+Wait 20
+Talk フレア
+・・・龍也様・・・。
+Talk 龍也
+解ってる・・・この魔力の波動・・・赤騎士・・・・。
+Talk ヒルダ
+・・・前線へ向かう最中に出会うなんてね・・・。
+Talk サーティス
+・・・・来ます。
+Talk フェリーナ
+・・・戦うのは・・・回避したいよね。
+Talk 龍也
+あぁ・・・とりあえず向こうのパイロットと話してみる気だ。
+End
+Wait 20
+Talk 涼子
+鳳・・・気付いてるわよね。
+Talk 鳳
+あぁ・・・前回であった黒と青の騎士・・・・だな。
+Talk ユキ
+・・・・・。
+Talk ザーム
+うひぃぃぃぃぃ・・・・。
+Talk トキア
+フ・・・・・。
+Talk ブロード
+でも・・・四騎士同士やり合うのは・・・。
+Talk 涼子
+・・・でも向こうが仕掛けて来るんだったら;・・・応戦するしかないわ。
+End
+Exit
+
+スタート :
+If Not 龍也編進行度 > 7 Then
+Exit
+Endif
+If Not 涼子編進行度 > 7 Then
+Exit
+Endif
+PaintPicture Black.jpg 0 0 1000 1000
+Refresh
+PlayMidi Fight!.mid
+Wait 20
+Font
+Font 26pt 明朝 Italic Bold
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 200 第８話
+Refresh
+Wait 2
+Next
+Font
+Wait 20
+Font
+Font 32pt 明朝 Italic Bold
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 265 闇と火と
+Refresh
+Wait 2
+Next
+Font
+Wait 30
+Cls
+Redraw
+StartBGM Anotherworld.mid
+Wait 10
+Join 龍也
+Join フレア
+Join ヒルダ
+Join サーティス
+Join フェリーナ
+Join 涼子
+Join 鳳
+Join ユキ
+Join ブロード
+Join トキア
+Join ザーム
+Launch 龍也 12 19
+Launch フレア 11 20
+Launch ヒルダ 13 20
+Launch サーティス 10 21
+Launch フェリーナ 14 21
+Launch 十六夜涼子 11 7
+Launch 鳳 10 6
+Launch ユキ 12 6
+Launch ブロード 11 5
+Launch ザーム 9 5
+Launch トキア 13 5
+Wait 20
+Talk 龍也
+・・・・来やがったな・・・。
+End
+Wait 5
+Move 龍也 12 16
+Wait 5
+Talk 涼子
+・・・また・・・やろうっての？;アイツは・・・。
+End
+Wait 5
+Move 涼子 11 11
+Wait 5
+Talk 涼子(攻撃)
+やってやろうじゃないのよ！！
+End
+Wait 2
+Move 涼子 11 12
+Wait 5
+Talk 龍也
+おい！？赤騎士のパイロット！聞こえるか！？;俺はお前とやり会うつもりはねぇ！
+Talk 涼子
+！？
+Talk
+涼子(黒騎士からの通信！？)
+涼子(でも・・・何処かで聞いたことのある・・・声？)
+Talk 涼子
+・・・アンタがやらないってなら;・・・こっちも止めておくわ。
+そのうち一緒に戦わなきゃならない身だし;・・・変な因縁つけたくないしね。
+Talk 龍也
+？？
+Talk
+龍也(・・・女！？)
+龍也(・・・女！？・・・・は・・・いいとして・・・・。)
+龍也(・・・どっかで聞いたことのある声だぞ;・・・こりゃ・・・。)
+Talk 涼子
+・・・・・。
+Talk 龍也
+・・・・・。
+End
+Wait 30
+Talk フレア
+あの・・・龍也様・・・じっとして動かないんですが・・・。
+Talk ヒルダ
+・・・まさか・・・変な術でもかけられてるんじゃ・・・。
+End
+Wait 10
+Talk 鳳
+・・・・涼子は・・・どうしたのだ？
+Talk ブロード
+もしや・・・変な魔術でも・・・かけられてるんじゃ！？
+End
+Wait 10
+Talk 龍也
+オイ！
+Talk 涼子
+ちょっと！
+End
+Wait 8
+PlaySound Wind.wav
+Wait 40
+Talk 龍也
+・・・・・・・。
+・・・まさか・・・お前・・・;十六夜涼子って名前じゃねーだろーな・・・・。
+Talk 涼子
+・・・・・・・。
+・・・そう言うアンタこそ・・・;桜龍也なんて言う名前じゃないでしょーね？
+End
+Wait 8
+PlaySound Wind.wav
+Wait 40
+StartBGM Peace Day.mid
+Talk 涼子
+何でアンタが異世界に居るのよ！！
+Talk 龍也
+そりゃこっちのセリフだ！;何でお前までこっちに居るんだよ！
+Talk ブロード
+・・・・あの・・・お知り合い・・・なんですか？
+Talk 涼子
+えぇ！幼なじみの腐れ縁ってヤツね。
+Talk 龍也
+あぁ！幼なじみの腐れ縁ってヤツよ！！
+Talk フレア
+え・・・あの・・・あの・・・・？
+Talk 鳳(キラリ)
+ぬぅ！？;なんだ・・・ソレに乗っているのは龍也だったのか。
+Talk 龍也
+ちょっと待て！！;もしや鳳まで来てるんじゃねーだろーな！！
+Talk 涼子
+・・・・ご愁傷様。
+ちなみに文句は鳳を呼びだした;・・・あのブロードって奴に言って。
+Talk 龍也
+ブロード！？どいつだ！
+Talk ブロード
+あ・・・はい。僕です。
+End
+Move 龍也 11 6
+Talk トキア
+ぬぉ！早い！？
+Talk 龍也(攻撃)
+テメーはなんつー事をしてくれたぁ！！;アレは全ての物理法則を否定する存在！『鳳飛翔』だぞ！！
+Talk ブロード
+え・・・あ・・・いやあの・・・僕に言われても・・・。
+・・・って・・・どっかで聞いたセリフですねぇ・・・。
+Talk 鳳
+フン・・・・では桜龍也！;早速！互いの機体を使ってロボバトルだ！！
+Talk 龍也(攻撃)
+黙れこの変質者！
+Talk 鳳
+変質者だと！？この崇高なる存在を指して変質者？
+・・・・・まぁ・・・・あながち間違ってはいないがな。;だがとりあえずヤな感じなので貴様に制裁を！
+Talk ザーム
+お・・・鳳さん！落ち着いて！
+Talk 龍也
+あんだとコラァ！！制裁だぁ？;やれるモンならやってみやがれってんだこの野郎！
+Talk 鳳(キラリ)
+フ！時空術の神髄を貴様に・・・・
+Talk ヒルダ
+あぁ！？そっちはやる気かい！？;こっちが和平を申し込んでやってるってのに！？
+Talk ユキ(攻撃)
+・・・・私はソレでかまわないわ・・・。;ラグナプールは・・・敵よ。
+Talk 涼子
+久々に口を開いたと思ったら;何を爆弾発言してるのよアンタは！？
+Talk ユキ
+・・・・。
+Talk フェリーナ
+で・・・結局はどうなのっ！？;どうなったの！？戦るの！？戦らないの！？
+Talk トキア
+・・・フ・・・・。
+Talk ヒルダ
+答えになってない！
+End
+Center トキア
+Wait 5
+PlaySound Punch.wav
+Wait 10
+Talk 涼子
+ご・・・ごめん！コイツバカだから！！
+Talk 龍也(攻撃)
+この杏仁豆腐野郎が！！
+Talk 鳳
+黙れ！この中華風ミートスパゲッティ！
+Talk 龍也(攻撃)
+うるせぇ！ラミキョンポモキハリシニアの分際で！
+Talk 鳳
+ふ・・・貴様など▽○▼＋±◎□・・・・
+Talk 龍也(攻撃)
+＄♂〆▲◎￡％〒※〓！！
+Talk 鳳
+◎￡％〒±◎※〓〆▲○▲◎￡▼！！
+Talk 涼子(攻撃)
+↑◇＃＊∴○∞⊇∀♯！！
+Talk ブロード
+∀▲○￡％・・・・。
+Talk ヒルダ
+∇∃◎※≪¶‰∂◇▲！！
+Talk サーティス
+＆§∩⇔♪†◯Å√。
+Talk フェリーナ
+※〓〆＆§〒±◎？
+Talk ザーム
+・・・・みんな・・・何を？
+Talk トキア
+・・・フ・・・。
+End
+Wait 20
+Talk ユキ
+・・・・†◎※・・・。
+End
+PlaySound Noise.wav
+Wait 2
+PaintPicture Black.jpg 0 0 1000 1000
+Font 32pt
+PaintString - - しばらくお待ち下さい
+Font 10pt
+PaintString 200 460 久々の登場で張り切っているエレナイ風紀委員
+Refresh
+PlaySound Tone.wav
+Wait 40
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 5
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 20
+Cls
+Redraw
+Talk 涼子
+・・・んじゃま;・・・今回はお互い不干渉ってことで・・・。
+Talk
+涼子(・・・何か・・・・)
+Talk 龍也
+ケ・・・命拾いしたな・・・鳳。
+Talk
+龍也(・・・おかしいような・・・。)
+Talk 鳳
+フ・・・そっちこそ・・・。
+Talk
+鳳(なんか・・・前にもコンナ事あったような・・・。)
+Talk ヒルダ
+・・・・・なんか・・・記憶が・・・。
+Talk ユキ
+・・・脳の情報が・・・撹乱されている？
+Talk サーティス
+うみゅー・・・・何か殴られたような気がするのー・・・。
+Talk フェリーナ
+・・・・あぁ・・・・何か・・・衝撃が・・・。
+Talk フレア
+・・・・あ・・・あの・・・;サーティスさんとフェリーナさん・・・キャラ違います・・・。
+Talk サーティス
+あ。
+Talk フェリーナ
+あ。
+End
+Wait 5
+PlaySound Wind.wav
+Wait 40
+Talk トキア
+・・・・フ。
+End
+Wait 5
+StartBGM Ebil Messenger.mid
+Wait 20
+Talk 龍也
+！？
+Talk 鳳
+！？
+Talk 涼子
+！？
+Talk 龍也
+このタイミングで来るかよ・・・。
+Talk ユキ
+・・・魔族！？
+Talk ヒルダ
+・・・なんだって！？
+End
+Wait 10
+Create 敵 シルフィディア 2 シルフィン 20 2 11
+Create 敵 ウィンディ 3 風のしもべ 17 3 10 A
+Create 敵 ウィンディ 3 風のしもべ 17 3 12 A
+Create 敵 ウィンディ 3 風のしもべ 17 4 11 A
+Create 敵 グリフォン 3 上級魔族 16 3 14 B
+Create 敵 グリフォン 3 上級魔族 16 4 13 B
+Create 敵 グリフォン 3 上級魔族 16 5 12 B
+Create 敵 ガーゴイル 3 中級魔族 15 3 8 C 
+Create 敵 ガーゴイル 3 中級魔族 15 4 9 C
+Create 敵 ガーゴイル 3 中級魔族 15 5 10 C
+Create 敵 オーガ 3 下級魔族 14 6 13 D
+Create 敵 シューター 3 下級魔族 14 6 14 D
+Create 敵 シューター 3 下級魔族 14 5 15 D
+Create 敵 オーガ 3 下級魔族 14 4 16 D
+Create 敵 ゴブリン 3 下級魔族 14 6 9 D
+Create 敵 シューター 3 下級魔族 14 6 8 D
+Create 敵 オーガ 3 下級魔族 14 5 7 D
+Create 敵 ゴブリン 3 下級魔族 14 4 6 D
+Create 敵 シューター 3 下級魔族 14 8 9
+Create 敵 ゴブリン 3 下級魔族 14 8 10
+Create 敵 オーガ 3 下級魔族 14 8 11
+Create 敵 ガーゴイル 3 下級魔族 13 8 12
+Create 敵 ゴブリン 3 下級魔族 13 8 13
+ChangeMode シルフィン 待機
+ChangeMode A 待機
+ChangeMode B 待機
+ChangeMode C 待機
+ChangeMode D 待機
+BossRank シルフィン 2
+Wait 20
+Talk 涼子
+こりゃ・・・争ってる場合じゃないわよね・・・。
+Talk 龍也
+・・・あぁ・・・・。
+Talk 涼子
+ってことで！みんな協力するわよ！いい？
+Talk ユキ
+・・・・仕方・・・無いわね・・・。
+Talk トキア
+了解・・・。
+Talk ザーム
+・・・りょ・・・りょーかい！
+Talk ブロード
+理解しましたー。
+Talk 龍也
+みんなもいいな？
+Talk ヒルダ
+・・・ま・・・・しゃーないね。
+Talk フレア
+はい！
+Talk サーティス
+・・・了解・・・。
+Talk フェリーナ
+おっけーだよ！
+End
+Talk シルフィン
+・・・黒の騎士追っかけててコレに遭遇かぁ・・・。;ついてないのかついてるのか・・・。
+Talk シルフィン(攻撃)
+ま・・・面白そうだからいいけどねっ！！
+End
+Exit
+
+ターン 1 敵:
+StartBGM Ebil Messenger.mid
+Wait 10
+Talk シルフィン
+・・・こっちが;・・・ちょっと不利・・・かなぁ？ 
+んじゃ・・・;グロウに教えて貰った魔術でもちょいと・・・。
+End
+PlaySound Snap(E).wav
+Wait 20
+Create 敵 ゴーレム 2 魔導知能 14 12 13
+Create 敵 ゴーレム 2 魔導知能 14 11 14
+Create 敵 ゴーレム 2 魔導知能 14 10 15
+Create 敵 ゴーレム 2 魔導知能 14 9 16
+Create 敵 ゴーレム 2 魔導知能 14 8 17
+Wait 20
+Talk シルフィン
+・・・ま・・・こんなもんかな。
+Talk 龍也
+・・・な・・・なんだありゃ！？
+Talk ブロード
+ゴーレム・・・ですね。;魔術で作り出される土と岩の巨兵です！
+動きは遅いですけど力はあります！;気を付けて下さい！
+Talk ヒルダ
+言われるまでもないよ！
+End
+Exit
+
+ターン 3 敵:
+StartBGM Ebil Messenger.mid
+Wait 20
+Create 敵 バルバロイ 4 バルバロス 20 25 15
+Create 敵 イフリータ 3 炎の兵 17 23 14 E
+Create 敵 イフリータ 3 炎の兵 17 23 15 E
+Create 敵 イフリータ 3 炎の兵 17 23 16 E
+Create 敵 イフリータ 3 炎の兵 17 23 17 E
+Create 敵 ドラゴニア 3 上級魔族 16 20 15 F 
+Create 敵 ドラゴニア 3 上級魔族 16 20 16 F
+Create 敵 ガーゴイル 3 中級魔族 15 15 14 
+Create 敵 ガーゴイル 3 中級魔族 15 15 15
+Create 敵 ガーゴイル 3 中級魔族 15 15 16
+Create 敵 ガーゴイル 3 中級魔族 15 15 17 
+Create 敵 オーガ 3 中級魔族 15 18 14
+Create 敵 オーガ 3 中級魔族 15 17 15
+Create 敵 オーガ 3 中級魔族 15 17 16
+Create 敵 オーガ 3 中級魔族 15 18 17 
+Create 敵 ゴブリン 3 下級魔族 14 17 12
+Create 敵 ゴブリン 3 下級魔族 14 16 13
+Create 敵 ゴブリン 3 下級魔族 14 16 18
+Create 敵 ゴブリン 3 下級魔族 14 17 19
+ChangeMode バルバロス 待機
+ChangeMode E 待機
+ChangeMode F 待機
+BossRank バルバロス 2
+Wait 20
+Talk サーティス
+！？
+Talk トキア
+・・・・増援だと！？
+Talk 涼子
+ゲ・・・バルバロス・・・。
+Talk バルバロス
+む？赤騎士を追ってみれば・・・;・・・四騎士が三機？
+Talk シルフィン
+あ。バルバロスー！ちょうどいい所に来たねー！
+Talk フェリーナ
+四魔将が２人！？
+Talk 龍也
+だが・・・こっちは四騎士三機だぜ！;どうにもならねぇ事はねぇ！ 
+Talk 鳳
+フ・・・・・。
+End
+ChangeMode D 通常
+Exit
+
+ターン 5 敵:
+ChangeMode C 通常
+ChangeMode F 通常
+ChangeMode B 通常
+Exit
+
+ターン 6 敵 :
+ChangeMode A 通常
+ChangeMode E 通常
+Exit
+
+ターン 7 敵 :
+ChangeMode シルフィン 通常
+ChangeMode バルバロス 通常
+Exit
+
+接触 涼子 龍也:
+Talk 涼子
+ったく・・・異世界でアンタとロボに乗って;一緒に戦うなんて・・・全く思いもしなかったわよ。
+Talk 龍也
+・・・思いもしなかったのはこっちも一緒だ。;もしこうなることを予想できた奴には龍也賞をやるぜ。
+Talk 涼子
+・・・龍也賞？・・・なにそれ？
+Talk 龍也
+おぅ。この俺が認めたモノだけに与える名誉の賞だ。;この賞を取ることによりこの俺の心に永遠に刻み込まれ・・・
+Talk 涼子
+・・・はいはい・・・・。 
+End
+ClearEvent
+Exit
+
+接触 龍也 鳳:
+Talk 龍也
+ちぃ・・・テメーと肩を並べて戦うとはな・・・。
+Talk 鳳
+フ・・・まぁ・・・こう言うのも一興であろう？
+Talk 龍也
+まぁ・・・そーだけどよ・・・・。
+俺の足を・・・引っ張るなよ。
+Talk 鳳
+・・・フ・・・・。;ソレはこちらのセリフだな。
+End
+ClearEvent
+Exit
+
+
+勝利条件:
+Talk 涼子
+行くわよ！龍也！
+Talk 龍也
+あぁ！！
+Talk システム
+勝利条件:敵の全滅;敗北条件:味方の全滅
+End
+Exit
+
+
+攻撃 シルフィン 龍也:
+Talk シルフィン(攻撃)
+・・・黒の騎士・・・私の獲物・・・逃がさない。
+Talk 龍也
+・・・女の子に好かれるってのはいいんだが・・・。;こう言う好かれ方ってのはちょっとな・・・。
+End
+ClearEvent
+Exit
+
+破壊 シルフィン:
+Talk シルフィン
+ウソ！？やられたっ？
+Talk システム
+ライトフェザーを手に入れた。
+End
+Item ライトフェザー
+Exit
+
+破壊 バルバロス:
+Talk バルバロス
+ぐぬ！？な・・・なんだと！？;このバルバロスが・・・。
+Talk システム
+シールドプレートを手に入れた。
+End
+Item シールドプレート
+Exit
+
+
+全滅 味方 :
+Talk 龍也(ダメージ)
+な・・・・バカな・・・。
+Talk 涼子
+そんな・・・・ココで終わりなんて・・・・。
+End
+GameOver
+Exit
+
+全滅 敵:
+Talk 涼子
+・・・終わった・・・わね・・・。
+Talk 龍也
+・・・あぁ。
+・・・で・・・涼子・・・お前達はどうするんだ？
+Talk 涼子
+どうするんだ・・・って・・・。;移動中だったから・・・目的地に行くけど・・・。
+Talk 龍也
+そっか。んじゃ・・・一応ココでまたお別れ・・・だな。
+Talk 涼子
+そね。
+Talk 龍也
+・・・・涼子。
+Talk 涼子
+何？
+Talk 龍也
+・・・死ぬなよ。;・・・・・鳳もな。
+Talk 涼子(余裕)
+ばーか。;このあたしがそう簡単にやられるかっての。
+Talk 鳳
+フン・・・・余計なお世話だな。
+Talk 龍也
+・・・みたいだな。;・・・・じゃあな・・・また。
+Talk 涼子
+えぇ。
+End
+Escape 涼子
+Escape 鳳
+Escape ユキ
+Escape ブロード
+Escape トキア
+Escape ザーム
+Talk 龍也
+・・・さて・・・俺達も行くか？
+Talk フレア
+そうですね。
+End
+Escape 味方
+Wait 20
+Ask どちらの視点を追いかける？
+桜龍也
+十六夜涼子
+End
+If 選択 = 1 Then
+Set 選択龍也 1
+Continue 第９話.eve
+Endif
+If 選択 = 2 Then
+Set 選択涼子 1
+Continue EN-09.eve
+Endif
+Exit
+
+エピローグ :
+If Not 龍也編進行度 > 7 Then
+Exit
+Endif
+If Not 涼子編進行度 > 7 Then
+Exit
+Endif
+StartBGM Peace Day.mid
+If 選択龍也 = 1 Then
+Talk 龍也
+・・・・・。
+Talk フレア
+龍也様？どうなされたのですか？
+Talk 龍也
+いや・・・何でも・・・無い。
+Talk ヒルダ
+・・・・・・。
+前線へ行きたくなくなった・・・んだろ？
+Talk 龍也
+！？
+Talk ヒルダ
+大当たり・・・だね。
+Talk 龍也
+・・・・かなわねーな・・・ヒルダにゃ・・・・。
+あぁ。そうさ・・・。行きたくねぇよ。;彼奴等とマジで戦うことになっちまいそうだしな・・・。
+Talk ヒルダ
+それじゃ王都へ引き返そうかね。
+Talk 龍也
+へ？
+Talk ヒルダ
+だから引き返すって言ってるんだよ。;最近王都の周りにも魔物がぽこぽこ現れて大変らしいしね。
+Talk 龍也
+だが・・・それじゃ・・・。
+Talk ヒルダ
+・・・敵と本気で戦えない奴を戦場の前線に置く;・・・なんて馬鹿なこと出来ると思うのかい？
+Talk 龍也
+・・・・ワリイ・・・・。
+Talk サーティス
+・・・龍也様は軍人ではない・・・。;だから・・・戦うことの出来ない理由が有るのならば戦わなくていい。
+Talk フェリーナ
+そうそう。;龍也ちゃんは対破壊神用の切り札なんだから。
+Talk フレア(憂い)
+・・・龍也様は・・・優しい方ですから・・・。
+Talk 龍也
+みんな・・・・ありがと・・・。
+・・・・ホントに・・・ありがとよ。
+End
+Wait 10
+StartBGM Darkness Wing Spread.mid
+Wait 20
+Talk システム
+「次回予告！」
+Talk ナレーター
+前線へ行くことを止めた龍也達は王都へと戻る。
+王都でしばらくぶりの休養を楽しむ龍也。
+だが・・・そんな平和な王都に魔族の魔の手が忍び寄る・・・。
+次回！聖戦記エレメンタルナイト！
+第９話！『危機』
+End
+Wait 10
+Talk ナレーター
+闇を払うは聖なる剣か・・・・。
+End
+Set 龍也編進行度 9
+Set 涼子編進行度 9
+Set 龍也編 1
+Set 涼子編 0
+Leave 涼子
+Leave 鳳
+Leave ユキ
+Leave ブロード
+Leave ザーム
+Leave トキア
+Call セーブデータ処理
+Exit
+Endif
+If 選択涼子 = 1 Then
+StartBGM Peace Day.mid
+Talk 涼子
+・・・・・・。
+Talk 鳳
+どうした？涼子？
+Talk 涼子
+・・・いや・・・別に・・・何も？
+Talk ブロード
+・・・・・。
+前線へ・・・行きたくないんですね。
+Talk 涼子
+え！？あ・・・・・・うん。
+龍也と・・・本気で殺し合わなきゃならないかも;・・・って考えると・・・どうもね・・・。
+Talk ユキ
+・・・・・・。
+Talk ブロード
+ユキさん・・・別の任務にして貰えませんかね・・・。
+Talk ユキ
+・・・・そうね・・・・。;解ったわ。掛け合ってみましょう。
+Talk 涼子
+・・・・へ？
+Talk ブロード
+は？
+Talk 鳳(キラリ)
+フ・・・・。
+Talk ユキ
+・・・どうしたの？その意外そうな顔は？
+Talk ザーム
+・・・ユキさんが・・・任務の変更とか;・・・そう言う軍関係のことで折れるなんて・・・無かったですから・・・。
+Talk ユキ
+・・・この隊の主力である二機が;マトモに戦えないとなるとこの隊の戦闘能力は激減するわ。
+・・・だから・・・別の任務に回して;その力を発揮した方が戦力の有効な活用になると判断しただけ。
+Talk トキア
+・・・・そういうことか。
+Talk 涼子
+・・・・ありがと・・・・ユキ。
+Talk ユキ
+・・・・・礼なんていいわ。;私は貴方のことを考えてやった訳じゃない。
+Talk 涼子
+・・・・でも・・・・ありがと・・・・。
+Talk ユキ
+・・・・・。
+End
+Wait 20
+PlayMIDI Flame Girl.mid
+Wait 20
+Talk 涼子
+次回予告っ！！
+前線行き任務を変更して貰ったあたし達！
+そして代わりに与えられた任務は補給部隊の護衛？
+護衛なんて楽勝楽勝。;・・・・と・・・思ったんだけど・・・。
+次回！聖戦記エレメンタルナイトッ！
+第９話！『疾風！青き強盗！』
+End
+Wait 10
+Talk ディオ
+・・・強盗団！青の疾風！参上っ！！
+End
+Set 涼子編進行度 9
+Set 龍也編進行度 9
+Set 涼子編 1
+Set 龍也編 0
+Leave 龍也
+Leave ヒルダ
+Leave フレア
+Leave サーティス
+Leave フェリーナ
+Call セーブデータ処理
+Exit
+Endif

@@ -1,0 +1,1449 @@
+
+プロローグ:
+Set 鳳撃破数 50
+If 涼子編進行度 < 19 Then
+Talk システム
+今の状態ではこの話は進められません。
+他編をある程度進ませればこちらも進ませられるようになります。
+End
+Continue 04.eve 
+Exit
+Endif
+ChangeMap "".map
+Redraw
+Show
+StartBGM AnotherWorld.mid
+Wait 20
+PlaySound Glass.wav
+Wait 20
+Call 文章表示２ 20 強くなりなさい…飛翔…
+Wait 10
+Call 文章表示２ 20 …おねえちゃん！おねえちゃん…！
+Wait 10
+Call 文章表示２ 20 …強くなりなさい…自分を護れるように…
+Wait 10
+Call 文章表示２ 20 …おねえちゃん…ぼくは…ぼくは…
+Wait 10
+Call 文章表示２ 20 強く…なりなさい…皆を…護れるように…
+Wait 10
+Call 文章表示２ 20 …あなたなら出来るわ…だって…貴方は…
+Wait 10
+Call 文章表示２ 20 …私の…弟でしょ…？
+Wait 20
+Call 文章表示２ 20 …うん…強くなる…ぼく、強くなるよ！
+Call 文章表示２ 40 だから…だから…！！
+Wait 20
+PlayMidi north.mid
+Wait 40
+
+
+Font 25pt 明朝 Italic Bold
+For i = 1 To 20
+Font RGB(12.5 * i, 12.5 * i, 12.5 * i)
+PaintString - 200 第四節
+PaintString - 200 第四節
+Refresh
+Next
+Wait 20
+Font 25pt 明朝 Italic Bold
+For i = 1 To 20
+Font RGB(12.5 * i, 12.5 * i, 12.5 * i)
+PaintString - 280 『だから貴方は泣かないで』
+Refresh
+Next
+Wait 30
+Font 8pt
+PlaySound Type.wav
+PaintString 155 270 お
+Refresh
+Wait 5
+PlaySound Type.wav
+PaintString 168 270 ね
+Refresh
+Wait 5
+PlaySound Type.wav
+PaintString 181 270 え
+Refresh
+Wait 5
+PlaySound Type.wav
+PaintString 194 270 ち
+Refresh
+Wait 5
+PlaySound Type.wav
+PaintString 207 270 ゃ
+Refresh
+Wait 5
+PlaySound Type.wav
+PaintString 220 270 ん
+Refresh
+
+Wait 80
+
+Font RGB(255, 0, 0)
+Font 10pt
+PlaySound Glass.wav
+PaintString 275 270 し
+Refresh
+PaintString 305 270 な
+Refresh
+Wait 50
+
+fadeOut
+
+Wait 30
+
+
+Talk システム
+「……ッ……」
+Talk 鳳
+…久々に…見る夢だ…。
+だが…なぜ…今更あんな夢を…
+…嫌味な程に静かな夜…。;:だが…
+Suspend
+PlaySound Sword.wav
+Wait 10
+Talk 鳳
+…始まったか。
+End
+Wait 20
+PlaySound Sword.wav
+Talk システム
+→Sight "Levin=Marvelick"
+end
+Wait 10
+PlaySound Mirage.wav
+Talk レヴィン
+(…気配が…消えていく…)
+(音もなく、闇から闇へと…。;ヤツは…もう始めている…！)
+(間に合ってくれればいいのですけど…)
+(…見つけた…！)
+End
+PlaySound Mirage.wav
+Wait 20
+StartBGM Namida-t.mid
+Wait 20
+Talk シエラ
+…おかしいわ…
+Talk ウォルディ
+あぁ、ここまで帝都に近づいてるのに;大した戦力を展開しているわけでもない…
+気付いてないなんてことは…;絶対にねぇだろうし…
+Talk シエラ
+…誘われているのかしら…
+Talk ウォルディ
+…罠か。どうするシエラ
+Talk シエラ
+おそらくは…。;でも私たちにはもう…進む道しか残されていない
+Talk システム
+勇ましいものですわね
+Talk ウォルディ
+誰だ！？
+end
+PlaySound Mirage.wav
+Wait 10
+Talk レヴィン
+(…彼女が…;シエラ＝ディオル＝ロゥ＝グランチェスタ…？)
+…お初にお目にかかる…かしらね。
+Talk シエラ
+…黒の団隊長、;レヴィン＝マーヴェリックが私に何の用？
+Talk ウォルディ
+レヴィン＝マーヴェリックだと…！？
+Talk レヴィン
+あら、有名人は自己紹介が楽でいいですわね。
+Talk ウォルディ
+貴様…っ！
+Suspend
+PlaySound whiz.wav
+Wait 5
+Talk レヴィン(不機嫌)
+…いきなり何をなさいますの？
+Talk ウォルディ
+シエラは…殺らせん…っ！！
+Talk レヴィン(不機嫌)
+…バカね。
+end
+PlaySound Mirage.wav
+Wait 10
+PlaySound Sword.wav
+Wait 5
+Talk レヴィン
+殺す気ならとっくにやってますわ。
+Talk ウォルディ
+…っ…！
+Talk シエラ
+私を殺すんじゃないのなら…;何をしに来たの？暗殺者。
+Suspend
+PlaySound Bow.wav
+Talk レヴィン(不機嫌)
+(…！！！！)
+伏せなさい！
+Suspend
+AutoTalk シエラ
+1;なっ！？
+Suspend
+PlaySound Swing.wav
+Wait 2
+PlaySound Swing.wav
+Wait 5
+Talk Ｓ
+…外しちゃったか…;全く…どこまでも私の邪魔をしてくれるんだねぇ…
+Talk レヴィン
+シャイナ…。;貴女にこれ以上人殺しはさせませんわ
+Talk Ｓ
+…あ～。ごめんね。;もう…たくさん殺して来ちゃった☆
+Suspend
+PlaySound wind.wav
+Talk ウォルディ
+…っ…こいつは…
+Talk シエラ
+この匂いは…血の…
+Talk ウォルディ
+護衛のヤツらは…全滅か…！？;:てめぇ…ッ！！！
+Talk レヴィン
+お待ちなさい。:シャイナは…私が止める。
+Talk ウォルディ
+そうは行かねぇ…こいつには借りがある。;ルフィナを殺したこいつだけは…！！
+Talk シエラ
+…ウォルディ、行くわよ。
+Talk ウォルディ
+な……！
+Talk シエラ
+………
+Suspend
+Wait 5
+Talk Ｓ
+…私の邪魔…するんだ。
+Talk レヴィン
+先ほども言ったでしょう？;貴方に…これ以上人殺しは
+Suspend
+Playsound Stab.wav
+Talk Ｓ
+ごめん、やっちゃった。
+Talk レヴィン(不機嫌)
+ッ…！！！！
+Suspend
+PlaySound FallDown.wav
+Talk Ｓ
+そうそう、そうやっておとなしく這いつくばっててね？
+End
+PlaySound Mirage.wav
+Wait 10
+Talk レヴィン(不機嫌)
+っ…ぁ…。
+(両足…胸…右手…腹…６箇所…！？;咄嗟に急所は外したけど…あの一瞬で…)
+…見えなかった…
+…あの子は…やっぱり…私より強い…？
+でも…
+End
+Wait 10
+PlaySound BoomA@22.wav
+Talk レヴィン(不機嫌)
+負けるわけには…倒れるわけには…いかない…
+End
+PlaySound Mirage.wav
+Wait 20
+Talk Ｓ
+行かせないってばぁ！
+Talk シエラ
+…こいつ…一瞬で！！
+Suspend
+PlaySound Mirage.wav
+Wait 5
+PlaySound Sword.wav
+Wait 3
+Talk Ｓ
+…止め…あれ…？
+Talk レヴィン(不機嫌)
+行かせない？それはこちらのセリフですわ。
+早く行きなさい！私が抑えますわ！
+Talk シエラ
+…ありがとう
+Talk レヴィン(不機嫌)
+早く！
+End
+Wait 10
+StopBGM
+Wait 10
+PlaySound Stairs(Run).wav
+Wait 30
+StartBGM kurayami.mid
+Wait 10
+Talk Ｓ
+なんで…？なんで生きてるの？;刺したはずじゃん。こうグサーっとさぁ。
+Talk レヴィン
+そんなに不思議？私の体が。
+End
+PlaySound Stab.wav
+Wait 10
+Talk Ｓ
+自分の体にクナイ刺して…;何の趣味？マゾ？痛そ～…それ気持ち良いの？
+Talk レヴィン
+これぐらいの傷でしたらね…
+Suspend
+PlaySound BoomA@22.wav
+Talk レヴィン
+治ってしまいますのよ。
+Talk Ｓ
+へー。ベンリだね。
+殺すなら首落とすぐらいしか…
+Talk レヴィン
+便利…何が…？
+Talk Ｓ
+ベンリじゃん。刺されても治るんでしょ？
+Talk レヴィン
+…違うわ…私はこんな力…欲しくはなかった…！！
+Talk Ｓ
+…何いってんの？
+Suspend
+PlaySound Mirage.wav
+Wait 5
+PlaySound Stab.wav
+Wait 5
+Talk レヴィン(不機嫌)
+あぐっ！？
+Talk Ｓ
+こーんなふうにさ？
+Suspend
+PlaySound Stab.wav
+Wait 2
+Talk Ｓ
+こーんなふうにさ？;刺されても
+Suspend
+PlaySound Stab.wav
+Wait 2
+Talk Ｓ
+こーんなふうにさ？;刺されても刺されても
+Suspend
+PlaySound Stab.wav
+Wait 2
+Talk Ｓ
+こーんなふうにさ？;刺されても刺されても刺されても
+Suspend
+PlaySound Stab.wav
+Wait 2
+Talk Ｓ
+こーんなふうにさ？;刺されても刺されても刺されても刺されてもォ！！！
+Suspend
+PlaySound Stab.wav
+Wait 10
+Talk レヴィン(不機嫌)
+っく…あぁ…！！
+Suspend
+PlaySound BoomA@22.wav
+Wait 10
+Talk Ｓ
+治っちゃった～。;呆れた。とんだ化け物だね。
+Talk レヴィン
+えぇ…化け物ですわよ…;全身を切り刻まれ…魔術と薬物で強化され…！！
+女としての身体も壊された…！！
+私はこんな力なんて…欲しくなかった…！
+Talk Ｓ
+…あー、カワイソカワイソ。それでなんなの？
+Talk レヴィン
+あなたも…こうなる筈だったんですのよ…？
+Talk Ｓ
+知ってるよ。
+Talk レヴィン
+！？
+Talk Ｓ
+教えてもらった。そのことは全部さ。
+Talk レヴィン
+だったら…！！
+Talk Ｓ
+アンタの勝手な価値観押し付けないでよ…
+Talk レヴィン
+…どういうこと…ですの…？
+Talk Ｓ
+私は良かったんだ…どうなっても良かった。;良かったんだよ…あのままで…。
+良かったのに…良かったのにさぁ…！！
+優しかった…優しかったんだよ…？;私のパパも…ママも…？
+Talk レヴィン
+シャイナ…あいつらは親でもなんでもない…！
+Talk Ｓ
+そんなこと関係ないんだよぉぉぉぉ！！！！
+優しかった…優しかったんだよ！！;パパも！！ママも！！！
+私は誓ったの…パパとママを殺したヤツに…復讐してやろうって…
+ローラさんが教えてくれたんだ…;パパとママを殺したのはお姉ちゃんだって…！
+だから…:だから殺すよ。:お姉ちゃん。
+もう…:殺す。
+Suspend
+PlaySound Mirage.wav
+Wait 5
+PlaySound Stab.wav
+Wait 2
+PlaySound Stab.wav
+Wait 2
+PlaySound Stab.wav
+Wait 2
+Talk レヴィン(不機嫌)
+…ぎ…ッ…！！
+Suspend
+PlaySound Mirage.wav
+Wait 10
+Talk Ｓ
+鈍い…よ。
+Suspend
+PlaySound Mirage.wav
+Wait 5
+PlaySound Stab.wav
+Wait 2
+PlaySound Stab.wav
+Wait 2
+PlaySound Stab.wav
+Wait 2
+Talk レヴィン(不機嫌)
+あ…あぅ、ぐ…っ…！
+end
+Wait 10
+Talk レヴィン
+フフ…
+Talk Ｓ
+…何笑ってるのよ…気持ち悪い。
+しんじゃえ♪
+End
+StopBGM
+PlaySound Stab.wav
+Wait 3
+PlaySound BreakOff.wav
+Wait 4
+Talk レヴィン
+捕まえましたわ…シャイナ…。
+Talk Ｓ
+(クナイを…;手に突き刺すように…私の手ごと…！？)
+な、なによそれ…いたく…ないの…！？
+Talk レヴィン
+痛いですわよ…凄く。
+でも…貴方はもっと;痛かったんですのよね…？
+Talk Ｓ
+なに…いってんの…？
+Talk レヴィン
+ごめんなさい。;私は貴方に謝ることしかできない…
+Talk Ｓ
+なに…いってんの…？
+Talk レヴィン
+ごめんなさい…;貴方のせいで…思い出してしまいましたわ…
+あの時のこと…私が味わった地獄…
+捨てたはずの…
+Suspend
+StartBGM Po_compo.mid
+PlaySound Mirage.wav
+Talk Ｓ
+！！！
+消え…
+Talk レヴィン
+わたくしの…ちから
+Talk Ｓ
+(うしろ…！？)
+な、な…なぁっ！？
+Talk レヴィン
+…鈍い
+Suspend
+PlaySound Mirage.wav
+Talk Ｓ
+…ま…また消え…！
+Suspend
+PlaySound Punch.wav
+Wait 2
+Talk Ｓ
+…ぇ…？
+(なぐ…られた…:うしろ…！？)
+Talk レヴィン
+からっぽでしたのよ私は。
+ただ、殺す。それだけ。;貴方とは違う…それだけ。
+Talk Ｓ
+何言ってるの…殺す…それだけだよ！;私も！！お前を殺すために…わたしは…
+Talk レヴィン
+そこでもう違う。
+Talk Ｓ
+え…
+Talk レヴィン
+私は…殺すために殺す。;ただそれだけ。殺す目的のために殺す。
+それを奴らは作り上げた。それを。私を。
+レヴィン＝マーヴェリックを。
+Talk Ｓ
+………
+Talk レヴィン
+だから…殺してやったのよ…
+男も女も…子供も…老人も…全部…えぇ、全部。
+Talk Ｓ
+やっぱりお前が…
+Talk レヴィン
+そうよ。私が殺した。全部。
+Talk Ｓ
+お前あぁぁぁぁぁぁぁ！！！
+Suspend
+PlaySound Mirage.wav
+Wait 5
+PlaySound Punch.wav
+Wait 5
+Talk Ｓ
+ぎゃうっ！
+Talk レヴィン
+私には…それすらも無かった。
+貴方のように…;そうして恨み、怒る…それすらも。
+Talk Ｓ
+…ぇ…？
+Talk レヴィン
+だって…人を殺すだけの;『影』に感情なんて必要ないでしょう？
+Talk Ｓ
+…でも…;じゃあ…なんで…あんたは…
+end
+Wait 10
+StartBGM KURAYAMI.mid
+Talk レヴィン
+貴方の存在ですわよ。
+Talk Ｓ
+わたし…？
+Talk レヴィン
+私は…貴方の実験に立ち会っていましたわ。
+感覚器の増幅…そして肉体の増強手術…
+それを見ていて…何かが…私の中で…;:昔、消されたはずの感情が…戻ってきたのですわよ。
+貴方を同じにするわけにはいかない。;そう思ったのですわ。
+結果…こうして貴方に命を;狙われることになったのですけど…
+それでも…うれしいですわよ…;貴方がこうして人として立っていることに…
+Talk Ｓ
+な…ぁ…！:何…:何言って…:るのよォ！！
+お前は…お前は…:お前はあぁぁぁぁぁ！！！
+Talk レヴィン
+私は…レヴィン＝マーヴェリックと言う;人格の演技をしているだけの人形…
+本当の心で動いている;貴方がうらやましいわ…シャイナ…。
+End
+StopBGM
+Wait 10
+PlaySound Stab.wav
+Wait 50
+PlaySound Sword.wav
+Talk システム
+→Sight "Ludia=SparkStar"
+end
+startBGM toki_xg.mid
+Wait 20
+Talk リィス
+ルディア…わかるの…
+Talk ルディア
+頭ちょーっと痛いけど…少しは…
+Suspend
+PlaySound Noise.wav
+Talk システム
+<i>西から回り込むぞ…</i>
+<i>了解</i>
+End
+Wait 5
+Talk ルディア
+聞こえた…西っ！
+Talk リィス
+西だね…早くしなきゃ…！
+Talk ルディア
+そうだね…;私達がTYPE-LD達を止めないと…！青の疾風の皆が…
+ぁ…づっ…！？
+Talk リィス
+ルディア！！大丈夫なの！？
+Talk ルディア
+大丈夫…ちょっと頭が…いたた…
+使ってなかった頭の機能、;突然使ったモンだから…いっつ～…
+Talk リィス
+ルディア…やっぱりムリしてるよ…
+Talk ルディア
+なんで？私は別に全然…ほら、ピンピンしてるし…
+Talk リィス
+ほら、またそうやって;ムリに笑顔作ろうとする…
+みんな気付いてるよ…;鳳さんもレヴィンさんも…勿論私も…
+Talk ルディア
+でも…でもさ…今は私が…やんなきゃ…
+Talk リィス
+違うよ！！
+違う！そんなの違うよ！;確かにルディアがやらなきゃなんないのかもしれない…
+でも…違うよ…
+Talk ルディア
+じゃ…なんだって言うのよ…？
+私にしか…私にしか出来ないじゃない！;私にしか背負えないじゃない！
+私の…私の姉妹達の運命は…
+Talk リィス
+なんでひとりでやろうとするの…？
+Talk ルディア
+え…？
+Talk リィス
+ディオさんも…兄さんも…私も言ったはずだよ…？
+ずっと昔に…ルディアは大事な家族だって…
+Talk ルディア
+…っ…？
+Talk リィス
+ルディアの…姉妹でしょ…？;だからこれは家族である私たちの問題！
+だから私にも…;:私にも背負わせてよ…ルディアの荷物
+一人じゃ重い荷物も;二人ならちょっとは軽くなるよ？
+ルディアは私の大切な友達。;:大切な仲間。:大切な家族。
+だから…ね？
+Talk ルディア
+リィス…
+Talk リィス
+一緒に…がんばろ？ルディア。
+Talk ルディア
+うん…:うんっ！！
+End
+Wait 10
+Talk ルディア
+(…そう…これが…仲間…)
+(人の優しさ、暖かさなんだ…。;:だから私は…皆にこれを教えてあげたいんだ…)
+(戦うために戦うんじゃない。;何かを護るために…戦うってことを…。)
+End
+Wait 20
+Playsound Noise.wav
+Wait 5
+Talk システム
+<i>戦…うん…何か…めに…ってこ…を…</i>
+Talk TYPE-LD
+…？
+Talk システム
+<i>…LD-24、遅れているぞ</i>
+Talk TYPE-LD
+…わかっている…。
+(なんだ…今の…念波は…？)
+(…他の者には聞こえていない…;:何か…何か…)
+(あた…たかい…？)
+(…あたたかい…暖かい…？;あたたかいとは…なんだ…？)
+End
+
+Wait 20
+StopBGM
+PlaySound Sword.wav
+Talk システム
+→Sight "Hisyou=Ootori"
+end
+Wait 20
+
+Talk 鳳
+…さて…私も動かねばなるまい…
+邪魔は…させんよ。
+End
+Exit
+
+スタート:
+ChangeMap 04.map
+Redraw
+night
+StartBGM Namida-t.mid
+
+
+
+Wait 15
+
+PlaySound Stairs(Run).wav
+Wait 10
+PlaySound Explode(Far).wav
+Wait 10
+
+Create ＮＰＣ 魔導輸送車 0 グランチェスタ兵 10 16 11
+
+Create ＮＰＣ しえら＝すぱーくすたー 0 量産型シエラ 30 16 20
+
+PlaySound Stairs(Run).wav
+
+Talk 量産型シエラ
+(戦闘の音がだんだん激しくなってる…)
+(夜の闇に紛れて、;白兵とエレナイで同時に攻撃をかける…)
+…くそ…ッ…完全に…手の内ってワケか…
+suspend
+Center 16 11
+Wait 10
+Talk 量産型シエラ
+ん…あれか…！
+End
+Wait 5
+Move 量産型シエラ 16 12 アニメ表示
+wait 5
+Talk 量産型シエラ
+運転手は…
+Suspend
+Move 量産型シエラ 15 12 アニメ表示
+wait 5
+Move 量産型シエラ 15 11 アニメ表示
+wait 5
+Talk 量産型シエラ
+…やっぱり…殺されてる…か。
+…すまない…お前達の仇は…必ず…！
+End
+
+Center 25 11
+PlaySound bow.wav
+Wait 5
+Talk 量産型シエラ
+…っ…
+(黒の団…後続の;シャドウ部隊が追いついて来やがったか…！)
+早くエージェシーを起動…
+Suspend
+Center 15 6
+Wait 2
+PlaySound Whiz.wav
+Wait 2
+center 15 8
+PlaySound whiz.wav
+Wait 2
+Center 15 10
+AutoTalk 量産型シエラ 15 11
+…ッ！！
+end
+Move 量産型シエラ 14 11 アニメ表示
+Center 15 11
+PlaySound WarShip.wav
+Wait 2
+PlaySound WarShip.wav
+Wait 5
+Explode L 15 11
+Move 量産型シエラ 13 11 アニメ表示
+Setstatus 量産型シエラ 消耗 1
+PlaySound FallDown.wav
+Wait 20
+Talk 量産型シエラ
+が…っは…:うぐっ…
+(クナイ…ってヤツか…;流石エレナイサイズ…カスってもいねぇのに…)
+End
+Wait 10
+Create 敵 シャドウ 4 黒の団 35 25 11
+Create 敵 シャドウ 4 黒の団 35 15 6 コロシ
+
+Talk 量産型シエラ
+これで…終わりかよ…;こんなところで終わるのかよ…っ
+End
+Move コロシ 13 8 アニメ表示
+Wait 5
+Center 13 8
+Playsound Whiz.wav
+Wait 3
+Center 13 9
+AutoTalk シエラ 13 10
+1;(ダメだ…直撃…する….肉片ぐらい残ってくれっかな…)
+Suspend
+
+PlaySound BeamCoat.wav
+Wait 5
+PlaySound Swing.wav
+Wait 3
+Center 12 11
+PlaySound Swing.wav
+Wait 3
+Center 11 12
+PlaySound Swing.wav
+Wait 3
+Center 10 13
+PlaySound Slash(2).wav
+Wait 20
+Talk 量産型シエラ
+…クナイの軌道が…曲がっ…た…！？
+…これは…
+End
+StartBGM Ootori Attack!.mid
+Wait 30
+
+Launch 鳳 13 15
+
+Talk 鳳
+間一髪…と言うところだな。;大丈夫か？シエラ＝ディオル＝ロゥ＝グランチェスタ殿。
+Talk 量産型シエラ
+お…鳳…！
+Talk 鳳
+む？何故私の名を…
+Talk 量産型シエラ
+俺だよ。鳳。
+Talk 鳳
+俺…まさか貴様ディオ…か？;:…なるほど、そう言うことだったのだな。
+まぁ、なんでもいい。;ここは私たちに任せろ。ウォルディはもう行ったぞ
+Talk 量産型シエラ
+…あぁ！恩に着る！
+End
+Move 量産型シエラ 15 10 アニメ表示
+PlaySound Breakoff.wav
+Escape 量産型シエラ
+Talk 鳳
+…どうでもいいことやもしれぬが一つ言っておく
+Talk 量産型シエラ 16 11
+あん？
+っと…よし…;エージェシーは何も細工されてねぇな…？
+Talk 鳳
+…ディオ＝スパークスターに戻っているぞ。シエラ嬢。
+Talk 量産型シエラ 16 11
+…あっ…！！
+…
+鳳飛翔、ここは任せましたよ。
+Talk 鳳
+フン…了解した。シエラ殿。
+End
+Escape グランチェスタ兵
+Join シエラ＝スパークスター
+Launch シエラ＝スパークスター 16 12
+PlaySound Jet.wav
+Move シエラ＝スパークスター 16 10 アニメ表示
+Escape シエラ＝スパークスター
+Leave シエラ＝スパークスター
+Wait 10
+Talk 鳳
+さて…。;お前達はここから進むことはまかり成らんぞ？
+この私が居るからには…な。
+Talk コロシ
+………
+Talk 鳳
+感情を完全に封じられた生ける戦闘人形…DOLLか。
+死によってのみ開放される戦うための…人。
+死に場所を求め戦い続ける;その呪われた運命…私が開放してやろう…
+End
+StartBGM Ravin'_U.mid
+KeepBGM
+Exit
+
+ターン 2 味方:
+Create 敵 シャドウ 3 黒の団(ザコ) 35 1 9
+Create 敵 シャドウ 3 黒の団(ザコ) 35 1 10
+Create 敵 シャドウ 3 黒の団(ザコ) 35 1 11
+Create 敵 シャドウ 3 黒の団(ザコ) 35 1 12
+
+Create 敵 シャドウ 3 黒の団(ザコ) 35 13 1
+Create 敵 シャドウ 3 黒の団(ザコ) 35 14 1
+Create 敵 シャドウ 3 黒の団(ザコ) 35 15 1
+Create 敵 シャドウ 3 黒の団(ザコ) 35 16 1
+
+Talk 鳳
+来たか…。
+(推測するに黒の団の残存兵力は約50…)
+残りは$(鳳撃破数)機か…！
+End
+Exit
+
+ターン 5 味方:
+
+Create 敵 シャドウ 4 黒の団(ザコ) 36 25 9
+Create 敵 シャドウ 4 黒の団(ザコ) 36 25 10
+Create 敵 シャドウ 4 黒の団(ザコ) 36 25 11
+Create 敵 シャドウ 4 黒の団(ザコ) 36 25 12
+
+FadeOut
+
+Call 文章表示２ 20 あの男…なら…
+ClearPicture
+Refresh
+
+Create 敵 シャドウ 4 黒の団(ザコ) 36 1 17
+Create 敵 シャドウ 4 黒の団(ザコ) 36 2 18
+Create 敵 シャドウ 4 黒の団(ザコ) 36 3 19
+Create 敵 シャドウ 4 黒の団(ザコ) 36 4 20
+
+FadeOut
+
+Call 文章表示２ 20 あの男…なら…！
+ClearPicture
+Refresh
+
+Talk 鳳
+来たか…！
+８機…まだまだここからが本番か！
+End
+Exit
+
+
+ターン 8 味方:
+Hide
+PlaySound Crash.wav
+Wait 5
+PlaySound Crash.wav
+Wait 10
+Talk ガスト
+ヒャーッハッハッハ！
+Talk 青の疾風
+ひ…っ！？
+Suspend
+PlaySound Crash.wav
+Wait 5
+Talk 黒の団
+………
+(何かが…)
+End
+Wait 10
+Talk ガスト
+おい！どうしたァ…お前等もヤれよ…？
+Talk 黒の団
+………
+(何かが…呼んでいる…？)
+(あの…男…な…ら…この苦しみから…)
+End
+PlaySound Saber.wav
+Wait 5
+PlaySound Saber.wav
+Talk ガスト
+あン…？逃げンのかァ！？
+なんなんだァ…？;揃いも揃って人形どもが逃げ出しやがって…。
+…なんでもいいかァ！;俺は殺せりャそれでいィしなァ…！！
+ケーッケッケッケッケッケ！
+End
+Wait 10
+
+Show
+
+Wait 20
+
+Create 敵 シャドウ 4 黒の団(ザコ) 36 25 14
+Create 敵 シャドウストーカー 4 黒の団(ザコ) 36 25 15
+Create 敵 シャドウ 4 黒の団(ザコ) 36 25 16
+Create 敵 シャドウ 4 黒の団(ザコ) 36 25 17
+
+FadeOut
+
+Call 文章表示２ 20 あの男…なら…助けてくれる…
+ClearPicture
+Refresh
+
+Create 敵 シャドウ 4 黒の団(ザコ) 36 13 1
+Create 敵 シャドウ 4 黒の団(ザコ) 36 14 1
+Create 敵 シャドウ 4 黒の団(ザコ) 36 15 1
+Create 敵 シャドウ 4 黒の団(ザコ) 36 16 1
+
+FadeOut
+
+Call 文章表示２ 20 この地獄から我々を…救ってくれる…
+ClearPicture
+Refresh
+
+Talk 鳳
+増援…か？
+だが…何故だ…？;先行していたハズの部隊も戻って来ている…？
+何かに…引き寄せられるように…？
+end
+Wait 10
+Talk 鳳
+…私に…か…？
+End
+Exit
+
+ターン 11 味方:
+Create 敵 シャドウ 5 黒の団(ザコ) 37 1 9
+Create 敵 シャドウストーカー 5 黒の団(ザコ) 37 1 10
+Create 敵 シャドウ 5 黒の団(ザコ) 37 1 11
+Create 敵 シャドウ 5 黒の団(ザコ) 37 1 12
+
+Fadeout
+Call 文章表示２ 20 …コロセ…鳳飛翔…！
+ClearPicture
+Refresh
+
+Create 敵 シャドウ 5 黒の団(ザコ) 37 13 1
+Create 敵 シャドウ 5 黒の団(ザコ) 37 14 1
+Create 敵 シャドウストーカー 5 黒の団(ザコ) 37 15 1
+Create 敵 シャドウ 5 黒の団(ザコ) 37 16 1
+
+Fadeout
+Call 文章表示２ 20 私たちを…コロシテ…クレ…
+ClearPicture
+Refresh
+
+Talk 鳳
+…そう…か…？
+…お前達は…自らの命を絶つために…
+自らの;呪われた運命を断ち切るために…;我が前に立つというのか…？
+…悲しき者どもよ…
+Suspend
+StartBGM Ootori Attack!.mid
+Wait 10
+Talk 鳳
+あぁ…お前達の魂…私が全て背負ってやろう…
+お前達が最後は人であったことを…;私が語ってやろう…！私が刻み付けておこう！
+来い！戦うことにしか;救いを求められぬ呪われし人形達よ！
+End
+KeepBGM
+Exit
+
+ターン 14 味方:
+Create 敵 シャドウ 5 黒の団(ザコ) 37 25 9
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 25 10
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 25 11
+Create 敵 シャドウ 5 黒の団(ザコ) 37 25 12
+Create 敵 シャドウ 5 黒の団(ザコ) 37 1 17
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 2 18
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 3 19
+Create 敵 シャドウ 5 黒の団(ザコ) 37 4 20
+
+Exit
+
+ターン 18 味方:
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 25 14
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 25 15
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 25 16
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 25 17
+
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 13 1
+Create 敵 シャドウストーカー 7 黒の団(ザコ) 37 14 1
+Create 敵 シャドウストーカー 7 黒の団(ザコ) 37 15 1
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 37 16 1
+
+Exit
+
+
+*ターン 全:
+If ターン数 > 1 Then
+ClearPicture
+Font RGB(255, 255, 255)
+PaintString 20 20 "残$(鳳撃破数)機"
+Wait 20
+Refresh
+Endif
+Exit
+
+延髄突き割る:
+
+If 延髄突き割られ済み = 1 Then
+Return
+Endif
+
+If ソニックブレード使用回数 > 25 Then
+
+Call 延髄突き割られる
+
+Return
+
+Endif
+
+If 対象ユニット使用武器 = ソニックブレード Then
+
+Incr ソニックブレード使用回数 1
+
+Elseif 相手ユニット使用武器 = ソニックブレード Then
+
+Incr ソニックブレード使用回数 1
+
+Endif
+
+Return
+
+延髄突き割られる:
+PlaySound Crash.wav
+
+Talk 鳳(ダメージ)
+ぬぅっ！？ソニックブレードが折れたかッ！！
+end
+
+Disable ブラス＝ドーン ソニックブレード
+
+Item 壊れた剣
+Equip 鳳 壊れた剣
+Set 延髄突き割られ済み 1
+
+Return
+
+
+攻撃後 全 全:
+Call 延髄突き割る
+
+If 空間断習得済み = 0 Then
+
+Call 弾数イベント
+
+Endif
+
+Exit
+
+弾数イベント:
+
+ Set ＱＭ Info(ユニット, ブラス＝ドーン, 武器, クイックミサイル, 弾数)
+ 
+ If ＱＭ = 0 Then
+
+  If ＢＲ弾切れ = 1 Then
+  PlaySound Breakoff.wav
+  Talk 鳳
+  クイックミサイルも切れたか…。
+  Suspend
+
+  Call 空間断習得
+
+  ClearEvent
+
+Exit
+  Endif
+
+  If ＱＭ弾切れ = 0 then
+ 
+  PlaySound Breakoff.wav
+  Talk 鳳
+  …チィ…！クイックミサイルが弾切れかっ！
+  End
+
+  Incr ＱＭ弾切れ 1
+
+Exit
+ 
+  Endif
+ Endif
+
+
+Set ＢＲ Info(ユニット, ブラス＝ドーン, 武器, ブラスターライフル, 弾数)
+
+If ＢＲ = 0 Then
+
+If ＱＭ弾切れ = 1 Then
+ PlaySound Breakoff.wav
+ Talk 鳳
+ ブラスターライフルの弾丸もこれで終わり…か…。
+ Suspend
+
+ Call 空間断習得
+Exit
+ Endif
+
+ If ＢＲ弾切れ = 0 then
+
+ PlaySound Breakoff.wav
+ Talk 鳳
+ ブラスターライフルの弾丸は…今のが最後か…！
+ End
+ Incr ＢＲ弾切れ 1
+ Exit
+ Endif
+ Endif
+
+Return
+
+空間断習得:
+Talk 鳳
+(これでこの機の弾丸は全て使い果たした…)
+(これでは敵の遠隔攻撃に対応出来ん！;どうする…？)
+………
+行けるか…？
+End
+PlaySound Beamcoat.wav
+Wait 10
+PlaySound Beamcoat.wav
+Wait 10
+Talk 鳳
+問題は…ないか。
+何を怯える…鳳飛翔…。;護るものを護れぬ強さなど…何も意味が無い
+そうだろう…？
+自らの…存在を賭けてでも、だ！
+我が力、全てを以って…:空を…断つ。
+即ち、空間断。
+End
+Item 空間断
+Equip 鳳飛翔 空間断
+Fix 空間断
+Set 空間断習得済み 1
+Return
+
+撃破イベント:
+
+Switch 鳳撃破数
+
+Case 40
+Talk 鳳
+これで…10機…！
+End
+IncreaseMorale 鳳 -30
+
+Case 30
+Talk 鳳
+19…いや、20か…。
+(一瞬たりとも気を抜けんな…;集中力が切れたその時こそが…死…か…)
+End
+
+IncreaseMorale 鳳 -40
+
+Case 20
+
+Talk 鳳(ダメージ)
+クッ…
+(もう何機倒したか…数えていられんな…。)
+(いや、余計なことは考えるな、;数などどうでもいい…)
+Talk 鳳
+(ただ！突き進むのみ！)
+End
+
+IncreaseMorale 鳳 -30
+
+Case 10
+Talk 鳳(血)
+ぐ…っ…
+空間魔術を酷使しすぎた…か…？
+世界に拒絶され始めている…？;だが…！だがな…っ！！
+End
+
+IncreaseMorale 鳳 -40
+
+Endsw
+
+
+#If 空間断習得済み = 0 Then
+#Call 弾数イベント
+#Endif
+Return
+
+進入 鳳 4 2:
+
+Talk 鳳
+この場ならば…;迫る敵も水に足を取られ戦いやすいか…？
+いや…水中は死角になる…ここは危険だ。
+何故私はこのような場所に…。
+(何かに引き寄せられた…のか？)
+end
+
+Global 鳳飛翔の足跡
+Set 鳳飛翔の足跡 1
+ClearEvent
+
+Exit
+
+
+破壊 敵:
+
+Incr 鳳撃破数 -1
+
+If ターン数 > 1 Then
+ClearPicture
+Font RGB(255 , 255, 255)
+PaintString 20 20 "残$(鳳撃破数)機"
+Wait 10
+Refresh
+Endif
+
+Call 撃破イベント
+
+Call 延髄突き割る
+
+If 空間断習得済み = 0 Then
+
+Call 弾数イベント
+
+Endif
+
+Exit
+
+
+全滅 敵:
+PlaySound LevelUp!.wav
+Talk システム
+<b><size=20>５０機斬！</size></b>
+無双の篭手を手に入れた！
+End
+
+Item 無双の篭手
+PlaySound Wind.wav
+Fadeout 100
+Talk 鳳
+…終わりだ。
+静かなる…永久の光の中で眠れ。:影達よ。
+End
+Hide
+Wait 30
+PlaySound FallDown.wav
+Wait 50
+
+Continue 04B.eve
+Exit
+
+破壊 鳳飛翔:
+Fadeout
+Call 文章表示２ 20 この男でも…駄目だったか…
+ClearPicture
+Refresh
+UPgrade ブラス＝ドーン ブラス＝ドーン
+Talk 鳳(血)
+…そう結論付けるにはまだ早いぞ…
+やると言ったからには…やり遂げて見せるさ…
+End
+PlaySound Grass.wav
+Wait 10
+Fadeout
+Talk 鳳
+我が全魔力…貴様達にくれてやる
+End
+PlaySound Glass.wav
+Color RGB(255, 255, 255)
+Line 0 (Random(480)) 480 (Random(480))
+Refresh
+Wait 5
+Talk 鳳
+時空…
+End
+ClearPicture
+
+For i = 1 to 50
+PlaySound Grass.wav
+Color RGB(15, 15, 15)
+Line (Random(480)) 0 (Random(480)) 480 
+Refresh
+Wait 0.2
+
+Next
+Talk 鳳
+時空…崩壊。
+End
+Wait 10
+PlaySound Crash.wav
+ClearPicture
+Escape 敵
+Refresh
+Wait 10
+PlaySound Wind
+Wait 30
+Talk 鳳
+苦しみは与えんよ…せめてもの情けだ
+静かなる…永久の光の中で眠れ。:影達よ。
+End
+Hide
+Wait 10
+PlaySound FallDown.wav
+Wait 30
+Continue 04B.eve
+Exit
+
+
+エピローグ:
+StopBGM
+PlaySound Stab.wav
+Wait 20
+Talk レヴィン(涙)
+ごめんなさい…シャイナ…。
+End
+PlaySound FallDown.wav
+Wait 20
+Talk ＳＭ
+…何が…ごめん…よ？
+何が…何が…ごめ…:あれ…？
+End
+PlaySound Punch.wav
+Wait 5
+Talk ＳＭ
+ねぇ、なんで動かないの？
+End
+PlaySound Punch.wav
+Wait 5
+PlaySound Punch.wav
+Wait 5
+Talk ＳＭ
+あれ？あんた死なないんでしょ？:治るんでしょ？
+End
+PlaySound Punch.wav
+Wait 5
+Talk ＳＭ
+あれ？:あれ…？
+なんで…:どうして…:どうして…
+死…あれ？
+なんで…なんで私…
+何で私…レヴィン＝マーヴェリックを…
+何で私…お姉ちゃん…を…？
+な…んで…？
+お姉ちゃんも…優しかった…のに…
+Talk システム
+シャイナ…貴方のお姉さんは貴方を捨てたの
+Talk ＳＭ
+ううん…違う…そうじゃ…なかった…
+Talk システム
+貴方のお姉さんは…貴方の全てを奪った
+Talk ＳＭ
+違う…お姉ちゃんは…私に全てを…与えてくれた…
+Talk システム
+だから…貴方はお姉さんを殺すのよ。
+Talk ローレライ
+あの女は…邪魔なの。;:判るわね？シャイナ。
+End
+PlaySound Crash.wav
+StartBGM Kurayami.mid
+Talk ＳＭ
+ち…がうよ…私は…
+Suspend
+PlaySound glass.wav
+Wait 30
+Talk シャイナ
+おねえ…ちゃん…！！
+いや…いやだよ…！
+おねえちゃん！嫌！シャイナを一人にしないで…！！
+おねえちゃんが居ないと私…！
+だめだよ！！おねえちゃん…謝るから…;:ね？私が…私が全部悪かったから…！！
+だから…だから…！！
+だからおねえちゃんは…死なないで…
+End
+PlaySound Stairs.wav
+Wait 10
+Talk システム
+死なせんよ。
+Talk シャイナ
+え…っ？
+Talk 鳳
+死なせんよ。死なせはせん…。
+誰も泣くことはない…。;もう誰も…死ななくていいんだ。
+Talk シャイナ
+あなたは…鳳…飛翔…？
+本当に…おねえちゃんを…？
+Talk 鳳
+あぁ、任せておけ…;私に不可能などは…
+Talk シャイナ
+…ねぇ！本当に助けてくれるの！？
+end
+PlaySound Punch.wav
+Wait 10
+PlaySound FallDown.wav
+Wait 10
+Talk シャイナ
+このひと…立ってるだけで…精一杯…？
+鳳飛翔…この人確か…;:間違いない、黒の団の相手を…
+えっ…黒の団の反応…;:全て…無い！？
+たった一人で…うそ…でしょ…
+Talk 鳳
+嘘では…ないさ。最早私に不可能は無い
+Talk シャイナ
+ムリだよ…そんな体で何が出来るって言うの！？
+Talk 鳳
+大丈夫だ…。;:僕はもう、あの頃とは違うんだ
+私は…鳳飛翔。;:空間を、時を、全ての事象を統べるもの
+絶対に助けてみせるさ…絶対に。
+でなければ…この強さの意味は何も無いからな…
+そうだろう…姉さん。
+End
+PlaySound BeamCoat.wav
+Wait 3
+Talk シャイナ
+なに…？
+end
+PlaySound BeamCoat.wav
+Wait 3
+PlaySound BeamCoat.wav
+Wait 3
+PlaySound BeamCoat.wav
+Wait 3
+Talk シャイナ
+空間が…震えてる…の…？
+なにを…！？
+End
+PlaySound Bazooka.wav
+Wait 10
+Talk 鳳
+レヴィン＝マーヴェリック…
+貴方の死んだその事実を…無かったことにする。
+End
+PlaySound Bazooka.wav
+Wait 2
+Talk 鳳
+<BIG><b>時</b><BIG>
+Suspend
+PlaySound Bazooka.wav
+Wait 2
+Talk 鳳
+<BIG><b>時空</b><BIG>
+Suspend
+PlaySound Bazooka.wav
+Wait 2
+Talk 鳳
+<BIG><b>時空転</b><BIG>
+Suspend
+PlaySound Bazooka.wav
+Wait 2
+Talk 鳳
+<BIG><b>時空転換</b><BIG>
+end
+PlaySound ExplosionA@11St.wav
+Wait 100
+
+IntermissionCommand なぜナイ２！！ 削除
+IntermissionCommand 視点切り替え 削除
+Set 鳳編進行度 4.5
+Call 鳳処理
+
+If 延髄突き割られ済み = 1 Then
+RemoveItem 鳳 壊れた剣
+Enable ブラス＝ドーン ソニックブレード
+Endif
+
+Exit
+

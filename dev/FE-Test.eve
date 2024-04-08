@@ -1,0 +1,44 @@
+
+スタート:
+
+
+
+
+
+ChangeMap エレナイサンプルその一.map
+
+Create 敵 ソーディアアサルト 0 トキア＝レンガー 90 20 20
+Bossrank トキア＝レンガー 5
+Create 味方 シルバー＝ファング 20 ソルディ＝ヴァンガード 60 15 20
+
+
+Wait 20
+
+Exit
+
+トルコ:
+
+For i = 1 To 45
+Color RGB(0, 0, 0)
+Line 0 (240 + (i * 2)) 480 (240 - (i * 2)) BF
+Refresh
+Wait 0.1
+Next
+Wait 20
+For wi = 0 To 26
+    font 25pt
+    Font RGB(INT(10 * wi), INT(10 * wi), INT(10 * wi))
+    PaintString - 180 Args(1)
+    Refresh
+    Wait 0.1
+Next
+Wait 20
+For wi = 0 To 26
+    font 22pt
+    Font RGB(INT(10 * wi), INT(10 * wi), INT(10 * wi))
+    PaintString - 250 Args(2)
+    Refresh
+    Wait 0.1
+Next
+
+return

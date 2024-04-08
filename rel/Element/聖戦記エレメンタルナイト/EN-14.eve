@@ -1,0 +1,1504 @@
+
+プロローグ:
+Set 北開始 99
+Global １４話
+StartBGM Ravin'_U.mid
+Wait 10
+Talk ブロード
+…くそっ！！
+End
+PlaySound Punch.wav
+Wait 5
+Talk 黒の団
+…
+Talk ブロード
+(黒の団ッ…;いつか来るとは思っていたけど…こんな町中で…)
+(くそっ…油断した…:ッ！！)
+End
+PlaySound Swing.wav
+Wait 2
+Talk 黒の団
+…
+Talk ブロード
+邪魔を…するなぁっ！！
+End
+Wait 5
+PlaySound Combo.wav
+Talk 黒の団
+…グッ！？
+Talk ブロード
+涼子さんやみんなが心配だ…行かないと！
+…！？
+Suspend
+PlaySound Explode.wav
+Wait 2
+PlaySound Explode.wav
+Wait 2
+PlaySound Explode(Nuclear).wav
+Wait 40
+Talk ブロード
+爆発音…！？
+涼子さん達の部屋の方だ！！
+End
+PlaySound Stairs(Run).wav
+Wait 30
+Talk ブロード
+これは…部屋が跡形もなく…っ！？
+涼子さん！ティーナさん！！;大丈夫ですか！？返事をしてくださいっ！！
+suspend
+PlaySound tub.wav
+Talk ブロード
+…っ！？
+Talk ティーナ(はにゃー)
+はにゃぁぁぁ…寝てたらいきなり爆発した…
+Talk ブロード
+驚かせないでくださいよ…
+Talk ティーナ
+う～痛い…
+Talk ブロード
+…それより…涼子さんは！？
+Talk ティーナ
+涼子さん…？
+…あっ！あそこに！！
+Talk 涼子(瀕死)
+…う…ぅ…
+Talk ブロード
+涼子さんっ！！！
+Talk 涼子(瀕死)
+……
+Talk ブロード
+なんで…こんな…
+Talk ティーナ
+刺されてる…みたいだけど…？
+Talk ブロード
+と…とにかく運びましょう！
+Talk ティーナ
+外も中も敵だらけみたいですよ！？;どこへ行くんです！？
+Talk ブロード
+…格納庫！エレナイに乗ってそのまま逃げよう！
+Talk ティーナ
+ディオさん達は…
+Talk ブロード
+みんなも同じ事を考えるハズ…;エレナイが無ければどうにもならない…
+Talk ティーナ
+う～む、了解しました～
+Talk ブロード
+…涼子さん…っ！
+Talk 涼子(瀕死)
+………
+End
+WAit 20
+PlaySound Whiz.wav
+Wait 5
+PlaySound Sword.wav
+Wait 6
+PlaySound Punch.wav
+Wait 3
+PlaySound Explode.wav
+Wait 8
+PlaySound Gun.wav
+Wait 5
+PlaySound Combo.wav
+Wait 10
+PlaySound Crash.wav
+Wait 12
+Talk ディオ(ダメージ)
+くそ…っ！;やっぱり格納庫は抑えられてやがる…！
+Talk ウォルディ
+当然と言えば当然のことだが…
+Talk サレナ
+全く…あいつら人の家を破壊して;何様のつもりなのかしらね…
+Talk ムルグ
+そうですな、賠償金の一つや二つも;巻き上げてやらねば気が済みませんぞ！
+Talk ザーム
+あのさぁ…２人とも;…そう言う場合じゃないと思うんだ…
+Talk ディオ
+…せっかくのシリアスムードを台無しにすんなっ！
+Talk サレナ
+堅いことは言いっこなし！
+Talk ディオ
+あのなぁ…
+Talk ウォルディ
+ストップ…今はどう状況を打破するかが先決だろ？
+Talk ディオ
+そりゃそうだな…
+Talk サレナ
+まぁ、もっともな意見ね…
+Talk ザーム
+…鳳さんが居れば何とかなりそうなんだけど…
+Talk ディオ
+そうだよ！鳳！あの野郎！;いつもどうでも良いときは居るやがるのに！;なんでこういう肝心なときに…
+End
+PlaySound Swing.wav
+Wait 10
+Talk ディオ(ダメージ)
+どわぁっ！？
+Talk 黒の団
+……！！
+Talk ウォルディ
+ちぃっ！このやろ…
+Talk サレナ
+<size=20><b>サレナ！ストラァァァイク！！</b></size>
+Suspend
+AutoTalk 黒の団
+1;！！？？
+Suspend
+PlaySound Warship.wav
+Wait 10
+Talk ムルグ
+<size=22><b>ムルグ！ホームランですじゃっ！！</b></size>
+suspend
+AutoTalk 黒の団
+1;！！！！！！！
+suspend
+PlaySound Sword.wav
+Wait 3
+PlaySound Combo.wav
+Wait 10
+PlaySound Bomb.wav
+Wait 12
+AutoTalk 黒の団
+1;！！！！！！！
+End
+PlaySound Flair.wav
+Wait 10
+Talk サレナ
+ナイスホームラン
+Talk ムルグ
+お嬢様も、ナイスストライクですじゃ
+Talk ディオ
+…お前等…一体…
+Talk サレナ
+田舎の美人女将と♪
+Talk ムルグ
+執事ですじゃ♪
+Talk ウォルディ
+ディオ…この２人に突っ込ませて中央突破は？
+Talk ディオ
+かなり良い案かもしれねーな…
+Talk ザーム
+本気ですか？２人とも…
+Talk ウォルディ
+少なくとも俺は。
+Talk ディオ
+当然の如く俺も。
+Talk ザーム
+……。
+(…このひとたちって…)
+End
+Wait 20
+Talk ブロード
+みなさん！
+Talk ディオ
+…ん？ブロードにティーナ;…無事だったみてぇだな。
+Talk ティーナ
+私たちは無事です！！でも…涼子さんが…
+Talk ディオ
+なにぃっ！？
+Talk サレナ
+ちょっと見せてくれる？
+Talk ブロード
+えっ？
+Talk ザーム
+姉さんは一応、医術の勉強をしてたんだ
+Talk ブロード
+そうなんですか！？それじゃお願いします…
+Talk サレナ
+…ふむ…
+Talk 涼子(瀕死)
+………
+Talk サレナ
+…刺されただけの傷じゃない…？
+………
+…ふむ…多分これは…毒…ね
+Talk ディオ
+毒だと…っ！？
+Talk サレナ
+それもかなり強力な…よ。;多分普通の医者じゃ無理…;かなり腕利きの人間じゃないと…
+Talk ブロード
+…ッ！！;それじゃ早くエレナイを…
+Talk ディオ
+行けねーんだよ！黒の団の奴らが制圧してる！
+出ていった瞬間に蜂の巣だぜ！？
+Talk ブロード
+…く…なら僕が…
+Talk ティーナ
+…あいつらをなんとかすれば良いんですね？
+Talk ディオ
+あぁ…そうだが…
+Talk ティーナ
+だったら私に任せて下さい！
+Talk ウォルディ
+…何か手が有るのか？
+Talk ティーナ
+んふ～、秘密です～
+それじゃ、ちょっと下がっててくださいね
+Talk ウォルディ
+あぁ…
+Talk ティーナ
+はい、その辺りでいいですよ;それじゃ、始めます
+…とうりゃっ！みなさん！こっちにご注目！
+Talk ウォルディ
+なぁっ！？
+Talk ディオ
+ば…バカ！？;仁王立ちって何考えてんだ！！
+End
+WAit 10
+Talk 黒の団
+…どうする？
+…殺せ。
+End
+wait 10
+Talk ザーム
+…危ないッ！
+Talk ティーナ
+<size=20>メモリィ～ッ！！</size>
+<size=20>け・ち・ら・せ♪</size>
+Talk メモリィ
+……
+Suspend
+PlaySound Hellcat.wav
+Talk メモリィ(キュピーン)
+<size=30>に゛ャァァァァァッ！！</size>
+End
+PlaySound Explode.wav
+Wait 2
+PlaySound Explode.wav
+WAit 3
+PlaySound Crash.wav
+AutoTalk ディオ
+1;…なんだよ…ありゃぁ…
+Suspend
+Wait 8
+PlaySound Crash.wav
+WAit 10
+PlaySound Missille.wav
+WAit 5
+PlaySound Whip.wav
+Wait 2
+PlaySound Whip.wav
+Wait 2
+AutoTalk ザーム
+1;で…でたらめだ…
+suspend
+PlaySound Whip.wav
+Wait 2
+PlaySound Whip.wav
+Wait 2
+PlaySound Whip.wav
+Wait 2
+PlaySound Whip.wav
+Wait 2
+AutoTalk ザーム
+1;で…でたらめだ…
+End
+PlaySound Explode(Nuclear).wav
+Wait 40
+Talk ティーナ
+よぉ～し！えらいぞメモリィ！よくやった～っ！
+Suspend
+PlaySound Cat.wav
+Talk メモリィ
+<size=20>にゃ～っ♪</size>
+End
+StopBGM
+PlaySound shore.wav
+Wait 100
+StartBGM Ravin'_U.mid
+Talk ブロード
+…:はっ！？そうだ！早く今の内に機体に！
+Talk ディオ
+おぉっ！？そうだ、すっかり忘れてたぁっ！
+Talk ティーナ
+んふ～、どうです！私とメモリィの愛の力！
+Talk ザーム
+…おかしいですよ…てぃーなさん…
+Talk ティーナ
+おかしかろうがなんだろうが！;愛の力は偉大なんです！
+Talk サレナ
+まぁ、起こったことは事実！;素直に受け止めなさい！ほら！早く行って！
+早くしないと涼子ちゃんが…
+Talk ブロード
+そうだ…涼子さん…
+ディオさん、涼子さんをお願いできますか？
+Talk ディオ
+あぁ、解ったが…何で俺に？
+Talk ブロード
+ディオさんの機体が一番早いからですよ…
+一刻も早く脱出して、涼子さんを医者に見せなきゃなりませんから
+Talk ディオ
+なるほどね…;だが…腕利きの医者…
+…当初の目的通り、行くしかねぇか
+Talk ウォルディ
+…あぁ、あの神殿なら大丈夫だろう
+Talk ディオ
+よしっ！それじゃお前達は俺を援護してくれ！;俺が一気に突破して、涼子をなんとかする！
+Talk ティーナ
+わっかりましたっ！
+Talk ザーム
+ウォルディさん…神殿…って？
+Talk ウォルディ
+…俺達の…本拠地…さ
+End
+Exit
+
+
+スタート:
+Call 涼子編タイトルコール 第14話 逃亡！生と死の狭間に！
+Launch ディオ 7 20
+Launch ティーナ＝プラネット 8 19
+Launch ブロード＝キャスター 8 21
+Launch ウォルディ＝シェファン 6 19
+Launch ザーム＝ロージィ 9 20
+
+StartBGM Ravin'_U.mid
+Wait 20
+Create 敵 ダークシャドウ 3 ガスト＝ジェイス 27 24 11
+
+Create 敵 シャドウストーカー 5 黒の団(ザコ) 25 22 11 A
+Create 敵 シャドウストーカー 5 黒の団(ザコ) 25 23 12 A
+Create 敵 シャドウストーカー 5 黒の団(ザコ) 25 24 13 A
+
+Create 敵 シャドウ 5 黒の団(ザコ) 24 19 14 B
+Create 敵 シャドウ 5 黒の団(ザコ) 24 20 15 B
+Create 敵 シャドウ 5 黒の団(ザコ) 24 19 16 B
+Create 敵 シャドウ 5 黒の団(ザコ) 24 20 17 B
+
+Create 敵 シャドウ 4 黒の団(ザコ) 24 6 9 C
+Create 敵 シャドウ 4 黒の団(ザコ) 24 7 8 C
+Create 敵 シャドウ 4 黒の団(ザコ) 24 8 7 C
+
+Create 敵 シャドウストーカー 6 黒の団(ザコ) 25 2 6 A
+
+Create 敵 シャドウ 5 黒の団(ザコ) 24 10 13 D
+Create 敵 シャドウ 5 黒の団(ザコ) 24 11 13 D
+
+Create 敵 シャドウ 4 黒の団(ザコ) 24 16 17 E
+Create 敵 シャドウ 4 黒の団(ザコ) 24 17 18 E
+Create 敵 シャドウ 4 黒の団(ザコ) 24 17 19 E
+Create 敵 シャドウ 4 黒の団(ザコ) 24 16 20 E
+
+Create 敵 シャドウ 4 黒の団(ザコ) 24 11 18
+Create 敵 シャドウ 4 黒の団(ザコ) 24 12 19
+
+Create 敵 シャドウ 4 黒の団(ザコ) 24 2 22
+Create 敵 シャドウ 4 黒の団(ザコ) 24 2 23
+Create 敵 シャドウ 4 黒の団(ザコ) 24 2 24
+
+BossRank ガスト 2
+Equip ガスト ＨＰ５０００
+
+ChangeMode ガスト 待機
+ChangeMode A 待機
+ChangeMode B 待機
+ChangeMode C 待機
+ChangeMode D 待機
+ChangeMode E 待機
+
+
+Talk ガスト
+なんだァ…中の奴ら不甲斐ねェなァ…;結局エレナイを出さセちまうたァ
+Talk A
+いかが致しますか？
+Talk ガスト
+ケケケケケケケ！;バカかてめェラは…
+<size=25>殺せェェェェェェ！</size>
+End
+Wait 10
+Talk ディオ
+首狩りガストか…影の女王レヴィンなら;まだなんとかなったかもしんねーが…
+Talk ブロード
+そうですね…単純な「戦う」技術なら;ガストさんの方が秀でていますからね…
+Talk ウォルディ
+流石は実戦部隊の隊長って事だな…;だが…やるしかない！
+Talk ザーム
+ディオさん！;貴方はこの包囲からの脱出を最優先として下さい
+Talk ディオ
+…そーだな…涼子をなんとかしなきゃ…
+今後の敵の布陣…なんかを考えると…
+End
+Center 13 1
+Wait 10
+Talk ディオ 13 1
+北の山岳地帯を抜けるか…
+End
+Center 25 13
+Wait 10
+Talk ディオ 25 13
+東の街道を突っ切って;とっととラグナプールに入るか…だ
+Talk ウォルディ
+そしてディオが脱出した後は…;俺達がここの敵を食い止める…
+Talk ブロード
+…少々辛いかも知れませんが…;そんなことを言っている暇は無いですね…
+Talk ディオ
+そういうことだ！行くぜっ！！
+Talk ウォルディ
+待て！ディオ！
+Talk ディオ
+あぁん？なんだよ？
+Talk ウォルディ
+操者に強い衝撃を伝える技;…率直に言えば、ツイスタードライブは使うなよ？
+Talk ディオ
+あぁ、解ってるよ
+流石に俺もそこまで間抜けじゃねぇって
+Talk ウォルディ
+ならいいがな…
+End
+Wait 10
+Talk ディオ
+(流石に…漫才やってる場合じゃねぇからな…)
+(もう少し辛抱してくれよ…涼子)
+End
+Wait 20
+Talk ザーム
+姉さん達は戦いが終わるまで安全なところに隠れてて！
+Talk サレナ 7 20
+そうねぇ…解ったわ…
+Talk ムルグ
+了解ですじゃ
+End
+Wait 30
+Talk サレナ 7 20
+…なんてね…
+クックック…ムルグ…出るわよ？
+Talk ムルグ
+解ってますじゃ、;クックック…久々の戦場は腕がなりますなぁ…
+Talk サレナ
+くっくっくっく
+Talk ムルグ
+くっくっくっくっく
+End
+Wait 10
+Talk ザーム
+何か嫌な予感がするなぁ…
+End
+Disable ツイスタードライブ
+Exit
+
+ターン 2 味方:
+StopBGM
+Talk ザーム
+…凄く嫌な予感がする
+いや…予感じゃなく確信だ…これは…
+Talk ブロード
+ザームさん…？
+Talk ザーム
+姉さん！出てくるなら出てこいよっ！
+End
+StartBGM Knight of Element.mid
+
+Wait 20
+
+Create 味方 タカエダ 8 サレナ＝ロージィ 23 7 20
+
+Talk サレナ
+あ…バレてんじゃないの…
+Talk ザーム
+…庭師用エレナイでなにをするつもりなんだよ…
+Talk サレナ
+何って…戦う。
+Talk ザーム
+無茶言うなよっ！;こいつらは普通の相手じゃないんだぞ！？
+Talk サレナ
+うるさいわねぇっ！;弟が必死で目の前で戦ってるってのに！
+ケツまくって逃げるなんて事、;出来るわけないでしょうがっ！
+Talk ザーム
+姉さん…でも…
+Talk サレナ
+大丈夫よ、最強の護衛が付いてくれるから
+Talk ザーム
+へ…？
+End
+
+StartBGM Battle of Destiny.mid
+Wait 10
+
+Create 味方 魔導ウォーカー(紅) 0 ムルグ＝アディオス 32 7 20
+
+Wait 20
+
+Talk ディオ(ダメージ)
+なんだありゃぁ…魔導砲に足のついた…
+Talk ティーナ
+…か…かっこいい…
+Talk ディオ(ダメージ)
+…。
+Talk ウォルディ
+魔導ウォーカーだな…前大戦の骨董品だ
+だがアレは…;とても戦える代物じゃ無いと聞いているが…？
+Talk ムルグ
+ふ、心配は無用ですぞ！;このムルグ、伊達酔狂で１５０年生きてはいませぬ！
+Talk ブロード
+１５０年って…
+Talk ザーム
+…むぅ…でも…
+Talk サレナ
+少しぐらいは私に格好つけさせなさい！;それにこれは、私の友人、涼子の為でもあるのよっ！
+Talk ザーム
+…:解った…
+でも気を付けてよ…
+Talk サレナ
+当然！
+さぁっ…行くわよ、ムルグ！！
+Talk ムルグ
+腕が鳴りますわい！！
+End
+Exit
+
+
+ターン 3 敵:
+ChangeMode D 通常
+ChangeMode E 通常
+Exit
+
+ターン 4 敵:
+ChangeMode C 通常
+Exit
+
+ターン 5 敵:
+ChangeMode B 通常
+Exit
+
+ターン 7 敵:
+ChangeMode A 通常
+Exit
+
+ターン 8 敵
+Changemode ガスト 通常
+Exit
+
+攻撃 ムルグ 敵:
+Talk ムルグ
+紅の発射台！;ファイア・カタパルトと恐れられた私の実力！
+とくとみせてやるわい！若造共が！
+End
+ClearEvent
+Exit
+
+攻撃 サレナ 敵:
+Talk サレナ
+庭師用だからってバカにするんじゃないわよっ！！
+やってやる…やってやるからぁ～っ！！！
+End
+ClearEvent
+Exit
+
+攻撃 ディオ 敵:
+Talk ディオ(攻撃)
+邪魔だ！！てめぇらっ！！
+どけぇぇぇぇぇぇぇぇっ！！！
+End
+Mind ディオ 熱血
+ClearEvent
+Exit
+
+脱出 ディオ＝スパークスター E:
+Talk ディオ
+よし、俺は行く！;てめぇらっ！後は任せたぜ！！
+Talk ブロード
+はいっ！！
+Talk サレナ
+まっかせなさいっ！
+End
+
+If Unit(ディオ＝スパークスター) = エージェシー Then
+Talk ディオ
+ぶっ飛ばすぜっ！
+Talk ディオ(攻撃)
+チェンジ！エージェシー！バードモード！！
+End
+PlaySound Jet.wav
+For i = 1 To 19
+PaintPicture エージェシー - - ((i * 32)) ((i * 32)) 透過
+Refresh
+Next
+PlaySound Jet.wav
+For i = 1 To 19
+PaintPicture エージェシー(バード) - - (640 - (i * 32)) (640 - (i * 32)) 透過
+Refresh
+Next
+Transform ディオ エージェシー(バード)
+Endif
+Center ディオ
+Wait 10
+Escape
+
+Wait 10
+
+Talk ブロード
+頼みましたよ…ディオさん…
+End
+
+ClearEvent
+ClearEvent "脱出 ディオ＝スパークスター N"
+Set １４話 東ルート
+Fadeout
+Goto 東ルート
+
+Exit
+
+脱出 ディオ＝スパークスター N:
+If １４話 = 北ルート Goto 北２
+Talk ディオ
+よし！俺は行く！;てめぇらっ！後は任せたぜ！！
+Talk ブロード
+はいっ！！
+Talk サレナ
+まっかせなさいっ！
+End
+
+If Unit(ディオ＝スパークスター) = エージェシー Then
+Talk ディオ
+ぶっ飛ばすぜっ！
+Talk ディオ(攻撃)
+チェンジ！エージェシー！バードモード！！
+End
+PlaySound Jet.wav
+For i = 1 To 19
+PaintPicture エージェシー - - ((i * 32)) ((i * 32)) 透過
+Refresh
+Next
+PlaySound Jet.wav
+For i = 1 To 19
+PaintPicture エージェシー(バード) - - (640 - (i * 32)) (640 - (i * 32)) 透過
+Refresh
+Next
+Transform ディオ エージェシー(バード)
+Endif
+Center ディオ
+Wait 20
+Escape
+
+Wait 10
+
+Talk ブロード
+頼みましたよ…ディオさん…
+End
+
+ClearEvent "脱出 ディオ＝スパークスター E"
+Set １４話 北ルート
+Goto 北ルート
+Fade
+Exit
+
+
+東ルート:
+ChangeMap EN-14E.map
+PlaySound Jet.wav
+Launch ディオ 2 10
+Wait 1
+Move ディオ 3 10
+Wait 1
+Move ディオ 4 10
+Wait 1
+Move ディオ 5 10
+Talk ディオ
+………
+クソッ…こんなに遅かったかよ…
+こんなに遅かったかよ！エージェシーっ！！
+…このままじゃ…涼子が…
+End
+Talk 涼子(瀕死)
+………
+Suspend
+PlaySound Alarm.wav
+Wait 10
+Talk ディオ(ダメージ)
+…なんだっ！？敵か！！
+End
+Hide
+Wait 15
+Talk ルシア
+…トキアさん！こっちです！！
+Talk トキア
+くっ！
+しかしルシア！;どこに向かっているかは解っているのか！
+私にはでたらめに動いているようにしか見えん！
+Talk ルシア
+こっちで良いはずです！;このまま進めば街道が…
+Talk トキア
+どうした！？
+Talk ルシア
+街道は見えましたが…:追いつかれましたっ！
+Talk トキア
+なんだとっ！？
+End
+Show
+Transform トキア ヴィア＝セルクト(バードモード)
+Launch ルシア 12 17
+Launch トキア 13 17
+Wait 5
+Talk ディオ
+ルシアとトキアか！？
+なんだ…お前達一緒に…
+Talk ルシア
+ディオさん！？なんでこんな所に…
+Talk トキア
+だがちょうど良い！こいつらを掃討するのを手伝ってくれっ！
+Talk ディオ
+こいつら…って…？
+End
+Wait 10
+
+Create 敵 シャドウストーカー 5 黒の団 24 12 20 １
+Create 敵 シャドウストーカー 5 黒の団 24 13 20 ２
+Create 敵 シャドウ 5 黒の団 24 11 20
+Create 敵 シャドウ 5 黒の団 24 10 19
+Create 敵 シャドウ 5 黒の団 24 9 18 ３
+Create 敵 シャドウ 5 黒の団 24 8 17 ３
+Create 敵 シャドウ 5 黒の団 24 15 19
+Create 敵 シャドウ 5 黒の団 24 16 18 ３
+Create 敵 シャドウ 5 黒の団 24 17 17 ３
+
+Talk ディオ
+…ックソッ！！なんてことだよっ！！
+Talk ルシア
+…なにか…あったんですか？
+Talk ディオ
+涼子が黒の団のヤツに刺されたんだよ;ご丁寧にも凶悪な毒つきのやつでな…
+Talk トキア
+なんだと…
+Talk ディオ
+事は一刻を争う！;すまねぇ！ここは助太刀できそうにない！
+Talk ルシア
+そうですか…
+Talk トキア
+だが奴らがタダで見逃してくれるとは思わん！
+かと言って私達の機体も限界だ！
+Talk ディオ
+…っ…
+Talk ルシア
+行って下さい、ディオさん、トキアさん
+Talk ディオ
+ルシア！？
+Talk トキア
+何を言う！お前の機体も限界…
+Talk ルシア
+行って…下さい、あとは僕がなんとかします
+Talk トキア
+ならば私も残ろう！
+Talk ルシア
+ダメです、ヴィア＝セルクトはもう動くだけで精一杯でしょう？
+Talk トキア
+…く…
+…だが…ッ！
+Talk ディオ
+…死ぬんじゃねぇぞ、解ったな？
+Talk ルシア
+承知していますよ、そこまで殊勝な人間じゃありません
+Talk トキア
+待て！ディオ！
+Talk ディオ(攻撃)
+行くんだよ！！解ったな！！
+Talk トキア
+それしか無いと言うのか…クソッ！！
+End
+Move トキア 13 4
+Move ディオ 9 10
+Wait 10
+Talk ２
+……
+End
+Move 13 9
+Wait 5
+Explode M 13 9
+Talk ２
+！？
+Talk ルシア
+行かせませんよ！
+Suspend
+Wait 10
+Talk １
+総員…目標は白の騎士だ、行け！
+End
+Move ディオ 12 10
+Move トキア 13 10
+
+ForEach ３ 全て
+Move 12 17
+Next
+Center ルシア
+Explode M 12 17
+Wait 5
+Talk トキア
+…
+Talk ディオ
+…:心配するな、大丈夫だよ
+Talk トキア
+…？
+Talk ディオ
+…アイツの目は死ぬ人間の目じゃなかったよ
+あぁいう目をしたヤツは絶対に死なねぇ。;断言してやるよ、だから大丈夫だ
+Talk トキア
+…その言葉を…信じよう…
+End
+
+Move ディオ 17 10
+Move トキア 18 10
+Wait 5
+
+Explode M 12 17
+Wait 5
+
+Move ディオ 19 10
+Move トキア 20 10
+Wait 2
+Escape ディオ
+Escape トキア
+
+Wait 10
+
+Talk ルシア
+…ふ～、行ってくれましたか…
+あの姿はまだ人に;見られるわけには行きませんからねぇ…
+あぁ、もちろんこれからこの姿を見るお前達には…
+Talk ルシア(マジ)
+<b>当然死んで貰うがな<b>
+Talk １
+……！？
+End
+StartBGM Brave Element.mid
+Wait 20
+FadeOut 80
+PlaySound Thunder.wav
+Wait 5
+PlaySound Thunder.wav
+Wait 10
+Talk 黒の団
+…こ…れ…は…ッ！？
+ぐがぁぁぁぁぁぁぁぁぁぁぁぁぁぁ！！！
+End
+StopBGM
+PlaySound Explode(Far).wav
+Wait 30
+Escape 敵
+ChangeMap EN-14EB.map
+UpGrade クレリュード ディム＝クレリュード
+Launch ルシア 12 17
+Wait 10
+Talk ルシア(マジ)
+…ザコ共が…
+Suspend
+Wait 15
+Talk ルシア
+…って何時までも怖い顔してちゃいけませんよねぇ…
+End
+WhiteOut 30
+PlaySound Thunder.wav
+Wait 7
+UpGrade ディム＝クレリュード クレリュード
+Wait 10
+StopBGM
+Wait 10
+Talk ルシア
+ふ～…:;ちょっとやりすぎちゃいましたかねぇ…
+まぁ、大丈夫ですよね。;それじゃ、とっとと行きますか…
+End
+Escape ルシア
+
+Continue EN-15.eve
+
+Exit
+
+破壊 ガスト:
+Talk ガスト
+…チィッ…クソ野郎共がぁっ！！
+Talk システム
+ファストセンサーを手に入れた
+End
+Item ファストセンサー
+Exit
+
+
+全滅 敵:
+If １４話 = 北ルート Then
+Talk ルディア
+…あ…はは…なんとかなっちゃった…
+Talk リィス
+ねぇルディア、逃げよう！;また来るかもしれないよ！
+Talk ディオ
+リィスの言うとおりだ！;それに涼子も危ない状態だ！逃げるぞ！
+Talk ルディア
+涼子…？;ディオ兄…女の人乗せてるの…？
+Talk ディオ
+…そうだが…？
+Talk ルディア
+ううん、なんでもないよ:;…それより早く行こう、ディオ兄！
+Talk ディオ
+あぁ、言われなくてもな！
+Talk リィス
+………
+End
+FadeOut
+PlaySound LebelUp!.wav
+Wait 5
+Talk システム
+完全抹殺ボーナス！;エーテルエンハンサーを手に入れた！
+End
+Item エーテルエンハンサー
+Continue EN-15.eve
+Else
+Talk ブロード
+…や…やった…
+Talk ウォルディ
+ディオ！今の内だ！行けッ！！
+Talk ディオ(攻撃)
+言われなくてもわかってらぁっ！
+さて…
+End
+Ask どっちに行きますか？
+北
+東
+End
+
+Switch 選択
+
+Case 1
+Talk ディオ
+よし！北へ向かう！後は任せたぜ！
+Talk ブロード
+はいっ！！
+Talk サレナ
+まっかせなさいっ！
+End
+Move ディオ X(ディオ) 1
+If Unit(ディオ＝スパークスター) = エージェシー Then
+Talk ディオ
+ぶっ飛ばすぜっ！
+Talk ディオ(攻撃)
+チェンジ！エージェシー！バードモード！！
+End
+PlaySound Jet.wav
+For i = 1 To 19
+PaintPicture エージェシー - - ((i * 32)) ((i * 32)) 透過
+Refresh
+Next
+PlaySound Jet.wav
+For i = 1 To 19
+PaintPicture エージェシー(バード) - - (640 - (i * 32)) (640 - (i * 32)) 透過
+Refresh
+Next
+Transform ディオ エージェシー(バード)
+Endif
+Center ディオ
+Wait 20
+Escape
+
+Wait 10
+
+Talk ブロード
+頼みましたよ…ディオさん…
+End
+
+ClearEvent "脱出 ディオ＝スパークスター E"
+Set １４話 北ルート
+Goto 北ルート
+Fade
+
+Case 2
+Talk ディオ
+よし！俺は東へ行く！後は任せたぜ！
+Talk ブロード
+はいっ！！
+Talk サレナ
+まっかせなさいっ！
+End
+
+If Unit(ディオ＝スパークスター) = エージェシー Then
+Talk ディオ
+ぶっ飛ばすぜっ！
+Talk ディオ(攻撃)
+チェンジ！エージェシー！バードモード！！
+End
+PlaySound Jet.wav
+For i = 1 To 19
+PaintPicture エージェシー - - ((i * 32)) ((i * 32)) 透過
+Refresh
+Next
+PlaySound Jet.wav
+For i = 1 To 19
+PaintPicture エージェシー(バード) - - (640 - (i * 32)) (640 - (i * 32)) 透過
+Refresh
+Next
+Transform ディオ エージェシー(バード)
+Endif
+Move ディオ 25 Y(ディオ)
+Center ディオ
+Wait 10
+Escape
+
+Wait 10
+
+Talk ブロード
+頼みましたよ…ディオさん…
+End
+
+ClearEvent
+ClearEvent "脱出 ディオ＝スパークスター N"
+Set １４話 東ルート
+Fadeout
+Goto 東ルート
+Endsw
+Endif
+Exit
+
+
+
+北ルート:
+Wait 20
+ChangeMap EN-14N.map
+StartBGM Peace Day.mid
+
+Wait 10
+
+Create 味方 ライトブルー・トルーパー 4 ルディア＝スパークスター 22 9 14
+Create 味方 ディープブルー・セイジ 4 リィス＝シェファン 22 10 14
+
+
+Talk ルディア
+ちょっとリィス～、本当にこっちで良いの？;なんか森ばっか山ばっかでさぁ…
+Talk リィス
+うん…良いはずだよ;この山を抜けていけば近道のはず…
+Talk ルディア
+…おとなしい顔してやることは結構大胆なんだからなぁ…
+Talk リィス
+…えへへ…:でも、ルディアほどじゃないよ
+Talk ルディア
+ちょっと～それってどう言う意味なのよ～
+Talk リィス
+の～こめんと♪
+Talk ルディア
+…ったく～…
+Talk リィス
+…あれれ？
+Talk ルディア
+どうしたの？リィス？
+Talk リィス
+何か反応があるの…:;あ！これって、ディオさんのエージェシーの？
+Talk ルディア
+うそっ！？ディオ兄がなんでこんなところに…
+End
+Wait 10
+StartBGM MAP1-2.mid
+Center 10 25
+PlaySound Jet.wav
+Wait 10
+Launch ディオ 10 25
+Wait 5
+Talk ディオ(ダメージ)
+ちぃっ…奴らピッタリとついてきやがる…:…ん？
+なんだ…あの機体はルディアとリィス！？;何でこんな所に…
+Talk ルディア
+ディオ兄～！はるばる会いに来たよ～
+Talk リィス
+あ、どうもです
+Talk ディオ
+…また勝手な行動しやがって…:;しかしちょうどいい！あいつらの相手を頼む！
+Talk ルディア
+あいつら…？
+End
+
+Create 敵 シャドウストーカー 2 黒の団 24 10 30 １
+Create 敵 シャドウストーカー 2 黒の団 24 11 30 ２
+Create 敵 シャドウ 2 黒の団 24 12 30
+Create 敵 シャドウ 2 黒の団 24 9 30
+Create 敵 シャドウ 2 黒の団 24 13 30
+Create 敵 シャドウ 2 黒の団 24 8 30
+Create 敵 シャドウ 2 黒の団 24 7 30
+Create 敵 シャドウ 2 黒の団 24 14 30
+Create 敵 シャドウ 2 黒の団 24 7 30
+Create 敵 シャドウ 2 黒の団 24 15 30
+Create 敵 シャドウ 2 黒の団 24 6 30
+Wait 20
+ChangeMode 敵 ディオ＝スパークスター
+Talk ルディア
+ちょ…あれって…
+Talk リィス
+…く…黒の団ですか…？
+Talk ディオ
+あぁ、お前達には荷が重いとは思うが;…食い止めるだけでいい！頼む！
+Talk ルディア
+ディオ兄の頼みなら断るわけにも行かないけど;なんでそんなに急いでるの？
+Talk ディオ
+怪我人だよ、赤の騎士様が重体なんだ;一刻も早く神殿へつれてかねぇと…
+Talk ルディア
+なるほど、そう言うことなら…
+Talk リィス
+はぅぅ…
+Talk ディオ
+すまねぇ、頼むぜ！
+Talk ルディア
+了解！:;リィス！行くよっ！
+Talk リィス
+…解ったよ…ルディア…
+End
+
+Set 北開始 ターン数
+IncreaseMorale ディオ -100
+IncreaseMorale ディオ 40
+Exit
+
+
+ターン (北開始 + 1) 味方:
+Wait 10
+Center ディオ
+Wait 10
+Explode M X(ディオ) Y(ディオ)
+Talk ルディア
+ディオ兄！？
+Talk ディオ(ダメージ)
+っぐぉっ！？なんだっ！？
+End
+
+Wait 10
+
+Create 敵 シャドウ 2 黒の団 24 (X(ディオ) + 2) Y(ディオ)
+Create 敵 シャドウ 2 黒の団 24 (X(ディオ) - 2) Y(ディオ)
+
+Wait 10
+
+Talk リィス
+伏…兵…
+Talk ディオ(ダメージ)
+…ッ！
+Talk ディオ(攻撃)
+ちくしょう！リアクターをやられた！！
+Talk ルディア
+ディオ兄！今そっちに行くからっ！！
+リィスっ！行くよ！！！
+Talk リィス
+わかった！ルディア！
+End
+Mind ルディア 神速
+Mind リィス 加速
+SetStatus ディオ 防御力ＤＯＷＮ -1
+SetStatus ディオ 運動性ＤＯＷＮ	-1
+SetStatus ディオ 移動力ＤＯＷＮ	-1
+Exit
+
+攻撃 ルディア 敵:
+Talk ルディア
+グランチェスタ帝国黒の団！
+あんたたちなんて;このルディア＝スパークスター様がっ！！
+ぎったんぎったんにしてやるんだから！;覚悟しろ～ぃ！
+End
+ClearEvent
+Exit
+
+攻撃 リィス 敵:
+Talk リィス
+えっと…:えぇ～っと…:とにかく行きますよ～！
+End
+ClearEvent
+Exit
+
+破壊 ディオ:
+Talk ディオ(ダメージ)
+………！！！
+…うそ…だろ…っ！
+Suspend
+If ウォルディ Then
+Talk ウォルディ
+ッ！ディオッ！！
+End
+Else
+Talk ルディア
+嫌ぁッ！！ディオ兄ッ！？
+End
+Endif
+GameOver
+
+破壊 ブロード:
+Talk ブロード
+…くそっ！？しまった！！
+ディオさん！！涼子さんを頼みますっ！！
+Talk ディオ(攻撃)
+ブロードッ！？
+End
+GameOver
+
+破壊 ザーム:
+Talk ザーム
+うぉぁっ！？
+みんな…ごめんっ！！
+Talk ムルグ
+おぼっちゃま！？
+Talk サレナ
+ザームッ！？
+End
+GameOver
+
+破壊 ウォルディ:
+Talk ウォルディ
+…ここ…までか…
+ディオ…もうサポートはできねぇ…;ここから先はお前の力で…ッ！
+Talk ディオ(攻撃)
+ウォルディィィィィィッ！？
+End
+GameOver
+
+破壊 ムルグ:
+Talk ムルグ
+おぼっちゃま…サレナ様…
+Talk ザーム
+ムルグ！？
+Talk サレナ
+そんな…っ！？
+End
+GameOver
+
+破壊 サレナ:
+Talk サレナ
+…そん…な…っ！？
+Talk ザーム
+姉さん！冗談だろっ！？姉さん！？
+End
+GameOver
+
+破壊 ティーナ:
+Talk ティーナ
+のべっち！？
+Talk ディオ(攻撃)
+ティーナ！？
+Talk ティーナ
+うぅ～…だいじょーぶ、後で追いつくから先行って…
+Talk ディオ
+本当に大丈夫なんだな？
+Talk ティーナ
+くどいです！愛の前に嘘は…:;まぁ、必要なときには必要ですけど…
+Talk ディオ(疲労)
+…あ～、ほっといて行くぞ…マジで大丈夫そうだ…
+End
+ClearEvent
+Exit
+
+
+破壊 ルディア:
+If リィス Then
+Talk ルディア
+うわっ！？ウソッ！？まじ！？
+Talk ディオ(攻撃)
+大丈夫か！？ルディアッ！！
+Talk リィス
+ルディア！脱出して！回収するっ！
+Talk ルディア
+うん！ごめんリィス！！
+…ディオ兄！大丈夫だよ！:;…心配して…くれたんだ…
+Talk ディオ(ダメージ)
+そりゃ心配ぐらいするけどよ…
+(その恋する乙女の熱視線はやめてくれ…)
+Talk リィス
+ディオさん、これ以上無理はできません！
+Talk ディオ
+解ってる！全速で離脱する！:;リィス！お前も事を見計らって逃げろ！
+Talk リィス
+わかりましたっ！
+End
+Else
+Talk ルディア
+キャァァァァァァッ！！
+Talk ディオ(攻撃)
+ルディア！！リィスッ！！
+End
+Gameover
+Endif
+Exit
+
+破壊 リィス:
+If ルディア Then
+Talk リィス
+うひゃぁぁぁぁぁぁ～っ！
+Talk ルディア
+リィスッ！？早く脱出しなさい！！
+Talk リィス X(リィス) Y(リィス)
+わ…わかってるよルディア～っ！
+ぽちっとなぁ～っ！
+End
+PlaySound Explode.wav
+Wait 3
+Talk ルディア
+ほいっと、ナイスキャッチ。
+Talk ディオ(攻撃)
+大丈夫か！？リィス！？
+Talk リィス X(ルディア) Y(ルディア)
+はい…なんとか大丈夫です…
+Talk ディオ
+…なら良かった…
+Talk ルディア
+ディオ兄…私だけじゃ厳しいよ
+Talk ディオ
+解ってる、頃合いを見計らって逃げろ！:;俺も全速で離脱する！
+Talk ルディア
+解ったよ！ディオ兄！！
+End
+Else
+Talk リィス
+…あぁぁぁぁぁぁぁぁぁ！！
+Talk ディオ(攻撃)
+ルディア！リィスッ！！
+End
+GameOver
+Endif
+Exit
+
+*ターン 全 味方:
+StartBGM Map1-2.mid
+Exit
+
+*ターン 全 敵:
+StartBGM Map2-2.mid
+Exit
+
+
+北２:
+Talk ディオ
+…ココまで来れば大丈夫だろ…
+ルディア！リィス！;お前達も適当に切り上げて退けよッ！！
+Talk ルディア
+解ってるよディオ兄！
+Talk ディオ
+俺は一足先に行くッ！
+ぶっ飛べ！エージェシーッ！！
+End
+Escape ディオ
+Wait 10
+Talk ルディア
+よし、リィス！作戦その６！愛の逃避行！！
+Talk リィス
+わかった！ルディアッ！
+お日様さんさん！閃光らんらん！:;必殺魔術！フラッシュグレネ～ド！！
+End
+PlaySound Sword.wav
+WhiteOut 80
+Talk 黒の団
+…！？
+Talk ルディア
+へへ～ん！追えるもんなら追ってみな～！
+Talk リィス
+るでぃあ～！挑発してないではやく…
+Talk ルディア
+おっと、それもそうね！それじゃっ！
+End
+Continue EN-15.eve
+Exit
+
+エピローグ:
+StartBGM Map1-2.mid
+Changemap "".map
+Redraw
+If １４話 = 北ルート Then
+PlaySound Jet.wav
+Talk ディオ(ダメージ)
+…くっそ…機体が限界に近い…ッ！
+頼む…もうすこし…もう少しだけ保ってくれっ！
+End
+Wait 2
+PlaySound Explode.wav
+Wait 5
+Talk ディオ(ダメージ)
+っでぇっ！？
+Suspend
+PlaySound Alarm.wav
+Wait 10
+Talk ディオ(ダメージ)
+げっ！？リアクターが火を吹いた！？;…えぇい！うるせぇ！なんとか騙して進め！
+根性見せろ！！エージェシーッ！！
+End
+PlaySound Alarm.wav
+Wait 5
+Talk ディオ(攻撃)
+くそ！危ないのはわかってんだよッ！！
+…うるせぇっ！！
+End
+PlaySound Crash.wav
+Wait 15
+Talk ディオ(ダメージ)
+…くそ:…くそ:…くそくそくそくそくそッ！！
+ここまでか！？ここまでなのかよ…:！？
+Talk ディオ
+…あれ…は…
+見えたっ！ダレクシア！:;涼子！あと一息の辛抱だぜっ！！
+Talk 涼子(瀕死)
+………
+End
+Else
+PlaySound Jet.wav
+Wait 20
+PlaySound Explode.wav
+Talk ディオ(攻撃)
+…ッッッッ！？
+Talk トキア
+…なんだこの音は…！？;私たちが来た方向だが…
+まさか…ルシアが！？
+Talk ディオ
+…わかんねぇ…;だが、何かを誰かがしでかしたのは確かだな…
+Talk トキア
+…むぅ…
+Talk ディオ
+(…一瞬だけ現れた;怖気のするようなあの魔力反応は一体…)
+(ルシア…てめぇなのか…？)
+End
+Endif
+Show
+
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 1
+ClearPicture
+Refresh
+Wait 1
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 1
+ClearPicture
+Refresh
+Wait 1
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 1
+ClearPicture
+Refresh
+Wait 1
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 1
+ClearPicture
+Refresh
+Wait 1
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 1
+ClearPicture
+Refresh
+Wait 1
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 2
+ClearPicture
+Refresh
+Wait 1
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 3
+ClearPicture
+Refresh
+Wait 1
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 4
+ClearPicture
+Refresh
+Wait 1
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 5
+ClearPicture
+Refresh
+Wait 1
+PaintPicture tobe.bmp 80 380
+Refresh
+Wait 30
+Set 涼子編進行度 15
+Leave サレナ
+Leave ムルグ
+Exit

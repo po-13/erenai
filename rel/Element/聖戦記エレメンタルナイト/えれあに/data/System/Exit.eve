@@ -1,0 +1,281 @@
+
+プロローグ:
+
+Switch Random(17)
+
+Case 1
+StartBGM Darkness Wing Spread.mid
+Talk 龍也
+ん？終わるのか？・・・・どうだった？楽しかったか？
+そーかそーか！そいつぁ良かった！
+・・・・って・・・俺誰に話してんだ？
+ま・・・いいや・・・・とにかく次回のプレイ楽しみに待ってるぜ！
+じゃあな！
+End
+
+
+Case 2
+StartBGM Flame Girl.mid
+Talk 涼子
+なにー・・・・もう終わるの？根性無い奴ねぇ・・・。
+男だったら２４時間ぶっ続けでやり続けるぐらいの根性見せなさいよ。
+でもこの画面に来ちゃった以上こんな事言っても仕方ないわね。
+絶対またプレイしてよ！あたしとの約束！
+んじゃさよならっ！
+End
+
+Case 3
+StartBGM Knight of Element.mid
+Talk ルシア
+あれれ？終わるんですか？
+おっかしいなぁ・・・・僕の予定だとこんな所で終わるはずは無いんですが・・・。
+これも歴史の流れってヤツでしょうかねぇ？
+・・・・貴方はどう思います？
+End
+
+
+Case 4
+StartBGM Knight of Element.mid
+Talk フレア
+・・・・終わるんですか・・・。
+そうですか・・・・・でも・・・・あの・・・・また・・・・プレイしてくれますよね・・・。
+ではゆっくりと身体を休めて下さい・・・・。
+さようなら。
+End
+
+
+Case 5
+StartBGM Ootori Attack!.mid
+Talk 鳳
+はぁーっはっはっは！！終わるだと！そんな軟弱なこと私が許さぬ！
+我が時空魔術でもう一度お前にプレイを・・・・。
+End
+PlaySound Punch.wav
+Wait 10
+Talk システム
+エレナイ風紀委員「・・・・・。」
+End
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 5
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 6
+PlaySound Punch.wav
+Wait 15
+Talk 鳳
+ぐほ！！ぐほ！！ぐはぁぁぁぁぁ！！！
+・・・こ・・・・これだけか・・・・私の出番は・・・・がくっ。
+End
+
+Case 6
+StartBGM Knight of Element.mid
+Talk フェリーナ
+やっほー！終わるんだね！たまには休まないと疲れるもんね！
+Talk サーティス
+確かに休息は必要だ・・・・だがしかし休みすぎは・・・・
+Talk フェリーナ
+とか言ってるけど要はまたプレイして欲しいってことなのよ。
+サーティスちゃんって不器用なんだから！
+Talk サーティス
+・・・・だ・・・・・黙っていろ・・・。
+Talk フェリーナ
+サーティスちゃん赤くなっちゃってかわいいっ！
+Talk サーティス
+う・・・うるさい！で・・・ではまた合おう・・・。
+Talk フェリーナ
+さよならー！
+End
+Wait 30
+PlaySound Door(Open).wav
+Wait 10
+Talk ヒルダ
+ふー・・・訓練が長引いて遅刻しちまったよ。
+・・・・あれ？・・・・エンドデモの収録は・・・・もう終わった！？
+だ・・・誰が！サーティスとフェリーナ！？
+コレって私の出番なんだろ！？
+あんの２人ぃ・・・・殺すぅぅぅぅ！！
+End
+PlaySound Door(Close).wav
+Wait 10
+PlaySound Stairs(Run).wav
+Wait 30
+Talk システム
+どたどたどたどた！
+End
+
+Case 7
+StartBGM Knight of Element.mid
+Talk ライル
+お・・・終わるのか・・・・。この程度で音を上げているようでは武人として・・・して・・・・
+えー・・・なんだったけな・・・・そうだ！武人として失格！
+・・・・・・・・・で・・・・おお！そうだ！
+こ・・・今度私が鍛え直してやるから・・・・ん？何だ！？
+え・・・・もう終わり？本気か？
+ちょ・・・ちょっとま・・・・・
+End
+
+Case 8
+StartBGM Knight of Element.mid
+Talk グレイス
+・・・・・・・・。
+・・・・・・・・・・・・。
+・・・・・・・・・・・・・・・・・。
+・・・何だ？何か言って欲しいのか？
+・・・・どうしても一言欲しいというのなら・・・貴様に一つ言ってやる・・・。
+・・・・・・ＳＲＣを止めた貴様に用はない・・・・死ね。
+End
+
+
+Case 9
+StartBGM Knight of Element.mid
+Talk ユキ
+・・・・そう・・・・終わるの・・・・。
+・・・私・・・・消えるのね・・・・。
+・・・・いいの・・・・どうせ私はその程度の存在・・・・。
+・・・でも・・・また貴方がプレイしてくれると言うのなら私は・・・・。
+・・・・・言っても仕方ないことね・・・・。
+・・・・・・さようなら・・・・また会いましょう・・・・。
+End
+
+
+Case 10
+StartBGM Knight of Element.mid
+Talk ディオ
+へっ！終わるみたいだな！
+強盗もＳＲＣも引き際が肝心！正しい選択だと俺は思うぜ！
+ゆっくり休んでまた戻ってこい！青の疾風はお前を歓迎するぜ！
+じゃ！また会おうぜ！
+End
+
+Case 11
+StartBGM Knight of Element.mid
+Talk ティーナ
+え？もう終わっちゃうんですかっ！？
+愛が足りませんッ！愛がッ！次会うときはもっと愛を磨いてきて下さいッ！
+でないと・・・・嫌いになっちゃいますからっ・・・・。
+では次に出会う時を楽しみにしていますね！
+さよーならー！
+End
+
+Case 12
+StartBGM Knight of Element.mid
+Talk ガスト
+ケーッケッケッケ！終わるのか！
+テメーなんざにもう用はねぇ！このかぁーっこいい俺様が直々に首を狩ってヤルぜ！
+今そっちにいってヤルぜぇ・・・・後ろを見てみな・・・俺様がそこに・・・。
+End
+Wait 60
+Talk ガスト
+居るわきゃねぇだろぅが！
+クキェーッケッケッケ！引っかかった奴は間違いなくバカだぜぇ・・・。
+ケーッケッケッケ！楽しくてたまんねぇぜ！オイ！
+またな！ケーッケッケッケッケ！！
+End
+
+Case 13
+StartBGM Ebil Messenger.mid
+Talk バルバロス
+ここで終わりか！こんな物なのか貴様という人間は！！
+期待をして損をした・・・所詮は人間と言うことか！！
+フン・・・今回だけは見逃してやる・・・何処へでも行くがいい！
+だが！次回は無いぞ！！フン・・・・。
+End
+
+Case 14
+StartBGM Ebil Messenger.mid
+Talk ローレライ
+・・・・もう行くのですね・・・。
+・・・・でも・・・また戻ってきてくれますよね・・・。
+・・・・解っています・・・・貴方はそう言う方ですから・・・・。
+・・・貴方が戻ってくるときまで私は歌を歌い続けましょう・・・・。
+さようなら・・・・。
+End
+
+Case 15
+StartBGM Ebil Messenger.mid
+Talk シルフィン
+えー？もう限界ー？もっと戦おうよー！
+貴方が壊れちゃっても私は全然痛くないしさー！
+ねぇ！戦おうよー！もっと戦おうよぉぉぉぉぉぉぉぉ！
+End
+PlaySound Punch.wav
+Wait 5
+Talk システム
+エレナイ風紀委員「・・・・・。」
+Talk シルフィン
+ちょ・・・ちょっと何？あなた達！ど・・・何処に連れて行く気よっ！
+あたしはまだ戦い足りないのにぃぃぃぃぃぃぃ！
+End
+
+Case 16
+StartBGM Ebil Messenger.mid
+Talk グロウ
+どうだった？私の見せた幻は・・・・。
+くっくっく・・・・面白かっただろう？異世界に巻き込まれた人の物語・・・。
+そしてお前達には厳しい現実が待っている・・・・。
+くっくっく・・・・架空の存在の私には問題ない・・が・・・
+End
+PlaySound Punch.wav
+Wait 5
+Talk システム
+エレナイ風紀委員「・・・・・・。」
+Talk グロウ
+な！お前達は噂のエレナイ風紀委員！？私を一体何処へ連れていく気だっ！
+な・・・何かイケナイ事でも言ったか！？
+うを・・・うをををををを！放せぇぇぇぇぇ！
+End
+
+Case 17
+StartBGM God of Destruction.mid
+Talk 破壊神デュクラシス
+このシナリオを止めようと言う愚かなりし貴様に死を・・・・。
+クライム・・・・・バニッシャ・・・・
+End
+PlaySound Punch.wav
+Wait 5
+Talk システム
+Talk
+エレナイ風紀委員「・・・・・・・・。」
+Talk 破壊神デュクラシス
+・・・破壊神たる我を何処へ連れていく気だ・・・愚かなりし風紀委員よ・・・。
+・・・な・・・何！そんなバカな！それは・・・・メソ・・・・
+End
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 7
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 6
+PlaySound Punch.wav
+Wait 5
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 6
+PlaySound Punch.wav
+Wait 10
+
+EndSw
+Quit
+
+
+

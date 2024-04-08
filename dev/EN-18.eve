@@ -1,0 +1,1215 @@
+
+プロローグ:
+
+StartBGM fascism.mid
+Wait 20
+PlaySound Noise.wav
+Talk システム
+「…これで、決まり。」
+「…強いわね…。やっぱり。;今なら貴方の強さもわかる気がするわ。;:完敗よ。私の…。」
+「それじゃ、しっかりとケジメもついたし。;行くわよ。ユキ。」
+「…いいの…？本当に…？」
+「なーに言ってんの。;これからは…ここが貴方の居場所よ。」
+「…そう…ね…。ありがとう…。」
+End
+Playsound Noise.wav
+Wait 20
+Talk ローレライ
+Talk
+ローラ「あらあら、裏切りはいけないわね。」
+Talk システム
+「っ！？」
+「…誰…っ！？」
+Talk ローレライ
+Talk
+ローラ「貴方は本当に優秀な兵だと;評価していたのだけれど…」
+ローラ「所詮は…人間なのね」
+Talk システム
+「…貴方は…！？」
+Talk ローレライ
+Talk
+ローラ「ユキ＝イザヨイ…;貴方には最後に一仕事して貰いますわネ。」
+End
+Playsound Beep010@22.wav
+Wait 10
+Talk ローレライ
+Talk
+ローラ「さようなら…ユキ＝イザヨイ…。」
+ローラ「そしてこんにちわ;…魔族…ユキ＝イザヨイ…。」
+End
+Playsound Noise.wav
+Wait 20
+Talk システム
+…こ…ないで…:だめ…逃げて…:ニ…ゲ…テ…
+end
+Playsound Noise.wav
+Wait 10
+Talk ローレライ
+Talk
+ローラ「あは…ははは！;あはははははははは！！！」
+ローラ「嗚呼…いいわ…;たまらないわ…貴方のその…感情…っ…！！」
+ローラ「こうして…;水晶越しに見える顔だけでも…十二分に…いいわ…！」
+ローラ「………」
+ローラ「そして殺しなさい。;私たちの敵を。人間どもを！！」
+End
+Exit
+
+スタート:
+Call 涼子編タイトルコール 第18話 永劫！血塗られた命！
+Changemap EN-17.map
+Redraw
+StartBGM Namida-T.mid
+Wait 20
+Launch 涼子 6 2
+Launch ティーナ 5 3
+Launch トキア＝レンガー 6 4
+Launch ザーム＝ロージィ 7 3
+
+Create 敵 スター・ティア・ラフメイカー -2 ユキ＝イザヨイ(狂瞳) 35 22 23
+BossRank ユキ＝イザヨイ(狂瞳) 4
+PlaySound Beam.wav
+Wait 1
+PlaySound Beam.wav
+Wait 1
+PlaySound Beam.wav
+Wait 1
+PlaySound Beam.wav
+Wait 1
+
+Create 敵 スターフォース 5 魔導知能(ザコ) 33 18 23 A
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 5 魔導知能(ザコ) 33 19 22 A
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 5 魔導知能(ザコ) 33 20 21 A
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 5 魔導知能(ザコ) 33 21 20 A
+PlaySound Beam.wav
+Wait 1
+
+Create 敵 スターフォース 3 魔導知能(ザコ) 32 20 18 A
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 32 21 17 A
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 32 22 16 A
+PlaySound Beam.wav
+Wait 1
+
+Create 敵 スターフォース 3 魔導知能(ザコ) 32 17 20 A
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 32 16 21 A
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 32 15 22 A
+PlaySound Beam.wav
+Wait 1
+
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 6 22 B
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 7 22 B
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 8 22 B
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 9 22 B
+PlaySound Beam.wav
+Wait 1
+
+
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 22 3 B
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 22 4 B
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 22 5 B
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 22 6 B
+PlaySound Beam.wav
+Wait 1
+
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 14 16 C
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 15 15 C
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 16 14 C
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 17 13 C
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 31 18 12 C
+PlaySound Beam.wav
+Wait 1
+
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 1 14
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 2 14
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 3 14
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 4 14
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 5 14
+PlaySound Beam.wav
+Wait 1
+
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 17 3
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 17 4
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 17 5
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 17 6
+PlaySound Beam.wav
+Wait 1
+
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 12 11
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 13 10
+PlaySound Beam.wav
+Wait 1
+Create 敵 スターフォース 3 魔導知能(ザコ) 30 14 9
+PlaySound Beam.wav
+Wait 1
+
+ChangeMode A 待機
+ChangeMode B 待機
+ChangeMode C 待機
+ChangeMode ユキ＝イザヨイ(狂瞳) 待機
+
+Center 十六夜涼子
+
+Wait 10
+
+Transform 十六夜涼子 ラグナセンティス改
+IncreaseMorale 十六夜涼子 -100
+SetStatus 十六夜涼子 移動力ＤＯＷＮ -1
+SetStatus 十六夜涼子 防御力ＤＯＷＮ -1
+SetStatus 十六夜涼子 運動性ＤＯＷＮ -1
+SetStatus 十六夜涼子 攻撃力ＤＯＷＮ -1
+Wait 20
+Talk 涼子(ダメージ)
+っく…ぅ…！
+Talk ザーム
+どうしました！？
+Talk 涼子(ダメージ)
+なんでも…ないわ…！
+Talk ティーナ
+魔力を使いすぎましたね…涼子さん…
+Talk 涼子(ダメージ)
+大丈夫、このぐらい…どうってことないっ！
+Talk 涼子
+行くわよ皆！ユキを…
+Talk 涼子(攻撃)
+ユキを助けるためにっ！
+End
+
+Call 勝利条件表示 ユキ＝イザヨイの撃破 敗北条件 味方機の撃破
+KeepBGM
+Exit
+
+ターン 2 味方:
+Talk 涼子(ダメージ)
+っ…ぁ…っ！！！
+End
+Finish 十六夜涼子
+If Action(十六夜涼子) > 0 Then
+Finish 十六夜涼子
+Endif
+Talk ティーナ
+涼子さん！本当に…大丈夫なんですか！？
+Talk 涼子(ダメージ)
+大丈夫よ…大丈夫…！;こんなところで倒れてたら…龍也に…笑われちゃうわ…
+Talk トキア
+だが…ここでお前が無理をして倒れても…！
+Talk 涼子(ダメージ)
+…ちょっとクラっと来ただけだから…！
+私なんかの数倍もユキは苦しんでる…;だから…絶対に助けてあげなきゃ…！
+Talk ザーム
+トキアさん！僕たちが前に出て…
+Talk トキア
+あぁ、そうだな…;少しでも涼子の負担を少なくせねば…！
+Talk ティーナ
+………
+(涼子さんはユキさんとの戦いで消耗して;いつものような力は到底出せない…)
+(実戦力は私とトキアさん…ザームさん…)
+Talk 涼子(ダメージ)
+………
+Talk ティーナ
+(…涼子さんに…;奇跡を起こせるだけの力は…あるの…！？)
+End
+Exit
+
+
+破壊 ユキ＝イザヨイ(狂瞳):
+
+UpGrade スター・ティア・ラフメイカー スター・ティア・ラフメイカー
+
+Item ファストセンサー
+
+Talk システム
+ファストセンサーを手に入れた
+End
+Goto 生けるもの、死にゆくもの
+Exit
+
+破壊 敵:
+Switch 相手ユニット
+
+Case 十六夜涼子
+Incr 涼子撃破数 1
+
+If 涼子撃破数 = 5 Goto 不死身の女
+
+Case ティーナ＝プラネット
+Incr ティーナ撃破数 1
+
+If ティーナ撃破数 = 2 Goto 命の鼓動
+
+
+Case ザーム＝ロージィ
+Incr ザーム撃破数 1
+
+If ザーム撃破数 = 5 Goto 不屈の剣
+
+Case トキア＝レンガー
+Incr トキア撃破数 1
+
+If トキア撃破数 = 5 Goto 朽ちぬ想い
+
+Endsw
+Exit
+
+
+不死身の女:
+Talk 涼子(ダメージ)
+………
+Talk トキア
+おい、どうした！？涼子！
+Talk 涼子(ダメージ)
+………:っ！！
+Talk ザーム
+涼子さんっ！？
+Talk 涼子(攻撃)
+っしゃぁ！ノって来たわよ！！
+Talk ザーム
+へ…へっ！？
+Talk 涼子(攻撃)
+邪魔するヤツぁ全部すっとばすっ！
+一気にブッ込むわよ！
+Talk トキア
+こ、この…！心配して損をしたわっ！
+Talk ザーム
+…は…ははは…安心しました…
+Talk 涼子(余裕)
+この程度でブッ倒れるほど私はヤワじゃないってね！
+Talk ティーナ
+………
+…無理は…しないでくださいね
+Talk 涼子
+…解ってる。
+(強がってみても…;全て…見透かされてるか…。)
+(…本当に…ヤバいわ…;自分の身体だからよくわかる…限界だ)
+…でも…退くわけにはいかない…退けない…！
+Talk 涼子(攻撃)
+やるしかないんだ！
+end
+ClearStatus 十六夜涼子 攻撃力ＤＯＷＮ
+ClearStatus 十六夜涼子 防御力ＤＯＷＮ
+wait 20
+
+If ティーナ撃破数 < 2 Then
+
+Talk ティーナ
+…ダメ…なんですか…？;こんな状況でも…私は力を使えないんですか！？
+Talk システム
+<i>今はまだその時じゃないわ</i>
+Talk ティーナ
+…ッ…！！
+End
+
+Endif
+
+Exit
+
+命の鼓動:
+Talk ティーナ
+…奇跡…か…。
+End
+Wait 10
+Talk 涼子(ダメージ)
+…っく…:はぁ…はぁ…っ…
+End
+Wait 10
+Talk ティーナ
+奇跡なんて…;涼子さんには起こせないのかもしれない…
+でも…一つだけ…解ることがある…。
+涼子さんは絶対に最後まで諦めない。
+…私も最後まで…諦めたくはないです！
+Talk システム
+<i>…ティーナ…貴方…！！</i>
+Talk ティーナ
+ごめんなさい。;初めて貴方に逆らいますね。
+私がこうして;生きていられるのは貴方のおかげ。
+だからこの命は;貴方のために使うのが道理だと思ってました。
+その考えは変わりません。
+でも…
+Talk システム
+<i>………</i>
+Talk ティーナ
+一度だけのわがままを…許してください。
+私の力だけしか使いません…だから…！
+<b>術式封印３、４、５番解除。;生命封印式解除。リアクター出力７５％…！</b>
+Talk システム
+<i>ティーナ！！</i>
+End
+StartBGM E-Numbers.mid
+Wait 20
+KeepBGM
+PlaySound Charge(Long).wav
+PaintPicture White.jpg 0 0 480 480
+Refresh
+Wait 1
+ClearPicture
+Refresh
+Wait 1
+PaintPicture White.jpg 0 0 480 480
+Refresh
+Wait 1
+ClearPicture
+Refresh
+Wait 1
+PaintPicture White.jpg 0 0 480 480
+Refresh
+Wait 1
+ClearPicture
+Refresh
+Wait 1
+PaintPicture White.jpg 0 0 480 480
+Refresh
+Wait 1
+ClearPicture
+Refresh
+Wait 1
+
+Upgrade メモリィ 『命』のメモリィ
+ReplacePilot ティーナ＝プラネット ティーナ＝プラネット(真)
+Wait 10
+
+Talk ティーナ
+…これは私のわがままです…;ただのわがまま…。
+私にも解ってます…でも…！;出来る限りのことはやってみたい…！
+Talk システム
+<i>………</i>
+<i>好きになさい</i>
+Talk ティーナ
+ありがとうございます！
+End
+Wait 10
+Talk 涼子
+ティーナ…それは…？
+Talk ティーナ
+これが命のメモリィですよ。涼子さん。
+Talk 涼子
+命…の…？どういうこと…
+Talk ティーナ
+愛、ではなく命のメモリィ…ですよ。
+Talk 涼子
+…！
+(これが…本当のティーナ…ってこと…？)
+Talk ティーナ
+私も出し惜しみはしてられません！;絶対にユキさんを助けましょう！
+Talk 涼子
+…ありがとう…ティーナ…！
+End
+Exit
+
+
+朽ちぬ想い:
+Talk トキア(攻撃)
+これで５つっ！！
+(…だがしかし…;何故私はこんな戦いをしているっ！？)
+End
+Center ユキ＝イザヨイ(狂瞳)
+Wait 20
+Talk トキア(攻撃)
+(どう考えても絶望的だ。;あのルシアが嘘を言うとも思えぬ…！)
+(だが…！私の身体は動いた…なぜだ！)
+End
+Center 十六夜涼子
+Wait 20
+Talk トキア
+(…そう…なのだろうな。;あの女の可能性に賭けた…それだけだ)
+(不思議と…この戦いに恐れは感じぬ…;十六夜涼子…か…)
+Talk 涼子
+トキア！動きが止まってるわよ！
+Talk トキア(恐怖)
+ぬぉ！？
+Talk 涼子
+…何？どうかした…？
+Talk トキア
+い、いや、なんでもない。
+Talk 涼子
+まぁ、なんでもいいけど…
+ユキを助けられても…;あんたに死なれたんじゃ何の意味もないから！
+しっかり…しなさいよ。
+Talk トキア(攻撃)
+…あぁ…やらせはせんよ！！
+End
+IncreaseMorale トキア＝レンガー 30
+Exit
+
+不屈の剣:
+Talk ザーム
+ふぅ…っ！これでいくつだ…！？
+(まだ行ける…でも…;この調子じゃ限界は近いかもしれない…)
+(そうなったら…)
+(………)
+(考えるまでもない、僕の命を犠牲にしてでも…)
+Talk 涼子
+ザーム！ちょっと出過ぎよ！
+Talk ザーム
+大丈夫です！これぐらい…！
+Talk 涼子
+ザーム、一つだけ言っておくわ。
+ユキを助けられても…;他の誰かが死んだ…って言うんじゃ…何の意味もないからね…？
+Talk ザーム
+…っ…。
+Talk 涼子
+皆でユキを笑顔で迎えてやりましょ！
+Talk ザーム
+は…はいっ！
+end
+IncreaseMorale ザーム＝ロージィ 30
+Exit
+
+
+会話 涼子 ユキ:
+Talk 涼子(攻撃)
+ユキっ！
+Talk ユキ＝イザヨイ(狂瞳)
+………
+Talk 涼子
+聞こえてないわけじゃ無いんでしょ！？;ねぇっ！返事をして…ユキ！！
+Talk ユキ＝イザヨイ(狂瞳)
+………
+Talk 涼子(ダメージ)
+ダメ…なの…！？
+End
+Wait 10
+Talk ティーナ
+涼子さん！;まずはスター・ティアの動きを止める事から考えましょう！
+Talk 涼子
+…そう…ね。;これだけが方法じゃない…！
+End
+ClearEvent
+Call 勝利条件表示 ユキのHPを４割以下にする 敗北条件 味方機の撃破
+Exit
+
+
+攻撃 涼子 ユキ＝イザヨイ(狂瞳):
+Talk 涼子
+ユキ、貴方はずっと苦しんでた…悩んでた;もうこれ以上苦しむ必要はないよ…
+私が絶対に貴方を助けてあげるから！
+Talk 涼子(攻撃)
+あなたの囚われた運命を…解き放ってあげる！！
+End
+ClearEvent
+Exit
+
+攻撃 ティーナ ユキ＝イザヨイ(狂瞳):
+Talk ティーナ
+動きが…速い…！;これじゃ浄化に入れない…！
+End
+ClearEvent
+Exit
+
+攻撃 トキア ユキ＝イザヨイ(狂瞳):
+Talk トキア
+ユキ＝イザヨイ…;お前の力もずっと羨ましかったよ…
+Talk トキア(攻撃)
+だが…その力は違う！;それは破壊の力…
+私の全てを奪った破壊の力だ…！
+その力は…絶対に封じさせてもらうぞ！！
+End
+ClearEvent
+Exit
+
+攻撃 ザーム ユキ＝イザヨイ(狂瞳):
+Talk ザーム
+ユキさん…！;涼子さんは貴方が戻ってきてくれることを望んでいます！
+…貴方が今までに起こした罪はあまりにも大きい…
+罪は償わなければならない、そうでしょう…！
+だから…だからこそ…戻って来てください…！
+End
+ClearEvent
+Exit
+
+
+
+損傷率 ユキ＝イザヨイ(狂瞳) 60:
+Goto 生けるもの、死にゆくもの
+Exit
+
+ターン 3 敵:
+ChangeMode C 通常
+Exit
+
+ターン 5 敵:
+ChangeMode B 通常
+Exit
+
+ターン 7 敵:
+ChangeMode A 通常
+Exit
+
+ターン 9 敵:
+ChangeMode ユキ＝イザヨイ(狂瞳) 通常
+Exit
+
+
+生けるもの、死にゆくもの:
+FadeOut
+Move 十六夜涼子 8 16
+Move ティーナ 7 15
+Move トキア＝レンガー 9 15
+Move ザーム＝ロージィ 8 14
+Move ユキ＝イザヨイ(狂瞳) 9 19
+ClearPicture
+Redraw
+Refresh
+Talk ユキ＝イザヨイ(狂瞳)
+…ぅ…
+Talk 涼子(攻撃)
+今っ！！
+End
+Move 十六夜涼子 10 19 アニメ表示
+PlaySound BreakOff.wav
+Wait 2
+Talk ユキ＝イザヨイ(狂瞳)
+…っ…
+Suspend
+PlaySound BreakOff.wav
+Talk 涼子(ダメージ)
+く…！;ティーナ！あたしがユキを抑えてる間に…！
+Talk ティーナ
+解りました！！
+End
+Move ティーナ 7 19 アニメ表示
+Talk ティーナ
+<i>天地万物の母、;大いなる女神アーシャ・ルーシャよ</i>
+Suspend
+Center ユキ＝イザヨイ(狂瞳)
+PlaySound BreakOff.wav
+Wait 2
+Center 十六夜涼子
+PlaySound Crash.wav
+Wait 2
+Talk 涼子(ダメージ)
+ぁぐっ！？
+…どれだけ…暴れても無駄よ…！;絶対に…この手は離さない…！
+suspend
+Wait 5
+Talk ティーナ
+<i>願わくは我が前に神の御力を</i>
+Suspend
+PlaySound Whiz.wav
+Talk ユキ＝イザヨイ(狂瞳)
+…ぁ…ァァァ！！
+suspend
+PlaySound Beam.wav
+Create 敵 スターフォース 0 魔導知能 30 11 17 J
+PlaySound Beam.wav
+Create 敵 スターフォース 0 魔導知能 30 11 21 K
+Talk 涼子(ダメージ)
+スターフォース！？
+っ…マズい…！！
+End
+Center J
+PlaySound Beam.wav
+Wait 1
+Center K
+PlaySound Beam.wav
+Wait 1
+Move トキア 10 20
+Move ザーム 10 18
+Explode M 10 18
+Explode M 10 20
+Talk トキア(攻撃)
+させんっ！！
+Talk ザーム
+雄ぉぉぉーーーーっ！！
+End
+PlaySound Cannon.wav
+Wait 3
+Center トキア
+PlaySound Bazooka.wav
+Wait 3
+Explode L 11 21
+Escape K
+Explode L 11 17
+Escape J
+Talk ティーナ
+<i>願わくは我が下へ神の奇跡を！</i>
+End
+Center ユキ＝イザヨイ(狂瞳)
+PlaySound Whiz.wav
+Talk ユキ＝イザヨイ(狂瞳)
+…ぅ…あああああああああああああああ！！！
+end
+PlaySound Crash.wav 
+Wait 1
+Center 十六夜涼子
+Wait 1
+Center ユキ＝イザヨイ(狂瞳)
+PlaySound Crash.wav 
+Wait 1
+Center 十六夜涼子
+Wait 1
+Center ユキ＝イザヨイ(狂瞳)
+PlaySound Crash.wav 
+Wait 1
+Center 十六夜涼子
+Wait 1
+Center ユキ＝イザヨイ(狂瞳)
+PlaySound Crash.wav 
+Wait 1
+Center 十六夜涼子
+Wait 1
+Center ユキ＝イザヨイ(狂瞳)
+Talk 涼子(ダメージ)
+…ら…っ！ラグちゃんの腕が…保たな…
+Suspend
+Playsound Glass.wav
+Talk 涼子(ダメージ)
+…いっっ！？
+End
+Move 涼子 14 19 アニメ表示
+Center 十六夜涼子
+PlaySound Crash.wav
+Wait 2
+PlaySound Crash.wav
+Wait 2
+PlaySound Crash.wav
+Wait 2
+Explode L 14 19
+Talk トキア(攻撃)
+チィッ！！
+Talk ザーム
+涼子さんっ！
+end
+Move トキア 8 19 アニメ表示
+Move ザーム 14 18 アニメ表示
+Talk トキア(攻撃)
+…ティーナっ！まだかっ！
+Talk ユキ＝イザヨイ(狂瞳)
+………
+End
+PlaySound Bow.wav
+Wait 3
+Talk トキア(恐怖)
+…な…
+End
+
+Move トキア 8 15 アニメ表示
+Explode L 8 15
+Talk トキア(攻撃)
+ぐ…ぅ…
+End
+Setstatus トキア＝レンガー 消耗 -1
+Wait 10
+Talk ザーム
+トキアさん…っ！！
+Talk 涼子(ダメージ)
+……ティーナッ！！！
+Talk ティーナ
+<i>悪しき力に蝕まれ、;迷える民に正しき道を示したまえ！</i>
+End
+PlaySound Charge(Long).wav
+WhiteOut 100
+Wait 10
+Talk ユキ＝イザヨイ(狂瞳)
+ぁァぁぁぁぁァァァァーーーーーっ！！！
+Talk ザーム
+や…やった！！
+Talk 涼子
+…駄目…！
+Talk ザーム
+え…？
+Talk 涼子(攻撃)
+駄目ッ！！ティーナ！避けて！！
+end
+PlaySound Crash.wav
+Wait 5
+Move ユキ＝イザヨイ(狂瞳) 8 19
+Redraw
+Refresh
+Talk ユキ＝イザヨイ(狂瞳)
+……ゥ…
+Talk ティーナ
+浄化が…効か…ない…っ…
+End
+SetStatus ティーナ 消耗 -1
+Playsound FallDown.wav
+Wait 5
+Talk ユキ＝イザヨイ(狂瞳)
+………
+End
+PlaySound Whiz.wav
+Wait 5
+Talk 涼子(攻撃)
+ティーナ！！！
+くっそ…ラグちゃん！立って…！
+End
+PlaySound Tone.wav
+Wait 10
+Talk 涼子(ダメージ)
+何…！エーテルリアクターに…損傷！？
+そんな…！こんな時に…！！
+Talk ザーム
+く…！！
+End
+Move ザーム 9 19 アニメ表示
+Talk ザーム
+うぉぉぉぉぉーーーーっ！！！
+Talk ユキ＝イザヨイ(狂瞳)
+………
+End
+Playsound Punch.wav
+wait 1
+Move ザーム 12 19
+PlaySound Crash.wav
+Wait 5
+Talk ザーム
+まだ…まだぁ…！！
+Talk 涼子(攻撃)
+ザーム！！
+End
+Move ザーム 9 19 アニメ表示
+Playsound Punch.wav
+wait 1
+Move ザーム 12 19
+PlaySound Crash.wav
+Wait 5
+Move ザーム 9 19 アニメ表示
+Playsound Punch.wav
+wait 1
+Move ザーム 12 19
+PlaySound Crash.wav
+Wait 5
+
+Talk ユキ＝イザヨイ(狂瞳)
+………
+End
+Move ユキ＝イザヨイ(狂瞳) 9 19 アニメ表示
+Move ザーム 10 19 アニメ表示
+Playsound BreakOff.wav
+Wait 10
+Talk ザーム
+…こ…の…放っ…せ…！
+End
+Center ユキ＝イザヨイ(狂瞳)
+PlaySound Punch.wav
+wait 3
+Center ザーム＝ロージィ
+PlaySound Punch.wav
+wait 3
+PlaySound Clash.wav
+wait 3
+PlaySound Warship.wav
+wait 3
+PlaySound whip.wav
+wait 3
+PlaySound Slash.wav
+wait 3
+PlaySound whiz.wav
+Wait 2
+Move ザーム 11 20
+Wait 1
+Move ザーム 12 21
+Wait 1
+Move ザーム 13 22
+Wait 1
+Move ザーム 14 23
+Wait 1
+Move ザーム 15 24
+Wait 1
+PlaySound Splash.wav
+Wait 5
+Talk ザーム
+…ぐ…ぁ…
+End
+SetStatus ザーム＝ロージィ 消耗 -1
+Wait 10
+Talk 涼子(ダメージ)
+ユキ…っ…
+…ラグちゃん…動いて…！お願い…！！
+End
+Move ユキ＝イザヨイ(狂瞳) 10 19 アニメ表示
+PlaySound Walk(Robot).wav
+Wait 5
+Talk 涼子(ダメージ)
+私の魔力なんて全部あげちゃってもいい…！
+だから動いて…！！
+End
+Move ユキ＝イザヨイ(狂瞳)  11 19 アニメ表示
+PlaySound Walk(Robot).wav
+Wait 5
+Talk 涼子(ダメージ)
+絶対に…諦めないから…！
+End
+Move ユキ＝イザヨイ(狂瞳)  12 19 アニメ表示
+PlaySound Walk(Robot).wav
+Wait 5
+Talk 涼子(攻撃)
+私は絶対に諦めないから！！
+End
+Move ユキ＝イザヨイ(狂瞳)  13 19 アニメ表示
+PlaySound Walk(Robot).wav
+Wait 5
+Talk ユキ＝イザヨイ(狂瞳)
+………
+Talk 涼子(ダメージ)
+ユキ！貴方を絶対に…助けてあげるからっ！！
+Talk ユキ＝イザヨイ(狂瞳)
+………
+…ぅ…ぁ…
+Talk 涼子
+…ユキ…！？
+Talk ユキ＝イザヨイ(狂瞳)
+あ…うあぁぁぁぁぁぁ！？
+Talk ユキ＝イザヨイ(狂瞳涙) X(ユキ＝イザヨイ(狂瞳)) Y(ユキ＝イザヨイ(狂瞳))
+…っぎ…ぁ…っぐ…！
+りょ…涼…子…！
+Talk 涼子
+ユキ…！あなた…ユキよね…！
+Talk ユキ＝イザヨイ(狂瞳涙) X(ユキ＝イザヨイ(狂瞳)) Y(ユキ＝イザヨイ(狂瞳))
+こ…ろして…ころして…！;私…を…殺…して…
+Talk 涼子(ダメージ)
+…そんなの…そんなこと…;出来るはずないじゃないの！！
+私は…
+Talk ユキ＝イザヨイ(狂瞳涙) X(ユキ＝イザヨイ(狂瞳)) Y(ユキ＝イザヨイ(狂瞳))
+じぶンの…事…よく…ワカ…る…っ！
+もう…も…ウ…ダカラ…！
+Talk 涼子(ダメージ)
+だけど…:だけど…:だけどっ！！
+End
+Talk システム 7 19
+<i>………</i>
+End
+Wait 5
+Talk ユキ＝イザヨイ(狂瞳涙) X(ユキ＝イザヨイ(狂瞳)) Y(ユキ＝イザヨイ(狂瞳))
+もう…もたな…い…！
+わたしが…わ…たしじゃ…なくな…っ…
+おねがい…:こ…:ろ…:し…:て…
+Talk 涼子(ダメージ)
+ユ…キ…！
+あたしは…:あたしは…っ！！
+End
+StopBGM
+Whiteout 50
+Center 7 19
+escape ティーナ
+PlaySound Sword.wav
+Create ＮＰＣ ライトネスクレリュード 5 ファーナ＝ブリンガー 45 7 19
+Redraw
+Wait 2
+PlaySound ChakiA@11.wav
+Wait 2
+PlaySound BoomA@22.wav
+Move ファーナ 12 19 アニメ表示
+Center 12 19
+PlaySound Stab.wav
+Wait 25
+Center 13 19
+Wait 30
+Talk 涼子(ダメージ)
+え………
+Talk ユキ＝イザヨイ(狂瞳涙) 13 19
+…あ…ぁ…。
+End
+explode M 13 19
+Talk 涼子
+…な…！？
+End
+Explode L 13 19
+Explode LL 13 19
+Explode XL 13 19
+Escape ユキ＝イザヨイ(狂瞳)
+Wait 50
+Talk 涼子(ダメージ)
+ユ…キ…！？
+End
+Wait 40
+Center 12 19
+PlaySound Swing.wav
+Wait 10
+Talk ファーナ
+Talk
+「貴女の魂に…光の導きのあらんことを…」
+End
+Wait 40
+Talk 涼子(ダメージ)
+…なんで…:え…？どうして…！
+End
+Wait 10
+Talk ファーナ
+Talk
+「…貴方にも解っているのでしょう。;彼女は…こうするしかなかった。」
+Talk 涼子(ダメージ)
+…ふざ…けるな…！！
+Suspend
+PlaySound ExplosionA@11St.wav
+Talk 涼子(攻撃)
+ふざけるなぁああああああああああああああああああああああああああああああああああああ！！！
+end
+Move 涼子 13 19 アニメ表示
+Talk 涼子(攻撃)
+うあああああああああああああああああ！！！
+Talk ファーナ
+Talk
+「…少し頭を冷やしなさい」
+End
+PlaySound Whiz.wav
+Move 涼子 12 20
+Wait 2
+Move 涼子 11 19
+Wait 2
+Move 涼子 12 18
+Wait 2
+Move 涼子 13 19
+Wait 2
+Move 涼子 13 23 アニメ表示
+PlaySound Splash.wav
+Wait 20
+SetStatus 十六夜涼子 消耗 -1
+Talk ファーナ
+Talk
+「………」
+Suspend
+Center トキア
+Wait 15
+center ザーム
+Wait 15
+Center 涼子
+Wait 15
+Talk ファーナ
+Talk
+「…散々な状況ね。;ティーナ、貴方がさっさと;私に肉体を渡していればこうはならなかった。」
+Talk システム
+「………」
+Talk ファーナ
+Talk
+「人には器というものがあるわ。;彼女に…ユキ＝イザヨイを助けるだけの器はない。」
+「そんなことは解り切っていた…」
+Talk システム
+Talk
+「…でも…」
+Talk ファーナ
+Talk
+「これは強さじゃないわ。ただの甘え…よ。」
+Talk システム
+Talk
+「ファーナ…さん…」
+Talk ファーナ
+目の前の一人を犠牲に出来なければ…;より多くの人々を護ることなど出来はしない
+End
+Continue EN-19.eve
+Exit
+
+破壊 十六夜涼子:
+Talk 涼子(ダメージ)
+やだなぁ…こんなところで…;:あたしが…死んじゃったら…っ…
+ごめん…龍…也…
+End
+FadeOut
+PlaySound Explode(Nuclear).wav
+Wait 50
+GameOver
+Exit
+
+破壊 ティーナ＝プラネット:
+Talk ティーナ
+…ここまで…か…ぁ…
+End
+FadeOut
+PlaySound Explode(Nuclear).wav
+Wait 50
+GameOver
+Exit
+
+破壊 ティーナ＝プラネット(真):
+Talk ティーナ
+結局…足手まといでしたか…
+End
+FadeOut
+PlaySound Explode(Nuclear).wav
+Wait 50
+GameOver
+Exit
+
+破壊 ザーム＝ロージィ:
+Talk ザーム
+しまっ…！
+End
+FadeOut
+PlaySound Explode(Nuclear).wav
+Wait 50
+GameOver
+Exit
+
+破壊 トキア＝レンガー:
+Talk トキア(恐怖)
+バカな…！
+End
+FadeOut
+PlaySound Explode(Nuclear).wav
+Wait 50
+GameOver
+Exit
+
+エピローグ:
+startBGM toki_xg.mid
+Playsound Noise.wav
+Talk システム
+「目の前の一人を犠牲に出来なければ…;より多くの人々を護ることなど出来はしない」
+Talk ローレライ
+Talk
+ローラ「…あれ…は…！;白の聖女ファーナ＝ブリンガー…！？」
+ローラ「なんて計算外…;あの女が…まだ生きていた…？」
+ローラ「これは…何か対策を考えねばならないようね…」
+End
+Playsound Knock.wav
+Wait 10
+Talk ローレライ
+Talk
+ローラ「…どなたかしら？」
+Suspend
+PlaySound Door(Open).wav
+Wait 5
+Talk ヴォルク
+私だ。
+Talk ローレライ
+Talk
+ローラ「…ヴォルク…？;私は貴方を呼んではいませんけど…」
+ローラ「…おかしいわね…術が変に作用したのかしら」
+Talk ヴォルク
+…私は私の意思でここに来たのだよ。
+魅のローレライ。
+Talk ローレライ
+…あら…。
+…おかしいおかしいとは思っていましたけど…
+貴方、初めからずっと;…私に操られたフリをしていましたのね
+Talk ヴォルク
+フリでここまでのことは出来んよ。
+お前の術は見事だったよローレライ。;この私が術を解くために9年を要したのだからな。
+Talk ローレライ
+お褒めに預かり光栄ですわ、;魔道皇帝ヴォルク＝ファント＝ロゥ＝グランチェスタ…
+私にその身を操られながらも;解除魔術を組み上げるなんて…ね
+それで…何の御用かしら？ 私を殺しにでも？
+Talk ヴォルク
+…殺しはせんよ…;貴様からはローラを取り戻さねばならない
+Talk ローレライ
+ふふ…まだあの女に未練があるようね。
+それでこそ…私も記憶を;封じてまで貴方に取り入った甲斐があったというもの…
+でも…無駄ですわよ？;ローラはもう…戻らない。
+Talk ヴォルク
+…フン…強がりを。;貴様の中にローラがまだ残っていることは解っている
+Talk ローレライ
+………
+Talk ヴォルク
+何にせよ…;お前の計画はもう終わりだローレライ。
+この国はもう滅ぶ。;私たちの娘の手によって…な
+Talk ローレライ
+…娘…ですって…？;バカな…私が…確かにこの手で…
+Talk ヴォルク
+殺したはず…か？
+お前はシエラを殺してなどいない。;ローラ、お前が逃がしたんだよ。
+ローレライ、貴様の記憶を改竄してな。
+Talk ローレライ
+…なん…ですって…
+Talk ヴォルク
+解ったかロ―レライ。;貴様は何も操れてはいない。自分自身すらも…な。
+と、長々と講釈をたれてみたが…;効果はあったようだな。ローラ。
+Suspend
+PlaySound Noise.wav
+Wait 5
+Talk システム
+「う…」
+Talk ローレライ
+Talk
+ローラ「う…ヴォルク…さ…ま…」
+End
+PlaySound Crash.wav
+Talk ローレライ
+…ぁッッ！！！
+はぁ…はぁ…ッ！
+(バカな…;ローラは私の意識の中で眠っているはず…)
+Talk ヴォルク
+…お前の時間はもう僅かだ。;もうすぐ…お前は消える。;そしてお前の中の…人だった頃の記憶が…
+ローラがお前を支配する。
+お前がローラを封じ切れていた決定打;自らの娘をその手で殺した…その過ちが正されたのだから
+Talk ローレライ
+私も…ただの道化だったと言うことかしら…
+Talk ヴォルク
+道化だよ。お前は…;:そして私も…な…
+Talk ローレライ
+………:私を殺さないのね
+Talk ヴォルク
+お前を殺して;ローラが戻るならとっくにそうしている
+行け。
+Talk ローレライ
+………
+End
+PlaySound Door(Open).wav
+Wait 15
+PlaySound Door(Close).wav
+Wait 5
+PlaySound Stairs.wav
+Wait 40
+Talk ヴォルク
+…私も…ただの道化さ…。;ローレライ、お前に私が操られなくとも…;暴君ヴォルクは現れた…
+人も魔族も全てを;巻き込んだ伝説(ぶたい)の道化の一人だ。
+ファーナ＝ブリンガー…;全てはあの女の思惑通りということだな…。
+破壊の神を滅ぼすための伝説。
+…聖戦…か。
+End
+PlaySound Stairs(Run).wav
+Wait 20
+PlaySound Door(Open).wav
+Wait 5
+Talk グランチェスタ騎士
+ヴォルク様っ！
+Talk ヴォルク
+あぁ、解っている…。
+来たか…シエラ…。
+End
+
+Wait 20
+
+Set 涼子編進行度 19
+Call 鳳処理
+
+Exit
+
+
+

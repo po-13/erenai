@@ -1,0 +1,56 @@
+エレメンタルナイト
+フォースソード, 2;ChakiA@11.wav;2;BoomA@22.wav
+ツインフォースソード, 1;ChakiA@11.wav;1;ChakiA@11.wav;2;BoomA@22.wav;2;BoomA@22.wav
+オメガブラスターキャノン, 12;MetalC@11.wav;Explode(nuclear).wav
+オメガブラスターキャノン(命中), Explode(nuclear).wav
+ハイブラスターキャノン, 12;MetalC@11.wav;Explode(nuclear).wav
+大口径エーテルキャノン, 12;MetalC@11.wav;Explode(nuclear).wav
+ハイブラスターキャノン(命中), Explode(nuclear).wav
+大口径エーテルキャノン(命中), Explode(nuclear).wav
+クイックミサイル, 2;AntiAirMissile.wav;2;AntiAirMissile.wav
+クイックミサイル(命中), 1.5;Explode(Small).wav;1.5;Explode(Small).wav;1.5;Explode(Small).wav;1.5;Explode(Small).wav
+ソニックソード, ChakiA@11.wav
+ソニックソード(命中), Drill.wav
+ソニックブレード, ChakiC@22.wav
+ソニックブレード(命中), Drill.wav
+ソニックランサー, ChakiA@11.wav
+ソニックランサー(命中), Drill.wav 
+ソニックハルバート, Whiz.wav
+ソニックハルバート(命中), Drill.wav
+ソニックサイズ, Whiz.wav
+ソニックサイズ(命中), Drill.wav
+ソニックダガー, , ChakiA@11.wav
+ソニックダガー(命中), Drill.wav
+メタルソード, ChakiA@11.wav
+メタルナイフ, ChakiA@11.wav
+メタルブレード, ChakiA@11.wav
+メタルナイフＡ, ChakiA@11.wav
+ハイメタルブレード, ChakiC@22.wav
+ハイメタルナイフ, ChakiC@22.wav
+ハイソニックソード, ChakiA@11.wav
+ハイソニックソード(命中), Drill.wav
+スナイパーライフル, 2;Beep010@22.wav;3;Beep010@22.wav;5;ChakiC@22.wav;Rifle.wav
+スナイパーライフルＡ, 2;Beep010@22.wav;3;Beep010@22.wav;5;ChakiC@22.wav;Rifle.wav
+閃光呪文, FlashB@22.wav
+氷結呪文, WindB@11.wav
+氷結呪文(クリティカル), SwordJ@22.wav
+爆裂呪文, 10;Cannon.wav;Explode(Far).wav
+土撃呪文, WarShip.wav
+光の矢, 2;SwordB@22.wav;2;SwordB@22.wav
+装甲修理, 2;MetalB@22.wav;2;MetalA@16.wav;2;MetalB@22.wav;2;MetalA@16.wav
+ＥＮ補給, Charge.wav
+弾薬装填, 4;BreakOff.wav;4;BreakOff.wav
+修理子機, 3;Saber.wav;3;Saber.wav
+グランドスパイク, 2;ChakiA@11.wav;2;ChakiC@22.wav;5;Whiz.wav
+火炎の舞, BurnerB@11.wav
+天魔楼刃, 2;BeamCoat.wav;2;BeamCoat.wav;2;BeamCoat.wav;5;Whiz.wav
+
+魔導兵器
+魔導砲, 2;Beep010@22.wav;3;Beep010@22.wav;12;MetalC@11.wav;Beam.wav
+
+魔兵
+衝撃波, 5;Saber.wav;8;Shock(Low).wav
+衝撃波(命中), BreakA@22.wav
+暗黒の矢, GunB@11.wav
+真空波, WindB@11.wav
+龍の牙, 2;ChakiA@11.wav;2;ChakiC@22.wav;4;GunB@11.wav

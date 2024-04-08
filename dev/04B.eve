@@ -1,0 +1,898 @@
+
+プロローグ:
+Set 攻撃回数 0
+StartBGM Map1-2.mid
+
+Talk ルディア
+………
+Talk リィス
+ここ…でいいの？ルディア？
+Talk ルディア
+うん…ここを通るハズだよ。みんなは…。
+Talk リィス
+ルディアは…;あのTYPE-LD達に逢ってどうするつもりなの？
+Talk ルディア
+正直…どうなるかはわからないけど…
+とにかく、私の想い…全てぶつけてみる。;:彼女達と会話できるのは私しか居ないんだから…。
+Talk リィス
+それで…ダメだったらどうする…？
+Talk ルディア
+考えたくないよそんなこと…
+でも…もし…そのときは…
+Talk リィス
+…ルディア
+Talk ルディア
+わかってる…わかってるよ…リィス。
+End
+
+Wait 20
+
+PlaySound Noise.wav
+Wait 5
+Talk システム
+<i>敵機…発見</i>
+<i>二機か</i>
+Talk TYPE-LD
+(２機…？この感じは…)
+Talk システム
+<i>どうした、LD-24</i>
+<i>なんでも…ない。</i>
+Talk TYPE-LD
+前の…あいつ…;TYPE-LDじゃないTYPE-LD…
+ル…ディア…？
+End
+Wait 20
+
+Exit
+
+スタート:
+ChangeMap 04B.map
+Redraw
+night
+
+StartBGM Namida-t.mid
+
+Launch ルディア 2 16
+Launch リィス 2 17
+
+
+Create 敵 シャドウ 5 TYPE-LD(ザコ) 35 9 13 Z
+Create 敵 シャドウ 5 TYPE-LD(ザコ) 35 10 14
+
+Create 敵 シャドウストーカー 6 LD-24 35 15 14
+
+Create 敵 シャドウ 5 TYPE-LD(ザコ) 35 16 24 X
+Create 敵 シャドウ 5 TYPE-LD(ザコ) 35 15 25
+
+Wait 10
+
+Talk リィス
+数が少ない…これだけ…？
+Talk ルディア
+違うよ、リィス…;あの機体を見て
+Talk リィス
+…？
+End
+
+Center LD-24
+Wait 20
+
+Talk リィス
+シャドウタイプ…先行部隊ってこと？
+Talk ルディア
+そういうことだよ。;本隊が来る前に…！
+話を聞いて！私達は戦いに来たんじゃないの！
+End
+Wait 10
+Talk Z
+<i>目標確認、排除する</i>
+Talk ルディア
+(やっぱり…口で言ってもわからないってことか…)
+Suspend
+PlaySound Noise.wav
+Talk ルディア
+<i>私達は戦いに来たんじゃない！;聞こえてるんでしょう！</i>
+Talk Z
+<i>…？ どういう事だ…貴様、何故…</i>
+Talk ルディア
+<i>簡単だよ…私も貴方達と同じTYPE-LDだから</i>
+Talk Z
+<i>ならば何故我らに敵対する？</i>
+Talk ルディア
+<i>…貴方達は間違っているから</i>
+Talk Z
+<i>我らはただ命に従うのみ</i>
+<i>主が間違っていようが正しかろうが、;そんなことは関係ない</i>
+<i>我々は戦うための人形。;戦うために生まれ、戦いの中で死ぬ</i>
+<i>そのために作られた道具なのだから</i>
+Talk LD-24
+(そう…その通りだ。;我々は戦うための人形…)
+だが…
+(流れ込んでくる…;LD-1A…ルディアの感情…これは…)
+Talk ルディア
+<i>違う！;貴方達はそんなことのために生まれてきたんじゃない！</i>
+<i>少なくとも…私は違う！！</i>
+<i>私は…LD-1Aは…;戦い以外の色々なことを教わったよ…</i>
+<i>ディオ兄から、ウォルディさんから;…青の疾風のみんなから…</i>
+リィスから…大事なこと、;大切なことを一杯教えてもらったよ…
+せっかく生まれてきて…;戦いだけなんて…そんな…そんな悲しいこと…！
+Talk Z
+<i>不思議だな、;同じ存在であるハズはずなのにお前は違いすぎる</i>
+Talk ルディア
+<i>そうだよ…だから貴方達も…</i>
+Talk Z
+<i>我らと違うLD…。:貴様は、危険だ</i>
+Talk ルディア
+<i>え…</i>
+Talk Z
+<i>排除する。LD-1A…</i>
+Talk ルディア
+<i>なんで！貴方達は本当にそれで…いいの！？</i>
+Talk Z
+<i>…死ね</i>
+End
+PlaySound Noise.wav
+Wait 10
+Talk ルディア
+うっぐ…！！
+Talk リィス
+ルディア…どうしたの…！？
+Talk ルディア
+頭が…痛…！
+(なんて強烈な敵意…本気だ…！)
+Talk リィス
+…どう…だったの…？
+Talk ルディア
+……
+Talk リィス
+そう…なんだ。やっぱり…。
+戦える？ルディア…？
+Talk ルディア
+うん…大丈夫…。
+なんで…なんでみんな判ってくれないの…？
+Talk リィス
+彼女達は…TYPE-LDは…;知らないからだと思う…人の暖かさを…。
+知らないことは判らない…。;理解できないんだよ…たぶん…
+Talk ルディア
+やるしか…ないの？
+Talk リィス
+私は…ルディアには絶対に…死んで欲しくないから
+Talk ルディア
+…リィス…
+Talk リィス(攻撃)
+行くよっ…！
+End
+ChangeMode LD-24 待機
+Exit
+
+ターン 2 味方:
+
+Talk LD-24
+大切なこと…人の…暖かさ…
+あたたかい…か…。
+Talk X
+<i>どうした…LD-24</i>
+Talk LD-24
+知りたい…
+Talk X
+<i>なんだと…？</i>
+End
+Wait 10
+Talk ルディア
+…？
+Talk システム
+<i>…えが…るのか</i>
+Talk ルディア
+何…？
+Talk LD-24
+お前が私に教えてくれるのか？
+あたたかい…と言うことを…
+Talk ルディア
+えっ！？
+貴方は…前の…？LD-24？
+Talk LD-24
+………
+Talk リィス
+ルディア…！
+Talk ルディア
+う…うん！;:勿論だよ！だから私と一緒に…！
+Talk LD-24
+部隊を、裏切れ…か？
+Talk ルディア
+…出来る…？
+貴方達にとって…任務とは与えられた全て…
+その全てを捨てても…貴方は…
+Talk LD-24
+お前が、教えてくれるんだろう…ルディア
+ならば、行くさ。
+End
+Changeparty LD-24 味方
+Wait 20
+Talk X
+<i>…壊れたか、LD-24…</i>
+Talk LD-24
+<i>お前達は…思わなかったのか？</i>
+Talk X
+<i>なんだと…？</i>
+Talk LD-24
+<i>LD-1A…ルディアの言うことを;…もっと知りたいと…</i>
+<i>ルディアの言う…;あたたかい…を…もっと知りたいと、だ</i>
+Talk X
+<i>やはりお前は壊れているようだ</i>
+<i>LD-24、始末する。</i>
+Talk ルディア
+させない…そんなこと！！
+LD-24！こっちへ！！
+Talk LD-24
+あぁ！
+Talk ルディア
+リィス！ひとまずLD-24と合流しよう！
+Talk リィス
+うん！わかってるっ！
+End
+keepBGM
+Exit
+
+ターン 3 味方:
+
+StartBGM laz_crzy.mid
+KeepBGM
+Wait 10
+
+create 敵 トルーパー 5 TYPE-LD 36 18 2 A
+create 敵 トルーパー(射撃戦仕様) 5 TYPE-LD 36 18 3 A
+create 敵 トルーパー 5 TYPE-LD 36 18 4 A
+
+create 敵 トルーパー 4 TYPE-LD 35 15 1 B
+create 敵 トルーパー(射撃戦仕様) 4 TYPE-LD 35 16 2 B
+create 敵 トルーパー 4 TYPE-LD 35 17 3 B
+
+create 敵 トルーパー 4 TYPE-LD 35 3 3
+create 敵 トルーパー(射撃戦仕様) 4 TYPE-LD 35 4 3
+create 敵 トルーパー 4 TYPE-LD 35 5 3
+
+create 敵 シャドウ 3 TYPE-LD 35 7 25
+create 敵 シャドウ 3 TYPE-LD 35 8 25
+create 敵 シャドウ 3 TYPE-LD 35 9 25
+
+create 敵 シャドウ 3 TYPE-LD 35 20 6
+create 敵 シャドウ 3 TYPE-LD 35 21 7
+create 敵 シャドウ 3 TYPE-LD 35 22 8
+
+Changemode A 待機
+
+
+Talk LD-24
+チィ…
+Talk ルディア
+来た…本隊っ！
+<i>みんな聞いて…私は</i>
+End
+PlaySound Noise.wav
+Wait 5
+Talk ルディア
+っ…！！
+なに…私の声が…届かない…！
+Talk LD-24
+無理だ…今、奴等は念話の同調をカットした
+つまり、完全な戦闘態勢に入った…
+Talk リィス
+余計な声は聞こえない…ってこと…？
+Talk LD-24
+そういうことだ
+Talk ルディア
+…ッ…！
+Talk リィス
+ルディア…
+Talk ルディア
+でも…あきらめないから…まだっ！
+End
+
+Exit
+
+
+ターン 7 敵:
+
+create 敵 トルーパー 5 TYPE-LD 36 21 2 X1
+create 敵 トルーパー(射撃戦仕様) 5 TYPE-LD 36 21 3 X2
+create 敵 トルーパー 5 TYPE-LD 36 21 4 X3
+
+Wait 10
+
+Talk リィス
+まだ来る…っ！？
+Talk LD-24
+いや…待て…様子がおかしい…
+End
+
+Wait 10
+
+Center X1
+Wait 2
+PlaySound Stab.wav
+Wait 3
+Center X2
+Wait 2
+PlaySound Stab.wav
+Wait 3
+Center X3
+Wait 2
+PlaySound Stab.wav
+Wait 3
+
+Explode M 21 2
+Escape X1
+Explode M 21 3
+
+Explode M 21 4
+Escape X3
+Wait 15
+Talk ルディア
+…な…っ！どういう…こと…
+End
+StartBGM Ravin'_U.mid
+KeepBGM
+Wait 30
+Center 24 2
+Wait 10
+PlaySound Crash.wav
+Talk システム
+<b><big>ケーッケッケッケッケ！！</b></big>
+End
+
+Create 中立 ダークシャドウ 2 ガスト 39 24 2
+Equip ＨＰ２００００
+Equip ＨＰ１００００
+Bossrank 1
+
+Talk ガスト
+見つけたゼェ…活きのいいガキどもォ…！
+お前らならちったぁ;殺シ甲斐ってモンがあるかァ！！
+ザコばっかでタイクツしてたトコロだァ…！
+Talk リィス
+首狩りガスト…！
+Talk ルディア
+どういうこと…！TYPE-LD達は同じ仲間じゃ…
+Talk ガスト
+何トチ狂ったコト言ってんだてめェ…？
+ドーグだ道具！;こんなモンは人間様に使われるドーグだＹＯ！
+End
+Move ガスト 22 3 アニメ表示
+Talk ガスト
+ン～ン、だからしてだナァ…
+Talk ルディア
+…ッ！！
+や…やめて…！
+suspend
+PlaySound Crash.wav
+Center 21 3
+Wait 10
+Talk ガスト
+俺様がいくら壊しちまってもォォォォォッ！
+いくらでも代わりはイルゥ！！;ヒャハッ！いいオモチャだぜこいつらはァ！！
+End
+Explode L 21 3
+Escape X2
+Wait 10
+Talk ルディア
+…おまえは…ッ！！
+<b>お前は何様だぁーーーっ！！</b>
+Suspend
+PlaySound crash.wav
+Talk ガスト
+<b><big>俺は俺様だァァァァーーーッ！！</b></big>
+まァ、こんな人形の首狩っても面白くねェしなァ…
+心配しなくてもよォ、次はお前らの首だァ！！
+<b>犯して:はらわたエグって:;目ン玉潰して:耳そいでェッ！！</b>
+<b><big>お前ぁ俺に;殺してって頼むんだァ！ヒャハッ！</b></big>
+<b><big>したら一思いに殺してやらァ！！;死体にはたっぷりと注ぎ込んでやるよォ！</b></big>
+Talk ルディア
+…っ！！！
+Talk ガスト
+面白そうだよてめェはよォ…！
+今までの人形どもと顔は同じでも;違った反応が見られそうでなァ！！
+Talk ルディア
+お前は絶対に許さない…！
+Talk ガスト
+御託はいらねェェェェーーーッ！
+<b><big>ヒャッハァァァァァァァァーーーッ！</b></big>
+End
+Changemode B 通常
+Exit
+
+ターン 5 敵:
+Changemode A 通常
+Exit
+
+攻撃 LD-24 TYPE-LD:
+Talk TYPE-LD
+<i>裏切り者は…始末する</i>
+Talk LD-24
+<i>…僅かにだが、判るぞ</i>
+<i>異常なのは…私達だと。;壊れていたのは…今までの私達なのだということが…</i>
+…あた、たかい…か
+End
+Center ルディア
+Wait 25
+Center リィス
+Wait 25
+Talk LD-24
+伝わってくる…あたたかさ…。
+違うんだ、今までの私達とはまるで…。
+End
+ClearEvent
+Exit
+
+攻撃 ルディア TYPE-LD:
+Talk ルディア
+わからないなら…教えてあげるよ…
+優しさを知っている人の…強さっていうものを！
+Talk 相手ユニット
+…優しさ…だと？
+End
+ClearEvent
+Exit
+
+攻撃 リィス TYPE-LD:
+Talk 相手ユニット
+排除する…人間
+Talk リィス(攻撃)
+貴方達も…『人』でしょうっ！？
+Talk 相手ユニット
+…我々は、ただの道具。それだけだ
+Talk リィス(攻撃)
+そんなこと…絶対に認めない…！
+End
+ClearEvent
+Exit
+
+接触 ルディア LD-24:
+
+Talk ルディア
+LD-24…貴方はあの時の…
+Talk LD-24
+あぁ、お前に撃墜され、;背に槍を突きつけられた…な。
+Talk ルディア
+だよね…ごめん…
+Talk LD-24
+謝ることは無い。
+おそらく私も…;お前という存在を実際に見ていなければ…他の皆と同じように…。
+戦うこと以外、私達は知らなかった。;勿論…友…などというものはな…
+Talk ルディア
+…そっか…。
+でも…もう違うよ。;私と貴方は友達、だめかな？
+Talk LD-24
+友達…？:;わからない…だが…。
+悪い…気分じゃない…。
+Talk ルディア
+それが…あたたかいって言うこと…だよ。
+Talk LD-24
+…今までに感じたことのない気分…。
+そうか…ならばもう私には…
+End
+ReplacePilot LD-24 シャロン
+PlaySound page.wav
+Wait 10
+Talk シャロン
+このマスクは…必要ない。;表情を隠し、心を偽る。
+そんなことは友には必要ない。;そうだろう、ルディア。
+Talk ルディア
+うんっ！
+end
+ClearEvent
+Exit
+
+攻撃 ルディア ガスト:
+Talk ルディア
+お前はそれでも…人間かぁっ！
+Talk ガスト
+人間だから殺すンじゃねぇかァ！
+グダグダ言ってンじゃねェーーーッ！;とっとと逝かせろやァ！
+End
+ClearEvent
+Exit
+
+攻撃 リィス ガスト:
+Talk ガスト
+お前からもイイ匂いがするぜェ…！
+殺シ甲斐のありそうなガキの匂いだァ！！！
+Talk リィス(攻撃)
+貴方はそうやって…何人の人を殺めて来たの…っ！！
+Talk ガスト
+知るかＹＯォォォォォォーーーッ！
+End
+Clearevent
+Exit
+
+攻撃 LD-24 ガスト:
+Talk ガスト
+お人形はどいてろヤ。;お前らじゃ前菜にもなりゃしねェ！！
+Talk LD-24
+試してみるか…？;私が他のTYPE-LDと同じなのかどうか…
+Talk ガスト
+あぁン…なんだてめェはァ…！？
+End
+ClearEvent
+Exit
+
+攻撃 ガスト TYPE-LD:
+
+Incr 攻撃回数 1
+
+Switch 攻撃回数
+
+Case 1
+
+Talk ガスト
+<b><big>邪魔邪魔邪魔邪魔ァーーーッ！</b></big>
+End
+Mind 必殺
+
+Case 2
+Talk ガスト
+<b><big>ウゼぇァーーーッ！</b></big>
+End
+
+Case 3
+Talk ガスト
+<b><big>カスがァァァーーーッ</b></big>
+End
+
+Case 4
+Talk ガスト
+<b><big>おとなしく逝けァーーーーッ！</b></big>
+End
+
+Case 5
+Talk ガスト
+<b><big>腐れてんじゃねェぞらァーーーッ！</b></big>
+End
+
+Case 6
+Talk ガスト
+<b><big>ブッ殺すぞらァーーーッ！</b></big>
+End
+
+Case 7
+Talk ガスト
+<b><big>ケーッケッケッケッケ！！</b></big>
+End
+
+Case 8
+Talk ガスト
+<b><big>脳味噌ブチ撒けァァァーーーーッ！！</b></big>
+End
+
+Case 9
+Talk ガスト
+<b><big>ザコぁ死んでＲＯォォォーーーッッ！</b></big>
+End
+
+Case 10
+Talk ガスト
+<b><big>ブッ掻いて埋めるぞラァァァーーーッ！！</b></big>
+End
+Set 攻撃回数 0
+Endsw
+
+Exit
+
+破壊 ガスト:
+Upgrade ダークシャドウ ダークシャドウ
+Talk ガスト
+がぁッ！？ふ…ザけんなよぉぉぉ！？
+Talk ルディア
+それはこっちの台詞…！
+あんたみたいなのが居るから…ッ！！
+End
+PlaySound Mirage.wav
+Move ルディア X(ガスト) Y(ガスト)
+Wait 3
+Talk ガスト
+ぬがっ！？
+Talk ルディア
+…チェックメイト。
+待ったは、なしよ。
+Talk ガスト
+ま、待っ…
+Suspend
+PlaySound Crash.wav
+Wait 3
+Talk ガスト
+ま、待っ…<color=red><big><b>っぎゃぁああああああ！？</color></big></b>
+End
+Explode XL X(ガスト) Y(ガスト)
+Escape ガスト
+
+Talk ルディア
+全く…おかげで思い出しちゃったじゃん…
+影の…技。
+End
+Continue 04C.eve
+Exit
+
+進入 ルディア 21 24:
+If 鳳飛翔の足跡 = 1 Then
+
+Talk ルディア
+なに…ここ…。
+何か力…感じる…。なんだろう、この感じ…
+何か落ちてる…この…剣から？
+End
+Item 英雄の剣
+PlaySound LevelUp!.wav
+Wait 5
+Talk システム
+英雄の剣を手に入れた！
+End
+
+Else
+
+Talk ルディア
+何か…落ちてる…なんだろこれ…？
+End
+
+Item グリーンガーネット
+PlaySound LevelUp!.wav
+Wait 5
+Talk システム
+グリーンガーネットを手に入れた！
+End
+
+Endif
+
+ClearEvent "進入 リィス 21 24"
+ClearEvent
+
+Exit
+
+
+進入 リィス 21 24:
+If 鳳飛翔の足跡 = 1 Then
+
+Talk リィス
+なんだろう…ここ…。
+何か…力を感じる…この力は…？
+End
+Item 時の奥義書
+PlaySound LevelUp!.wav
+Wait 5
+Talk システム
+時の奥義書を手に入れた！
+End
+
+Else
+
+Talk リィス
+何か…落ちてる…なんだろこれ…？
+End
+
+Item イエローオニキス
+PlaySound LevelUp!.wav
+Wait 5
+Talk システム
+イエローオニキスを手に入れた！
+End
+
+Endif
+
+ClearEvent "進入 ルディア 21 24"
+ClearEvent
+
+Exit
+
+破壊 ルディア:
+Talk ルディア
+みんな…ごめんね…！
+End
+PlaySound Explode(Far).wav
+Fadeout
+Wait 10
+Gameover
+Exit
+
+破壊 リィス:
+Talk リィス
+…こんな…ところで…！
+ルディア…
+End
+PlaySound Explode(Far).wav
+Fadeout
+Wait 10
+Gameover
+Exit
+
+破壊 LD-24:
+Talk LD-24
+…これが…死か…
+End
+PlaySound Explode(Far).wav
+Fadeout
+Gameover
+Exit
+
+
+エピローグ:
+StartBGM Ravin'_U.mid
+PlaySound Falldown.wav
+Wait 20
+Talk ガスト
+は…はひっ…！ッガ！
+くそ…くそがァァァ！！;なんだってんだクソがァ！！！！
+俺の…俺の手ェ…！！;うごかね…クッソがぁ！がァ！！ガァァァァ！！
+End
+Wait 15
+Talk ルディア
+…やっぱり、まだ生きてた。
+Talk ガスト
+が、ガキィィィィィ！！
+Talk ルディア
+逃がす気はないよ…;お前は…人を殺しすぎた…
+私の仲間…私の姉妹…！;:お前は…お前はァァァッッ！！
+Talk ガスト
+ま、まァ…落ち着けや…！
+見ろよ俺の手ェ！;な、なくなっちまった…！なァ！！
+うごかね…ねェんだぜ！？なァ！！;これで何が出来るよ…なァ！？
+Talk ルディア
+そうやって命乞いした人;…いつもあんたどーした…？
+Talk ガスト
+よ、良く覚えて…ねェなァ…:へへへ…
+Talk ルディア
+ッ！！！
+Suspend
+PlaySound Punch.wav
+Wait 5
+Talk ガスト
+っが…！！？
+Talk ルディア
+…
+Talk リィス
+ルディア…
+Talk ルディア
+もう…いい…消えて。
+Talk LD-24
+いいのか
+Talk ルディア
+いい、こんなの殺す価値も…ない！
+Talk ガスト
+へ…へへ…
+Talk リィス
+…
+(…こいつ…！)
+Talk ガスト
+ひゃは…
+ありがと…
+Talk ガスト(噛)
+ありがと…<b><big>ＹＯＯＯＯＯＯＯＯＯＯ！！</b></big>
+Suspend
+PlaySound Whiz.wav
+AutoTalk リィス
+2;ルディアっ！！！！
+AutoTalk ルディア
+2;…っ！？
+AutoTalk ガスト(噛)
+2;ぉおおおおおおおおおおおおおおおおおおおおおおおお！！？
+AutoTalk LD-24
+0.2;…！！
+End
+Wait 10
+PlaySound Stab.wav
+Wait 2
+PlaySound Stab.wav
+Wait 2
+PlaySound Crash.wav
+Wait 15
+PlaySound FallDown.wav
+Wait 30
+Talk ガスト
+…チィッ…！！
+覚えとけガキがァ！！
+End
+StopBGM
+PlaySound Mirage.wav
+Wait 20
+Talk リィス(攻撃)
+…ガスト…ッ！！
+…いや…今は…ガストを追うより…っ！
+Talk ルディア
+…やだ…冗談…でしょ…
+Suspend
+StartBGM Kurayami.mid
+Talk リィス
+ルディア！しっかりして…！
+早く！早くLD-24を…
+Talk ルディア
+…やだよ…やだよこんなの！？
+なんで…なんで…！
+Talk リィス
+………。
+LD-24！しっかりして…
+Talk LD-24
+…っ…。
+…だい…じょうぶか…ルディア…
+Talk リィス
+ルディアは無事だよ…:ねぇ！ルディア！！！
+Talk ルディア
+…ぁ…っ…
+ごめん…ごめんね…私が…:私が…！！
+Talk LD-24
+気にすることは…ない…;ルディア、お前が人間だったから…
+LD-1Aでなく…ルディアという人間だったから…;お前はヤツを殺せなかった…
+その結果なのだから…いい。
+Talk ルディア
+良くない…何も良くないよ…！！
+死んじゃったら…何も…意味ないよ…！
+Talk LD-24
+意味は…あったよ…:私が生きた意味は…あった。
+だって私は…あたたかいを…知れたんだから…
+友達も…出来たんだ…でも…一つだけ…
+Talk リィス
+うん…？
+Talk LD-24
+名前を…くれないか。
+ナンバーじゃない…私だけの名前を…。
+Talk ルディア
+名前…？
+…シャロン…。
+Talk シャロン
+Talk
+シャロン「シャロン…それが私の…名前…？」
+Talk ルディア
+そう…私の好きな歌姫シャロンから…;すっごく綺麗な声してるの…。
+そうだ、戦いが終わったら行こうよ？;:歌を聞きに…ね？３人で…さ…。
+…シャロン？
+…シャロン、ねぇ…どうしたの？
+なんで…返事…
+ねぇ、シャロン…？
+シャロン…
+Talk リィス
+…ルディア…。
+Talk ルディア
+…ごめんね…シャロン…。
+絶対…仇…とるから…。他のみんなの分も…
+Talk リィス
+ルディア…待って！どこ行くの…！？
+Talk ルディア
+ガストを…追う。;絶対に…絶対に今度は殺してやる…！！
+Talk リィス
+ルディア！待って！
+もう機体もボロボロ…;こんな状態で魔族にでも会ったら…
+それにガストがどっちに行ったのかも！！
+Talk ルディア
+関係ないっ！！
+絶対に見つけ出して殺す！絶対！！
+Talk リィス
+ルディア…
+Talk ルディア
+リィス！邪魔するんならあんただって！！
+Talk リィス
+ごめんね、ルディア
+Talk ルディア
+…！？
+End
+PlaySound Punch.wav
+Wait 5
+PlaySound Falldown.wav
+Wait 20
+Talk リィス
+シャロン…貴方も;そんなこと望んでないよね…。
+大丈夫だよ…貴方の分も…;私がルディアのこと護るから…。
+…
+なんでだろう…;こんなに悲しいのに…涙、出ないね。
+End
+Wait 30
+Set 鳳編進行度 4.8
+Call 鳳処理
+RemoveUnit シャドウストーカー
+RemovePilot LD-24
+Exit
+
+
+
+
+
+
+
+
+
+

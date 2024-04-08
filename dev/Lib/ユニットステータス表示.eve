@@ -1,0 +1,425 @@
+# インターミッションコマンド「ユニットステータス」
+# 最終更新日 02.06.06, Kei Sakamoto
+
+プロローグ:
+
+KeepBGM
+
+MakeUnitList ＨＰ
+表示モード = ＨＰ
+
+If Option(改造不可) = 1 Then
+  ClearEvent "ユニットコマンド ユニット強化 味方 (RankUpCost() <= 資金)"
+EndIf
+
+Exit
+
+
+# なにもしない
+スタート:
+local リストそのいち
+local 表示状態 0
+	set i 0
+
+	ForEach 味方 離脱
+
+		set リストそのいち[i] Unit(対象ユニットＩＤ)
+
+		incr i
+
+	Next
+clearEvent "マップコマンド 出撃ユニット表示"
+Exit
+
+エピローグ:
+Exit
+
+マップコマンド ユニット全表示:
+    set 表示状態 1
+	set i 0
+
+	ForEach 味方 離脱
+
+		set リストそのいち[i] Unit(対象ユニットＩＤ)
+
+		join
+
+		incr i
+
+	Next
+
+	MakeUnitList 表示モード
+	RestoreEvent "マップコマンド 出撃ユニット表示"
+	clearEvent
+
+Exit
+
+マップコマンド 出撃ユニット表示:
+    set 表示状態 0
+	set i 0
+
+	ForEach i In リストそのいち
+
+		leave リストそのいち[i]
+
+	Next
+
+	MakeUnitList 表示モード
+	
+	RestoreEvent "マップコマンド ユニット全表示"
+	clearEvent
+
+Exit
+
+
+マップコマンド 並べ替え:
+
+If Info(オプション,等身大基準) = "On" Then
+  Ask "どれで並べ替えますか？" キャンセル可
+  ランク
+  ＨＰ
+  ＥＮ
+  装甲
+  運動性
+  移動力
+  最大攻撃力
+  最長射程
+  レベル
+  ＳＰ
+  格闘
+  射撃
+  命中
+  回避
+  技量
+  反応
+  名称
+  End
+  
+  Switch 選択
+    Case 1
+      MakeUnitList ランク
+      表示モード = ランク
+    Case 2
+      MakeUnitList ＨＰ
+      表示モード = ＨＰ
+    Case 3
+      MakeUnitList ＥＮ
+      表示モード = ＥＮ
+    Case 4
+      MakeUnitList 装甲
+      表示モード = 装甲
+    Case 5
+      MakeUnitList 運動性
+      表示モード = 運動性
+    Case 6
+      MakeUnitList 移動力
+      表示モード = 移動力
+    Case 7
+      MakeUnitList 最大攻撃力
+      表示モード = 最大攻撃力
+    Case 8
+      MakeUnitList 最長射程
+      表示モード = 最長射程
+    Case 9
+      MakeUnitList レベル
+      表示モード = レベル
+    Case 10
+      MakeUnitList ＳＰ
+      表示モード = ＳＰ
+    Case 11
+      MakeUnitList 格闘
+      表示モード = 格闘
+    Case 12
+      MakeUnitList 射撃
+      表示モード = 射撃
+    Case 13
+      MakeUnitList 命中
+      表示モード = 命中
+    Case 14
+      MakeUnitList 回避
+      表示モード = 回避
+    Case 15
+      MakeUnitList 技量
+      表示モード = 技量
+    Case 16
+      MakeUnitList 反応
+      表示モード = 反応
+    Case 17
+      MakeUnitList 名称
+      表示モード = 名称
+  EndSw
+Else
+  Ask "どれで並べ替えますか？" キャンセル可
+  ランク
+  ＨＰ
+  ＥＮ
+  装甲
+  運動性
+  移動力
+  最大攻撃力
+  最長射程
+  名称
+  End
+
+  Switch 選択
+    Case 1
+      MakeUnitList ランク
+      表示モード = ランク
+    Case 2
+      MakeUnitList ＨＰ
+      表示モード = ＨＰ
+    Case 3
+      MakeUnitList ＥＮ
+      表示モード = ＥＮ
+    Case 4
+      MakeUnitList 装甲
+      表示モード = 装甲
+    Case 5
+      MakeUnitList 運動性
+      表示モード = 運動性
+    Case 6
+      MakeUnitList 移動力
+      表示モード = 移動力
+    Case 7
+      MakeUnitList 最大攻撃力
+      表示モード = 最大攻撃力
+    Case 8
+      MakeUnitList 最長射程
+      表示モード = 最長射程
+    Case 8
+      MakeUnitList 最長射程
+      表示モード = 最長射程
+    Case 9
+      MakeUnitList 名称
+      表示モード = 名称
+  EndSw
+EndIf
+
+Exit
+
+ユニットコマンド アイテム交換 味方:
+	ExchangeItem 対象ユニット
+Exit
+
+#ユニット改造用ユニットコマンド
+ユニットコマンド ユニット強化 味方 (RankUpCost() <= 資金):
+
+cost = RankUpCost()
+
+If cost = 999999999 Then
+  Talk システム
+  これ以上強化できません
+  End
+  Exit
+EndIf
+
+If cost > 資金 Then
+  Talk システム
+  資金が足りません;改造費 = $(cost);資金 = $(資金)
+  End
+  Exit
+EndIf
+
+caption = "ユニットを強化しますか？ ：$(Rank()) => $(Rank() + 1)："
+If Info(ユニット,対象ユニットＩＤ,特殊能力所有,最大改造数) Then
+  caption = caption & "Max=$(Info(ユニット,対象ユニットＩＤ,最大改造数))："
+EndIf
+caption = caption & " 改造費 $(cost) ： 資金 $(資金)"
+Ask caption キャンセル可
+強化する
+強化しない
+End
+
+If 選択 = 1 Then
+  RankUp 1
+  Money (- cost)
+  MakeUnitList 表示モード
+EndIf
+
+Exit
+
+
+# インターミッションに復帰
+マップコマンド インターミッションに戻る:
+
+	set i 0
+
+	if 表示状態 = 1 then
+	
+		ForEach i In リストそのいち
+
+			leave リストそのいち[i]
+
+		Next
+		
+	endif
+	
+Hide
+Continue
+
+
+# サブルーチン
+MakeUnitList:
+
+Hide
+
+ForEach 味方
+  Escape
+Next
+
+ChangeMap ""
+
+Font Regular 9pt 背景
+
+# ユニットを表示する位置を初期設定
+xx = 1
+yy = 1
+
+ForEach u In ユニット一覧(Args(1))
+  #デフォルトユニットを設定
+  Select u
+
+  # ユニット出撃位置を折り返す
+  If xx > 15 Then
+    xx = 1
+    Incr yy
+    If yy > 40 Then
+      Talk システム
+        ユニット数が多すぎるため、一部のユニットが表示出来ません
+        Break
+      End
+    Endif
+  Endif
+
+  # パイロットが乗っていないユニットにはダミーパイロットを載せる
+  If Pilot() = "" Then
+    Incr ダミーパイロット数
+    Pilot ステータス表示用ダミーパイロット(ザコ) 1 ("ダミー" & ダミーパイロット数)
+    Ride ("ダミー" & ダミーパイロット数)
+  Endif
+
+  # 出撃
+  Launch xx yy
+
+  # プレイヤーが操作できないように
+  SetStatus 非操作 -1
+
+  # ユニットの愛称とランク、ＨＰ、ＥＮを表示
+  PaintString (32 * xx + 2) (32 * (yy - 1) + 1) Nickname(u) 
+  Switch Args(1)
+    Case "ランク"
+      PaintString (32 * xx + 2) (32 * (yy - 0.5) + 1) "RK$(Rank()) HP$(HP()) EN$(EN())"
+    Case "ＨＰ" "ＥＮ" "名称"
+      PaintString (32 * xx + 2) (32 * (yy - 0.5) + 1) "HP$(HP()) EN$(EN())"
+    Case "装甲"
+      PaintString (32 * xx + 2) (32 * (yy - 0.5) + 1) "装甲$(Info(u,装甲))"
+    Case "運動性"
+      PaintString (32 * xx + 2) (32 * (yy - 0.5) + 1) "運動性$(Info(u,運動性))"
+    Case "移動力"
+      PaintString (32 * xx + 2) (32 * (yy - 0.5) + 1) "移動力$(Info(u,移動力))"
+    Case "最大攻撃力"
+      PaintString (32 * xx + 2) (32 * (yy - 0.5) + 1) "攻撃力$(Info(u,最大攻撃力))"
+    Case "最長射程"
+      PaintString (32 * xx + 2) (32 * (yy - 0.5) + 1) "射程$(Info(u,最長射程))"
+  EndSw
+
+  # 表示位置を右に5マスずらす
+  Incr xx 5
+Next
+
+# フォントの設定を戻しておく
+Font
+
+Redraw
+Show
+
+Return
+
+
+#ランクアップ費用計算用関数「RankUpCost」
+RankUpCost:
+Local rucost
+
+#Ver.1.7.*ではInfo関数で改造費を参照可能
+rucost = Info(ユニット, UnitID(), 改造費)
+If rucost > 0 Then
+  Return rucost
+EndIf
+
+If Option(５段階改造) = 1 Then
+  If Rank() >= 5 Then
+    Return 999999999
+  EndIf
+EndIf
+
+If Eval("Disable($(Unit()),改造)") = 1 Then
+  Return 999999999
+EndIf
+
+If IsAvailable(分離) Then
+  Switch LLength(Info(ユニット, UnitID(), 特殊能力データ, 分離))
+    Case 3
+      If Not IsAvailable(主形態) Then
+        Return 999999999
+      EndIf
+    Case Else
+      If IsAvailable(制限時間) Then
+        Return 999999999
+      EndIf
+  EndSw
+EndIf
+
+If Option(低改造費) <> 1 Then
+  Switch Rank()
+    Case 0
+      Return 10000
+    Case 1
+      Return 15000
+    Case 2
+      Return 20000
+    Case 3
+      Return 40000
+    Case 4
+      Return 80000
+    Case 5
+      Return 150000
+    Case 6
+      Return 200000
+    Case 7
+      Return 300000
+    Case 8
+      Return 400000
+    Case 9
+      Return 500000
+    Case Else
+      Return 999999999
+  EndSw
+Else
+  Switch Rank()
+    Case 0
+      Return 10000
+    Case 1
+      Return 15000
+    Case 2
+      Return 20000
+    Case 3
+      Return 30000
+    Case 4
+      Return 40000
+    Case 5
+      Return 50000
+    Case 6
+      Return 60000
+    Case 7
+      Return 70000
+    Case 8
+      Return 80000
+    Case 9
+      Return 100000
+    Case Else
+      Return 999999999
+  EndSw
+EndIf
+
+Return 0
+

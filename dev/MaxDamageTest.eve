@@ -1,0 +1,668 @@
+プロローグ:
+StopBGM
+Set VerN "Ver1.00"
+
+#コンフィグ
+Set 技能用レベル 80
+Set 設定レベル 40
+Set 設定ランク 5
+Set 敵技量 150
+Set 敵装甲 2000
+Set 味方気力 150
+Set 敵気力 130
+#Set 敵地形 空
+
+#
+Set 瀕死技能評価 1
+Set 精神コマンド反映 1
+Set アイテム選択 1
+
+#Set 封属性実効評価 1
+Set 非評価属性 合封
+#Set 尽属性ENギリギリ 1
+Set 計測キャラ履歴出力 1
+
+Set フォルダ直下 1
+
+Set 設定情報 "($(VerN), $(技能用レベル), $(設定レベル), $(設定ランク), $(味方気力), $(敵気力), $(敵装甲))"
+
+#Set 測定フォルダ 計測者
+#Set データパス "Data\計測者"
+Do While 1
+
+#If Dir(AppPath & "\" & "Data-SD.eve", ファイル) <> "" Then
+If フォルダ直下 = 1 Then
+　Set DataP LoadFileDialog("Pilot.txt", "txt",読み込むPilot.txtを指定して下さい,data\)
+  If InStr(DataP, \) = 0 Then
+      Talk
+　　　EVEを置く位置が間違っています。
+　　　End
+      Quit
+  Endif
+　For i = 1 to Len(DataP)
+　　　If Right(Left(DataP,i),1) = "\" Then
+　　　　Incr 階層
+　　　　Set 起点[階層] i
+　　　Endif
+　Next
+　Set 測定フォルダ Mid(DataP,(起点[(階層 - 1)] + 1),(起点[階層] - 起点[(階層 - 1)] - 1))
+  Set データパス Left(DataP,(起点[階層] - 1))
+
+Endif
+
+
+
+Do While 1
+
+Load 測定フォルダ
+Call 計測者設定
+
+#Do While 1
+ #If Dir(MaxDamage & ".txt", ファイル) <> "" Then
+  # Open (MaxDamage & 計測者ユニット & ".txt") For 出力 As F
+  #   Break
+  #Endif
+  #Set MaxDamage (MaxDamage & i)
+  #incr i
+#Loop
+
+#Print F 設定情報
+#Print F
+
+Set 計測者パイロット数 1
+Unit 計測者ユニット 設定ランク
+Pilot 計測者パイロット 技能用レベル
+Ride 計測者パイロット
+#If 計測者アイテム <> "" Then
+Set 計測パイロット名[1] 計測者パイロット
+If 装備アイテム数 > 0 Then
+ For i = 1 to 装備アイテム数
+  Item 計測者アイテム[i]
+  Equip 計測者アイテム[i]
+ Next
+Endif
+
+Set 実効精神コマンド Info(パイロット,計測者パイロット,精神コマンド)
+
+
+If ユニット乗員数 > 1 Then
+  For i = 2 To ユニット乗員数
+    Pilot 計測者同乗者[i] 技能用レベル
+    Ride 計測者同乗者[i] 計測者ユニット
+    Incr 計測者パイロット数
+    Set 計測パイロット名[計測者パイロット数] 計測者同乗者[i]
+    Set 実効精神コマンド "$(実効精神コマンド) $(Info(パイロット,計測者同乗者[i],精神コマンド))"
+  Next
+Endif
+If 計測者サポート <> "なし" Then
+  Pilot 計測者サポート 技能用レベル
+  Ride 計測者サポート 計測者ユニット
+  Incr 計測者パイロット数
+  Set 計測パイロット名[計測者パイロット数] 計測者サポート
+  Set 実効精神コマンド "$(実効精神コマンド) $(Info(パイロット,計測者サポート,精神コマンド))"
+Endif
+
+Show
+AutoTalk
+1;$(計測者ユニット)測定中……
+Suspend
+
+Call 計算
+
+RemovePilot 計測者パイロット
+If 装備アイテム数 > 0 Then
+  For i = 1 to 装備アイテム数
+    RemoveItem 計測者アイテム[i]
+  Next
+  Unset 計測者アイテム
+Endif
+AutoTalk
+1;$(計測者ユニット)測定終了
+Suspend
+Ask このフォルダの他のキャラで計測を続けますか？ キャンセル可
+はい
+いいえ
+End
+If 選択 <> 1 Then
+   Break
+Endif
+
+Loop
+If フォルダ直下 = 0 Then
+  Break
+Endif
+Forget 測定フォルダ
+Ask 他のフォルダを読み込んでで計測を続けますか？ キャンセル可
+はい
+いいえ
+End
+If 選択 <> 1 Then
+   Break
+Endif
+Unset 登録パイロット
+Unset 登録サポート
+Unset 登録ユニット
+Unset 登録アイテム
+
+
+Loop
+#Close F
+Quit
+
+計測者設定:
+
+Set パイロット数 0
+Set ユニット数 0
+Set サポート数 0
+Set アイテム数 0
+#Set 計測者アイテム ""
+#If Dir("Data\計測者\pilot.txt" = "") or Dir("Data\計測者\unit.txt" = "") Then
+If Dir(データパス & "\pilot.txt" = "") Then
+  Talk システム
+  計測者のデータがたりません
+  End
+  Quit
+Endif
+If (Dir(データパス & "\unit.txt") = "") and (Dir(データパス & "\robot.txt") = "") Then
+  Talk システム
+  計測者のデータがたりません
+  End
+  Quit
+Endif
+
+Set テスト ""
+Open (データパス & "\pilot.txt") For 入力 As F
+Do While (EOF(F) = 0)
+  LineRead F 暫定
+  If (暫定 = "") Or (Left(暫定, 1) = "#") Then
+    Skip
+  Endif
+  Incr パイロット数
+  Set パイロット名[パイロット数] 暫定　
+  If InStr(Info(パイロットデータ, 暫定, 機体クラス), "サポート") > 0 Then
+    Incr サポート数
+    Set サポート名[サポート数] 暫定
+  Endif
+  Do
+    LineRead F テスト
+  Loop While ((テスト != "") And (EOF(F) = 0))
+Loop
+Close F
+Set テスト ""
+If (Dir(データパス & "\unit.txt") <> "") Then
+　Open (データパス & "\unit.txt") For 入力 As F
+#Else
+# Open (データパス & "\robot.txt") For 入力 As F
+#Endif
+Do While (EOF(F) = 0)
+  LineRead F 暫定
+  If (暫定 = "") Or (Left(暫定, 1) = "#") Then
+    Skip
+  Endif
+  Incr ユニット数
+  Set ユニット名[ユニット数] 暫定
+　Set 開始行数[ユニット数] 行数
+  Do
+    LineRead F テスト
+  Loop While ((テスト != "") And (EOF(F) = 0))
+Loop
+Close F
+Endif
+Set テスト ""
+If (Dir(データパス & "\robot.txt") <> "") Then
+  Open (データパス & "\robot.txt") For 入力 As F
+Do While (EOF(F) = 0)
+  LineRead F 暫定
+  If (暫定 = "") Or (Left(暫定, 1) = "#") Then
+    Skip
+  Endif
+  Incr ユニット数
+  Set ユニット名[ユニット数] 暫定
+　Set 開始行数[ユニット数] 行数
+  Do
+    LineRead F テスト
+  Loop While ((テスト != "") And (EOF(F) = 0))
+Loop
+Close F
+Endif
+
+If アイテム選択 > 0 Then
+Set テスト ""
+If (Dir(データパス & "\item.txt") <> "") Then
+  Open (データパス & "\item.txt") For 入力 As F
+Do While (EOF(F) = 0)
+  LineRead F 暫定
+  If (暫定 = "") Or (Left(暫定, 1) = "#") Then
+    Skip
+  Endif
+  Incr アイテム数
+  Set アイテム名[アイテム数] 暫定
+　Set 開始行数[アイテム数] 行数
+  Do
+    LineRead F テスト
+  Loop While ((テスト != "") And (EOF(F) = 0))
+Loop
+Close F
+Endif
+Endif
+
+If (パイロット数 = 0) Or (ユニット数 = 0) Then
+  Talk システム
+  計測者のデータが足りません
+  End
+  Quit
+Endif
+
+
+Do
+
+For i = 1 To パイロット数
+  Set 登録パイロット[i] パイロット名[i]
+Next
+For i = 1 To サポート数
+  Set 登録サポート[i] サポート名[i]
+Next
+For i = 1 To ユニット数
+  Set 登録ユニット[i] ユニット名[i]
+Next
+For i = 1 To アイテム数
+  Set 登録アイテム[i] アイテム名[i]
+Next
+#　登録パイロット[やめる] = やめる
+Unset 計測者同乗者
+
+If パイロット数 = 1 Then
+  Set 計測者パイロット 登録パイロット[1]
+  Set 登録パイロット[1] ""
+Else
+#  Talk システム
+#  パイロットを選択して下さい。
+#  End
+  Ask 登録パイロット パイロットを選択して下さい。 キャンセル可
+　If 登録パイロット[選択] = "" Then
+    Break
+  Endif
+  Set 計測者パイロット 登録パイロット[選択]
+  Set 登録パイロット[選択] ""
+Endif
+
+If ユニット数 = 1 Then
+  Set 計測者ユニット 登録ユニット[1]
+  Set 登録ユニット[1] ""
+Else
+#  Talk システム
+#  ユニットを選択して下さい。
+#  End
+  Ask 登録ユニット ユニットを選択して下さい。
+  Set 計測者ユニット 登録ユニット[選択]
+  Set 登録ユニット[選択] ""
+Endif
+
+Set ユニット乗員数 Abs(Info(ユニットデータ,計測者ユニット,規定パイロット数))
+
+If ユニット乗員数 > 1 Then
+  If パイロット数 < ユニット乗員数 Then
+    Talk システム
+    計測者のpilotデータ数が足りません
+    End
+    Quit
+  Endif
+  Talk システム
+  同乗者を選択して下さい。
+  End
+  For i = 2 To ユニット乗員数
+    Ask 登録パイロット 同乗者を選択して下さい。
+    Set 計測者同乗者[i] 登録パイロット[選択]
+    Set 登録パイロット[選択] ""
+  Next
+Endif
+
+Set 装備アイテム数 0
+If (アイテム数 > 0) and アイテム選択 Then
+ Do While 1
+　Set 登録アイテム[ない] "装備させない"
+  Ask 登録アイテム 装備アイテムを選択して下さい。 キャンセル可
+　If (選択 <> "ない") and (選択 <> "") Then
+    Incr 装備アイテム数
+　  Set 計測者アイテム[装備アイテム数] 登録アイテム[選択]
+  　Set 登録アイテム[選択] ""
+  Else
+       Break
+　Endif
+ Loop
+Endif
+
+
+Set 計測者サポート "なし"
+If サポート数 > 0 Then
+  Set 登録サポート[ない] "乗せない"
+  Ask 登録サポート サポートパイロットを選択して下さい。 キャンセル可
+  If (選択 <> "ない") and (選択 <> "") Then
+    Set 計測者サポート 登録サポート[選択]
+    Set 登録サポート[選択] ""
+  Endif
+Endif
+
+If ((パイロット数 * ユニット数) = 1) And (計測者サポート = "なし") Then
+  Break
+Endif
+
+Set 表示アイテム ""
+#If 計測者アイテム <> "" Then
+#  Set 表示アイテム (" ＆ " & 計測者アイテム)
+#Endif
+If 装備アイテム数 > 0 Then
+   For i = 1 to 装備アイテム数
+    Set 表示アイテム (表示アイテム & " ＆ " & 計測者アイテム[i])
+  Next
+  Set 表示アイテム (" ＆ " & 表示アイテム)
+Endif
+If 計測者サポート <> "なし" Then
+  Confirm (計測者ユニット & " ＆ " & 計測者パイロット & " ＆ " & 計測者サポート & 表示アイテム & " でよろしいですか？")
+Elseif ユニット乗員数 > 1 Then
+  Set 暫定 (計測者ユニット & " ＆ " & 計測者パイロット & 表示アイテム)
+  For i = 2 To ユニット乗員数
+    Set 暫定 (暫定 & " ＆ " & 計測者同乗者[i] & 表示アイテム)
+  Next
+  Confirm (暫定 & " でよろしいですか？")
+Else
+  Confirm (計測者ユニット & " ＆ " & 計測者パイロット & 表示アイテム & " でよろしいですか？")
+Endif
+If 選択 = 1 Then
+  Break
+Endif
+
+Loop While 1
+UnSet 表示アイテム
+Return
+
+計算:
+
+If 精神コマンド反映 > 0 Then
+  If (InStr(実効精神コマンド,魂) + InStr(実効精神コマンド,捨て身) + InStr(実効精神コマンド,奇跡) + InStr(実効精神コマンド,夢)) > 0 Then
+    Set 精神倍率 3
+  Elseif (InStr(実効精神コマンド,熱血) + InStr(実効精神コマンド,奇襲)) > 0 Then
+    Set 精神倍率 2
+  Elseif InStr(実効精神コマンド,激闘) > 0 Then
+    Set 精神倍率 1.5
+  Else
+    Set 精神倍率 1
+  Endif
+Else
+    Set 精神倍率 1
+Endif
+
+Unset 実効精神コマンド
+
+Set 評価格闘 (Info(パイロット,計測者パイロット,格闘) - 技能用レベル + 設定レベル)
+Set 評価射撃 (Info(パイロット,計測者パイロット,射撃) - 技能用レベル + 設定レベル)
+Set 評価技量 (Info(パイロット,計測者パイロット,技量) - 技能用レベル)
+
+
+Set 瀕死攻撃力修正 1
+Set 瀕死CT修正 0
+Set ブースト倍率 1
+
+Set wap_地形[空] Left(Info(ユニット,計測者ユニット,地形適応),1)
+Set wap_地形[陸] Mid(Info(ユニット,計測者ユニット,地形適応),2,1)
+Set wap_地形[水] Mid(Info(ユニット,計測者ユニット,地形適応),3,1)
+Set wap_地形[宇] Right(Info(ユニット,計測者ユニット,地形適応),1)
+
+Set 適応威力修正[A] 1.2
+Set 適応威力修正[B] 1
+Set 適応威力修正[C] 0.8
+Set 適応威力修正[D] 0.6
+Set 適応威力修正[E] 0
+
+
+#RankUp 計測者ユニット 設定ランク
+
+If 味方気力 >= 130 Then
+ If Info(ユニット,計測者ユニット,特殊能力所有,ブースト) Then
+　　Set ブースト倍率 1.25
+ Endif
+ If Info(パイロット,計測者パイロット,特殊能力所有,野生化) Then  
+    Set ブースト倍率 (ブースト倍率 * 1.25)
+ Endif
+Endif
+
+If 瀕死技能評価 > 0 Then
+　If Info(パイロット,計測者パイロット,特殊能力所有,覚悟) = 1 Then
+　　Set 瀕死攻撃力修正 1.2
+    Set 瀕死CT修正 50
+  Elseif (Info(パイロット,計測者パイロット,特殊能力所有,底力) + Info(パイロット,計測者パイロット,特殊能力所有,超底力)) <> 0 Then
+    Set 瀕死CT修正 50
+  Endif
+Endif
+
+For w = 1 To Info(ユニット,計測者ユニット,武器数)
+  Set 評価武装名 Info(ユニット,計測者ユニット,武器,w)
+#    If Info(ユニット,計測者ユニット,武器,評価武装名,属性)
+    If (Info(ユニット,計測者ユニット,武器,評価武装名,攻撃力) > 0) and (味方気力 >= Info(ユニット,計測者ユニット,武器,評価武装名,必要気力)) Then       
+       Call 個別武器計算
+    Endif
+Next
+Open ("MaxDamageResult" & ".txt") For 追加出力 As F
+Print F 
+Print F (計測者ユニット & 最大火力)
+Print F ("最大火力期待値(" & 最大火力武装 & "): " & 総合最大火力 & "(" & 総合最大火力CT & "%)")
+Print F ("最大実ダメージ(" & 最大ダメージ武装 & "): " & CT抜き総合最大火力 & "(" & CT抜き総合最大火力CT & "%)")
+Close F
+
+#結果表示 ("最大火力期待値: " & 総合最大火力 & "(" & 最大火力武装 & ")")
+#結果表示 ("最大実ダメージ: " & CT抜き総合最大火力 & "(" & 最大ダメージ武装 & ")")
+If 計測キャラ履歴出力 Then
+ Set 暫定 (測定フォルダ & "," & 計測者ユニット & "," & 計測者パイロット数)
+ For i = 1 to 計測者パイロット数
+   Set 暫定 (暫定 & "," & 計測パイロット名[i]) 
+ Next
+ Set 暫定 (暫定 & "," & 装備アイテム数) 
+ For i = 1 to 装備アイテム数
+   Set 暫定 (暫定 & "," & 計測者アイテム[i]) 
+ Next
+ Open MDCharalist.txt For 追加出力 As F
+ Print F 暫定
+ Close F
+Endif
+　UnSet CT抜き総合最大火力
+  UnSet CT抜き総合最大火力CT
+  UnSet 最大ダメージ武装
+  UnSet 総合最大火力
+  UnSet 総合最大火力CT
+  UnSet 最大火力武装
+  Unset 暫定
+Return
+
+個別武器計算:
+#If (Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,合) = 1) and (合体技評価 = 0) Then
+#    Return
+#Endif
+For i = 1 to Len(非評価属性)
+   If InStr(Info(ユニット,計測者ユニット,武器,評価武装名,属性),Mid(非評価属性,i,1)) > 0 Then
+      Return
+#        Set 非評価属性ON
+  Endif
+Next
+
+RecoverEN 計測者パイロット 100
+If (Info(ユニット,計測者ユニット,武器,評価武装名,属性レベル,尽) >= 1) and 尽属性ENギリギリ Then
+   EN(計測者パイロット) = Info(ユニット,計測者ユニット,武器,評価武装名,消費ＥＮ)
+Endif
+
+Set wp_武突接 0
+If Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,突) = 1 Then
+  Set wp_武突接 1
+Elseif Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,武) = 1 Then
+  Set wp_武突接 1
+Elseif Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,接) = 1 Then
+  Set wp_武突接 1
+Endif
+
+Set wp_最大適応修正 0
+Set wp_地形[空] Left(Info(ユニット,計測者ユニット,武器,評価武装名,地形適応),1)
+If (wp_武突接 = 1) And (StrComp(wp_地形[空],wap_地形[空]) = 1) Then
+  Set wp_地形[空] wap_地形[空]
+  If Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,Ｊ) = 1 Then
+    Switch Info(ユニット,計測者ユニット,武器,評価武装名,属性レベル,Ｊ)
+      Case 1
+        If wp_地形[空] = "E" Then
+          Set wp_地形[空] "D"
+        Elseif wp_地形[空] = "D" Then
+          Set wp_地形[空] "C"
+        Elseif wp_地形[空] = "C" Then
+          Set wp_地形[空] "B"
+        Else
+          Set wp_地形[空] "A"
+        Endif
+      Case 2
+        If wp_地形[空] = "E" Then
+          Set wp_地形[空] "C"
+        Elseif wp_地形[空] = "D" Then
+          Set wp_地形[空] "B"
+        Else
+          Set wp_地形[空] "A"
+        Endif
+      Case 3
+        If wp_地形[空] = "E" Then
+          Set wp_地形[空] "B"
+        Else
+          Set wp_地形[空] "A"
+        Endif
+      Case Else
+        Set wp_地形[空] "A"
+    EndSw
+  Endif
+Endif
+
+  Set wp_地形[陸] Mid(Info(ユニット,計測者ユニット,武器,評価武装名,地形適応),2,1)
+  If (wp_武突接 = 1) And (StrComp(wp_地形[陸],wap_地形[陸]) = 1) Then
+    Set wp_地形[陸] wap_地形[陸]
+  Endif
+
+  Set wp_地形[水] Mid(Info(ユニット,計測者ユニット,武器,評価武装名,地形適応),3,1)
+  If (wp_武突接 = 1) And (StrComp(wp_地形[水],wap_地形[水]) = 1) Then
+    Set wp_地形[水] wap_地形[水]
+  Endif
+
+    Set wp_地形[宇] Right(Info(ユニット,計測者ユニット,武器,評価武装名,地形適応),1)
+  If (wp_武突接 = 1) And (StrComp(wp_地形[宇],wap_地形[宇]) = 1) Then
+    Set wp_地形[宇] wap_地形[宇]
+  Endif
+
+Switch 敵地形
+#If 敵地形 <> "" Then
+#  Set wp_最大適応修正 適応威力修正[敵地形]
+  Case 空 空中
+    Set wp_最大適応修正 適応威力修正[wp_地形[空]]
+  Case 地 地上 陸 陸上 水上
+    wp_最大適応修正 適応威力修正[wp_地形[陸]]
+  Case 水 水中 海 海中
+    Set wp_最大適応修正 適応威力修正[wp_地形[水]]
+  Case 宇 宇宙 異 異空間
+    Set wp_最大適応修正 適応威力修正[wp_地形[宇]]
+　Case Else
+  If 適応威力修正[wp_地形[空]] > wp_最大適応修正 Then
+    Set wp_最大適応修正 適応威力修正[wp_地形[空]]
+  Endif
+  If 適応威力修正[wp_地形[陸]] > wp_最大適応修正 Then
+    Set wp_最大適応修正 適応威力修正[wp_地形[陸]]
+  Endif
+  If 適応威力修正[wp_地形[水]] > wp_最大適応修正 Then
+    Set wp_最大適応修正 適応威力修正[wp_地形[水]]
+  Endif
+  If 適応威力修正[wp_地形[宇]] > wp_最大適応修正 Then
+    Set wp_最大適応修正 適応威力修正[wp_地形[宇]]
+  Endif
+EndSw
+
+#Set wp_適応威力修正 (適応威力修正[wp_地形[空]] + 適応威力修正[wp_地形[陸]] + 適応威力修正[wp_地形[水]] + 適応威力修正[wp_地形[宇]])
+#Incr wp_適応威力修正 (wp_最大適応修正 * 2)
+#Set wp_適応威力修正 (wp_適応威力修正 / 6)
+
+If Info(ユニット,計測者ユニット,武器,評価武装名,最大射程) = 1 Then
+  Set 評価格闘射撃値 評価格闘
+Else
+  Set 評価格闘射撃値 評価射撃
+Endif
+If Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,格) = 1 Then
+  Set 評価格闘射撃値 評価格闘
+Endif
+If Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,射) = 1 Then
+  Set 評価格闘射撃値 評価射撃
+Endif
+
+
+If Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,縛) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,Ｓ) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,劣) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,中) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,石) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,痺) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,眠) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,乱) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,魅) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,恐) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,憑) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,盲) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,毒) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,撹) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,不) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,止) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,黙) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,除) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,即) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,脱) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,Ｄ) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,低) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,吹) + Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,Ｋ) >= 1 Then
+ Set ＣＴ率 0
+Else
+ Set ＣＴ率 (Info(ユニット,計測者ユニット,武器,評価武装名,クリティカル率) + (Info(パイロット,計測者パイロット,特殊能力レベル,Ｖ．ポジティブ) * 2) + (Info(パイロット,計測者パイロット,特殊能力所有,超能力) * 5) + (Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,忍) * Info(ユニット,計測者ユニット,特殊能力所有,ステルス) * 10) + 評価技量 - 敵技量 + 瀕死CT修正)
+Endif
+
+
+
+# 最大火力
+Set 気力修正 (味方気力 / 100)
+Set 敵気力修正 (敵気力 / 100)
+Set 評価格闘射撃値 (評価格闘射撃値 / 100)
+
+Set 最大火力[評価武装名] (Info(ユニット,計測者ユニット,武器,評価武装名,攻撃力) * wp_最大適応修正 * 評価格闘射撃値 * 気力修正 * 瀕死攻撃力修正)
+    If Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,貫) = 1 Then
+      If (Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,封) = 1) and (封属性実効評価 = 1) Then
+        Incr 最大火力[評価武装名] (敵装甲 * 敵気力修正 * -0.3)
+      Else
+        Incr 最大火力[評価武装名] (敵装甲 * 敵気力修正 * -0.6)
+      Endif
+    ElseIf (Info(ユニット,計測者ユニット,武器,評価武装名,属性所有,封) = 1) and (封属性実効評価 = 1) Then
+      Incr 最大火力[評価武装名] (敵装甲 * 敵気力修正 * -0.6)
+    Else
+      Incr 最大火力[評価武装名] (敵装甲 * 敵気力修正 * -1.2)       
+    Endif
+If 最大火力[評価武装名] < 0 Then
+  Set 最大火力[評価武装名] 10
+Endif
+
+#Set 最大火力[評価武装名] Int(最大火力[評価武装名])
+Set 最大火力[評価武装名] Int(Int(最大火力[評価武装名] * ブースト倍率) * 精神倍率)
+
+If ＣＴ率 > 100 Then
+  Set ＣＴ率 100
+Endif
+If ＣＴ率 < 0 Then
+  Set ＣＴ率 1
+Endif
+
+Set CT抜き最大火力[評価武装名] 最大火力[評価武装名]
+Incr 最大火力[評価武装名] (最大火力[評価武装名] * 0.5 * (ＣＴ率 / 100))
+Set 最大火力[評価武装名] Int(最大火力[評価武装名])
+
+If 最大火力[評価武装名] > 総合最大火力 Then
+  Set 総合最大火力 最大火力[評価武装名]
+  Set 総合最大火力CT (ＣＴ率)
+  Set 最大火力武装 評価武装名
+Endif
+If CT抜き最大火力[評価武装名] > CT抜き総合最大火力 Then
+　Set CT抜き総合最大火力 CT抜き最大火力[評価武装名]
+  Set CT抜き総合最大火力CT (ＣＴ率)
+  Set 最大ダメージ武装 評価武装名
+Endif
+Return 
+
+没
+　If Info(パイロット,計測者パイロット,特殊能力所有,超能力) Or Info(パイロット,計測者パイロット,特殊能力所有,集中力) Then  
+   　Set コスト修正[計測者パイロット] 0.8 
+　Endif
+　If ユニット乗員数 > 1 Then
+　　　For i = 2 To ユニット乗員数
+　　  　If Info(パイロット,計測者同乗者[i],特殊能力所有,超能力) Or Info(パイロット,計測者同乗者[i],特殊能力所有,集中力) Then  
+  　　 　 Set コスト修正[計測者同乗者[i]] 0.8 
+　　  　Endif
+　　Next
+　Endif
+  If 計測者サポート <> "なし" Then
+　 　If Info(パイロット,計測者サポート,特殊能力所有,超能力) Or Info(パイロット,計測者サポート,特殊能力所有,集中力) Then  
+ 　  　 Set コスト修正[計測者サポート] 0.8 
+　　 Endif
+  Endif
+  If Info(パイロット,計測者パイロット,精神コマンド所有,夢) > 0 Then
+Endif
+

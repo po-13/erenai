@@ -1,0 +1,201 @@
+
+戦闘アニメ_暗黒閃命中:
+_CenteringCheck 対象ユニットＩＤ
+Set C_X WX(対象ユニットＩＤ)
+Set C_Y WY(対象ユニットＩＤ)
+
+Set ANG _GetAngle()
+
+Center 相手ユニット
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku1.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 1
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku2.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 1
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku3.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 1
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku4.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 1
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku5.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 5
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku6.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 2
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku7.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 2
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku8.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 2
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku9.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 2
+PlaySound Slash.wav
+_PaintCutin_KZ EFFECT_Ankoku10.bmp ANG C_X C_Y 透過
+Refresh
+ClearPicture
+Wait 2
+Return
+
+
+戦闘アニメ_閃駈連刃攻撃:
+
+
+For i = 1 To 10
+PlaySound Bow.wav
+Color RGB(0, 0, 0)
+Line 0 239 (48 * i) 241 BF
+Refresh
+Next
+
+Return
+
+戦闘アニメ_閃駈連刃命中:
+
+Center 相手ユニット
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+Refresh
+ClearPicture 60 60 420 420
+Playsound SwordB@22.wav
+PaintPicture EFFECT_ZAN1.bmp - - 360 360 透過 暗
+Refresh
+Wait 2
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+Refresh
+ClearPicture 60 60 420 420
+PaintPicture EFFECT_ZAN.bmp - - 360 360 透過 暗
+Refresh
+Playsound SwordB@22.wav
+Wait 10
+Return
+
+戦闘アニメ_サクラチル準備:
+
+PlaySound wind.wav
+For i = 1 To 13
+
+Set さくらん (Effect_Sakura & i & .bmp)
+
+PaintPicture さくらん - - 120 120 透過 暗
+Refresh
+Wait 2
+ClearPicture
+Next
+Wait 10
+Return
+
+戦闘アニメ_黒破無段攻撃:
+
+Center 相手ユニット
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+Refresh
+ClearPicture 60 60 420 420
+Playsound SwordB@22.wav
+PaintPicture EFFECT_ZAN1.bmp - - 360 360 透過 暗
+Refresh
+Wait 1
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+Refresh
+ClearPicture 60 60 420 420
+PaintPicture EFFECT_ZAN2.bmp - - 360 360 透過 暗
+Refresh
+Playsound SwordB@22.wav
+Wait 1
+ClearPicture 60 60 420 420
+Playsound SwordB@22.wav
+PaintPicture EFFECT_ZAN3.bmp - - 360 360 透過 暗
+Refresh
+Wait 1
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+Refresh
+ClearPicture 60 60 420 420
+PaintPicture EFFECT_ZAN4.bmp - - 360 360 透過 暗
+Refresh
+Playsound SwordB@22.wav
+Wait 1
+Return
+
+戦闘アニメ_黒破無段命中:
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+Refresh
+ClearPicture 60 60 420 420
+
+PaintPicture EFFECT_ZAN-4.bmp - - 360 360
+PaintPicture (Unit(相手ユニット)) - - 64 64
+Refresh
+Playsound Sword.wav
+Wait 0.5
+Playsound Sword.wav
+Wait 0.5
+Playsound Sword.wav
+Wait 0.5
+Playsound Sword.wav
+Wait 0.5
+ClearPicture
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+Wait 5
+PlaySound Whiz.wav
+For i = 1 To 10
+ClearPicture
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+PaintPicture Unit(相手ユニット) - - (32 * i) (32 * i) 透過
+Wait 1
+Refresh
+Next
+PlaySound Whiz.wav
+For i = 1 To 10
+ClearPicture
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+PaintPicture Unit(相手ユニット) - - (32 * i) (32 * i) 透過
+Wait 1
+Refresh
+Next
+PlaySound Whiz.wav
+For i = 1 To 10
+ClearPicture
+Color RGB(0, 0, 0)
+Line 0 0 480 480 BF
+PaintPicture Unit(相手ユニット) - - (32 * i) (32 * i) 透過
+Wait 1
+Refresh
+Next
+Playsound Slash!.wav
+PaintPicture EFFECT_ZAN-F.bmp - - 480 480 透過 RGB(0. 0. 0)
+Refresh
+WhiteOut 20
+Wait 20
+Cls
+Refresh
+Return
+

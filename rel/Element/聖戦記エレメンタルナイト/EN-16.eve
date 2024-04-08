@@ -1,0 +1,1667 @@
+
+プロローグ:
+
+StartBGM HolyGoddes.mid
+Talk 涼子
+～～♪
+～～～～～♪～～♪
+End
+Wait 10
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+…いい歌ですね…
+Talk 涼子
+え！？:あ…シエラさん…
+…聞かれちゃった？あはは…
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+…なんと言う歌なんです？
+Talk 涼子
+…題名は…解らない。;昔…私が小さい頃…お母さんが良く歌ってくれた歌
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+お母さん…ですか…
+Talk 涼子
+ん？どうかしたの…？
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+私は母の顔を知らないんです…
+Talk 涼子
+…知らないって…どういうこと？
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+私は…戦場で拾われたんです…
+父に…
+Talk 涼子
+父…って…ヴォルク…？
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+はい…。
+昔は…優しい人だったんです…。本当に…
+Talk 涼子
+………
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+父が変わってしまったのには;何か原因があるのかもしれません
+ですが…もう…こうなってしまった以上は…
+Talk 涼子
+貴方の手で…ってこと？
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+はい…。
+Talk 涼子
+………
+歌、教えてあげるわ。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+え？
+Talk 涼子
+私の歌。教えてあげる。
+それと…私のことは涼子…;…って呼び捨ててくれていいわよ。
+私もあなたのこと…;シエラって呼び捨てにするからさ
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+…はい…。
+よろしくお願いします…涼子。
+Talk 涼子
+えぇ、よろしくね…シエラ。
+End
+Wait 30
+Talk システム
+翌日
+end
+Wait 20
+StartBGM battle1.mid
+Wait 10
+Talk ディオ
+………
+Talk ウォルディ
+ディオ！
+Talk ディオ
+…おう、そっちも準備はいいんだな？
+Talk ウォルディ
+あぁっ。
+Talk ディオ(攻撃)
+行くぜ…っ！！
+End
+Wait 30
+Talk ディオ(攻撃)
+皆！遂にこの時が来たッ！;我等に圧制を敷く暴君ヴォルクを討つ時がっ！
+Talk 青の疾風
+<size=20><b>おぉ～っ！！</b></size>
+end
+Playsound Applause.wav
+Wait 20
+Talk ティーナ
+凄い声ですねぇ…;…耳がおかしくなっちゃいそうです
+Talk 涼子
+声も凄いけど…。;これだけの数の人員が居たなんてね…。
+Talk ウォルディ
+…１０年って時間は決して軽くは無いさ。:;…だが、これでも遅すぎた。
+この戦いに勝ったとしても…、;後には破壊神が控えてる。
+Talk トキア
+そもそもこの戦いに負けたら全ては終わる…か。
+Talk ザーム
+………
+Talk 涼子
+………そうね。
+End
+Wait 20
+Talk ディオ(攻撃)
+勝つぜ！！てめぇらっ！！
+Talk 青の疾風
+<size=20><b>うおぉ～っ！！</b></size>
+end
+Playsound Applause.wav
+wait 20
+Talk ディオ
+それじゃ！ダメ押しに一発行くかっ！
+俺達の指導者、このグランチェスタの後継者！;シエラ様からのありがたいお言葉だっ！
+てめぇら！耳かっぽじって良く聞けよッ！
+Talk 青の疾風
+<size=20><b>ぐぅおぉ～っ！！</b></size>
+end
+Playsound Applause.wav
+WAit 40
+Playsound Stairs.wav
+Wait 10
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+………
+Suspend
+Wait 10
+Talk システム
+あれが…シエラ様か！？
+…すげぇ…美人だ…
+End
+
+Wait 20
+
+Talk ブロード
+…あれ？;シエラ様は反乱軍の指導者…なんですよね？
+Talk ウォルディ
+…表にはほとんど顔を出せなかったからな…。
+黒の団…奴等の存在があるおかげでね。
+Talk 涼子
+確かに。;…指導者が暗殺されちゃったらそこまでだしね
+Talk ウォルディ
+…これで初めて;顔を見るやつが９割ぐらいだろうな。
+Talk トキア
+…顔も見せぬ皇女に;よくもここまで人が集められたものだ。
+Talk ウォルディ
+それだけ今のこの国の現状に;不満を持ってるやつは多いってことだ…
+Talk トキア
+なるほどな。
+End
+Wait 20
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+………
+…私は１０年待ちました。
+我が父…;:いえ、暴君ヴォルクが王となったあの時から！
+その後…この国は;ヴォルクの圧制に荒れ果てました…。
+風は嘆き、大地は荒れ…。;:…多くの民が死んだと聞きます…。
+貴方達も大変な苦労をしたことでしょう。
+でも！それも今日で終わりです！
+この戦いで…全てを決します。
+………
+<size=18><b>我等に！勝利を！</b></size>
+Suspend
+Playsound Applause.wav
+Talk 青の疾風
+<size=25><b>わぁぁぁぁぁっ！！</b></size>
+end
+
+Wait 30
+
+Talk ウォルディ
+よし！各員、小隊を組め！出撃だっ！
+Talk 涼子
+シエラ…か…
+……
+ウォルディ、;あたしたちはいつものこのメンバーでいいのよね？
+Talk ウォルディ
+あぁ、お前達はアテにしてるぜ。
+Talk 涼子(余裕)
+おっけ～っ、それじゃ出撃と行きますか！
+End
+
+PlaySound Stairs.wav
+
+Wait 20
+
+Talk ウォルディ
+さぁて。んじゃ俺も行くかね…
+suspend
+PlaySound Stairs(Run).wav
+Wait 10
+Talk 青の疾風
+副長っ！！
+Talk ウォルディ
+どうした！？何かあったのか…！？
+Talk 青の疾風
+西に…西から…っ！！
+End
+Wait 20
+Talk ウォルディ
+なんだと…っ！？
+Talk 青の疾風
+どうしやすかっ！？
+Talk ウォルディ
+…とりあえずディオに知らせてくるっ！
+命令があるまで待機だ！！
+Talk 青の疾風
+了解！！
+Suspend
+PlaySound Stairs(Run).wav
+Talk ウォルディ
+…クソ…っ！！;なんで…なんでこんな時に…っ！！
+<b><size=20>魔族ッ！！！</size></b>
+End
+
+Wait 20
+
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+ねぇ、ディオ……あれで良かったのかな？
+Talk ディオ
+へっ、;なかなかの指導者ぶりだったぜ？シエラ？
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+茶化さないでよ…
+Talk ディオ
+茶化してなんてねぇさ。;素直にそう思ったからそう言っただけだ。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+本当…に？
+Talk ディオ
+本当だよ。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+…マジで？
+Talk ディオ
+マジですよ。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+…本当に…本当？
+Talk ディオ
+…くどい女は嫌われるぞ。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+…ディオ、それ酷い…
+あ…そうだディオ…。;私、涼子に歌を教えてもらったのよ。
+Talk ディオ
+涼子に？歌？
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+えぇ…とても奇麗な歌。
+それに涼子さん…凄く歌が上手いのよ？
+Talk ディオ
+ほ～…
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+この戦いが終わったら…聞かせてあげる。
+だからディオ…:死なないで。
+Talk ディオ
+…へっ…そう簡単に俺がくたばるかってんだよ
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+そうよね…ディオってば無駄にしぶといし…
+Talk ディオ(ダメージ)
+おまえ、それ微妙に酷くねぇか？
+End
+
+PlaySound Knock.wav
+Wait 10
+Talk ディオ
+ん…？誰だ？入っていいぜ。
+end
+PlaySound Door(Open).wav
+Wait 10
+Talk ウォルディ
+ディオ！
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+ウォルディ？どうしたの？そんなに急いで…
+Talk ウォルディ
+…西から…魔族が接近してるらしい
+Talk ディオ(攻撃)
+なんだとっ！？
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+…魔族が…？
+Talk ウォルディ
+最悪のタイミングだ…どうする？
+Talk ディオ
+ウォルディ、お前達は予定通り出撃しろ。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+ディオ…でもそれじゃ…！
+Talk ウォルディ
+…この町を見捨てるって言うのか？
+Talk ディオ(攻撃)
+バカ言うな。;ンなことするぐらいなら死んだ方がマシだ！
+Talk ディオ
+…俺が、魔族を潰す。
+Talk ウォルディ
+…お前一人で…か！？
+それに…お前が居なけりゃ…隊の指揮は…！
+Talk ディオ
+…それは大丈夫だ。;…ウォルディ、お前が居る。
+それにシエラも居るしな。;俺が居ないぐらいで士気が下がったりはしねぇ
+Talk ウォルディ
+…だが…ッ！
+Talk ディオ
+…魔族を潰したらすぐに隊に戻るさ。
+…それが出来るのは超高速で;飛行が可能な俺のエージェシーだけだ
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+ディオ…でも…
+Talk ディオ
+俺はそう簡単には死にゃしないさ。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+………
+それじゃ、約束して…。絶対戻ってくるって。
+Talk ディオ
+約束するさ。絶対に戻る。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+絶対よ？
+Talk ディオ
+あぁ。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+………
+ウォルディ、出撃の準備を…早く。
+Talk ウォルディ
+…解りました…。
+…ディオ…死ぬなよ…
+Talk ディオ
+…あぁ…。
+End
+Playsound door(Close).wav
+Wait 10
+PlaySound Stairs(Run).wav
+Wait 30
+Exit
+
+
+スタート:
+
+Call 涼子編タイトルコール 第16話 暴風！荒れ狂う運命！
+StopBGM
+
+Create 敵 炎猛るバルバロイ 3 力のバルバロス 35 3 11
+
+BossRank バルバロス 3
+
+Create 敵 イフリータ 4 炎の兵 32 5 10 Ｂえーす
+Create 敵 イフリータ 4 炎の兵 32 6 11 B
+Create 敵 イフリータ 4 炎の兵 32 5 12 B
+
+Create 敵 オーガ 5 中級魔族 30 10 7 B
+Create 敵 オーガ 5 中級魔族 30 9 8 B
+
+Create 敵 ドラゴニア 5 上級魔族 32 11 10 B
+Create 敵 ドラゴニア 5 上級魔族 32 11 11 B
+
+Create 敵 ギガント 5 中級魔族 30 9 13 B
+Create 敵 ギガント 5 中級魔族 30 10 14 B
+
+ChangeMode バルバロス 待機
+ChangeMode Ｂえーす 待機
+ChangeMode B 待機
+
+
+Create 敵 風鳴るシルフィディア 3 魔のシルフィン 35 3 22
+BossRank シルフィン 3
+Create 敵 ウィンディ 4 風のしもべ 32 4 20 Ｓえーす
+Create 敵 ウィンディ 4 風のしもべ 32 5 21 S
+Create 敵 ウィンディ 4 風のしもべ 32 6 22 S
+
+Create 敵 ガーゴイル 5 中級魔族 30 8 16
+Create 敵 ガーゴイル 5 中級魔族 30 9 17
+Create 敵 ガーゴイル 5 中級魔族 30 10 18
+
+Create 敵 グリフォン 5 中級魔族 30 9 21 S
+Create 敵 グリフォン 5 中級魔族 30 9 22 S
+
+Create 敵 ワイバーン 5 上級魔族 32 5 17 S
+Create 敵 ワイバーン 5 上級魔族 32 6 17 S
+
+ChangeMode シルフィン 待機
+ChangeMode Ｓえーす 待機
+changeMode S 待機
+
+StartBGM Peace Day.mid
+
+Wait 20
+
+Talk シルフィン
+この先の町をブチ壊せ…かぁ。;まったく、つまんないことやらせてくれるなぁ。
+Talk バルバロス
+油断はするな。;近頃は人間も力をつけている。
+私たちがそうして何度も;苦渋を舐めさせられているのを忘れたか？
+Talk シルフィン
+む…。
+Talk バルバロス
+解ればよい。気を抜くな。
+Talk シルフィン
+むむむ…
+Talk Ｓえーす
+シルフィン様…;バルバロス様の言うとおりでございます。
+油断は禁物。気を引き締めて…
+Suspend
+StartBGM The Nazenai.mid
+Talk シルフィン
+むかっ！
+…あんたたちはどっちの味方なのさ～！？;あのバカマッチョの味方するわけ～！？
+消しちゃうぞこのっ！
+Talk バルバロス
+…聞こえているぞ…シルフィン…
+Talk Ｂえーす
+アニキのあの肉体美をバカマッチョだと！？
+シルフィン様ってのは、;機体だけじゃなく…頭の中も軽いようだなっ！
+Talk シルフィン
+何ィ！？;この…ザコの分際で言ってくれんじゃないっ！
+だいたいねぇ！あんた達！;無駄に汗臭いのよ！お風呂ちゃんと入ってるのッ！？
+Talk バルバロス
+汗臭いだと！？;この漢達の血と努力の証を愚弄するか！？
+Talk シルフィン(攻撃)
+その血だの;努力だのとか言うのが汗臭いってのっ！
+自身で焼却消毒しろってーのよっ！
+Talk バルバロス
+言わせておけば…っ！
+シルフィンっ！貴様を倒して;今日こそは我等が肉体美を理解させてやるッ！
+ゆくぞお前達ッ！！
+Suspend
+PlaySound Explode.wav
+Talk バルバロス
+<size=20><b>炎の力は！</b></size>
+Suspend
+PlaySound Explode(Far).wav
+Talk Ｂえーす
+<size=20><b>肉体美！</b></size>
+Suspend
+PlaySound Explode.wav
+Talk バルバロス
+<size=20><b>押せば命の！</b></size>
+suspend
+PlaySound Explode(Far).wav
+Talk Ｂえーす
+<size=22><b>肉体美！</b></size>
+Suspend
+PlaySound Explode(Far).wav
+Talk バルバロス
+<size=22><b>見よ！東方は！？</b></size>
+suspend
+PlaySound Explode(Nuclear).wav
+Talk Ｂえーす
+<size=22><b>肉体美ィィィィッ！</b></size>
+Suspend
+Wait 10
+PlaySound Applause.wav
+Wait 30
+Talk シルフィン
+…あーいうのなんて言うんだっけ？
+わ…:わ～…:Ｙセッチュー剤散布罪だっけ？
+Talk Ｓえーす
+猥褻物陳列罪ですか？
+Talk シルフィン(攻撃)
+そう！それそれ！ｍｙ精通仏珍裂罪！
+Talk Ｓえーす
+………
+Talk シルフィン
+と言うわけでシルフィンちゃん;脳内裁判の判決を言い渡す！
+満場一致で！
+Suspend
+PlaySound WarShip.wav
+Talk シルフィン(攻撃)
+<size=30><b>死</size><B>
+Suspend
+PlaySound WarShip.wav
+Talk シルフィン(攻撃)
+<size=30><b>死刑</size><B>
+今なら上空２０００ｍ！;ヒモ無しバンジーツアーに大サービスで強制ご招待だァ！
+Talk バルバロス
+フンッ！やれるものならやってみせいっ！
+Talk シルフィン(攻撃)
+やってやるわよォォォ！！！
+End
+Wait 20
+StopBGM
+Talk 風のしもべ
+…シルフィン様、残念ながら;そのようなことをしている場合ではなさそうです。
+Talk シルフィン(攻撃)
+あァん！？
+Talk 風のしもべ
+旋風が…来ます。
+Talk シルフィン
+旋風…？なにそれ？
+End
+Center 25 15
+StartBGM E-numbers.mid
+Wait 20
+
+If Unit(ディオ＝スパークスター) = 『風』のエージェシー Then
+PlaySound Jet.wav
+Wait 10
+For i = 1 to 20
+ClearPicture
+PaintPicture 『風』のエージェシー(バード) (480 - (i * 8)) - 134 134 透過
+Refresh
+Wait 0.1
+Next
+Playsound flyby.wav
+Wait 20
+PlaySound Storm.wav
+For i = 1 to 25
+ClearPicture
+PaintPicture 『風』のエージェシー (340 - (i * 8)) - (134 - (i * 4)) (134 - (i * 4)) 透過
+Refresh
+Wait 0.1
+Next
+
+Else
+PlaySound Jet.wav
+Wait 10
+For i = 1 to 20
+ClearPicture
+PaintPicture エージェシー(バード) (480 - (i * 8)) - 134 134 透過
+Refresh
+Wait 0.1
+Next
+Playsound flyby.wav
+Wait 20
+PlaySound Storm.wav
+For i = 1 to 25
+ClearPicture
+PaintPicture エージェシー (340 - (i * 8)) - (134 - (i * 4)) (134 - (i * 4)) 透過
+Refresh
+Wait 0.1
+Next
+Endif
+ClearPicture
+Refresh
+Launch ディオ 22 15
+
+Talk ディオ(攻撃)
+見つけたぜ魔族共…っ！
+俺が生きてる限り…;この先には一歩も進ませねぇぜっ！
+Talk シルフィン
+…ふぅん…あたしと同じ感じがする…;そっか…あんたが風のエレナイ乗り…。
+Talk シルフィン(攻撃)
+楽しそうじゃん…バカマッチョよりはさぁ！
+Talk Ｂえーす
+…て…てめぇ…っ！
+Talk シルフィン
+…ほ～らほら、;あたしよりもあの人間なんとかしなきゃね～。
+Talk バルバロス
+シルフィンの言うとおりだ。耐えろ。
+Talk Ｂえーす
+…で、ですが兄貴…っ！
+Talk バルバロス
+なぁに…お子様の言うことに;いちいち腹を立てていてはキリがないということだ
+Talk Ｂえーす
+兄貴…大人ですねぃ！
+Talk バルバロス
+ふ。
+Talk シルフィン
+やっぱあとで殺す…
+Talk ディオ(ダメージ)
+…こいつら…なんなんだよ…
+Talk ディオ(疲労)
+こっちが決死の覚悟で来たってのによぉ…。
+なんだかバカらしくなってきたぜ…。
+Talk バルバロス
+行くぞっ！我等が力を見せ付けてやれ！;１機とて容赦はするなっ！
+Talk Ｂえーす
+偉大なるアニーキのために！
+Talk シルフィン
+ま、テキトーに行くわよ！;バカマッチョに遅れを取るな～っ！
+Talk Ｓえーす
+はっ！
+End
+Wait 20
+Talk ディオ(疲労)
+ま…まぁ、気を取り直して…と。
+Talk ディオ
+…シルフィンにバルバロス…;共に<b>バカ</b>だが実力は馬鹿にできない…
+Talk ディオ(ダメージ)
+まぁ、馬鹿にできるんだけどな…;…生粋の<b>バカ</b>だし…。
+Talk ディオ
+とにかく俺が言いたいのは;戦力的に辛い…ってことだ。
+…だが、やるしかねぇ…。;ここでこいつらを通しちまえば、;俺達の苦労が全部水の泡になっちまう…。
+やらせねぇ…通さねぇぜ…
+Talk ディオ(攻撃)
+絶対になッ！
+End
+KeepBGM
+If Unit(ディオ＝スパークスター) = エージェシー Then
+IncreaseMorale ディオ 30
+Endif
+Exit
+
+攻撃 ディオ 敵:
+Talk ディオ(攻撃)
+消えろッ！この魔族野郎がッ！！
+邪魔は…シエラ達の邪魔はさせねぇっ！！！
+End
+ClearEvent
+Exit
+
+*破壊 敵:
+Incr ブチ壊しザワールド 1
+If ブチ壊しザワールド = 5 Then
+Call りょーこちゃん登場
+ClearEvent
+Endif
+Exit
+
+りょーこちゃん登場:
+Talk シルフィン
+…ふ～ん、なかなかやるじゃ～ん。
+Talk ディオ(攻撃)
+お褒めに預かり光栄だっ！
+逃げるなら今のウチだぜっ！？
+Talk シルフィン
+逃げる…？
+Suspend
+PlaySound Bow.wav
+Wait 1
+Move シルフィン (X(ディオ) - 1) Y(ディオ)
+Center シルフィン
+Wait 2
+PlaySound BeamCoat.wav
+AutoTalk ディオ(ダメージ)
+2;ッ！？
+Suspend
+PlaySound AntiAirMissile.wav
+Wait 2
+Move ディオ (X(ディオ) + 5) Y(ディオ) アニメ表示
+Explode LL X(ディオ) Y(ディオ)
+Talk シルフィン(攻撃)
+誰が逃げるって～？
+逃げるはず無いじゃない…;いたぶり甲斐のある獲物を前にしてさァ…？
+そう思うでしょ？
+Talk ディオ(ダメージ)
+ッぐ…:かは…っ
+Talk シルフィン(攻撃)
+以前までの;私たちだと思わないほうがいいわよ？
+最近すこぶる調子がいいのよねー。;デュクラシス様の復活が近いからかな～？
+Talk ディオ(ダメージ)
+でゅく…ラシス…！？
+…そうだったな…俺は…;:こんなとこで…寝てる場合じゃねぇ…っ！
+Talk シルフィン
+へ～。動けるんだ…
+流石は風のひとだねぇ。;あたしの技には耐性あるって～？
+Talk バルバロス
+…シルフィン。
+Talk シルフィン
+へ～へ～。解ってま～すよ。
+ごめんね～？;もうちょっと遊んであげたいんだけどさ～。
+Talk シルフィン(攻撃)
+バカマッチョがうるさいから;とっとと死んじゃってちょーだい！
+Talk ディオ(ダメージ)
+…ッッッッッ！！
+End
+Center シルフィン
+PlaySound Charge.wav
+Wait 10
+PlaySound Storm.wav
+Wait 2
+Center (X(シルフィン) + 1) Y(シルフィン)
+Wait 1
+Center (X(シルフィン) + 2) Y(シルフィン)
+Wait 1
+Center (X(シルフィン) + 3) Y(シルフィン)
+Wait 1
+Center (X(ディオ) - 2) Y(シルフィン)
+Wait 1
+Explode XL (X(ディオ) - 1) Y(シルフィン)
+Wait 10
+Talk ディオ(ダメージ)
+…っ！？
+…？当たって…ねぇ？
+Talk シルフィン(攻撃)
+…届かない…なんで！？
+…あんた…今…何をしたの…っ！？
+Talk ディオ(ダメージ)
+…なんだ…今のは…
+Talk バルバロス
+………
+Talk シルフィン(攻撃)
+この…！もう一発…ッ！
+End
+Center シルフィン
+PlaySound Charge.wav
+Wait 10
+PlaySound Storm.wav
+Wait 2
+Center (X(シルフィン) + 1) Y(シルフィン)
+Wait 1
+Center (X(シルフィン) + 2) Y(シルフィン)
+Wait 1
+Center (X(シルフィン) + 3) Y(シルフィン)
+Wait 1
+Center (X(ディオ) - 2) Y(シルフィン)
+Wait 1
+Explode XL (X(ディオ) - 1) Y(シルフィン)
+Wait 10
+Talk システム
+…風は火を煽る…:ってね。
+ごめんねディオ！おいしいトコは…
+end
+StartBGM Flame Girl.mid
+KeepBGM
+Wait 20
+Launch 涼子 (X(ディオ) - 1) Y(ディオ)
+Talk 涼子(余裕)
+貰って行くわよっ！
+Talk ディオ
+涼子…っ！？なんで…！
+Talk 涼子
+なんでもかんでも無いでしょ。
+魔族を倒して本隊合流！;それが出来る機体がエージェシーの他に;もう一機あるでしょ？
+そのもう一機があんたを助けに来た、それだけよ。
+Talk ディオ
+涼子…。
+Talk 涼子(余裕)
+あんたを一人で戦わせるのは;あたしを一人で戦わせるのと同じぐらい危険だしね
+Talk ディオ(ダメージ)
+………
+Talk 涼子
+…それに…あんたが死んだらシエラが悲しむわ。
+Talk ディオ
+……そうだな…助かった…礼を言うぜ。
+だけどさっきのは一体どういうことなんだ…？;シルフィンの術が途中で爆発…
+Talk 涼子
+あぁ、簡単よ。相反する要素…;シルフィンの風にあたしの火を叩き込んでかき消しただけ
+風は火に弱い。;:この世界じゃ常識なんでしょ？
+Talk ディオ
+…それはそうだが…。
+Talk 涼子
+うん、あんたの言いたいことはわかる。
+この属性システムは;２００２年、３月６日現在導入された新システ…
+End
+WhiteOut
+PlaySound Noise.wav
+Wait 2
+Font 32pt RGB(0, 0, 0,)
+PaintPicture White.jpg 0 0 480 480
+PaintPicture Love.jpg 250 250 - -
+PaintString - - しばらくお待ち下さい
+Font 10pt RGB(0, 0, 0,)
+PaintString 170 460 実に久々の登場で張り切っているエレナイ風紀委員
+Refresh
+PlaySound Tone.wav
+Wait 40
+
+For i = 1 to 25
+Switch Random(20)
+Case 1
+PlaySound Bazooka.wav
+Wait 3
+
+Case 2
+PlaySound AntiShipMissile.wav
+Wait 4
+
+Case 3
+PlaySound Beam.wav
+Wait 2
+
+Case 4
+PlaySound BreakOff.wav 
+Wait 2
+
+Case 5
+PlaySound Cannon.wav
+Wait 2
+
+Case 6
+PlaySound Crash.wav
+Wait 3
+
+Case 7
+PlaySound Drill.wav
+Wait 3
+
+Case 8
+PlaySound FastGun.wav
+Wait 5
+
+Case 9
+PlaySound Fire.wav
+Wait 10
+
+Case 10
+PlaySound GunPod.wav
+Wait 5
+
+Case 11
+PlaySound Gun.wav
+Wait 3
+
+Case 12
+PlaySound MachineGun.wav
+Wait 6
+
+Case 13
+PlaySound MicroMissile.wav
+Wait 10
+
+Case 14
+PlaySound MultipleRocketLauncher.wav
+Wait 8
+
+Case 15
+PlaySound Rifle.wav
+Wait 4
+
+Case 16
+PlaySound Stab.wav
+Wait 2
+
+Case 17
+PlaySound Storm.wav 
+Wait 10
+
+Case 18
+PlaySound Thunder.wav
+Wait 10
+
+Case 19
+PlaySound Warship.wav
+Wait 5
+
+Case 20
+PlaySound Whip.wav
+Wait 2
+Endsw
+Next
+PlaySound Noise.wav
+Wait 10
+Cls
+Redraw
+
+StartBGM 
+Talk りょ～こちゃん
+火は風に強いから、しるふぃんは私にまかせなさい
+Talk ディオ(疲労)
+解った、しるふぃんはまかせるぜ
+Talk シルフィン
+えぇ～い、あれがとめられるなんて～！
+suspend
+Move シルフィン 3 22 アニメ表示
+Wait 10
+Talk りょ～こちゃん
+おじけづいたか！しるふぃんめ！
+Talk シルフィン(攻撃)
+ばかいうんじゃないわよ～！;せんりゃくてきせったいってやつよ！
+Talk Ｓえーす
+しるふぃんさま、『接待』してどうするんですか？
+Talk バルバロス
+きんにく～っ！
+Talk Ｂえーす
+むきむき～！
+End
+
+PlaySound Noise.wav
+Wait 2
+Font 32pt RGB(0, 0, 0,)
+PaintPicture White.jpg 0 0 480 480
+PaintPicture Love.jpg 250 250 - -
+PaintString - - 失礼致しました
+Font 10pt RGB(0, 0, 0,)
+PaintString 170 460 実に久々の登場で少々ミスったエレナイ風紀委員
+Refresh
+PlaySound Tone.wav
+
+PlaySound Explode(Nuclear).wav
+Wait 30
+FadeOut 80
+ClearPicture
+Refresh
+
+Talk 涼子(攻撃)
+ディオ！シルフィンは私に任せて！
+私の火の魔術は、;『風』の要素を持つあいつには痛いだろうから！
+Talk ディオ(攻撃)
+…解った！それじゃ俺はバルバロスを…
+Talk ディオ(ダメージ)
+って！俺のエージェシーも『風』だぜ？;火を使うバルバロスの攻撃には弱い…か…
+Talk 涼子
+そうなるわね。;ディオ、あんたはザコ魔族の掃討をお願い。
+Talk ディオ
+そうだな。だが奴等の中にゃ;火を吹くのも居る…気をつけなきゃなるめぇ…
+Talk 涼子
+万が一もあっちゃいけないからね…
+…絶対に死なせないわ。;あんたはこれからのこの国に必要な人間だからね…。
+Talk ディオ
+涼子…。
+Talk 涼子
+まぁ、私に任せなさい。
+チリ一つ残さず…
+Suspend
+PlaySound Fire.wav
+Talk 涼子(攻撃)
+チリ一つ残さず…焼き尽くしてあげるわっ！
+End
+IncreaseMorale 涼子 10
+ChangeMode B 通常
+Return
+
+
+攻撃 涼子 シルフィン:
+Talk シルフィン
+なかなかやるみたいじゃない…
+Talk シルフィン(攻撃)
+でもあんた程度の火じゃ！;私の風は乱せないわよっ！
+Talk 涼子(余裕)
+それが出来ることは;さっき証明してみせたでしょ？
+Talk 涼子(攻撃)
+あんたの風じゃ;…私の炎は消せはしないっ！！
+あんたに刻んであげる！;あたしの…十六夜の炎をねっ！！
+End
+ClearEvent
+Exit
+
+攻撃 涼子 バルバロス:
+Talk バルバロス
+赤の騎士か…
+Talk 涼子
+(バルバロス…使う力は同じ火…か。;真正面から行ってもちょっと厳しいかな…。)
+(…アレを試してみようかな…！)
+Talk 涼子(攻撃)
+よし！行くわよ！バルバロスッ！！
+Talk バルバロス
+来いッ！！
+End
+
+Item キャンセルアタック
+Equip 涼子 キャンセルアタック
+
+Mind 涼子 必中
+Mind 涼子 熱血
+
+SetMessage 涼子 キャンセルアタック(対イベント用) 1
+
+Attack 涼子 キャンセルアタック バルバロス 無抵抗
+
+ClearMind 涼子 必中
+
+Talk バルバロス
+なんだ…今の…動きはっ！？
+Talk 涼子
+キャンセル行動よ…。;攻撃の隙を消して次の行動へ移る…。
+Talk 涼子(余裕)
+まぁ、あたしとラグちゃんの;コンビ以外には無理だろうけどね
+Talk バルバロス
+…やってくれるな…っ！;それでこそ戦い甲斐があると言うものっ！
+End
+Cancel
+ClearEvent
+ClearEvent "攻撃 バルバロス 涼子"
+Exit
+
+攻撃 バルバロス 涼子:
+Talk バルバロス
+はっはっはっはっは！行くぞ赤の騎士ィ！
+Talk 涼子
+(バルバロス…使う力は同じ火…か。;…猪突猛進バカみたいだし…あれで行ってみようかな。)
+Talk 涼子(攻撃)
+ぐだぐだ言ってないでとっとと来なさいっ！
+Talk バルバロス
+死ぬ覚悟があると言うかッ！くらえぇ～ぃ！！
+End
+
+Item カウンターブレイク
+Equip 涼子 カウンターブレイク
+
+Mind バルバロス 必中
+Mind 涼子 必中
+Mind 涼子 痛打
+SetStatus 涼子 不死身 -1
+
+SetMessage 涼子 カウンターブレイク(対イベント用) 1
+
+Attack バルバロス 猛りの拳 涼子 カウンターブレイク
+
+ClearStatus 涼子 不死身
+ClearMind バルバロス 必中
+ClearMind 涼子 必中
+
+Talk バルバロス
+ぐは…っ！？なんだ…今の…攻撃はっ！？
+Talk 涼子
+…ガードキャンセルにアーマークラッシュ。
+バカみたいに突っ込んでくる;あんたみたいなのには一番有効な攻撃よ。
+Talk 涼子(余裕)
+まぁ、あたしとラグちゃんの;コンビ以外には無理だろうけどね
+Talk バルバロス
+…ぐぅ…やってくれるな…っ！;だがそれでこそ戦い甲斐があると言うものっ！
+End
+Cancel
+ClearEvent
+ClearEvent "攻撃 涼子 バルバロス"
+Exit
+
+攻撃 ディオ シルフィン:
+Talk ディオ(攻撃)
+シルフィン…さっきの借りは返すぜ…っ！！
+Talk シルフィン(攻撃)
+ふふ～ん…
+おとなしく逃げてれば良かったのにネぇっ！
+End
+ClearEvent
+Exit
+
+攻撃 ディオ バルバロス:
+Talk ディオ(攻撃)
+黙って見てなんていられるかぁっ！
+やってやらぁ…！俺の全魔力をブチ込んでやるっ！
+Talk バルバロス
+ほぅ…この気迫…！
+End
+Mind ディオ 魂
+ClearEvent
+Exit
+
+ターン 5 敵:
+ChangeMode S 通常
+Exit
+
+ターン 6 敵:
+ChangeMode Ｂえーす 通常
+ChangeMode Ｓえーす 通常
+Exit
+
+ターン 8 敵:
+ChangeMode シルフィン 通常
+Exit
+
+ターン 10 敵:
+ChangeMode バルバロス 通常
+Exit
+
+
+破壊 涼子:
+Talk 涼子(ダメージ)
+やだなぁ…こんなところで…;:あたしが…死んじゃったら…っ…
+ごめん…龍…也…
+End
+FadeOut
+PlaySound Explode(Nuclear).wav
+Wait 50
+GameOver
+Exit
+
+破壊 ディオ:
+Talk ディオ(ダメージ)
+へ…っ…;…おとなしく…してりゃ良かったな…
+…すまねぇ…俺は…ぁ…
+End
+FadeOut
+PlaySound Explode(Nuclear).wav
+Wait 50
+GameOver
+Exit
+
+
+破壊 シルフィン:
+UpGrade 風鳴るシルフィディア 風鳴るシルフィディア
+If 相手ユニット = 十六夜涼子 Then
+Talk システム
+ライトフェザーを手に入れた
+End
+Wait 10
+Talk シルフィン(攻撃)
+こ…この…ォ…
+Talk 涼子(余裕)
+だから言ったじゃない…無理だ…ってね。
+End
+Item ライトフェザー
+
+Else
+
+Switch Unit(ディオ＝スパークスター)
+
+Case エージェシー エージェシー(バード)
+Item ウィンドエレメント
+Talk システム
+ウィンドエレメントを手に入れた
+End
+
+Case 『風』のエージェシー 『風』のエージェシー(バード)
+Item ウィンドフェザー
+Talk システム
+ウィンドフェザーを手に入れた
+End
+Endsw
+
+Talk ディオ
+借りは返したぜ…シルフィン…
+Talk シルフィン(攻撃)
+やってくれるじゃん…っ！
+Suspend
+Endif
+
+Talk シルフィン
+もう謝っても許さないよ…。
+Talk シルフィン(攻撃)
+粉微塵になるまで切り裂いて…
+Suspend
+PlaySound Thunder.wav
+Wait 10
+If バルバロス Then
+Talk バルバロス
+…シルフィン、聞いたな？
+Talk シルフィン
+…聞いたよ。
+…仕方ないなぁ…
+Suspend
+Else
+PlaySound Thunder.wav
+Wait 10
+Talk シルフィン(攻撃)
+………
+Talk シルフィン
+切り裂いてあげようと思ったけど…や～めた。
+あたしも忙しいこと思い出したし～ィ。
+End
+Endif
+Talk シルフィン
+それじゃぁ…大サービスで…;この勝負は預けといてあげる…
+Talk シルフィン(攻撃)
+次に合う時までに…;死ぬ覚悟を固めときなさいな！
+End
+Escape 敵
+Wait 10
+Talk 涼子
+…ヤケにあっさりと引き下がるわねぇ…
+Talk ディオ
+むしろ好都合じゃねぇか。;行くぜ、涼子！とっとと追いつかなきゃな
+Talk 涼子(余裕)
+おっけー！それじゃ行きますか。
+End
+
+FadeOut
+Continue EN-17.eve
+
+Exit
+
+破壊 バルバロス:
+UpGrade 炎猛るバルバロイ 炎猛るバルバロイ
+If 相手ユニット = 十六夜涼子 Then
+Talk システム
+闘争の腕輪を手に入れた
+End
+Wait 10
+Talk バルバロス
+…ぐぉ…っ！？
+Talk 涼子(余裕)
+どうやら、この勝負はあたしの勝ちみたいね。
+End
+Item 闘争の腕輪
+
+Else
+
+Switch Unit(ディオ＝スパークスター)
+
+Case エージェシー エージェシー(バード)
+Item ファイアエレメント
+Talk システム
+ファイアエレメントを手に入れた
+End
+
+Case 『風』のエージェシー 『風』のエージェシー(バード)
+Item ディフェンドアーマー
+Talk システム
+ディフェンドアーマーを手に入れた
+End
+Endsw
+
+Talk ディオ(攻撃)
+…見たかっ！俺の風は火をも吹き消すっ！
+Talk バルバロス
+く…っ…その力…やるなっ！
+我が隊に引き抜きたいぐらいだッ！
+Suspend
+PlaySound Thunder.wav
+Talk ディオ(疲労)
+<size=20><b>超お断り</size>
+suspend
+PlaySound Gabi-n.wav
+Talk バルバロス
+<size=20><b>なにぃぃぃっ！？</size>
+suspend
+Endif
+Talk シルフィン
+まったく…これだからバカマッチョは！
+Talk シルフィン(攻撃)
+あたしがここは引き受けたげるから！;帰ってお風呂に入って全身タワシで磨いてなさいっ！
+Talk バルバロス
+ぐぅ…っ！撤退するっ！
+End
+Escape バルバロス
+If B Then
+Escape B
+Endif
+if Ｂえーす Then
+Escape Ｂえーす
+Endif
+
+Exit
+
+
+エピローグ:
+Show
+ChangeMap EN-09.map
+Redraw
+Refresh
+StopBGM
+Launch ウォルディ 11 4
+Launch トキア 12 6
+Launch ザーム 10 6
+Launch ルシア 13 4
+Launch ティーナ 9 4
+Launch ブロード 11 2
+
+Talk ウォルディ 11 4
+…妙だな…
+Talk ルシア 13 4
+えぇ…
+Talk ザーム 10 6
+どうかしたんですか？
+Talk ウォルディ 11 4
+俺たちがこれだけ大掛かりな;進軍をしてるってのに軍のひとつも遣さないってトコが…だ
+Talk トキア 12 6
+…いくら息を潜めていると言っても…確かにな…。
+Suspend
+PlaySound Explode(Nuclear).wav
+StartBGM Laz_crzy.mid
+Wait 10
+Talk ウォルディ 11 4
+爆発音？どこから…！？
+Suspend
+PlaySound Noise.wav
+Talk ブロード 11 2
+ウォルディさん…何か…通信が…
+Talk ウォルディ 11 4
+ん…？
+End
+Hide
+PlaySound Noise.wav
+Talk システム
+…な…なんだっ！
+Suspend
+PlaySound Stab.wav
+Talk システム
+ぐわぁぁぁぁぁぁっ！
+Suspend
+PlaySound Explode(Far).wav
+Wait 20
+PlaySound Mirage.wav
+Wait 2
+PlaySound MachineGun.wav
+Wait 5
+PlaySound Mirage.wav
+Wait 2
+PlaySound MachineGun.wav
+Wait 5
+Talk システム
+あ…あたらねぇ！？あたらねぇよォ！？
+end
+Talk システム
+<i>ウフフフフフフフ</i>
+Suspend
+PlaySound Stab.wav
+Wait 2
+PlaySound Explode(Far).wav
+Wait 10
+Talk システム
+ふ…副長…！仲間が…仲間が…！
+End
+Talk システム
+<i>仲間ガ…ドウシタノ？</i>
+Suspend
+PlaySound Stab.wav
+Talk システム
+…あ…あ…あぁぁぁぁぁぁっ！？
+End
+PlaySound Stab.wav
+Wait 1.5
+PlaySound Stab.wav
+Wait 1.5
+PlaySound Stab.wav
+Wait 1.5
+PlaySound Stab.wav
+Wait 1.5
+PlaySound Stab.wav
+Wait 1.5
+PlaySound Stab.wav
+Wait 1.5
+Show
+
+PlaySound Noiz.wav
+PlaySound Explode(Far).wav
+Wait 20
+Talk ウォルディ 11 4
+これは…！？
+どうしたっ！？おい！;お前達！どうしたっ！？
+Talk ブロード 11 2
+敵…ですか！？
+Talk ルシア 13 4
+…なんの魔力反応もありませんね。
+Talk ウォルディ 11 4
+…待て…っ…！
+………
+Suspend
+Center 11 24
+PlaySound Sword.wav
+wait 3
+Center 11 23
+PlaySound Bow.wav
+Wait 2
+Center 11 22
+PlaySound Bow.wav
+Wait 2
+Center 11 21
+PlaySound Bow.wav
+Wait 2
+Center 11 20
+PlaySound Bow.wav
+Wait 2
+Center 11 19
+PlaySound Bow.wav
+Wait 1
+Center 11 18
+PlaySound Bow.wav
+Wait 1
+Center 11 17
+PlaySound Bow.wav
+Wait 1
+Center 11 16
+PlaySound Bow.wav
+Wait 0.5
+Center 11 15
+PlaySound Bow.wav
+Wait 0.5
+Center 11 14
+PlaySound Bow.wav
+Wait 0.5
+Center 11 13
+PlaySound Bow.wav
+Wait 0.5
+Center 11 12
+PlaySound Bow.wav
+Wait 0.5
+Talk ウォルディ 11 4
+…なにか…来るぞっ！！
+Talk トキア 12 6
+…なんだというのだ…！？
+End
+PlaySound Mirage.wav
+Center 11 9
+Talk システム 11 8
+あはは…あはははははは…
+End
+PlaySound Mirage.wav
+Center 11 6
+PlaySound Stab.wav
+Center 12 6
+Wait 3
+Explode L 12 6
+Move トキア 17 6 アニメ表示
+Center 11 6
+PlaySound Stab.wav
+Center 10 6
+Wait 3
+Explode L 10 6
+Move ザーム 5 6 アニメ表示
+Talk ウォルディ 11 4
+トキア！？ザーム！？
+Talk トキア(恐怖) 17 6
+な…何が…起こった…っ！？
+Talk ザーム 5 6
+う…うぅ…っ！
+Talk ルシア 13 4
+皆さん！まだ居るはずです！周囲に気を…
+Suspend
+PlaySound Mirage.wav
+Center 13 3
+Wait 2
+Talk ルシア 13 4
+！？
+(まさか！？僕が…後ろを取られた…！？)
+end
+PlaySound Stab.wav
+Center 13 4
+Wait 3
+Explode L 13 4
+Move ルシア 13 9 アニメ表示
+Talk ウォルディ 11 4
+ルシア！？
+Talk ティーナ 9 4
+ウォルディさん！右ッ！！！
+Talk ウォルディ 11 4
+っ！？
+End
+Center 12 4
+PlaySound Sword.wav
+Wait 3
+Talk システム 12 4
+あれ…？…止めたんだ…すごいねぇ。
+Talk ウォルディ 11 4
+…この…っ！何処だ…っ！
+End
+PlaySound MachineCannon.wav
+Wait 5
+Talk システム 12 4
+うふふふ…
+End
+PlaySound Mirage.wav
+Talk ウォルディ 11 4
+…この技…影…？
+黒の団かっ！？
+Talk システム 12 4
+…ご、め、い、と、う♪
+end
+
+StartBGM Battle of Destiny.mid
+
+Wait 10
+
+Create 敵 ローズンシェイル 5 ＳＭ 45 12 4
+SetStatus ＳＭ データ不明 -1
+
+Wait 10
+
+Talk ブロード 11 2
+あの機体…ローズンシェイル…！？
+真なりき影が…なぜ…！
+Talk ＳＭ 12 4
+へぇ、このコのこと知ってるんだ…。
+Talk ブロード 11 2
+だけど…それがここに有るはずが無い！;いや…『影』を継ぐレヴィンさん以外には動かせないはず…！
+Talk ＳＭ 12 4
+『影』を継ぐ人間が…他に居たとしたら…？
+Talk ブロード 11 2
+！？
+Talk ＳＭ 12 4
+私の名前は『Ｓ』。:黒の団の新隊長…『Ｓ』…よ。
+まぁ、キミたちをここで殺しちゃってもいいんだけどさ…
+Talk ウォルディ 11 4
+ふざけるなっ！
+End
+PlaySound whiz.wav
+Wait 2
+Move ＳＭ 13 4 アニメ表示
+PlaySound whiz.wav
+Move ウォルディ 12 4 アニメ表示
+Wait 2
+Talk ＳＭ 13 4
+もぅ…、私…短気なヒトは嫌いだなぁ。
+Talk ウォルディ 12 4
+雄ぉぉぉぉぉぉっ！
+End
+Playsound Mirage.wav
+Escape ＳＭ
+Move ウォルディ 13 4
+Talk ウォルディ 13 4
+消えた…！？
+Talk ティーナ 9 4
+………:！！
+End
+Launch ＳＭ 11 1
+PlaySound Crash.wav
+Move ブロード 11 6 アニメ表示
+Talk ブロード 11 6
+っ！？
+Talk ウォルディ 13 4
+ブロード！？
+Suspend
+PlaySound Mirage.wav
+Escape ＳＭ
+Talk システム 11 1
+…今日はこのぐらいで見逃してあげる…。
+キミたちを殺せって命令は受けてないしね…
+Talk ウォルディ 13 4
+…何処に消えた…っ！？
+Talk システム 11 1
+…それじゃ…私はやることがあるから。
+貴方達の…大事なお姫様を殺さなきゃいけないから…ね
+Talk ウォルディ 13 4
+なんだと…ッ！？
+End
+PlaySound Mirage.wav
+Wait 10
+StartBGM Laz_crzy.mid
+Wait 20
+Talk ウォルディ 13 4
+お姫様…？
+シエラか…！？;:チィッ！…シエラが…危ないッ！？
+ティーナ、皆を頼む！
+Talk ティーナ 9 4
+は…はいっ！
+Talk ウォルディ 13 4
+クソ…っ！間に合え…！
+end
+FadeOut
+Hide
+StopBGM
+PlaySound Wind.wav
+Wait 30
+PlaySound Bow.wav
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+…？
+Talk 青の疾風
+…どうしやした？シエラ様。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+いえ…何か…風の流れが消えたような…
+Talk 青の疾風
+風が…？そりゃ一体どういう…
+end
+PlaySound Stub.wav
+Wait 5
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+ッ！？
+Suspend
+PlaySound fallDown.wav
+Wait 5
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+きゃ…:な…何…大丈夫！？
+…あ…ぇ…っ？:死んで…死んでる…！？
+Talk システム
+フフフフ…
+Talk ＳＭ
+私の気配に気付くなんて…;キミ、なかなか良い勘してるじゃないの…
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+あ…ぁ！？貴方…は…！？;貴方が…貴方がやったの…！？
+Talk ＳＭ
+そうよ～。;皆、死ぬまで私の存在に気付かなかったのよ。
+お粗末なものだよねぇ。
+Talk シエラ＝ディオル＝ロウ＝グランチェスタ
+……
+Talk ＳＭ
+まぁ、そういうことだから…。;:恨むなら…無能な部下を恨むのね…。
+お:ひ:め:さ:ま♪
+Suspend
+PlaySound Stab.wav
+Talk シエラ(絶望)
+あ…？
+え…っ？:刺され…:死…ぬ？
+Suspend
+PlaySound FallDown.wav
+Talk シエラ(絶望)
+…ディ…オ…
+ごめん…ごめんね…;私は…自分の役割…果たせそうに…ない…
+…ごめんね…:ディ…:オ…
+End
+PlaySound Stab.wav
+Wait 40
+PlaySound Mirage.wav
+Wait 40
+Playsound stair(Run).wav
+Wait 10
+Talk ウォルディ
+…はぁ…はぁっ！
+………！
+こ…これは…！？
+End
+Wait 10
+Talk ウォルディ
+全員…やられてやがる…！？
+…シエラ…そうだ！！シエラは無事か…っ！？
+End
+PlaySound Door(Open).wav
+Wait 10
+Talk ウォルディ
+………
+……！:…シエ…ラ…！
+畜生…っ！！
+<size=20>チクショォォォォッ！！</size>
+End
+Wait 50
+Talk 涼子
+よ～し、;このスピードで突っ走れば余裕で間に合うわね。
+Talk ディオ(ダメージ)
+涼子…確かに余裕で間に合うだろうがな…。
+Talk ディオ(疲労)
+俺ぁもう、一杯一杯です…;もーちょっと速度落としてくれると俺も楽なんだけどよ…
+Talk 涼子
+男が情けないこと言ってるんじゃないわよ。
+ほら、飛ばすわよ。
+Talk ディオ(疲労)
+勘弁してくれ…
+Suspend
+PlaySound Signal.wav
+WAit 10
+Talk ディオ
+っと…通信届くトコまで近付いたか…。
+おう、どうした？
+Talk ウォルディ
+ディオ！無事だったか！
+Talk ディオ
+無事だけど…どうしたんだ？;そんなに血相変えて…
+Talk ウォルディ
+すまねぇ…俺は…シエラを守れなかった…っ！
+Talk ディオ(ダメージ)
+…どういうことだよ…そりゃぁ…
+Talk ウォルディ
+シエラが…殺された…
+Suspend
+StartBGM Kurayami.mid
+Talk ディオ
+なんだって…！？
+Talk ウォルディ
+影…を。黒の団を名乗るやつに襲撃されて…
+俺が駆けつけた時には…
+Talk ディオ
+…冗談じゃ…ねぇんだよな…
+Talk ウォルディ
+馬鹿野郎！どんな状況だとしても…;こんなこと冗談で言えるかッ！
+Talk ディオ
+………
+…隊の…皆には…知らせたのか？
+Talk ウォルディ
+いや…
+Talk ディオ
+その事は俺から皆に言う…。
+Talk ウォルディ
+…！！
+全てを…バラす気か？
+Talk ディオ
+…少なくとも…この戦いが;終わるまではバラしたく無かったけど…な
+…シエラ…っ…
+Talk ウォルディ
+…解った…奴等を集めておくよ;…なるべく早く頼むぜ…
+Talk ディオ
+…あぁ…それとウォルディ…
+Talk ウォルディ
+…なんだ…？
+Talk ディオ
+…気にするな…お前のせいじゃねぇよ…
+Talk ウォルディ
+………
+そう言ってくれると;…少しは心が楽になるよ…
+すまねぇ…ディオ…
+End
+Wait 10
+Talk 涼子
+ねぇ…ディオ…シエラが…死んだって…
+Talk ディオ
+シエラは…死んでねぇよ…。
+Talk 涼子(攻撃)
+本当のことを言って…ディオ！
+Talk ディオ
+本当だよ…。
+だけどな…シエラだったヤツは死んだ…
+Talk 涼子
+！？
+Talk ディオ
+『自分』を殺して…他のヤツを装わされてよ…
+…神殿の地下の部屋に何年も閉じ込められて…
+あいつぁ…何のために生きてたんだよ…！
+Talk 涼子
+ディオ…？
+Talk ディオ
+涼子…;お前に歌教えてもらった…って喜んでてさ…！
+俺に…聞かせてくれるって…
+Talk 涼子
+………
+Talk ディオ
+………
+なんでだよ…なんでなんだよ…！
+Talk 涼子
+…ディオ…貴方は…
+Suspend
+Talk ディオ(攻撃)
+そうさ…俺は…;『ディオ＝スパークスター』じゃねぇ…
+俺は…俺の本当の名前は…
+suspend
+PlaySound Whiz.wav
+Talk ディオ(バンダナ無し)
+シエラ＝ディオル＝ロウ＝グランチェスタだっ！！！
+End
+PlaySound Thunder.wav
+Wait 50
+Set 涼子編進行度 17
+Call 鳳処理
+Exit
+
+

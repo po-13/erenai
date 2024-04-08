@@ -1,0 +1,69 @@
+
+エレナイ人物百科:
+
+
+For i = 1 To 24
+PaintPicture NZ2CL.bmp (10 * i) 0
+PaintPicture NZ2CR.bmp (480 - (10 * i)) 0
+Refresh
+Redraw
+Next
+
+Refresh
+Wait 10
+If Not 人物百科かむひあ Then
+Global 人物百科かむひあ
+Set 人物百科かむひあ 1
+Talk ティーナ
+エレナイ人百物科～！
+Talk 鳳
+・・・エレナイ人物百科だ。
+Talk ティーナ
+え・・・だって;・・・後ろにそう書いて・・・。
+Talk 鳳
+左から縦読みだ。
+Talk ティーナ
+そうなの？
+Talk 鳳
+そうなのだ。
+Talk ティーナ
+・・・・・。
+Talk 鳳
+・・・・・・。
+Talk ティーナ
+そんなことは良いからとっとと進めちゃおぅ！！
+Talk 鳳
+・・・全く・・・。
+・・・そうだ。;ちなみに後ろの題字は私がデザインしている。
+Talk ティーナ
+前なぜナイのバックの題字は私が描いてたんだよーん。
+Talk 鳳
+あまりにもヘタだったので私が見かねてな。
+Talk ティーナ
+ぷー。ひどいー！
+Talk 鳳
+ふ・・・事実だ。
+Talk ティーナ
+ぶー。
+End
+Endif
+
+Talk 鳳
+と言うわけで人物百科だ。
+Talk ティーナ
+エレナイ登場人物の;全てが解らない素晴らしい百科だよ。
+End
+FadeOut
+ShowImage NZ2C2.bmp 0 0
+
+
+
+
+
+
+
+
+
+
+
+

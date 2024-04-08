@@ -1,0 +1,264 @@
+音楽室:
+
+If Not 音楽室襲撃 = 1 Then
+Global 音楽室襲撃
+Set 音楽室襲撃 1
+Talk 鳳
+フン…言うまでもないが…音楽室だ。
+Talk ティーナ
+うん。確かに言うこと無いよね。まんまだし。
+Talk 鳳
+と言うわけで思う存分聞きまくるが良い！
+End
+Endif
+Talk ティーナ
+音楽室～！思う存分聞いて行ってね。
+End
+
+# 一覧表作成
+Call 進行度別一覧表作成 "EVENT\音楽室\サウンドデータ.LST"
+
+Do While (1)
+
+    Ask 表示名称 "サウンドデータ（右クリックで戻る）" キャンセル可 通常
+
+    Switch 選択
+      Case ""
+        Talk ティーナ
+            おっけー！それじゃ戻るよっ！
+            End
+        Break
+      Case Else
+        Call 表示ラベル[選択]
+    EndSw
+
+Loop
+
+Return
+
+ザ☆なぜナイ:
+StartBGM THE Nazenai.mid
+Talk システム
+「THE Nazenai」;『ザ☆なぜナイ』;なぜナイ２テーマ曲;原曲名「UN-TA-KA-PA」
+作曲者 ＱＭＡ
+End
+Return
+
+心の通い道:
+StartBGM InterMission.mid
+Talk システム
+「InterMission」;『心の通い道』;インターミッション曲;原曲名「心の通い道」
+作曲者 ＱＭＡ
+End
+Return
+
+闇色の翼広げて:
+StartBGM Darkness Wing Spread.mid
+Talk システム
+「Darkness Wing Spread」;『闇色の翼広げて』;桜龍也イメージ曲;原曲名「The other side of the eyes」
+作曲者 草薙孝司
+End
+Return
+
+炎の乙女:
+StartBGM Flame girl.mid
+Talk システム
+「Flame girl」;『炎の乙女』;十六夜涼子イメージ曲;原曲名『Laughter』
+作曲者 草薙孝司
+End
+Return
+
+鳳襲来！:
+StartBGM Ootori Attack!.mid
+Talk システム
+「Ootori Attack!」;『鳳襲来！』;鳳飛翔イメージ曲;原曲名『YOU TEEL LIES』
+作曲者 草薙孝司
+End
+Return
+
+四騎士:
+StartBGM 4th Knight.mid
+Talk システム
+「4th Knight」;『四騎士』;四騎士テーマ曲;原曲名『human erebus』
+作曲者 ＡＯＫＩっくす
+End
+Return
+
+エレメンタル＝ナンバーズ:
+StartBGM E-Numbers.mid
+Talk システム
+「E-Numbers」;『エレメンタル＝ナンバーズ』;ナンバーズテーマ曲;原曲名『ENTER』
+作曲者 ＡＯＫＩっくす
+End
+Return
+
+覚醒める力:
+StartBGM Po_compo.mid
+Talk システム
+「Po_compo」;『覚醒める力』
+End
+Return
+
+エレメンタルナイト:
+StartBGM Knight of Element.mid
+Talk システム
+「Knight of Element」;『エレメンタルナイト』;エレナイメイン戦闘テーマ;原曲名『Folded Wings』
+作曲者 草薙孝司
+End
+Return
+
+運命の闘い:
+StartBGM Battle of Destiny.mid
+Talk システム
+「Battle of Destiny」;『運命の闘い』;ラカウティス＆ヴォルクのテーマ;原曲名『胎動』
+作曲者 ＡＯＫＩっくす
+End
+Return
+
+平和な日:
+StartBGM Peace Day.mid
+Talk システム
+「Peace Day」;『平和な日』;エレナイテーマその一;原曲名『Boogie 01』
+作曲者 草薙孝司
+End
+Return
+
+異世界:
+StartBGM AnotherWorld.mid
+Talk システム
+「AnotherWorld」;『異世界』;エレナイテーマその二;原曲名『Snow 0 "Desperate"』
+作曲者 草薙孝司
+End
+Return
+
+聖なる女神:
+StartBGM HolyGoddes.mid
+Talk システム
+「HoryGoddes」;『聖なる女神』;エレナイテーマその三;原曲名『Pink Ocean』
+作曲者 草薙孝司
+End
+Return
+
+ファイト！:
+StartBGM Fight!.mid
+Talk システム
+「Fight!」;『ファイト！』;エレナイテーマその四;原曲名『2300』
+作曲者 草薙孝司
+End
+Return
+
+暗闇に染めて:
+StartBGM KURAYAMI.mid
+Talk システム
+「KURAYAMI」;『暗闇に染めて』;エレナイテーマその五
+作曲者 Sage
+End
+Return
+
+戦士の運命:
+StartBGM Map1.mid
+Talk システム
+「Map1」;『戦士の運命(さだめ)』;エレナイ草原味方マップテーマ
+作曲者 田隣あつし
+End
+Return
+
+暗躍:
+StartBGM Map2.mid
+Talk システム
+「Map2」;『暗躍』;エレナイ草原敵マップテーマ
+作曲者 田隣あつし
+End
+Return
+
+邪悪なる使者:
+StartBGM Ebil Messenger.mid
+Talk システム
+「Ebil Messenger」;『邪悪なる使者』;魔族のテーマ;原曲名『Meditation 01』
+作曲者 草薙孝司
+End
+Return
+
+破壊神:
+StartBGM God of Destruction.mid
+Talk システム
+「God of Destruction」;『破壊神』;デュクラシスのテーマ;原曲名『Graving Underground』
+作曲者 草薙孝司
+End
+Return
+
+戦士の戦場:
+StartBGM Map1-2.mid
+Talk システム
+「MAP1-2」;『戦士の戦場(いくさば)』;味方マップテーマその２;原曲名『BATTLE寺内』
+作曲者 ぴっち
+End
+Return
+
+幻影天駆:
+StartBGM Map2-2.mid
+Talk システム
+「Map2-2」;『幻影天駆』;敵マップテーマその２;原曲名『INIT』
+作曲者 ぴっち
+End
+Return
+
+Ebil-4th-Knight:
+StartBGM Ebil 4th Knight.mid
+Talk システム
+「Ebil 4th Knight」;『四魔将』;四魔将のテーマ;原曲名『華妖舞闘』
+作曲者 Step
+End
+Return
+
+WILD=SAMURAI!:
+StartBGM Moon.mid
+Talk システム
+「Moon」;『WILD=SAMURAI!』;桜龍也、イメージテーマ;原曲名『RED MOON』
+作曲者 SNOWHAWK
+End
+Return
+
+RedSpice:
+StartBGM Sweet.mid
+Talk システム
+「Sweet」;『RedSpice』;十六夜涼子、イメージテーマ;原曲名「Ravin'U」
+End
+Return
+
+Everyday:
+StartBGM ofarrell_88p.mid
+Talk システム
+「ofarrell_88p」;『Every day』;エレナイテーマその６;原曲名『O'farrell Street』
+作曲者 Yasuo Kanamori
+End
+Return
+
+BraveElement:
+StartBGM Brave Element.mid
+Talk システム
+「Brave Element」;『勇者の要素』;真ヴァル＝セリエのテーマ;原曲名『幻藍騒霧』
+作曲者 Step
+End
+Return
+
+RunAway!:
+StartBGM laz_crzy.mid
+Talk システム
+「laz_crzy」;『Run Away!』;原曲名「laz_crzy」
+End
+Return
+
+OverLimit:
+StartBGM Namida-t.mid
+Talk システム
+「Namida-t」;『OvarLimit』;原曲名「NAMIDA(MelodicTranceInStringsMix)」
+End
+Return
+
+絶対危険領域:
+StartBGM Ravin'_U.mid
+Talk システム
+「Ravin'_U」;『絶対危険領域』;原曲名「Ravin'U」
+End
+Return

@@ -1,0 +1,227 @@
+
+プロローグ:
+Exit
+
+スタート:
+
+StartBGM AnotherWorld.mid
+Wait 30
+Call 文章表示２ 30 ラグナプールに倒れた黒き英雄
+Wait 20
+Call 文章表示２ 30 グランチェスタを救った炎の乙女
+Wait 20
+Call 文章表示２ 30 一つの運命を変えた時空の覇王
+Wait 40
+Call 文章表示２ 50 ３つの運命が、一つになる。
+Wait 10
+Call 文章表示２ 50 それは、聖戦と呼ばれる戦いの序章
+Wait 30
+Call 文章表示２ 50 戦いは、終わらない
+
+StartBGM RED-MOON.mid
+Wait 30
+
+Talk ラグナプール兵
+ラカウティス様ーっ！ラカウティス様ーっ！！
+Talk ラカウティス
+…どうした、騒がしい…何事だ！？
+Talk ラグナプール兵
+し…真紅の機体が空を飛んで、;この城に向かって来ています！！
+Talk ラカウティス
+空を飛んで…だと！識別信号は！？
+End
+Wait 10
+Talk システム
+赤の騎士、十六夜涼子は;二国の和平を成す為、ラグナプールへ飛んだ。
+End
+Wait 10
+PlaySound Explode(Far).wav
+Wait 10
+Talk りょ～こちゃん
+…どかーん？
+End
+Talk ラグナプール兵
+フフ…
+Talk ラグナプール騎士
+何をしている！貴様！！
+End
+Wait 10
+Talk 涼子(攻撃)
+ヤバい！マジヤバいって！！;:落ちてる！本気で落ちてる！！
+End
+PlaySound Warship.wav
+Wait 20
+
+Talk システム
+向かうは英雄を失った国、ラグナプール
+End
+
+Wait 10
+
+Talk ライル
+…似ているな。
+Talk 涼子
+え？
+Talk ライル
+いや、申し訳ない、ただの独り言だ。
+End
+Wait 5
+Talk ヒルダ
+なんだい、;四騎士ってのはこんなのばっかりなのかい。
+Talk りょ～こちゃん
+ど、どーいう意味ですか…？
+End
+Wait 5
+Talk サーティス(照れ)
+ご期待に添えず申し訳ありません…
+Talk 涼子(余裕)
+そうそう、その顔その顔。
+Talk サーティス(照れ)
+え…っ？
+End
+Wait 5
+Talk ラカウティス
+ふっ…龍也よ。;お前の守ったこの国…この世界。
+それを継ぎ守るのは…;闇に最も近しき…火の乙女…か。
+End
+Wait 10
+
+Call 文章表示２ 50 そっか、龍也は守ったんだ…
+
+Wait 10
+
+AutoTalk シエラ＝ディオル＝ロウ＝グランチェスタ
+5;よろしくお願いします…涼子。
+End
+Playsound Sword.wav
+Wait 5
+AutoTalk ユキ＝イザヨイ(狂瞳涙)
+5;おねがい…こ…ろ…し…て…
+End
+Wait 10
+Talk 涼子
+私には守れなかったから…。
+End
+Wait 10
+
+AutoTalk 龍也(攻撃２)
+2;いざ行かん！！異世界の乙女を守るために！！！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也(攻撃)
+2;飛べ…ヴァル＝セリエ！！！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也
+2;おお！飛んだぞ！確かに武器だ！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也
+2;ま…そのために俺達が居るんだ。.次も撃退してみせるさ！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也(攻撃)
+2;重大な使命のためなら！.人を見殺しにしていいって言うのか！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也(攻撃２)
+2;…みんなは手出しするな！！.俺とアイツでケリを付ける！！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也(攻撃)
+2;俺は負けるわけにゃ行かねぇんだ！！.テメェ等！死にたい奴からかかって来やがれッ！！
+Suspend
+PlaySound Sword.wav
+autoTalk 龍也
+2;そりゃこっちのセリフだ！.何でお前までこっちに居るんだよ！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也(攻撃)
+2;っザケんな！！俺がンな事させねぇ！！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也(攻撃２)
+2;俺じゃねぇ！！俺じゃ…ねぇんだぁぁぁぁぁぁぁ！！！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也
+2;ま…今更言っても仕方ねーことさ…。
+Suspend
+PlaySound Sword.wav
+autoTalk 龍也(攻撃)
+2;真剣勝負の最中に悩み事だ？.ふざけんじゃねぇっ！！俺をナメるのもいい加減にしやがれっ！！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也(攻撃)
+2;起きますとも～っ！！！そうさ！今すぐ起きる！起きるともよ！！そして俺の朝ご飯はお前だぁぁぁぁっ！！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也
+2;んなこたぁどうでもいい！.サーティス！フェリーナ！ヒルダを早く安全な場所へ！
+Suspend
+PlaySound Sword.wav
+AutoTalk 龍也(攻撃)
+10;てめぇに滅びを与えてやるっ！.奪われるものの悲しみを…思い知れッ！！！
+End
+PlaySound Whiz.wav
+wait 10
+
+Talk システム
+英雄は、全てを護った。:だが…
+End
+
+Wait 10
+
+StopBGM
+
+Wait 30
+
+Talk 涼子
+…な…に…どういうこと…！？
+なによこれ…！？
+End
+Wait 10
+Talk 龍也(絶命)
+―――
+End
+
+Call 文章表示２ 100 桜龍也は、死んだ
+
+Wait 50
+StartBGM Namida-t.mid
+Wait 20
+Call 文章表示２ 50 英雄の死をきっかけに全ては揺らぎ始める
+Wait 20
+AutoTalk ヒルダ(攻撃)
+5;もうあいつは…龍也はいないんだからね…。
+AutoTalk サーティス
+5;龍也様は魔力を…生命力を使いすぎ;命を…枯らしてしまった…。
+AutoTalk フレア(攻撃)
+5;わたっ…しの…魔力なんて…！;全部渡してしまってもいい…だからっ！
+AutoTalk レディ(涙)
+5;龍也さんが死んだのは…私のせいだから…！
+AutoTalk ライル(攻撃)
+5;…何があろうと…守ってみせる！;我が命に代えてもなッ！
+AutoTalk フレア(攻撃)
+5;私が…私が死ねば良かったんです！！
+End
+PlaySound Slap.wav
+Wait 30
+Playsound Grass.wav
+StopBGM
+
+
+Call 文章表示２ 30 さようなら…私の目標…。
+Wait 20
+Call 文章表示２ 30 他のどんな友達より…お父さんよりお母さんより
+Wait 20
+Call 文章表示２ 60 一番大好きだった…家族…。
+Wait 50
+Call 文章表示２ 50 もう、私は泣かないから
+Wait 20
+Talk 十六夜涼子(後半)
+これ以上悲しいことなんてあるはず無いから…。
+Suspend
+Wait 60
+Gameclear
+Exit

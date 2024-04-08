@@ -1,0 +1,82 @@
+
+ユニット図鑑スタート:
+PaintPicture Unit.jpg 0 0 480 480
+Refresh
+Talk フレア
+ユニット図鑑のコーナーです。
+Talk ティーナ
+とりあえず暫定公開！四騎士だけね！
+End
+Goto ユニット図鑑
+
+ユニット図鑑:
+PaintPicture Unit.jpg 0 0 480 480
+Refresh
+Ask
+おしまい
+ヴァル＝セリエ
+ラグナセンティス
+クレリュード
+クレイハウアー
+End
+
+If 選択 = 1 Then
+Talk フレア
+もういいのですね？では・・・戻ります
+End
+Return
+Endif
+If 選択 = 2 Then
+Call う゛ぁる
+Endif
+If 選択 = 3 Then
+Call らぐな
+Endif
+If 選択 = 4 Then
+Call くれり
+Endif
+If 選択 = 5 Then
+Call くれは
+Endif
+
+Goto ユニット図鑑
+
+う゛ぁる:
+ShowImage EN_Vall=Selie.bmp 64 64
+Talk システム
+ヴァル＝セリエ;通称 黒騎士ヴァル＝セリエ;四騎士の中でもリーダー格と言われる、闇を司る騎士。
+そのパワーは全エレナイ中最高クラス。;豊富な武器とそのパワーがウリ。
+ちなみに名前の由来は「ヴァルキュリエ」
+End
+ClearImage
+Return
+
+らぐな:
+ShowImage EN_Ragnasentiss.bmp 64 64
+Talk システム
+ラグナセンティス;通称 赤騎士ラグナセンティス;四騎士の中で最もバランスの取れた機体。火を操る。
+コレと言った特徴も無く、その辺りが長所でもあり短所でもある。
+名前の由来は某ＭＤのアクションＲＰＧ。
+End
+ClearImage
+Return
+
+くれり:
+ShowImage EN_Cleryudo.bmp 64 64
+Talk システム
+クレリュード;通称 白騎士クレリュード;四騎士の中で最も早い高速機動型の機体。光を司る。
+その速さで敵を翻弄し、一撃をくわえる。;また、魔族の弱点である「光」の魔術を主とするため、;魔族に対しては非常に強い機体となっている
+名前の由来は「プレリュード(序章)」だと思う。
+End
+ClearImage
+Return
+
+くれは:
+ShowImage EN_CleyHouar.bmp 64 64
+Talk システム
+クレイハウアー;通称 青騎士クレイハウアー;他の四騎士のサポートを目的として開発された機体。水を操る。
+前述したとおりサポート能力に優れる。;反面攻撃力は他の四騎士に比べ低め。
+名前の由来は無い。思いつき。;「ハウアー」の辺りが何となく水っぽい。・・・・のか？
+End
+ClearImage
+Return

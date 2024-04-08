@@ -1,0 +1,121 @@
+エレナイ機体格納庫:
+Talk システム
+<SIZE=20><B>工事ちう</B></SIZE>
+End
+Return
+
+
+
+If Not 来たい核かむひあ Then
+Global 来たい核かむひあ
+Set 来たい核かむひあ 1
+Talk 鳳(キラリ)
+くはははははははは！！
+Talk ティーナ
+どわはははははは！！
+Talk 鳳(キラリ)
+機体格納庫。
+Talk ティーナ
+機体格納庫です～！
+Talk 鳳
+・・・と言うわけで機体を格納している庫だ。
+Talk ティーナ(はにゃー)
+機体を格納している庫ですね！
+Talk 鳳
+・・・うむ。機体を格納する庫だ。
+Talk ティーナ
+・・・そーですね～。
+Talk 鳳
+・・・・・。
+Talk ティーナ
+・・・・・・・。
+Talk 鳳
+・・・・・・・・・。
+Talk ティーナ
+・・・・・・・・・・・。
+Talk 鳳
+・・・・・・・・・・・・・。
+Talk ティーナ
+・・・・・・・・・・・・・・・。
+End
+Endif
+
+Talk 鳳
+ふ・・・ナイス格納！
+Talk ティーナ
+ナイスかくの～！！
+End
+FadeOut
+
+Do While (1)
+PaintPicture kakunou.jpg 0 0
+HotPoint Return 390 450 80 30
+HotPoint "4th Knight" 15 85 160 55
+HotPoint "E-Numbers" 15 150 170 50
+HotPoint "Knight Of Element" 10 215 270 50
+HotPoint "Ebil Soldier" 25 290 160 50
+HotPoint "Change Music" 50 440 160 40
+Refresh
+Do
+Wait Click
+Loop While (選択 = "")
+
+ClearObj
+ClearPicture
+
+Switch 選択
+Case 0
+Talk 鳳
+ふ・・・メニューに戻るか。;ソレも良かろう。
+End
+Break
+
+Case "4th Knight"
+Call "4th Knight"
+
+Case "E-Numbers"
+Call "E-Numbers"
+
+Case "Knight Of Element"
+Call "Knight Of Element"
+
+Case "Ebil Soldier"
+Call "Ebil Soldier"
+
+Case "Change Music"
+
+Switch Random(10)
+
+Case 1
+StartBGM Darkness Wing Splead.mid
+Case 
+StartBGM Flame Girl.mid
+Case 3
+StartBGM Ootori Attack!.mid
+Case 4
+StartBGM E-Numbers.mid
+Case 5
+StartBGM 4th Knight.mid
+Case 6
+StartBGM Battle Of Destiny.mid
+Case 7
+StartBGM Knight Of Element.mid
+Case 8
+StartBGM Ebil Messenger.mid
+Case 9
+StartBGM God Of Destruction.mid
+Case 10
+StartBGM Spark Star.mid
+Endsw
+
+Case Return
+Talk 鳳
+ふ・・・メニューへ戻るか。
+End
+Break
+Endsw
+
+Loop
+FadeOut
+Return
+<EVENT\エレナイ人物百科\機体一覧.eve>

@@ -1,0 +1,524 @@
+龍也(攻撃)
+龍也, EN_Ryuya(A3).bmp
+
+龍也(攻撃２)
+龍也, EN_Ryuya(A4).bmp
+
+龍也(ダメージ)
+龍也, EN_Ryuya(D2).bmp
+
+龍也(ナシ)
+龍也, EN_Ryuya(G).bmp
+
+龍也(自責)
+龍也, EN_Ryuya(J).bmp
+
+龍也(驚愕)
+龍也, EN_Ryuya(K).bmp
+
+龍也(キス)
+龍也, EN_RyoukoVSRyuya.bmp
+
+龍也(邪笑)
+龍也, EN_Ryuya(DS).bmp
+
+龍也(微笑み)
+龍也, EN_Ryuya(Smile).bmp
+
+龍也(マジ)
+龍也, EN_Ryuya(M).bmp
+
+龍也(シリアス)
+龍也, EN_Ryuya(S).bmp
+
+龍也(キズ)
+龍也, EN_Ryuya(Kz).bmp
+
+龍也(疑惑)
+龍也, EN_Ryuya(O).bmp
+
+龍也(潰れ)
+龍也, EN_Ryuya(T).bmp
+
+龍也(真っ白)
+龍也, EN_Ryuya(White).bmp
+
+龍也(憤り)
+龍也, EN_Ryuya(I).bmp
+
+龍也(焦り)
+龍也, EN_Ryuya(As).bmp
+
+龍也(すぱこーん)
+龍也, EN_Ryuya(G).bmp
+
+龍也(見切り)
+龍也, EN_Ryuya(Mk).bmp
+
+龍也(眠り)
+龍也, EN_Ryuya(Z).bmp
+
+龍也(儚げ)
+龍也, EN_Ryuya(H).bmp
+
+龍也(絶命)
+龍也, EN_Ryuya(Death).bmp
+
+りゅーたん
+龍也, EN_Ryu-tan.bmp
+
+涼子(攻撃)
+涼子, EN_Ryouko(A2).bmp
+
+涼子(余裕)
+涼子, EN_Ryouko(S).bmp
+
+涼子(眠り)
+涼子, EN_Ryouko(Z).bmp
+
+涼子(ダメージ)
+涼子, EN_Ryouko(D).bmp
+
+涼子(照れ)
+涼子, EN_Ryouko(T).bmp
+
+涼子(バンダナ無し)
+涼子, EN_Ryouko(BN).bmp
+
+涼子(バンダナ無しダメージ)
+涼子, EN_Ryouko(BND).bmp
+
+涼子(瀕死)
+涼子, EN_Ryouko(Deth).bmp
+
+涼子(呆然)
+涼子, EN_Ryouko(B).bmp
+
+りょ～こちゃん
+涼子, EN_Ryokotyan.bmp
+
+涼子(困惑)
+涼子, EN_Ryouko(K).bmp
+
+涼子(涙)
+涼子, EN_Ryouko(C).bmp
+
+涼子(憤り)
+涼子, EN_Ryouko(EXA).bmp
+
+涼子(後半涙)
+涼子, EN_Ryouko(EXC).bmp
+
+フレア(攻撃)
+フレア, EN_Flea(A).bmp
+
+フレア(憂い)
+フレア, EN_Flea(U).bmp
+
+フレア(微笑)
+フレア, EN_Flea(U).bmp
+
+フレア(照れ)
+フレア, EN_Flea(T).bmp
+
+フレア(天然)
+フレア, EN_Flea(O).bmp
+
+フレア(慌て)
+フレア, EN_Flea(H).bmp
+
+フレア(いたい)
+フレア, EN_Flea(i).bmp
+
+フレア(涙)
+フレア, EN_Flea(Tear).bmp
+
+フレア(必死)
+フレア, EN_Flea(Z).bmp
+
+ルシア(照れ)
+ルシア, EN_Lusia(T).bmp
+
+ルシア(マジ)
+ルシア, EN_Lusia(M).bmp
+
+ルシア(笑)
+ルシア, EN_Lusia(S).bmp
+
+鳳(キラリ)
+鳳, EN_Ootori(X).bmp
+
+鳳(大破)
+鳳, EN_Ootori(D).bmp
+
+鳳＆ティーナ
+鳳＆ティーナ, EN_Ootori&Teana.bmp
+
+鳳(血)
+鳳, EN_Ootori(Bl).bmp
+
+鳳(眠り)
+鳳, EN_Ootori(S).bmp
+
+鳳(ダメージ)
+鳳, EN_Ootori(Dm).bmp
+
+謎の鳳
+謎の鳳, EN_Ootori(Shadow).bmp
+
+レヴィン(涙)
+レヴィン, EN_Levin(C).bmp
+
+レヴィン(不機嫌)
+レヴィン, EN_Levin(F).bmp
+
+ヒルダ(攻撃)
+ヒルダ, EN_Hilda(A).bmp
+
+ヒルダ(ダメージ)
+ヒルダ, EN_Hilda(D).bmp
+
+ヒルダ(気絶)
+ヒルダ, EN_Hilda(D).bmp
+
+ライル(攻撃)
+ライル, EN_Rail(A).bmp
+
+ディオ(攻撃)
+ディオ, EN_Dio(A).bmp
+
+ディオ(ダメージ)
+ディオ, EN_Dio(D).bmp
+
+ディオ(くるくる)
+ディオ, EN_Dio(C).bmp
+
+ディオ(疲労)
+ディオ, EN_Dio(H).bmp
+
+ディオ(バンダナ無し)
+ディオ, EN_Dio(BNS).bmp
+
+ユキ(攻撃)
+ユキ, EN_Yuki(A).bmp
+
+ユキ(幼年)
+ユキ, EN_Yuki(Y).bmp
+
+ユキ(涙)
+ユキ, EN_Yuki(C).bmp
+
+ユキ＝イザヨイ(狂瞳涙)
+ユキ, EN_Yuki(BT).bmp
+ユキ(狂瞳涙)
+ユキ, EN_Yuki(BT).bmp
+
+ティーナ(はにゃー)
+ティーナ, EN_Teana(C).bmp
+
+ティーナ(はごっ)
+ティーナ, EN_Teana(Gusya).bmp
+
+ティーナ(愛の休息)
+ティーナ, EN_Teana(ZZZ).bmp
+
+サーティス(笑顔)
+サーティス, EN_Sartiss(S).bmp
+
+サーティス(笑顔２)
+サーティス, EN_Sartiss(S2).bmp
+
+サーティス(照れ)
+サーティス, EN_Sartiss(T).bmp
+
+サーティス(眠り)
+サーティス, EN_Sartiss(Z).bmp
+
+フェリーナ(眠り)
+フェリーナ, EN_Feliena(Z).bmp
+
+ザーム(瀕死)
+ザーム, EN_Zarm(D).bmp
+
+ザーム(反転チックに瀕死)
+ザーム, EN_Zarm(ND).bmp
+
+レディ(涙)
+レディ, EN_Ledy(C).bmp
+
+レディ(笑顔)
+レディ, EN_Ledy(S).bmp
+
+レディ(ピキーン！)
+レディ, EN_Ledy(X).bmp
+
+レディ(アップ)
+レディ, EN_Ledy(G).bmp
+
+レディ(すやすや)
+レディ, EN_Ledy(Z).bmp
+
+レディ(怒)
+レディ, EN_Ledy(A).bmp
+
+トキア(恐怖)
+トキア, EN_Tokia(O).bmp
+
+トキア(攻撃)
+トキア, EN_Tokia(A).bmp
+
+シルフィン(攻撃)
+シルフィン, EN_Silfin(A).bmp
+
+シルフィン(ブチ切れ)
+シルフィン, EN_Silfin(D).bmp
+
+グロウ(攻撃)
+グロウ, EN_Grow(A).bmp
+
+グロウ(ダメージ)
+グロウ, EN_Grow(D).bmp
+
+グロウ(焦り)
+グロウ, EN_Grow(DA).bmp
+
+ブロード(瀕死)
+ブロード, EN_Burord(D).bmp
+
+謎の声
+謎の声, EN_Nazo.bmp
+
+#謎の声。
+
+桜源三郎
+源三郎, EN_genzaburou.bmp
+
+#龍也の曾祖父。
+
+ブラウン＝ブロウ＝マクシミリアン
+大臣, EN_Daijin.bmp
+
+大臣(くぺっ！？)
+大臣, EN_Daijin(kupe).bmp
+
+#ラグナプール王国の大臣。
+エリス
+エリス, EN_Elikyundess.bmp
+
+エリキュンデス＝アリア＝ラグナプール
+エリス, EN_Elikyundess.bmp
+
+エリス(はわわ)
+エリス, EN_Elikyundess(Hw).bmp
+
+エリス(死)
+エリス, EN_Elikyundess(D).bmp
+
+エリス(瀕死)
+エリス, EN_Elikyundess(UD).bmp
+
+エリス(最後)
+エリス, EN_Elikyundess(F).bmp
+
+#ラグナプールの王女様。
+
+
+町人Ａ
+町人Ａ, EN_TyouninA.bmp
+
+町人Ｂ
+町人Ｂ, EN_TyouninB.bmp
+
+町人Ｃ
+町人Ｃ, EN_TyouninC.bmp
+
+デアヒメル＝ロメロ＝ダッシャー
+デアヒメル, EN_Deahimel.bmp
+
+#二話に出てくる大神官。
+
+新田俊作
+老人, EN_Roujin.bmp
+
+三島健太
+子供, EN_Kodomo.bmp
+
+三島杏子
+母, EN_Haha.bmp
+
+安藤啓治
+運ちゃん, EN_UNtyan.bmp
+
+名黒栄一
+名黒, EN_Nagro.bmp
+
+羽村京
+羽村, EN_Hamura.bmp
+
+美作憂美
+保険医, EN_Mimasaka.bmp
+
+後藤隆利
+後藤, EN_Gotou.bmp
+
+藤宮秀一
+藤宮, BZ_Fujimiya.bmp
+
+剣道部員
+剣道部員, EN_Kendoubu.bmp
+
+剣道部三面剣
+剣道部三面剣, EN_Kendoubu(3).bmp
+
+十六夜瑞穂
+涼子の母, EN_IzayoiMizuho.bmp
+
+テリオ＝リマン
+受付の神官, EN_Terio.bmp
+
+レンダ＝ナンダ＝ドーダ
+町長, EN_Tyoutyou.bmp
+
+魔導ビジョン
+魔導ビジョン, EN_TV.bmp
+
+マスター
+マスター, EN_Master.bmp
+
+商人
+商人, EN_Syounin.bmp
+
+商人達
+商人達, EN_Syouninntati.bmp
+
+露天商
+露天商, EN_Rotensyou.bmp
+
+ごみばこ♪
+ごみばこ♪, EN_Gomibako.bmp 
+
+サレナ＝ロージィ
+サレナ, EN_Salena.bmp
+
+サレナ(怒)
+サレナ, EN_Salena(D).bmp
+
+謎女
+謎女, EN_Salena(D).bmp
+
+温泉ジジイ
+温泉ジジイ, EN_Mlug.bmp
+
+ムルグ＝アディオス
+ムルグ, EN_Mlug.bmp
+
+若かりし日のムルグ
+若かりし日のムルグ, EN_Mlug(Y).bmp
+
+ヒートマン
+ヒートマン, EN_Heatman.bmp
+
+#温泉シリーズ
+
+涼子(温泉)
+涼子, EN_Ryouko(Onsen).bmp
+
+涼子(温泉天国)
+涼子, EN_Ryouko(OnsenH).bmp
+
+涼子(超究極温泉生命体)
+涼子, EN_Ryouko(SAOS).bmp
+
+涼子(威圧温泉)
+涼子, EN_Ryouko(OI).bmp
+
+鳳(温泉)
+鳳, EN_Ootori(Onsen).bmp
+
+ティーナ(温泉)
+ティーナ, EN_Teana(Onsen).bmp
+
+ティーナ(温泉帝王)
+ティーナ, EN_Teana(OnsenK).bmp
+
+ティーナ(湯煙殺人)
+ティーナ, EN_Teana(YukemuriK).bmp
+
+ウォルディ(温泉)
+ウォルディ, EN_Woldy(Onsen).bmp
+
+ウォルディ(恐怖の温泉)
+ウォルディ, EN_Woldy(TOnsen).bmp
+
+ウォルディ(温泉絶叫)
+ウォルディ, EN_Woldy(ZOnsen).bmp
+
+ウォルディ(電流爆破湯煙デスマッチ３０分１本勝負)
+ウォルディ, EN_Woldy(DBYDM30M-1HF).bmp
+
+ウォルディ(反転色の電流爆破湯煙デスマッチ３０分１本勝負)
+ウォルディ, EN_Woldy(NDBYDM30M-1HF).bmp
+
+ブロード(温泉)
+ブロード, EN_Burord(Onsen).bmp
+
+ブロード(温泉爆破デスマッチ)
+ブロード, EN_Brord(OBDM).bmp
+
+ブロード(たそがれの温泉爆破デスマッチ)
+ブロード, EN_Brord(NOBDM).bmp
+
+メモリィ
+メモリィ, EN_Memory.bmp
+
+メモリィ(キュピーン)
+メモリィ, EN_Memory(Kyupi).bmp
+
+謎の女
+謎の女, EN_Leveck(S).bmp
+
+謎の女(後姿)
+謎の女, EN_Farna(B).bmp
+
+シエラ＝ディオル＝ロウ＝グランチェスタ
+シエラ, EN_Siera.bmp
+
+シエラ(絶望)
+シエラ, EN_Siera(Z).bmp
+
+ちび涼子
+少女, EN_ChibiRyouko.bmp
+
+ルディア(少女)
+ルディア, EN_Ludia(C).bmp
+
+リィス(少女)
+リィス, EN_Ris(C).bmp
+
+TYPE-LD(素顔)
+TYPE-LD, EN_LD.bmp
+
+TYPE-LD(バラ)
+TYPE-LD, EN_LD(B).bmp
+
+研究員
+研究員, EN_Pr.bmp
+
+ローラ＝ハミルトン
+ローラ, EN_Lola=Hamilton.bmp
+
+リィス(攻撃)
+リィス, EN_Riss(A).bmp
+
+ガスト(噛)
+ガスト, EN_Gast(C).bmp
+
+看護婦
+看護婦, EN_Kangohu.bmp
+
+メイド
+メイド, EN_Meido.bmp
+
+ラカウティス(瀕死)
+ラカウティス, EN_Rakautiss(Death).bmp
+

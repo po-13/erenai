@@ -1,0 +1,138 @@
+
+# 一覧表メニュー画面
+
+エレナイ人物百科:
+
+For i = 1 To 12
+PaintPicture NZ2CL.bmp (-240 + ( 20 * i)) 0
+PaintPicture NZ2CR.bmp (480 - (20 * i)) 0
+Refresh
+Next
+Wait 10
+If Not 人物百科かむひあ Then
+Global 人物百科かむひあ
+Set 人物百科かむひあ 1
+Talk ティーナ
+エレナイ人百物科～！
+Talk 鳳
+・・・エレナイ人物百科だ。
+Talk ティーナ
+え・・・だって;・・・後ろにそう書いて・・・。
+Talk 鳳
+左から縦読みだ。
+Talk ティーナ
+そうなの？
+Talk 鳳
+そうなのだ。
+Talk ティーナ
+・・・・・。
+Talk 鳳
+・・・・・・。
+Talk ティーナ
+そんなことは良いからとっとと進めちゃおぅ！！
+Talk 鳳
+・・・全く・・・。
+・・・そうだ。;ちなみに後ろの題字は私がデザインしている。
+Talk ティーナ
+前なぜナイのバックの題字は私が描いてたんだよーん。
+Talk 鳳
+あまりにもヘタだったので私が見かねてな。
+Talk ティーナ
+ぷー。ひどいー！
+Talk 鳳
+ふ・・・事実だ。
+Talk ティーナ
+ぶー。
+End
+Endif
+
+Talk 鳳
+と言うわけで人物百科だ。
+Talk ティーナ
+エレナイ登場人物の;全てが解らない素晴らしい百科だよ。
+End
+FadeOut
+
+Do While (1)
+PaintPicture NZ2C2.bmp 0 0
+PaintPicture MG.bmp 20 20
+HotPoint 戻る 362 15 80 40
+HotPoint 四騎士操者 184 50 110 40
+HotPoint ナンバーズ操者 153 132 180 40
+HotPoint ラグナプール 163 208 160 40
+HotPoint グランチェスタ 162 283 167 40
+HotPoint 魔族 202 353 80 40
+HotPoint その他 204 423 80 40
+HotPoint 音楽変更 20 20 25 25
+Refresh
+Do
+Wait Click
+Loop While (選択 = "")
+
+ClearObj
+ClearPicture
+
+Switch 選択
+Case 0
+Talk ティーナ
+あ・・・戻るんですね？
+End
+Break
+
+Case 四騎士操者
+Call 四騎士操者リスト
+
+Case ナンバーズ操者
+Call ナンバーズ操者リスト
+
+Case ラグナプール
+Call ラグナプール人
+
+Case グランチェスタ
+Call グランチェスタ人
+
+Case 魔族
+Call 魔族っ子
+
+Case その他
+Call どうでもいい方々(滅)
+
+Case 音楽変更
+
+Switch Random(10)
+
+Case 1
+StartBGM AnotherWorld.mid
+Case 
+StartBGM Ebil messenger.mid
+Case 3
+StartBGM HolyGoddes.mid
+Case 4
+StartBGM InterMission.mid
+Case 5
+StartBGM Map01-2.mid
+Case 6
+StartBGM Map02-2.mid
+Case 7
+StartBGM Map1.mid
+Case 8
+StartBGM Map2.mid
+Case 9
+StartBGM Peace Day.mid
+Case 10
+StartBGM The NAZENAI.mid
+Endsw
+
+Case 戻る
+Talk 鳳
+ふむ・・・メインメニューへ戻るのだな。
+End
+Break
+Endsw
+
+Loop
+FadeOut
+Return
+
+
+<EVENT\エレナイ人物百科\キャラクター一覧.eve>

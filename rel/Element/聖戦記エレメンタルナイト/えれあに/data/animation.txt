@@ -1,0 +1,85 @@
+
+エレメンタルナイト
+ブラックソーサー(攻撃), 回転発射 EFFECT_B-Cut.bmp 32 Swing.wav
+ブラックソーサー(命中), 斬撃
+ブラックブレード(攻撃), 回転発射 EFFECT_B-Cut.bmp 32 Saber.wav 速
+ブラックブレード(命中), 斬撃
+ダークブラスト(準備), 五芒星 ブラック Whiz.wav
+ダークブラスト(攻撃), ＭＡＰ重力弾 Crash.wav
+ダークフィールド(準備), 五芒星 ブラック Whiz.wav
+ダークフィールド(攻撃), ＭＡＰブラックホール Doukoku.wav
+カオスブラスター, 小ビーム ブラック
+ブラッディファング(準備), 粒子集中 黒
+ブラッディファング(攻撃), 実弾発射 Effect_B-Fang.bmp 32 AntiAirMissile.wav 速
+ブラッディファング(命中), 噛み付き Stab.wav;1;Stab.wav
+フォースソード(準備), 振る武器 EFFECT_4thSword.bmp 48 ChakiA@11.wav
+フォースソード(攻撃), 斬撃 BoomA@22.wav
+フォースソード(命中), 炎斬撃 Saber.wav イエロー
+ツインフォースソード(準備), 振る武器 EFFECT_4thSword.bmp 48 ChakiA@11.wav 二刀流
+ツインフォースソード(攻撃), 斬撃 BoomA@22.wav 二刀流
+ツインフォースソード(命中), SwordB@22.wav;10;ZAN.bmp 480 480 透過
+オメガブラスターキャノン(準備), 射撃武器 EFFECT_O-B-Cannon.bmp 64 MetalC@11.wav
+オメガブラスターキャノン(攻撃), バスタービームライフル EFFECT_O-B-Cannon.bmp 64 イエロー Explode(nuclear).wav
+オメガブラスターキャノン(命中), バスタービームライフル イエロー Explode(nuclear).wav
+フォースランチャー(準備), 射撃武器 EFFECT_F-Launcher.bmp 64 MetalC@11.wav
+フォースランチャー(攻撃), ビームランチャー EFFECT_F-Launcher.bmp 64 イエロー Beam.wav
+フォースランチャー(命中), ビームランチャー イエロー Beam.wav
+四星桜花流・閃駈連刃(準備), サクラチル
+四星桜花流・閃駈連刃(攻撃), 閃駈連刃
+四星桜花流・閃駈連刃(命中), 閃駈連刃
+四星桜花流・暗黒閃(準備), サクラチル;5;振る武器 EFFECT_4thSword.bmp 48 ChakiA@11.wav 二刀流
+四星桜花流・暗黒閃(攻撃), 小ビーム ブラック Thunder.wav
+四星桜花流・暗黒閃(命中), 暗黒閃
+四星桜花流・黒破無段切り(準備), サクラチル;5;振る武器 EFFECT_4thSword.bmp 48 ChakiA@11.wav 二刀流
+四星桜花流・黒破無段切り(攻撃), 黒破無段
+四星桜花流・黒破無段切り(命中), 黒破無段
+メタルソード(準備), 振る武器 EFFECT_MetalSword.bmp 32
+メタルソード(攻撃), 白兵武器 Swing.wav
+メタルソード(命中), 斬撃 Saber.wav
+メタルブレード(準備), 振る武器 EFFECT_MetalBlade.bmp 32
+メタルブレード(攻撃), 白兵武器 Swing.wav
+メタルブレード(命中), 斬撃 Saber.wav
+スマートソード, ショートソード
+ナイトソード(準備), 振る武器 EFFECT_KnightSword.bmp 32
+ナイトソード(攻撃), 白兵武器 Swing.wav
+ナイトソード(命中), 斬撃 Saber.wav
+ハンドランチャー(準備), 射撃武器 EFFECT_H-Ran.bmp 32 Reload(4).wav
+ハンドランチャー(攻撃), ビームライフル EFFECT_H-Ran.bmp 32 イエロー
+ハンドランチャー(命中), ビームライフル イエロー
+ハンドブラスター, 小ビーム イエロー
+エーテルライフル(準備), 射撃武器 EFFECT_E-Rifle.bmp 32 Reload(3).wav
+エーテルライフル(攻撃), ビームライフル EFFECT_E-Rifle.bmp 32 イエロー
+エーテルライフル(命中), ビームライフル イエロー
+スナイパーライフル(準備), 射撃武器 EFFECT_S-Rifle.bmp 64 BreakOff.wav
+スナイパーライフル(攻撃), ビームライフル EFFECT_S-Rifle.bmp 64 イエロー
+スナイパーライフル(命中), ビームライフル イエロー
+バスターエーテルライフル(準備), 射撃武器 EFFECT_B-E-Rifle.bmp 64 イエロー
+バスターエーテルライフル(攻撃), ＭＡＰバスタービームライフル EFFECT_B-E-Rifle.bmp 64 イエロー Beam.wav
+バスターエーテルライフル(命中), ダメージ
+ハイエーテルショット, ニードルレーザー イエロー
+ハイエーテルショット, ニードルレーザー連射 イエロー
+ハーフムーン(準備), 振る武器 EFFECT_Harfmoon.bmp 64
+ハーフムーン(攻撃), 白兵武器 Swing.wav
+ハーフムーン(命中), 斬撃 Saber.wav
+サイドワインダー(準備), 射撃武器 EFFECT_Side.bmp 32 Reload(3).wav
+サイドワインダー(攻撃), ピストル EFFECT_Side.bmp 32
+サイドワインダー(命中), ピストル
+デモンマッシャー(準備), 振る武器 EFFECT_D-M.bmp 48
+デモンマッシャー(攻撃), 振り下ろし EFFECT_D-M.bmp 48 Whiz.wav
+デモンマッシャー(命中), ビームサーベル ホワイト
+閃光呪文(準備), 魔法集中 白
+閃光呪文(クリティカル), 発光 白
+氷結呪文(準備), 魔法集中 青
+氷結呪文(攻撃), 氷弾
+氷結呪文(クリティカル), 凍結
+魔弾呪文(準備), 魔法集中 黄
+魔弾呪文(攻撃), 光投射 黄 BeamShot.wav
+爆裂呪文(準備), 魔法集中 赤 中 Charge.wav
+爆裂呪文(攻撃), 火炎弾;6;ＭＡＰ爆発
+土撃呪文(準備), 魔法集中 橙
+土撃呪文(命中), 石柱 Explode(Small).wav
+光の矢(準備), 魔法集中 白
+光の矢(攻撃), 実弾発射 Effect_LightBow.bmp 32 Beam.wav 速
+
+魔兵
+衝撃波, 気斬 ブラック

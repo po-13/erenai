@@ -1,0 +1,1406 @@
+
+プロローグ:
+Exit
+
+スタート:
+PaintPicture Black.jpg 0 0 480 480
+Refresh
+Wait 20
+Font 30pt Ｐゴシック Regular
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString -  - 聖戦記エレメンタルナイト
+Wait 1
+Refresh
+Next
+Wait 20
+Font 30pt Ｐゴシック Regular
+For i = 1 To 10
+Font  RGB(255 - 25 * i, 255 - 25 * i, 255 - 25 * i)
+PaintString -  - 聖戦記エレメンタルナイト
+Wait 1
+Refresh
+Next
+
+playmidi Darkness Wing Spread.mid
+
+Wait Start
+Wait Until 22
+
+For i = 1 To 20
+  ClearPicture
+  PaintPicture ルシア＝ローディッシ (16 * i) - 64 64 
+  Refresh
+Next
+
+Wait 2
+
+FadeOut
+
+Wait Until 34
+
+For i = 1 To 20
+  ClearPicture
+  PaintPicture フレア＝クレスト (640 - (28 * i)) - 64 64 
+  Refresh
+Next
+
+Wait 2
+
+FadeOut
+
+Wait Until 46
+
+For i = 1 To 20
+  ClearPicture
+  PaintPicture 鳳飛翔 - (16 * i) 64 64 
+  Refresh
+Next
+Wait 2
+
+FadeOut
+
+Wait Until 58
+
+For i = 1 To 20
+  ClearPicture
+  PaintPicture 十六夜涼子 - (640 - (28 * i)) 64 64 
+  Refresh
+Next
+Wait 2
+
+FadeOut
+
+Wait Until 70
+
+For i = 1 To 20
+  ClearPicture
+  PaintPicture 桜龍也 - - (464 - (20 * i)) (464 - (20 * i))
+  Refresh
+Next
+Wait 2
+
+FadeOut
+
+
+Wait Until 85
+
+PaintPicture 龍也(自責) - - 128 128
+Refresh
+
+Wait Until 88
+
+ClearPicture
+PaintPicture 龍也(憤り) - - 128 128
+Refresh
+
+Wait Until 91
+
+ClearPicture
+PaintPicture 龍也(攻撃) - - 128 128
+Refresh
+
+Wait Until 94
+
+ClearPicture
+PaintPicture 龍也(攻撃２) - - 128 128
+Refresh
+Playsound Crash.wav
+
+For i = 1 To 10
+ClearPicture
+PaintPicture 龍也(攻撃２) - - (128 + (32 + i)) (128 + (32 + i))
+Refresh
+Next
+
+FadeOut
+
+Wait Until 100
+
+For i = 1 To 80
+PaintPicture Logo.jpg - - (1200 - (10 * i)) (450 - (3.8 * i))
+Refresh
+Next
+
+PlaySound Sword.wav
+Wait 10
+
+PlaySound Wind.wav
+Wait 40
+
+Wait Until 280
+
+FadeOut 20
+WhiteOut 40
+
+PaintPicture Cle.jpg - - - -
+Whitein
+
+Wait 10
+For i = 1 To 96
+Color RGB(0, 0, 0)
+Line 240 0 480 (5 * i) BF
+Refresh
+Next
+
+Wait 20
+
+PlaySound Sword.wav
+
+PaintPicture ルシア＝ローディッシ 376 40
+Whitein
+PaintPicture ルシア＝ローディッシ 376 40
+Refresh
+
+
+Wait 5
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 160 "Name Lusia=Roadysse"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 210 "Class White=Knight"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 260 "Height&Weight 173cm 56kg"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 310 "and others All Unknown?"
+Refresh
+Next
+
+Wait 30
+
+Wait Until 400
+
+WhiteOut
+
+PaintPicture hower.jpg - - - -
+Whitein
+
+Wait 10
+For i = 1 To 96
+Color RGB(0, 0, 0)
+Line 240 0 480 (5 * i) BF
+Refresh
+Next
+
+Wait 10
+PlaySound Splash.wav
+PaintPicture フレア＝クレスト 376 40
+Whitein
+PaintPicture フレア＝クレスト 376 40
+Refresh
+
+
+Wait 5
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 160 "Name Flea=Clest"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 210 "Class Blue=Knight"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 260 "Age 20"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 310 "Height&Weight 145cm 39kg"
+Refresh
+Next
+
+Wait 30
+
+WhiteOut 40
+
+For i = 1 To 96
+Color RGB(0, 0, 0)
+Line 0 240 (5 * i) 480 BF
+Refresh
+Next
+PlaySound Rifle.wav
+PaintPicture ヒルダ＝グラスティア 40 88
+Whitein
+PaintPicture ヒルダ＝グラスティア 40 88
+Refresh
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(250 - (10 * i), 250 - (10 * i), 250 - (10 * i))
+PaintString 120 70 "Name Hilda=Glasstia"
+Refresh
+Next
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(250 - (10 * i), 250 - (10 * i), 250 - (10 * i))
+PaintString 120 120 "Class Gland=Destroyer"
+Refresh
+Next
+
+Wait 10
+PlaySound Mirage.wav
+PaintPicture レヴィン＝マーヴェリック 378 328
+Whitein
+PaintPicture レヴィン＝マーヴェリック 378 328
+Refresh
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 80 330 "Name Levin=Marvelick"
+Refresh
+Next
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 80 380 "Class Shadow=Queen"
+Refresh
+Next
+
+Wait 20
+
+ClearPicture
+
+
+Color RGB(255, 255, 255)
+Line 0 0 480 240 BF
+
+PlaySound Bow.wav
+PaintPicture ディオ＝スパークスター 40 88
+Whitein
+PaintPicture ディオ＝スパークスター 40 88
+Refresh
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(250 - (10 * i), 250 - (10 * i), 250 - (10 * i))
+PaintString 120 70 "Name Dio=Sparkstar"
+Refresh
+Next
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(250 - (10 * i), 250 - (10 * i), 250 - (10 * i))
+PaintString 120 120 "Class Sonic=Wing"
+Refresh
+Next
+
+Wait 10
+PlaySound AntiAirMissile.wav
+PaintPicture ユキ＝イザヨイ 378 328
+Whitein
+PaintPicture ユキ＝イザヨイ 378 328
+Refresh
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 80 330 "Name Yuki=Izayoi"
+Refresh
+Next
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 80 380 "Class Freezing=Angel"
+Refresh
+Next
+
+Wait 10
+
+FadeOut
+
+Wait Until 688
+
+PaintPicture サーティス＝レヴュー 40 60
+Refresh
+
+Wait Until 690
+
+PaintPicture フェリーナ＝レヴュー 378 60
+Refresh
+
+Wait Until 695
+
+PaintPicture ブロード＝キャスター - 60
+Refresh
+
+Wait Until 697
+
+PaintPicture ザーム＝ロージィ 40 356 64 64
+Refresh
+
+Wait Until 702
+
+PaintPicture トキア＝レンガー 378 356
+Refresh
+
+Wait Until 705
+
+PaintPicture ウォルディ＝シェファン - 356
+Refresh
+
+PlaySound Crash.wav
+
+For i = 1 To 240
+Color RGB(255, 255, 255)
+Line 0 239 (2 * i) 241 BF
+Refresh
+Next
+
+WhiteOut 40
+
+PaintPicture VallFly.jpg - -
+Whitein 50
+PaintPicture VallFly.jpg - -
+Refresh
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString 160 380 "～ メカニカルデザイン ～"
+Refresh
+Next
+
+Wait 5
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString 335 415 "7600YEN"
+Refresh
+Next
+
+Wait 20
+
+FadeOut 20
+
+Font 18pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 40 "Midi提供"
+Refresh
+Next
+
+Wait 10
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 80 "草薙孝司"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 100 "ＡＯＫＩ"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 120 "田隣あつし"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 140 "Sage"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 160 "ＱＭＡ"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 180 "大嶋 啓之"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 200 "Yasuo Kanamori"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 220 "Ryosuke Enso"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 240 "Amayakan"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 260 "JUN"
+Refresh
+Next
+
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 280 "Shito"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 300 "NAYUTA"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 320 "YUKI"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 340 "Sei"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 360 "Kenji Tanaka"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 380 "K.Kawamachi"
+Refresh
+Next
+
+Font 14pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 400 "GACHOPIN"
+Refresh
+Next
+
+#カンシャしてまっせ～、ホンマ(笑)
+
+Wait 20
+
+WhiteOut 50
+
+Font 25pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 40 "グラフィック協力"
+Refresh
+Next
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 80 "水原 碧"
+Refresh
+Next
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 110 "葉月 瞬"
+Refresh
+Next
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 140 "坪川 琴生"
+Refresh
+Next
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 170 "エース藤井"
+Refresh
+Next
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 200 "けっせるりんく"
+Refresh
+Next
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 230 "7600YEN"
+Refresh
+Next
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 260 "りえ"
+Refresh
+Next
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 290 "フンボルト"
+Refresh
+Next
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 320 "YUO"
+Refresh
+Next
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 350 "アントラセン物語"
+Refresh
+Next
+
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 380 "Rizerd"
+Refresh
+Next
+
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 410 "七谷 駿"
+Refresh
+Next
+
+Wait 20
+
+Wait Until 895
+
+WhiteOut 40
+
+PaintPicture Ragna.jpg - -
+
+Whitein
+
+Wait 10
+
+For i = 1 To 96
+Color RGB(0, 0, 0)
+Line 240 0 480 (5 * i) BF
+Refresh
+Next
+
+Wait 10
+PlaySound fire.wav
+PaintPicture 十六夜涼子 376 40
+Whitein
+PaintPicture 十六夜涼子 376 40
+Refresh
+
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 160 "Name Ryouko=Izayoi"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 210 "Class Flame=Girl"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 260 "Age 17"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 310 "Height&Weight 168cm 51kg"
+Refresh
+Next
+
+Wait Until 980
+
+FadeOut 40
+
+For i = 1 To 10
+
+PlaySound Whiz.wav
+ClearPicture
+PaintPicture 鳳(キラリ) - - (448 - (32 * i)) (448 - (32 * i))
+Whitein
+
+Wait 0.1
+Next
+
+Wait 20
+
+PlaySound Cannon.wav
+Font 80pt Ｐゴシック Regular Bold
+Font  RGB(255, 10, 10)
+PaintString 350 60 "鳳"
+Refresh
+Wait 10
+
+
+PlaySound Cannon.wav
+Font 80pt Ｐゴシック Regular Bold
+Font  RGB(255, 10, 10)
+PaintString 350 210 "飛"
+Refresh
+Wait 10
+
+PlaySound WarShip.wav
+Font 80pt Ｐゴシック Regular Bold
+Font  RGB(255, 10, 10)
+PaintString 350 310 "翔"
+Refresh
+Wait 25
+
+PlaySound Alarm.wav
+
+For i = 1 To 120
+
+SIZE = Random(80) & "pt"
+
+X = Random(450)
+Y = Random(450)
+
+Font SIZE Ｐゴシック Bold
+
+
+
+Font  RGB(255, 0, 0)
+
+Switch Random(3)
+
+Case 1
+
+PaintString X Y  "危険"
+Refresh
+
+Case 2
+
+PaintString X Y  "ＤＡＮＧＥＲ"
+Refresh
+
+Case 3
+
+PaintString X Y  "ALERT"
+Refresh
+
+Endsw
+Wait 0.1
+Next
+
+PlaySound Crash.wav
+
+WhiteOut 40
+
+For i = 1 To 96
+Color RGB(0, 0, 0)
+Line 0 240 (5 * i) 480 BF
+Refresh
+Next
+
+PlaySound Saber.wav
+PaintPicture ライル＝ラディン 40 88
+Whitein
+PaintPicture ライル＝ラディン 40 88
+Refresh
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(250 - (10 * i), 250 - (10 * i), 250 - (10 * i))
+PaintString 120 70 "Name Rail=Radin"
+Refresh
+Next
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(250 - (10 * i), 250 - (10 * i), 250 - (10 * i))
+PaintString 120 120 "Class Sword=Master"
+Refresh
+Next
+
+Wait 10
+
+PlaySound Inori.wav
+PaintPicture グレイス＝アルティシア 378 328
+Whitein
+PaintPicture グレイス＝アルティシア 378 328
+Refresh
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 80 330 "Name Grayce=Altysia"
+Refresh
+Next
+
+Wait 10
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 80 380 "Class Death=Scythe"
+Refresh
+Next
+
+Wait 20
+
+WhiteOut
+
+
+PaintPicture ごみばこ♪ - - 128 128
+Fadein
+
+Wait 20
+PlaySound Tub.wav
+ClearPicture
+Color RGB(255, 255, 255)
+Line 0 0 480 480 BF
+PaintPicture ごみばこ♪ - - 128 112
+Refresh
+Wait 0.5
+ClearPicture
+Color RGB(255, 255, 255)
+Line 0 0 480 480 BF
+PaintPicture ごみばこ♪ - - 128 96
+Refresh
+Wait 0.5
+ClearPicture
+Color RGB(255, 255, 255)
+Line 0 0 480 480 BF
+PaintPicture ごみばこ♪ - - 128 112
+Refresh
+Wait 0.5
+ClearPicture
+Color RGB(255, 255, 255)
+Line 0 0 480 480 BF
+PaintPicture ごみばこ♪ - - 128 128
+Refresh
+Wait 0.5
+ClearPicture
+Color RGB(255, 255, 255)
+Line 0 0 480 480 BF
+PaintPicture ごみばこ♪ - - 112 128
+Refresh
+Wait 0.5
+ClearPicture
+Color RGB(255, 255, 255)
+Line 0 0 480 480 BF
+PaintPicture ごみばこ♪ - - 96 128
+Refresh
+Wait 0.5
+ClearPicture
+Color RGB(255, 255, 255)
+Line 0 0 480 480 BF
+PaintPicture ごみばこ♪ - - 112 128
+Refresh
+Wait 0.5
+ClearPicture
+Color RGB(255, 255, 255)
+Line 0 0 480 480 BF
+PaintPicture ごみばこ♪ - - 128 128
+Refresh
+Wait 0.5
+PlaySound Charge(long).wav
+WhiteOut 255
+
+Explode XL
+
+Color RGB(255, 255, 255)
+Line 0 0 480 480 BF
+
+PaintPicture ティーナ(愛の休息) - - 128 128
+
+Whitein
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(250 - (10 * i), 250 - (10 * i), 250 - (10 * i))
+PaintString 10 40 "Name Teana=Planet"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(250 - (10 * i), 250 - (10 * i), 250 - (10 * i))
+PaintString 10 70 "Class Love=Missionary"
+Refresh
+Next
+
+Wait 10
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(250 - (10 * i), 250 - (10 * i), 250 - (10 * i))
+PaintString 10 100 "Age 12"
+Refresh
+Next
+
+Wait 10
+
+Wait until 1305
+
+Font 50pt RGB(255, 53, 255)
+
+PaintString 95 20 愛
+Refresh
+
+Wait until 1307
+
+PaintString 215 20 愛
+Refresh
+
+Wait until 1312
+
+PaintString 335 20 愛
+Refresh
+
+Wait until 1314
+
+PaintString 95 410 愛
+Refresh
+
+Wait until 1319
+
+PaintString 215 410 愛
+Refresh
+
+Wait until 1322
+
+PaintString 335 410 愛
+Refresh
+PlaySound Cat.wav
+For i = 1 To 30
+
+SIZE = (i * 8) & pt
+
+Font SIZE
+
+PaintString - - 愛
+Refresh
+Next
+
+WhiteOut
+
+PaintPicture デアヒメル＝ロメロ＝ダッシャー 0 0 96 96
+Refresh
+Wait 0.2
+
+PaintPicture サレナ＝ロージィ 96 0 96 96
+Refresh
+Wait 0.2
+
+PaintPicture ムルグ＝アディオス 192 0 96 96
+Refresh
+Wait 0.2
+
+PaintPicture 若かりし日のムルグ 288 0 96 96
+Refresh
+Wait 0.2
+
+PaintPicture ちび涼子 384 0 96 96
+Refresh
+Wait 0.2
+
+PaintPicture EN_Touya.bmp 384 96 96 96
+Refresh
+Wait 0.2
+
+PaintPicture EN_Misaki.bmp 384 192 96 96
+Refresh
+Wait 0.2
+
+PaintPicture EN_Namiki.bmp 384 288 96 96
+Refresh
+Wait 0.2
+
+PaintPicture EN_Tomoe.bmp 384 384 96 96
+Refresh
+Wait 0.2
+
+PaintPicture 十六夜瑞穂 288 384 96 96
+Refresh
+Wait 0.2
+
+PaintPicture 桜源三郎 192 384 96 96
+Refresh
+Wait 0.2
+
+PaintPicture ソルディ＝ヴァンガード 96 384 96 96
+Refresh
+Wait 0.2
+
+PaintPicture ガスト＝ジェイス 0 384 96 96
+Refresh
+Wait 0.2
+
+PaintPicture ウェンディ＝ミューゼナ 0 288 96 96
+Refresh
+Wait 0.2
+
+PaintPicture グリム＝ラディア 0 192 96 96
+Refresh
+Wait 0.2
+
+PaintPicture サリア＝フォーチュナ 0 96 96 96
+Refresh
+Wait 0.2
+
+PaintPicture レベッカ＝グラスティア(グラサン) 96 96 96 96
+Refresh
+Wait 0.2
+
+PaintPicture レティディウス＝マクレディ 192 96 96 96
+Refresh
+Wait 0.2
+
+PaintPicture ルディア＝スパークスター 288 96 96 96
+Refresh
+Wait 0.2
+
+PaintPicture リィス＝シェファン 288 192 96 96
+Refresh
+Wait 0.2
+
+PaintPicture エリキュンデス＝アリア＝ラグナプール 288 288 96 96
+Refresh
+Wait 0.2
+
+PaintPicture シエラ＝ディオル＝ロウ＝グランチェスタ 192 288 96 96
+Refresh
+Wait 0.2
+
+PaintPicture ヴォルク＝ファント＝ロウ＝グランチェスタ 96 288 96 96
+Refresh
+Wait 0.2
+
+PaintPicture ラカウティス＝ディーズ＝ラグナプール 96 192 96 96
+Refresh
+Wait 0.2
+
+PaintPicture ゲイザー＝ロワウ 192 192 96 96
+Refresh
+
+Wait 40
+
+Font 20pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(5 * i, 0.5 * i, 0.5 * i)
+PaintString 160 380 "～ キャラクターデザイン ～"
+Refresh
+Next
+
+Wait 5
+
+Font 30pt Ｐゴシック Italic Bold
+For i = 1 To 10
+Font  RGB(5 * i, 0.5 * i, 0.5 * i)
+PaintString 390 415 "炎"
+Refresh
+Next
+
+Wait 50
+
+FadeOut 50
+
+Wait 10
+
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 180 "～ ギミック提供 ～"
+Refresh
+Next
+
+Wait 20
+
+Font 20pt
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 240 【通】
+Refresh
+Next
+
+Wait 20
+
+For i = 1 To 10
+Font  RGB(25 * i, 25 * i, 25 * i)
+PaintString - 280 アントラセン物語
+Refresh
+Next
+
+
+
+Wait until 1530
+
+For i = 1 To 240
+Color RGB(255, 255, 255)
+Line 0 239 (2 * i) 241 BF
+Refresh
+Next
+
+WAit 2
+
+For i = 1 To 240
+Color RGB(255, 255, 255)
+Line 239 0 241 (2 * i) BF
+Refresh
+Next
+
+WhiteOut
+
+PaintPicture Vallselie.jpg - -
+Whitein
+
+Wait 30
+
+For i = 1 To 96
+Color RGB(0, 0, 0)
+Line 240 0 480 (5 * i) BF
+Refresh
+Next
+
+Wait 20
+PlaySound Thunder.wav
+PaintPicture 桜龍也 376 40
+Whitein
+PaintPicture 桜龍也 376 40
+Refresh
+
+
+Wait 15
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 160 "Name Ryuya=Sakura"
+Refresh
+Next
+
+Wait 15
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 210 "Class Black=Knight"
+Refresh
+Next
+
+Wait 15
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 260 "Age 17"
+Refresh
+Next
+
+Wait 15
+
+Font 12pt Ｐゴシック Italic Bold
+For i = 1 To 25
+Font  RGB(10 * i, 10 * i, 10 * i)
+PaintString 250 310 "Height&Weight 182cm 68kg"
+Refresh
+Next
+
+Wait 35
+
+FadeOut
+
+Wait 15
+
+PlaySound Whiz.wav
+
+For i = 1 To 20
+ClearPicture
+Color RGB(255, 15, 15)
+Line 0 0 480 480 BF
+PaintPicture 力のバルバロス 40 40 (416 - (16 * i)) (416 - (16 * i))
+Refresh
+
+Wait 0.1
+Next
+
+Wait 15
+
+PlaySound Whiz.wav
+
+For i = 1 To 20
+ClearPicture
+Color RGB(15, 15, 255)
+Line 0 0 480 480 BF
+PaintPicture 力のバルバロス 40 40 96 96
+PaintPicture 魅のローレライ 344 40 (416 - (16 * i)) (416 - (16 * i))
+Refresh
+
+Wait 0.1
+Next
+
+Wait 15
+
+PlaySound Whiz.wav
+
+For i = 1 To 20
+
+ClearPicture
+
+Color RGB(15, 225, 120)
+Line 0 0 480 480 BF
+
+PaintPicture 力のバルバロス 40 40 96 96
+PaintPicture 魅のローレライ 344 40 96 96
+PaintPicture 魔のシルフィン 40 344 (416 - (16 * i)) (416 - (16 * i))
+Refresh
+
+Wait 0.1
+Next
+
+Wait 15
+PlaySound Whiz.wav
+For i = 1 To 20
+
+ClearPicture
+Color RGB(165, 105, 65)
+Line 0 0 480 480 BF
+
+PaintPicture 力のバルバロス 40 40 96 96
+PaintPicture 魅のローレライ 344 40 96 96
+PaintPicture 魔のシルフィン 40 344 96 96
+PaintPicture 幻のグロウ 344 344 (416 - (16 * i)) (416 - (16 * i))
+Refresh
+
+Wait 0.1
+Next
+
+Wait 15
+
+FadeOut
+
+PaintPicture 力のバルバロス 40 40 96 96
+PaintPicture 魅のローレライ 344 40 96 96
+PaintPicture 魔のシルフィン 40 344 96 96
+PaintPicture 幻のグロウ 344 344 96 96
+
+PlaySound BeamCoat.wav
+Fadein
+
+PaintPicture 力のバルバロス 40 40 96 96
+PaintPicture 魅のローレライ 344 40 96 96
+PaintPicture 魔のシルフィン 40 344 96 96
+PaintPicture 幻のグロウ 344 344 96 96
+Refresh
+
+Wait Until 1840
+
+PlaySound Doukoku.wav
+
+For i = 1 To 20
+ClearPicture
+PaintPicture 破壊神デュクラシス(未覚醒) - - (448 - (16 * i)) (448 - (16 * i))
+Fadein
+Wait 0.2
+Next
+
+PlaySound Doukoku.wav
+
+Wait Until 1940
+PlaySound Whiz.wav
+FadeOut
+
+Wait 10
+
+PlaySound Crash.wav
+Wait 3
+PlaySound Crash.wav
+Wait 3
+PlaySound Crash.wav
+Wait 3
+PlaySound Doukoku.wav
+
+PaintPicture Syouga.jpg - -
+
+Fadein 80
+
+PaintPicture Syouga.jpg - -
+
+Refresh
+Wait 30
+
+PlaySound Charge(Long).wav
+Wait 30
+PlaySound Flame.wav
+Wait 25
+PlaySound Sword.wav
+PaintPicture Syouga.jpg - -
+Whitein
+Wait 5
+PlaySound Sword.wav
+PaintPicture Syouga.jpg - -
+Whitein
+Wait 5
+PlaySound Sword.wav
+PaintPicture Syouga.jpg - -
+Whitein
+
+Wait 10
+
+PlaySound Explode(Nuclear).wav
+WhiteOut 200
+
+Wait Until 2150
+
+PaintPicture Vall&Ragna.jpg - -
+Whitein 50
+PaintPicture Vall&Ragna.jpg - -
+Refresh
+Wait 15
+PlaySound Flyby.wav
+WhiteOut 120
+
+PaintPicture Sky.jpg - -
+Whitein 80
+PaintPicture Sky.jpg - -
+Refresh
+
+
+Font 32pt
+
+For i = 1 To 10
+Font  RGB(255 - (5 * i), 255 - (5 * i), 255 - (5 * i))
+PaintString - 180 "～ 製作 ～"
+Refresh
+Next
+
+Wait 20
+
+Font 32pt
+For i = 1 To 10
+Font RGB(5 * i, 0.1 * i, 0.1 * i)
+PaintString - 240 炎
+Refresh
+Next
+
+
+Wait 50
+
+WhiteOut
+
+Wait Until 2300
+
+Continue エレナイスタート！.eve
+
+Exit

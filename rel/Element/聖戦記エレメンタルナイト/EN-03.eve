@@ -1,0 +1,650 @@
+
+プロローグ:
+If Not かむひあ Then
+InterMissionCommand なぜナイ２！！ Event\なぜナイ２.eve
+Endif
+StartBGM Peace Day.mid
+Wait 20
+Talk 鳳
+量産型など・・・・ダサくて乗ってられるかァァァァァァ！！
+End
+PlaySound Punch.wav
+Wait 10
+Talk レヴィン
+わがまま言うんじゃありませんわ。量産型しかないから仕方ないでしょう。
+Talk 鳳
+ぬぅぐ・・・・むむむむ・・・・・。
+Talk 涼子
+・・・・鳳・・・・量産型の何処が気に入らないっての？
+Talk 鳳
+・・・量産型に乗る輩はやられ役！気力のエサ！と私の中で決まっておる！
+Talk グランチェスタ兵
+・・・・・・・・。
+Talk ブロード
+あ・・・・通りすがりの兵士の皆さん・・・。
+End
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 30
+Talk 鳳
+うお・・・・・この鳳飛翔が・・・・。
+ザコ兵士などに・・・・。
+Talk グランチェスタ兵
+・・・・・・。
+End
+PlaySound Punch.wav
+Wait 20
+Talk 涼子
+・・・この調子じゃ何があっても量産型には乗ろうとしないわね・・・。
+・・・なんかいい機体無いの？ブロード？
+Talk ブロード
+良い機体・・・・ですか？
+うーん・・・・・・・無いことも・・・・無いんですけど・・・・。
+Talk 涼子
+何か問題でもあるの？
+Talk ブロード
+・・・えぇ・・・・その機体が保存してある神殿ですが・・・・。
+Talk レヴィン
+・・・・まさかあの魔族に占拠されたルーヴィア神殿！？
+Talk ブロード
+・・・そうです。ルーヴィア神殿です・・・・。そこに一つ機体が有るんですけど・・・。
+Talk 鳳(キラリ)
+・・・・フッ・・・そのルーヴィアとやらに機体を取りに行くぞ！
+Talk 涼子
+い・・・何時の間に復活したのよ・・・・あんたは・・・・。
+Talk ブロード
+・・・・鳳さんでも使いこなせるかどうか解りませんよ？
+Talk 鳳
+ふ・・・・私に出来ぬ事など無い・・・。
+Talk ブロード
+・・・・・ま・・・・いっか・・・とりあえず鳳さんが乗れなくても回収するだけ回収しておけば・・・。
+Talk 鳳
+ふ・・・決定だ！行くぞ！！
+Talk 涼子
+行ってらっしゃい。
+Talk レヴィン
+おみやげを忘れないで欲しいですわ。
+End
+PlaySound Wind.wav
+Wait 40
+Talk ブロード
+Talk
+ブロード(・・・息ピッタリですね・・・涼子さんとレヴィンさん・・・。)
+Talk 鳳
+・・・わ・・・私一人で？
+Talk 涼子
+もち。
+Talk レヴィン
+当然ですわ。
+End
+PlaySound Wind.wav
+Wait 40
+Talk 鳳
+・・・・き・・・来てくれないのか？
+Talk 涼子
+べっつにぃー・・・・どおしてもってんなら付いて行ってあげてもいいけどぉ・・・・。
+Talk 鳳
+どうしても！
+Talk レヴィン
+・・・・誠意が足りませんわね・・・・。
+Talk 鳳
+・・・・・く・・・・た・・・頼む！付いてきてくれ！。
+Talk 涼子
+頼むぅー？何様のつもり？アンタ？
+Talk レヴィン
+・・・もー良いですわ・・・私、部屋で寝ます・・・。
+Talk 鳳
+すまん！！私が悪かった！;お願いですから付いてきてくださいぃぃぃぃ！！(土下座ッ！)
+Talk 涼子
+まぁ・・・そこまで言うンなら・・・・。
+Talk レヴィン
+鳳一人Lvが上がるのはしゃくですしね・・・。
+Talk ブロード
+・・・・最初から行く気だったんじゃないですか;・・・・全く・・・この２人は・・・・。
+Talk 涼子
+何か言った！？
+Talk レヴィン
+何か言いまして！？
+Talk ブロード
+・・・・な・・・なななな・・・・何も言ってませんっ！
+Talk
+ブロード(ついついよけいなことまで正直に言ってしまう;この口が恨めしい・・・。)
+Talk 涼子
+よーし。んじゃ鳳の機体探しにルーヴィア神殿まで行くわよ！
+Talk レヴィン
+ですわね。
+Talk 鳳
+Talk
+鳳(鳳飛翔が・・・この鳳飛翔が土下座を・・・・うおぉぉぉぉ！！)
+Talk ブロード
+・・・何やってるんですか鳳さ・・・
+End
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 2
+PlaySound Punch.wav
+Wait 3
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 1
+PlaySound Punch.wav
+Wait 4
+PlaySound Punch.wav
+Wait 10
+Talk ブロード
+・・・何やってるんですか鳳さ・・・ベンガル虎ァ！
+Talk 鳳
+・・・・はぁ・・・はぁ・・・少しは気が晴れたか・・・・。
+Talk レヴィン
+・・・何をじゃれてますの？お二人さん？行きますわよ。
+Talk 鳳
+ふ・・・・解っている・・・・。
+Talk ブロード
+・・・・はぐぅぅぅぅぅ・・・・・。
+End
+Exit
+
+スタート :
+PaintPicture Black.jpg 0 0 480 480
+Refresh
+
+PlayMIDI Fight!.mid
+Wait 20
+Font
+Font 26pt 明朝
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 200 第３話
+Refresh
+Wait 2
+Next
+Font
+Wait 20
+Font
+Font 26pt 明朝 Italic Bold
+For i = 1 To 10
+Font RGB(25 * i, 25 * i, 25 * i)
+PaintString - 280 復活！時を統べるモノ！
+Refresh
+Wait 1
+Next
+Font
+Wait 30
+
+Cls
+Redraw
+Create 敵 ブラス＝ドーン 0 魔導知能 1 5 6 X
+Create 敵 ガーゴイル 1 下級魔族 9 11 16 A
+Create 敵 ゴブリン 1 下級魔族 8 9 16 A
+Create 敵 オーガ 1 下級魔族 8 10 16 A
+Create 敵 ゴブリン 1 下級魔族 8 13 16 A
+Create 敵 オーガ 1 下級魔族 8 12 16 A
+Create 敵 ガーゴイル 1 下級魔族 9 15 9 B
+Create 敵 オーガ 1 下級魔族 8 14 8 B
+Create 敵 オーガ 1 下級魔族 8 16 8 B
+Create 敵 オーガ 1 下級魔族 8 9 4 C
+Create 敵 オーガ 1 下級魔族 8 10 5 C
+Create 敵 オーガ 1 下級魔族 8 11 6 C
+Create 敵 オーガ 1 下級魔族 8 12 7 C
+Create 敵 ゴブリン 1 下級魔族 10 5 10 D
+Create 敵 ゴブリン 1 下級魔族 10 7 8 D
+Create 敵 ゴブリン 1 下級魔族 10 3 8 D
+ChangeMode A 待機
+ChangeMode B 待機
+ChangeMode C 待機
+ChangeMode D 待機
+Redraw
+StartBGM Flame girl.mid
+Wait 30
+Launch 涼子 2 27
+Launch レヴィン 4 27
+
+Talk 涼子
+ふへー・・・・やっと着いたぁ・・・・。
+Talk レヴィン
+ココに来るまでかなりの魔物と戦った気がしますわ・・・。
+Talk ブロード 2 27
+とりあえずは物資でＨＰもＥＮも満タンだから良いじゃないですか・・・。
+Talk 鳳 4 27
+・・・・何とも説明的なセリフだな・・・・。
+Talk レヴィン
+お情けで乗せて貰ってる人は黙ってなさい！
+Talk 涼子
+・・・・しっかし・・・ココも敵多いわねぇ・・・正攻法じゃかなりきついわ・・・。
+・・・・！！
+Talk ブロード
+どうかしました？涼子さん？
+Talk 涼子
+ブロード。ブラス＝ドーンがどの辺りにあるか解る？
+Talk ブロード
+えぇ・・・解りますけど。
+Talk 涼子
+どの辺り？
+Talk ブロード
+そうですね・・・・。
+End
+Center 5 27
+Center 5 24
+Center 5 21
+Center 5 18
+Center 5 15
+Center 5 12
+Center 5 9
+Center 5 6
+Wait 30
+Talk ブロード
+この辺り・・・ですかね。
+Talk 涼子
+ふむ・・・・じゃ・・・・
+End
+Center 4 17
+Wait 20
+Talk 涼子
+あの辺かな・・・・。
+Talk ブロード
+な・・・・何をやるつもりです？
+Talk 鳳 4 27
+ふ・・・・アレをやるのか・・・涼子・・・。
+Talk レヴィン
+アレ・・・って何ですの？
+Talk 鳳
+見ていれば解る・・・・。
+End
+Move 涼子 4 21
+Center 涼子
+Talk 涼子
+さて・・・行きますか・・・・。
+Talk 涼子(攻撃)
+炎の精霊よ！彼の物を破壊せよ！
+Talk ブロード
+うわ・・・・涼子さん！まさか！！
+Talk 涼子(攻撃)
+プロミネンスッ！！バァァァァァストォ！
+End
+PaintPicture White.jpg 0 0 480 480
+Refresh
+PaintPicture White.jpg 0 0 480 480
+Refresh
+PaintPicture White.jpg 0 0 480 480
+Refresh
+Explode XL 4 17
+Wait 20
+
+PaintPicture White.jpg 0 0 480 480
+Refresh
+ChangeMap EN-03B.map
+Redraw
+Disable 時空天駆斬
+Create 敵 ブラス＝ドーン 0 無人 1 5 6
+SetStatus 無人 行動不能 -1
+SetStatus 無人 データ不明 -1
+Create 敵 ガーゴイル 3 下級魔族 9 11 16 A
+Create 敵 ゴブリン 3 下級魔族 8 9 16 A
+Create 敵 オーガ 3 下級魔族 8 10 16 A
+Create 敵 ゴブリン 3 下級魔族 8 13 16 A
+Create 敵 オーガ 3 下級魔族 8 12 16 A
+Create 敵 ガーゴイル 3 下級魔族 9 15 9 B
+Create 敵 オーガ 3 下級魔族 8 14 8 B
+Create 敵 オーガ 3 下級魔族 8 16 8 B
+Create 敵 オーガ 3 下級魔族 8 9 4 C
+Create 敵 オーガ 3 下級魔族 8 10 5 C
+Create 敵 オーガ 3 下級魔族 8 11 6 C
+Create 敵 オーガ 3 下級魔族 8 12 7 C
+Create 敵 ゴブリン 1 下級魔族 10 5 10 D
+Create 敵 ゴブリン 1 下級魔族 10 7 8 D
+Create 敵 ゴブリン 1 下級魔族 10 3 8 D
+ChangeMode A 待機
+ChangeMode B 待機
+ChangeMode C 待機
+ChangeMode D 待機
+Launch 涼子 4 21
+Launch レヴィン 4 27
+
+Talk 涼子
+けほ・・・けほ・・・・。
+ちょっとやりすぎた・・・・・かな・・・・。
+End
+PlaySound Wind.wav
+Wait 30
+Talk ブロード
+うっひゃぁぁぁぁぁ！！歴史的文化遺産がぁぁぁぁぁ！
+Talk 涼子
+いーじゃないの。今はタダの魔族の巣窟なんだし。
+Talk ブロード
+そーゆー問題じゃ無いですー・・・・。
+Talk レヴィン
+・・・やりますわねぇ・・・・涼子さん。
+Talk 鳳
+ふ・・・・ともかくコレで突破口は確保した。
+行け！レヴィン！
+Talk レヴィン
+言われ無くともっ！
+End
+Move レヴィン 4 18
+Center レヴィン
+Talk 鳳
+レヴィン！あの機体へファスアルを隣接させろ！私が乗り移る！
+Talk レヴィン
+動かし方解りますの？貴方は？
+Talk 鳳
+ああ・・・・この鳳飛翔に出来ぬ事はない・・・・。
+・・・・と、言うことだからそこの２人もヨロシク。
+Talk 涼子
+おっけー。
+Talk ブロード
+鳳さんに動かせますかねぇ・・・・。
+End
+Exit
+
+接触 レヴィン 無人:
+Talk レヴィン
+鳳！行きなさい！
+Talk 鳳
+ふ・・・無論だ・・・・。
+End
+Escape 無人
+Unit ブラス＝ドーン 0
+Ride 鳳 ブラス＝ドーン
+Launch 鳳 5 6
+Talk 涼子
+うまく乗ったみたいね・・・鳳。
+Talk ブロード
+・・・・みたいですが・・・・ってああっ！
+Talk レヴィン
+どうしましたの？
+Talk ブロード X(涼子) Y(涼子)
+・・・・鳳さんにその機体・・・ブラス＝ドーンの説明するの忘れてました・・・。
+End
+PlaySound Punch.wav
+Wait 20
+Talk 涼子
+あんたバカァ？何考えて生きてるのよ！
+Talk ブロード
+うう・・・しくしく・・・・。
+End
+Center 鳳
+StartBGM Ootori Attack!.mid
+Wait 30
+Talk レヴィン
+こ・・・このテーマは・・・・。
+Talk 鳳
+ふ・・・問題ない・・・・。
+Talk 涼子
+鳳！？動かせるの！？
+Talk 鳳
+あぁ・・・・この機体に乗った瞬間、膨大な量の情報が頭の中に流れ込んで来てな・・・。
+私は全てを理解した・・・この機体;・・・ブラス＝ドーンの事・・・そして時空魔術のことも・・・・。
+Talk ブロード X(涼子) Y(涼子)
+アレに耐えきったんですか・・・流石と言えば流石ですねぇ・・・。
+普通の人じゃ途中で精神崩壊してますよ・・・。
+Talk 鳳
+私を凡人と一緒にして貰っては困るな・・・・。
+Talk レヴィン
+ま・・・貴方は色々な意味で凡人ではないですけど・・・。
+Talk 鳳
+ふ・・・・とにかく手に入れるモノは手に入れた・・・退くぞ！
+Talk 涼子
+そうね。南の方角に逃げるわよ！
+・・・・！！
+・・・・・そう簡単には逃げられないみたいね・・・・。
+End
+
+
+Create 敵 グリフォン 0 上級魔族 11 5 25 E
+Create 敵 ガーゴイル 0 中級魔族 10 6 24 E
+Create 敵 ガーゴイル 0 中級魔族 10 4 24 E
+Create 敵 ゴブリン 1 下級魔族 10 3 20
+Create 敵 ゴブリン 1 下級魔族 10 4 20
+Create 敵 ゴブリン 1 下級魔族 10 5 20
+Create 敵 ゴブリン 1 下級魔族 10 6 20
+Create 敵 ゴブリン 1 下級魔族 10 7 20
+ChangeMode E 待機
+Talk 上級魔族
+ギャァァァァァァォ！
+Talk ブロード
+うっひゃぁぁぁぁ！退路を断たれましたぁぁぁぁぁ！！
+Talk 鳳
+ふ・・・・この程度・・・・・。
+百年の眠りから覚めた時空魔術士『鳳飛翔』とブラス＝ドーンが成敗してくれる！！
+End
+Wait 20
+Talk 鳳
+・・・・ん？何か・・・エネルギー出力が・・・・。
+Talk ブロード
+しかたないですよ・・・１００年眠ってたんですから・・・。
+End
+Set 鳳Ride 1
+RecoverEN 鳳 -50
+ClearEvent
+Exit
+
+ターン 4 敵:
+ChangeMode D 通常
+Exit
+
+ターン 5 敵 :
+ChangeMode C 通常
+Exit
+
+ターン 6 敵 :
+ChangeMode B 通常
+Exit
+
+ターン 7 敵 :
+ChangeMode A 通常
+Exit
+
+勝利条件:
+If 鳳Ride = 0 Then
+Talk 鳳
+まずは私を乗せたファスアルがブラス＝ドーンに隣接することだな・・・。
+ちなみにファスアルがやられるとそこでジ・エンドだ。
+Talk システム
+敗北条件:ファスアルがやられる。
+End
+Exit
+Else
+Talk 涼子
+南の方角に逃げるのよっ！
+ま・・・敵を全て潰してもいいんだけど・・・。
+Talk システム
+勝利条件:敵の全滅、;もしくは味方全員が南方向に到達。;敗北条件:味方の全滅
+End
+Endif
+Exit
+
+破壊 レヴィン:
+If 鳳Ride = 0 Then
+Talk レヴィン
+・・・んなっ・・・しまった！
+Talk 鳳
+う・・・ぐぁぁぁぁぁぁぁぁ！！
+Talk 涼子
+鳳！レヴィン！？
+End
+GameOver
+Exit
+Else
+Talk レヴィン
+や・・・・やられましたわっ！
+End
+Endif
+Exit
+
+
+脱出 味方 S:
+If 鳳Ride = 1 Then
+Escape
+If 味方数 > 0 Exit
+Talk 涼子
+・・・・みんな逃げたみたいね！んじゃ！！飛ばすわよ！
+Talk 鳳
+ふ・・・おっけーだ！
+End
+Continue EN-04.eve
+Exit
+Else
+Exit
+Endif
+
+破壊 無人:
+Talk 鳳
+ド阿呆！！破壊してどうするっ！！
+End
+GameOver
+Exit
+
+全滅 敵:
+Talk 鳳
+フ・・・・調子に乗って全部殺ってしまったな・・・・。
+Talk 涼子
+ま・・・・またなんか来るとヤバイから・・・とっとと逃げるわよ！
+Talk レヴィン
+賢明な判断ですわね。 
+End
+Continue EN-04.eve
+Exit
+
+全滅 味方 :
+Talk 涼子
+うそ・・・・・正義が・・・・破れる・・・なんて・・・・。
+End
+GameOver
+Exit
+
+破壊 鳳:
+Talk 鳳
+こ・・・この空のブラス＝ドーンがぁぁぁ！！
+End
+Exit
+
+エピローグ :
+StartBGM Peace Day.mid
+Talk 涼子
+・・・どうにかこうにか戻って来れたわねー・・・・。
+Talk レヴィン
+・・・あぁ・・・疲れましたわ・・・。こりゃ寝るっきゃ無いですわ。
+Talk ブロード
+・・・それにしても・・・鳳さんに空のブラス＝ドーンが操れるとは・・・。
+Talk 鳳
+・・・・フ・・・・この鳳飛翔に不可能はない。
+Talk ブロード
+あの機体は昔、僕も乗ってみたんですが・・・・。
+発狂寸前まで追いつめられてリハビリに半年かかりました・・・・。
+Talk 鳳
+・・・・ほぅ・・・・そんなヤバイ機体に私を乗せたのか？
+Talk ブロード
+・・・ま・・・死んじゃったとしてもどうせ異世界人・・・・
+End
+PlaySound Punch.wav
+Wait 10
+Talk  ブロード
+・・・ま・・・死んじゃったとしてもどうせ異世界人・・・・ゴールデンレトリバァ！
+End
+PlaySound Dog.wav
+Wait 20
+Talk 涼子
+・・・・なぁーんかどっかで見たような風景ねぇ・・・。
+Talk 鳳
+おい！涼子！レヴィン！コイツを吊すの手伝え！
+Talk レヴィン
+・・・・しかたないですわね・・・・。
+Talk ブロード
+ま・・・また吊されるんですか！？;皆さんそんな酷いことしませんよ・・・
+End
+PlaySound Punch.wav
+Wait 6
+Talk 涼子
+あらよっ・・・・と。
+Talk 鳳
+・・・・そのような縛りではまだ甘いな・・・・。
+ココをこうして・・・・こうして・・・・・・できた！
+Talk レヴィン
+・・・・き・・・・亀甲縛り・・・・ですの？
+や・・・やりますわね・・・・鳳・・・・。
+Talk 鳳
+・・・・・ふ・・・この程度時空魔術士として当然だ。
+Talk 涼子
+・・・・それがホントだったら・・・時空魔術士ってヤな職かも・・・。
+Talk レヴィン
+・・・・あ。そうですわ。がさごそ・・・・。
+Talk 涼子
+なにやってんの？レヴィン？
+Talk レヴィン
+ふふ・・・・これを・・・こうして・・・・。
+出来た。
+End
+Wait 10
+Talk システム
+看板「ご自由にどうぞ」;(↑さりげなく鞭が置いてある)
+Talk 鳳
+・・・・な・・・・なんという・・・・
+・・・・なんというナイスな奴だ！オマエは！
+Talk 涼子
+そーよ！レヴィン才能有るわよ！きっと！
+Talk レヴィン
+そんなに誉めないで下さいますか・・・なんか恥ずかしいですわ・・・。
+Talk 涼子
+凄いよ！レヴィンは！フツーの人には出来る事じゃないよ！
+Talk レヴィン
+ほほほ・・・・このレヴィンにかかればちょちょいのちょーいですわ！
+End
+Wait 20
+PlaySound Wind.wav
+Wait 30
+Talk ブロード
+・・・・は・・・コレは！？み・・・皆さん！僕を解放し・・・・
+アレ？どこ行ったんですかっ！？シャレになんないですよ！ちょっと！
+・・・・あう！なんか見るからにヤバイ趣味をしてそーな男がこっちにぃ！！
+・・・・れ・・・レヴィンさぁぁぁぁん！;涼子さぁぁぁぁん！鳳すわぁぁぁぁん！！
+・・・・う・・・うわ！見せ物じゃないぞ！？こっち来るなっ！
+だぁぁぁぁ！鞭持って何をする気・・・・
+うっひゃぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁ！！！
+End
+Wait 20
+PlaySound Whip.wav
+Wait 30
+PlayMIDI Flame Girl.mid
+Wait 20
+Talk 涼子
+次回予告っ！！
+鳳の機体も手に入れてなんだか暇気味なあたし達！
+・・・でも・・・そんな中あたしは有ることに気付いちゃった・・・。
+私には・・・魂揺さぶる必殺技が・・・・無い！
+次回！聖戦記エレメンタルナイトッ！
+第４話！『特訓！必殺技！』
+End
+Wait 10
+Talk 涼子(攻撃)
+・・・・炎獄ッ！鳳凰ざぁぁぁん！！
+End
+Set 涼子編進行度 4
+Call セーブデータ処理
+Exit
