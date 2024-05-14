@@ -1,6 +1,41 @@
 
 プロローグ:
 
+join 涼子
+join フレア
+replacePilot フレア＝クレスト フレア＝クレスト(後半)
+
+join ライル
+ride ライル シルバー＝ファング
+upgrade シルバー＝ファング ブレード＝ファング
+
+
+join ソルディ
+ride ソルディ アサルトナイトガード
+
+join ラカウティス
+
+join ヒルダ
+join レベッカ
+join サリア
+join グリム
+join ウェンディ
+join フェリーナ
+join レディ
+
+replacePilot シエラ＝スパークスター ディオ＝スパークスター
+
+local でぃおののりもの
+
+# エージェシーか『風』のどっちか判別
+set でぃおののりもの Info(ユニット, エージェシー, 名称)
+
+if でぃおののりもの = "" then
+	set でぃおののりもの Info(ユニット, 『風』のエージェシー, 名称)
+endif
+
+ride ディオ でぃおののりもの
+
 Ask プロローグを見ますか？
 はい
 いいえ(戦闘シーンへスキップします)
@@ -11,22 +46,30 @@ if 選択 = 2 Then
 Exit
 Endif
 
+startbgm AnotherWorld.mid
+wait 20
 Talk システム
 ラグナプール王国、王都ラムゼリア、;グランチェスタ帝国、帝都グランナード
-二大国の首都壊滅は、ラグナプール国王の発した聖戦令と共に瞬く間に大陸中へと広がった
-聖戦令。二百年前の一次聖戦後にイシュメリア各国の結んだ対破壊神の軍事同盟
-これを基に、二次聖戦では各国が選りすぐりの英雄を聖戦へ送り込み、その力は破壊神の再封印に大いに貢献した
-そして三次聖戦
+二大国の首都壊滅は、;ラグナプール国王の発した聖戦令と共に;瞬く間に大陸中へと広がった
+聖戦令。;:二百年前の一次聖戦後にイシュメリア各国の結んだ;対破壊神の軍事同盟
+これを基に二次聖戦では;各国が選りすぐりの英雄を聖戦へ送り込み、;その力は破壊神の再封印に大いに貢献した
+そして今、:三次聖戦
 聖戦令は、機能しなかった
 世界全土で同時多発的に起こった魔族の狂乱
-各国は自国の防衛に手一杯で、とても他国への援軍を出せるような状況ではなかった
-この状況下でラグナプール王国とグランチェスタ帝国は一時休戦を締結
+各国は自国の防衛に手一杯で、;とても他国への援軍を出せるような状況ではなかった
+この状況下でラグナプール王国と;グランチェスタ帝国は一時休戦を締結
 20年以上に渡る長き戦争が遂に終わりを迎えた
-両国首都の壊滅、全土で多発する魔族、他国の援護は期待できず
+両国首都の壊滅、;全土で多発する魔族、他国の援護は期待できず
 最悪の状況下で、最後の聖戦が始まる
 End
 
-wait 30
+wait 20
+stopBGM
+
+wait 10
+startBGM Peace Day.mid
+wait 20
+
 Talk 涼子
 …
 Talk フレア
@@ -49,30 +92,31 @@ Talk ライル
 結果、死んでいませんので
 Talk フレア
 あれは本当に奇跡でした;思い返すだけでも胸の奥からこみあげるものがあります
-いや、本当に本っ当に反省してください感謝してくださいこの脳筋畜生どもが
+Talk フレア(必死)
+いや、本当に本っ当に反省してください;感謝してくださいこの脳筋畜生どもが
 Talk ライル
 かたじけない…
 Talk レベッカ
 お陰で術の精度も段違いに上がっただろう？;感謝が欲しいのはこっちの方さ
-Talk フレア
+Talk フレア(必死)
 感謝はしますが絶対に許しませんから
 もう無理だって言った後に;何度涼子さんの手足を繋げさせられたか…
-本当に無理って言ったら本当に無理なんですからね！？
+本当に無理って言ったら;本当に無理なんですからね！？
 Talk レベッカ
 涼子は生きてるし、五体満足だ。;あんたの無理は無理じゃなかったって事さね
 信頼してるよ
-Talk フレア
-信頼しているの言葉がここまで白々しく重く聞こえるなんて…
+Talk フレア(必死)
+信頼しているの言葉が;ここまで白々しく重く聞こえるなんて…
 Talk りょ～こちゃん
 あい、この話ここで終わり
 Talk 涼子
-お陰でとりあえず、手足1本ぐらいは斬られても動じなくはなったよ…
+お陰でとりあえず、;手足1本ぐらいは斬られても動じなくはなったよ…
 Talk レベッカ
 やれることはやったさ
 時間があるなら教えられることは他にもあるがね
 Talk 涼子
-うん。最低限命のやり取りってコトの意味は分かったつもり
-だからってあいつに勝てるとは思ってないんだけど…
+うん。;最低限命のやり取りってコトの意味は分かったつもり
+だからって;あいつに勝てるとは思ってないんだけど…
 Talk レベッカ
 そこはいいさ。分かったんだろ？
 Talk 涼子
@@ -80,12 +124,14 @@ Talk 涼子
 勝てなくても、生き残ることは出来るよ。絶対
 Talk レベッカ
 上々だ。行ってきな
-Talk 涼子
+Talk 涼子(余裕)
 おっけー！行ってきまーす！
 end
 wait 20
+startBGM Ebil Messenger.mid
+wait 10
 Talk エルヴィオーネ
-ラグナプール王都の件以後、何の動きも見せていない
+ラグナプール王都の件以後、;何の動きも見せていない
 どういうつもりだ？
 Talk 魔王龍也
 どうもこうもねぇ
@@ -105,7 +151,7 @@ Talk 魔王龍也
 Talk エルヴィオーネ
 狂犬には躾が必要だ
 Talk 魔王龍也
-やってみろや。;今度と言う今度はてめーの首と胴をキッチリ分割してやらぁな
+やってみろや。;てめーの首と胴をキッチリ分割してやらぁな
 End
 wait 10
 Talk ローレライ
@@ -113,10 +159,10 @@ Talk ローレライ
 Talk エルヴィオーネ
 …
 Talk 魔王龍也
-いっつもいいタイミングで割って来るな、お前さんはよ
+いっつもいいタイミングで割って来るな、;お前さんはよ
 Talk ローレライ
 余計な仕事を増やしたくないものですから
-魔神将様も矛を収めてくださいまし。;この男が働かないのも今日まで。ようやく期が来たのですから
+魔神将様も矛を収めてくださいまし。;この男が働かないのも今日まで。;ようやく期が来たのですから
 Talk エルヴィオーネ
 働きを期待するぞ、魔王
 Talk 魔王龍也
@@ -132,7 +178,7 @@ Talk 陽のサーティス
 Talk 魔王龍也
 来たかサーティス
 そんじゃ一発ブッ殺しに行くとするか。
-ドキドキとワクワクが止まらねぇな。ハーッハッハッハッハッハ！
+ドキドキとワクワクが止まらねぇなぁ;:こいつが恋ってヤツか？クックック
 end
 wait 30
 Talk エルヴィオーネ
@@ -140,7 +186,7 @@ Talk エルヴィオーネ
 Talk ローレライ
 必要でしたワ。;お陰で破壊神様復活の時も格段に早まっている
 Talk エルヴィオーネ
-私も人の感情を餌とする存在ではあるが、;やはり理解は出来んな
+私も人の感情を;餌とする存在ではあるが、やはり理解は出来んな
 Talk ローレライ
 使える手駒であることは確かです。;扱いを間違わなければ
 Talk エルヴィオーネ
@@ -161,7 +207,7 @@ Exit
 スキップストップ
 stopBGM
 
-Create 敵 デモン・ヴァル＝セリエ 3 魔王龍也 55 10 10
+Create 敵 デモン・ヴァル＝セリエ 3 魔王龍也 55 14 13
 
 Wait 20
 
@@ -173,14 +219,14 @@ wait 5
 
 center 10 5
 
-Upgrade ラグナセンティス改 ラグナセンティスＦ
+Upgrade ラグナセンティス改 ラグナセンティスＥＸ
 
-Launch 涼子 10 5
+Launch 涼子 16 14
 
 wait 10
 
 Talk 涼子
-流石に自分から持ちかけといて約束破るような事は出来ないわよ
+流石に自分から持ちかけた約束を;破るような事は出来ないわよ
 いくら相手があんただって言ってもね
 Talk 魔王龍也
 結構、結構。;そんじゃまぁ、始めるか。
@@ -197,8 +243,7 @@ wait 5
 Talk 魔王龍也
 もう耐えきれねえよ！滾って滾って仕方ねえんだ！！
 遂に殺せるんだぜ？十六夜涼子を！俺の枷をよ！！
-始めろ、早くしてくれ！頼むぜ涼子！！;ここに来る前から決めてんだ！まずてめぇの一撃を受けるってよ！！
-何を用意してきた？何を見せてくれる？;期待外れは止してくれよ？おい！涼子！なぁ！！
+どこから斬らせてくれるよ？;足か？腕か？まさかの首から行っちまうかァ！？
 Talk 涼子
 あーもう、拗らせた仕上がり方してるなぁ…
 あのさ、龍也。一つだけ言わせてもらいたいの
@@ -206,6 +251,10 @@ Talk 魔王龍也
 なんだ？辞世の句か？聞いてやるぜ
 Talk 涼子
 そんなもんよ
+suspend
+StopBGM
+playSound Explosion(far).wav
+wait 5
 Talk りょ～こちゃん
 このたたかい、わたしのまけだ
 Talk 魔王龍也
@@ -218,20 +267,47 @@ Talk 魔王龍也
 待て、どういう事だ？何が言いたい
 Talk 涼子
 だからさ、ごめんね？
+suspend
+startBGM Knight of Element.mid
 Talk 涼子(余裕)
 勝てる手段を、取るよ
 End
 
+center 1 20
+PlaySound Rifle.wav
+wait 2
 
+center 魔王龍也
 
+explode S 
 
 Talk 魔王龍也
 ッガっ！！！
 た、まっ！？どこか…
+suspend
+move 涼子 15 13 アニメ表示
 Talk 涼子
 っらぁ！！！！！
+suspend
+playSound Shock(low).wav
+wait 2
+
+move 魔王龍也 7 13 アニメ表示
+wait 1
 AutoTalk 魔王龍也
 涼子！てめ
+suspend
+
+move 魔王龍也 8 13 アニメ表示
+
+join ライル
+launch ライル 9 13
+playSound Sword.wav
+wait 2
+move 魔王龍也 7 13
+move ライル 8 13
+playSound Sword.wav
+wait 2
 Talk ライル
 よそ見をしている間は、無いぞ
 Talk 魔王龍也
@@ -242,11 +318,17 @@ Talk 魔王龍也
 涼ッ
 suspend
 
+launch レヴィン 7 16
+move レヴィン 7 14 アニメ表示
+
+playsound stab.wav
+wait 1
+
+move 魔王龍也 7 12 アニメ表示
 Talk 魔王龍也
 涼ッっがあああ！！！
 end
-
-# レヴィン奇襲
+wait 2
 Talk レヴィン
 あの時の借りを、今全て清算させて頂きますわ！
 Talk 魔王龍也
@@ -255,30 +337,101 @@ Talk レヴィン
 否
 end
 
+move レヴィン 8 12
+playsound stab.wav
+wait 1
+move レヴィン 6 12
+playsound stab.wav
+wait 2
+playsound mirage.wav
+wait 2
+move レヴィン 7 16
+
 Talk レヴィン
 迅い、のですわ。
 end
+wait 10
 
+Talk 魔王龍也
+チッ、そういう事かよ涼子ォ…！
+てめーの前に、死体を積めって事か…ぁ！
+Talk 涼子
+んー？まだまだ余裕かぁ。
+お次どうぞー！
+end
 
+launch ヒルダ 7 7
+center 7 7
+
+playsound MachineGun.wav
+wait 3
+playsound MachineGun.wav
+wait 3
+explode S 7 13
+explode S 7 12
+explode S 7 11
 Talk ヒルダ
 不本意な援護ではあるけどね…手は抜かないよ
 end
 
+playsound MachineGun.wav
+wait 3
+
+move 魔王龍也 7 11
+explode S 7 11
 Talk 魔王龍也
 だったらてめぇから…！！！
 end
 
+playsound MachineGun.wav
+
+move 魔王龍也 7 8 アニメ表示
+
+playsound Sword.wav
+wait 2
+
+Talk ヒルダ
+あんたのその剣を、どれだけ頼もしく思ったか…
+Talk 魔王龍也
+止め…やがった！
+Talk ヒルダ
+甘く見ンじゃないよ！;今のあんたの剣にはなにも乗ってない、安いんだよ！
+end
+
+launch フェリーナ 5 11
+playsound Beam.wav
+wait 3
+launch ブロード 4 10
+playsound Beam.wav
+wait 3
+launch ルシア 3 9
+playsound Lightning.wav
+wait 8
+center 7 8
+Explode M 7 8
+Explode M 7 8
+Explode M 7 8
 Talk フェリーナ
-はいよそ見、こっちこっち！
-end
-
+で、気を取られた所にブチ込むってワケだ！！
 Talk ブロード
-これ本当に大丈夫なんですよね！？撃ちますけど！！
+これ本当に大丈夫なんですよね！？;撃ちますけど！！
+Talk ルシア
+大丈夫大丈夫！;せっかくの光担当ですから、;個人的な恨みと一緒に目一杯ぶち込んでやりましょう！
 end
 
-Talk ルシア
-大丈夫大丈夫！せっかくの光担当ですから、個人的な恨みと一緒に目一杯ぶち込んでやりましょう！
-end
+launch グリム 12 6
+playsound MachineGun.wav
+wait 3
+launch ウェンディ 12 8
+playsound Beam.wav
+wait 3
+launch サリア 12 7
+playsound Beam.wav
+wait 3
+center 7 8
+Explode M 7 8
+Explode M 7 8
+Explode M 7 8
 
 Talk グリム
 得手ではなイが、賑やかしにハ、なる！
@@ -288,41 +441,302 @@ Talk サリア
 良し悪しは関係ない。命令だ。
 end
 
+wait 5
+
+launch トキア 6 2
+playsound Beam.wav
+wait 3
+launch ザーム 7 2
+playsound Beam.wav
+wait 3
+launch レディ 8 2
+playsound Warship.wav
+wait 3
+center 7 8
+
+Explode M 7 8
+Explode M 7 8
+Explode M 7 8
+
+Talk トキア
+こっちに来るなよ…！
+Talk ザーム
+火器は予備も持ってきた！まだまだ撃てるぞ！
+Talk レディ
+間違った力、矯正してあげます！
+end
+
+center 7 8
+
+playsound Beam.wav
+wait 3
+playsound Beam.wav
+wait 3
+playsound Beam.wav
+wait 3
+playsound MachineGun.wav
+wait 3
+playsound Beam.wav
+wait 3
+playsound Thunder.wav
+wait 5
+
+Explode M 7 8
+Explode M 7 8
+Explode M 7 8
+
+Talk 魔王龍也
+舐めるなよ…
+Talk ヒルダ(ダメージ)
+ッ！
+end
+playsound crash.wav
+wait 2
+move ヒルダ 4 7 アニメ表示
+
+playsound Beam.wav
+wait 3
+playsound MachineGun.wav
+wait 3
+playsound Sword.wav
+wait 3
+playsound Beam.wav
+wait 3
+Explode M 7 8
+Explode M 7 8
+
+move 魔王龍也 7 7 アニメ表示
+center 7 7
+wait 3
+playsound Sword.wav
+wait 3
+playsound Beam.wav
+wait 3
+playsound Sword.wav
+wait 3
+playsound MachineGun.wav
+wait 3
+playsound Warship.wav
+wait 4
+
+Explode M 7 7
+Explode M 7 7
+
+move 魔王龍也 7 6 アニメ表示
+center 7 6
+wait 3
+
+playsound Beam.wav
+Talk トキア(恐怖)
+お、おい！近づいてきてないか！！
+end
+playsound Beam.wav
+Talk ザーム
+剣で、切り払ってる？嘘だろ…！！
+end
+center 7 6
+playsound rifle.wav
+wait 2
+playsound Sword.wav
+wait 2
+playsound Sword.wav
+wait 2
+playsound Sword.wav
+wait 2
+playsound Thunder.wav
+wait 5
+Explode M 7 6
+
+move 魔王龍也 7 5 アニメ表示
+center 7 5
+wait 5
+playsound Warship.wav
+Talk レディ
+と、止められな…い！
+end
+wait 2
+
+move 魔王龍也 7 4 アニメ表示
+wait 3
+join ディオ
+launch ディオ 7 1
+autotalk ディオ(攻撃)
+1;おらあああああああああああああ！！！！
+suspend
+center 7 4
+playsound rifle.wav
+wait 2
+
+move ディオ 7 4 アニメ表示
+move ディオ 6 4 
+
+playsound Crash.wav
+wait 3
+explode XL 7 4
+
+move 魔王龍也 7 6 アニメ表示
+
+wait 5
+
+Talk ディオ(ダメージ)
+どうだ、全力も全力！全力で全速の一撃だ…！
+Talk トキア(恐怖)
+たすたす、かった…った
+end
+wait 10
+
+Talk 魔王龍也
+…クソ、がぁ！
+散れ！！！
+end
+
+playsound Explode(nuclear).wav
+
+wait 20
+
+center 7 4
+
+playsound beamcoat.wav
+wait 5
+launch フレア 7 4
+launch 鳳 8 4
+
+center 11 1
+explode XL
+wait 5
+
 Talk 鳳
 残念、外れだ
 Talk フレア
-止めて、曲げる。どれだけ貴方の力が強かろうとも…！
+止めて、曲げる。;:どれだけ貴方の力が強かろうとも…！
 end
 
-
-
-Talk ソルディ
-た、盾は砕けども我が志は折れぬぞ
-Talk ライル
-以前よりも増して鋭くなっているな。
-Talk ラインバルト
-双方お見事。次は私が受けましょうぞ。
-end
-
-Talk レベッカ
-見える限りは、当て続けるよ…魔王ッ…！
-end
-
-
+wait 10
 
 Talk 魔王龍也
-ふざけっっ！！こんな、こんな事で！！
+チィ…腹立たしいが、距離を…！
+end
+
+move 魔王龍也 5 6 アニメ表示
+
+join ソルディ
+launch ソルディ 4 6
+playsound crash.wav
+wait 3
+#move ソルディ 1 6 アニメ表示
+move 魔王龍也 9 6 アニメ表示
+explode M 1 6
+
+launch ウォルディ 9 7
+playsound crash.wav
+wait 3
+move 魔王龍也 11 1
+explode XL 11 1
+
+Talk ソルディ
+このソルディ、魔族に容赦はせん！
+Talk ウォルディ
+ドンピシャだ。やるな、銀の盾！
+end
+
+wait 10
+launch ラインバルト 9 9
+wait 10
+Talk ラインバルト
+双方お見事。さて、次なる手を…
+end
+
+wait 5
+
+Talk 魔王龍也
+冗談じゃ、ね
+suspend
+center 1 20
+
+PlaySound Rifle.wav
+wait 2
+
+center 魔王龍也
+
+explode S 
+
+move 魔王龍也 12 1 アニメ表示
+
+Talk 魔王龍也
+これだ、こいつが一番…！;初動を、その一瞬を必ず捉えてくる嫌な…
+…レベッカ…ぁ！どこだ！！！
+end
+center 1 20
+
+wait 20
+
+launch レベッカ 1 20
+PlaySound Reload.wav
+
+Talk レベッカ
+熱くなりなさんな、見えてる限りは当て続けてやるよ…！！
 end
 
 
+PlaySound Rifle.wav
+wait 2
 
+
+center 魔王龍也
+wait 3
+explode S 
+
+Talk 魔王龍也
+があああああああ！！！
+ふざけんな！！俺が、この俺が…;:こんな事で！？こんな、こんな…！！！
+end
+
+playsound MachineGun.wav
+wait 3
+playsound Beam.wav
+wait 3
+playsound Lightning.wav
+wait 5
+explode L
+move 魔王龍也 12 1 アニメ表示
+center 12 1
+playsound Beam.wav
+wait 3
+playsound Beam.wav
+wait 3
+PlaySound Rifle.wav
+wait 5
+explode LL
+move 魔王龍也 11 1 アニメ表示
+center 11 1
+playsound Beam.wav
+wait 3
+playsound MachineGun.wav
+wait 5
+PlaySound Rifle.wav
+wait 5
+Playsound sword.wav
+wait 3
+playsound Beam.wav
+wait 3
+playsound Beam.wav
+wait 3
+PlaySound Rifle.wav
+Wait 5
+explode XL
+
+
+create 敵 サーディフィルア 3 陽のサーティス 54 11 2
 
 playSound beamcoat.wav
+
+wait 10
 
 Talk 涼子
 ありゃあ～、ボーナスタイムはここまでかぁ
 Talk 陽のサーティス
-念のため、伏せていて正解でした
+伏せていて正解でした…ね
+もう、気は済みましたか？
 Talk 魔王龍也
 サーティス…クソッ
 涼子ォ！てめぇ！なんだ、なんなんだ！こいつぁ！！！
@@ -334,22 +748,23 @@ Talk 魔王龍也
 Talk 涼子
 ふざけてないって。
 なんだっけ？あんた。;誰よりも強くなるとか力がどうとか言ってたっけ？
-だったらさ～、どんな状況でも、誰が、何人が相手でも勝てなきゃダメじゃない？
+だったらさ、どんな状況でも、;誰が、何人が相手でも勝てなきゃダメじゃない？
 Talk 魔王龍也
 言うに及んでこの野郎ッ！！
 Talk 涼子
 いやさ、龍也あんた誰に怒ってんの？
-あんたに対しては、あたしはいつもこんなモンでしょーが？
+あんたに対しては、;あたしはいつもこんなモンでしょーが？
 Talk 魔王龍也
-…ああ、そうだ。そうだったな;てめぇはそういう女だったよ
-…上等だこの野郎。全身バラバラの合体ロボにしてやんよ
-木っ端共が！誰にどんだけヤられたか覚えてっからな！;オラ！かかってこい！群れなきゃ何もできねーか！？
+…ああ、:そうだ。;:そうだったな…;てめぇはそういう女だったよ
+…上等だこの野郎。;全身バラバラの合体ロボにしてやんよ
+木っ端共が！;誰にどんだけヤられたか覚えてっからな！;オラ！かかってこい！群れなきゃ何もできねーか！？
 Talk 陽のサーティス
 いえ、龍也様。ここは退きましょう
 流石にこの状態では
 Talk 魔王龍也
-退けるワケねーだろうが！やるんだよ！ここで、今！
-てめーは誰の味方だ？サーティス！;ああもうタイマンとかどうでもいい！！こっちもすぐに数揃えろ！トコトンまでやってやんよ！！！
+退けるワケねーだろうが！;:やるんだよ！:ここで、:今！
+てめーは誰の味方だ？サーティス！
+ああもうタイマンとかどうでもいい！！;:こっちもすぐに数揃えろ！トコトンまでやってやんよ！！！
 Talk 陽のサーティス
 …
 Talk 魔王龍也
@@ -368,20 +783,110 @@ Talk 陽のサーティス
 Talk 魔王龍也
 向こうが思いっきり売ってきたんだろうが！
 Talk 陽のサーティス
-殺す殺さないのお話がいつの間にかただのケンカに…
+殺す殺さないのお話が;いつの間にかただのケンカに…
 Talk 魔王龍也
-馬鹿野郎！殺しますよ！！殺すだろうが！！！
+馬鹿野郎！
+殺しますよ！！:殺すだろうが！！！
 Talk 陽のサーティス
-はい、はい。:わかりました。そういうアレですね。
-こんなこともあろうかと、ケンカの好きそうな人たちを伏せてあります
+はい、:はい。
+わかりました。そういうアレですね。
+こんなこともあろうかと、;ケンカの好きそうな人たちを伏せてあります
 先生方、どうぞ
 end
 
+create 敵 炎猛るバルバロイ 3 力のバルバロス 54 24 2 ばるば
+
+create 敵 イフリータ 4 炎の兵 50 21 1 ばるば
+create 敵 イフリータ 4 炎の兵 50 22 2 ばるば
+create 敵 イフリータ 4 炎の兵 50 23 3 ばるば
+create 敵 イフリータ 4 炎の兵 50 24 4 ばるば
+create 敵 イフリータ 4 炎の兵 50 25 5 ばるば
+
+changemode ばるば 待機
+
 Talk バルバロス
 どぉ～れ
+end
+
+create 敵 風鳴るシルフィディア 3 魔のシルフィン 53 23 23 しる
+
+create 敵 ウィンディ 4 風のしもべ 50 24 20 しる
+create 敵 ウィンディ 4 風のしもべ 50 23 21 しる
+create 敵 ウィンディ 4 風のしもべ 50 22 22 しる
+create 敵 ウィンディ 4 風のしもべ 50 21 23 しる
+create 敵 ウィンディ 4 風のしもべ 50 20 24 しる
+
+changemode しる 待機
+
+
 Talk シルフィン
 ケンカとか最高じゃん！
 End
+
+wait 10
+
+Talk 陽のサーティス
+そして戦闘員の皆さん
+end
+
+create 敵 ドラゴニア 5 上級魔族 52 22 14 じょう
+create 敵 ドラゴニア 5 上級魔族 52 22 15 じょう
+create 敵 ドラゴニア 5 上級魔族 52 22 16 じょう
+
+create 敵 ケンタウロス 4 上級魔族 52 23 17 じょう
+create 敵 ケンタウロス 4 上級魔族 52 23 18 じょう
+
+create 敵 ネクロノミコン 4 上級魔族 52 23 12 じょう
+create 敵 ネクロノミコン 4 上級魔族 52 23 13 じょう
+
+create 敵 デストロイヤー 4 上級魔族 52 21 11 じょう
+create 敵 デストロイヤー 4 上級魔族 52 20 12 じょう
+
+create 敵 ケルベロス 3 中級魔族 48 20 14 ちゅうきゅう
+create 敵 ケルベロス 3 中級魔族 48 20 15 ちゅうきゅう
+create 敵 ケルベロス 3 中級魔族 48 20 16 ちゅうきゅう
+
+create 敵 グリフォン 3 中級魔族 48 21 19 ちゅうきゅう
+create 敵 グリフォン 3 中級魔族 48 20 15 ちゅうきゅう
+create 敵 グリフォン 3 中級魔族 48 20 16 ちゅうきゅう
+
+create 敵 キマイラ 3 中級魔族 48 19 18 ちゅうきゅう
+create 敵 キマイラ 3 中級魔族 48 18 19 ちゅうきゅう
+create 敵 キマイラ 3 中級魔族 48 17 20 ちゅうきゅう
+
+create 敵 ワイバーン 3 中級魔族 48 15 20 ちゅうきゅう
+create 敵 ワイバーン 3 中級魔族 48 14 21 ちゅうきゅう
+create 敵 ワイバーン 3 中級魔族 48 13 22 ちゅうきゅう
+
+create 敵 ギガント 3 中級魔族 45 8 17 ちゅうきゅう
+create 敵 ギガント 3 中級魔族 45 9 18 ちゅうきゅう
+create 敵 ギガント 3 中級魔族 45 10 19 ちゅうきゅう
+
+create 敵 ガーゴイル 3 下級魔族 45 17 14
+create 敵 ガーゴイル 3 下級魔族 45 16 15
+create 敵 ガーゴイル 3 下級魔族 45 15 16
+create 敵 ガーゴイル 3 下級魔族 45 14 17
+create 敵 ガーゴイル 3 下級魔族 45 13 18
+
+create 敵 ホッパー 3 下級魔族 43 20 2
+create 敵 ホッパー 3 下級魔族 43 21 3
+create 敵 ホッパー 3 下級魔族 43 22 4
+create 敵 ホッパー 3 下級魔族 43 23 5
+
+create 敵 オーガ 3 下級魔族 43 7 12
+create 敵 オーガ 3 下級魔族 43 8 13
+create 敵 オーガ 3 下級魔族 43 7 14
+create 敵 オーガ 3 下級魔族 43 8 15
+
+create 敵 ゴブリン 3 下級魔族 42 17 5
+create 敵 ゴブリン 3 下級魔族 42 17 6
+create 敵 ゴブリン 3 下級魔族 42 17 7
+create 敵 ゴブリン 3 下級魔族 42 16 8
+create 敵 ゴブリン 3 下級魔族 42 15 9
+
+changemode じょう 待機
+changemode ちゅうきゅう 待機
+
 
 Talk 魔王龍也
 用意がいいな
@@ -389,8 +894,52 @@ Talk 陽のサーティス
 こんなこともあろうかと、です
 Talk 魔王龍也
 ああチクショウ良くやったと褒めておくよ！
-オラ！覚悟しろてめーら生きて帰れると思うなよ！！！
+オラ！;覚悟しろてめーら生きて帰れると思うなよ！！！
 end
+
+move 陽のサーティス 25 14 アニメ表示
+move 魔王龍也 25 16 アニメ表示
+
+center 25 16
+
+wait 20
+
+
+Talk 涼子
+はい、全員集合！！
+end
+
+move 涼子 20 20
+move フレア 4 2
+move ルシア 2 4
+
+launch ティーナ 3 3
+
+move ディオ 4 4
+
+launch ルディア 2 9
+launch リィス 3 9
+move トキア 4 9
+move ザーム 5 9
+move ブロード 6 8
+
+move 鳳 2 6
+move レヴィン 2 7
+
+move レベッカ 6 2
+move ヒルダ 7 2
+
+move ライル 7 4
+move ソルディ 6 5
+move ラインバルト 5 6
+move ウォルディ 4 7
+
+move フェリーナ 9 2
+move サリア 9 3
+move ウェンディ 9 4
+move グリム 9 5
+move レディ 8 6
+
 
 
 Talk フレア
@@ -398,7 +947,7 @@ Talk フレア
 Talk 涼子
 やりきりましたわ
 Talk ライル
-初めに聞かされた時は何を言っているのか理解が出来ませんでしたが
+初めに策を聞かされた時は何を言っているのか理解が出来ませんでしたが
 Talk レベッカ
 ま、ある意味の天才の発想だねこりゃぁ
 Talk りょ～こちゃん
@@ -407,7 +956,7 @@ Talk 鳳
 あの馬鹿相手ならば目はあると踏みはしたが…
 こうも上手く行くとはな
 Talk フェリーナ
-龍也ちゃんがもうただのチンピラにしか見えないねぇ
+しっかりもりっと削れた感触はあるし！イケるイケる！
 Talk ルシア
 いやぁ、笑いました笑いました。
 それじゃ後はこの目の前に山盛りの魔族を倒すだけですね
@@ -426,6 +975,11 @@ Talk システム
 いや、ナンバーズは7機だ
 Talk 涼子
 え…？
+end
+
+join グレイス
+launch グレイス 7 7
+
 Talk グレイス
 遅くなったな
 Talk 涼子
@@ -687,7 +1241,7 @@ End
 Exit
 
 
-
+ターン 5 味方:
 Talk システム
 間に合った
 Talk 涼子
@@ -760,27 +1314,29 @@ Talk ウォルディ
 Talk ラカウティス
 …:良し。
 End
+exit
 
-Talk ティーナ
-ああ～
-出来ますねえ…出来てしまいますねえ
-彼女の魂への媒介、死から呼び戻す声、そして命
-更に対象は血縁関係の娘、と
-倫理的にも何にもかんにも全部NGなんですが…;出来てしまうのだから仕方がない！！
-弟と姪の為です。倫理も禁忌もぶっ飛ばして一肌脱いでいきましょう！
-愛です！！！
-
-Talk エリス
-わた、し、は？
-Talk 魔王龍也
-ば、馬鹿、な
-ふざけるな！あいつは、確かに、死…
-Talk ティーナ
-生き返らせました！
-Talk 魔王龍也
-なん、だと…
-それじゃ、俺は一体、なんのために…なにを
-
+#Talk ティーナ
+#ああ～
+#出来ますねえ…出来てしまいますねえ
+#彼女の魂への媒介、死から呼び戻す声、そして命
+#更に対象は血縁関係の娘、と
+#倫理的にも何にもかんにも全部NGなんですが…;出来てしまうのだから仕方がない！！
+#弟と姪の為です。倫理も禁忌もぶっ飛ばして一肌脱いでいきましょう！
+#愛です！！！
+#end
+#
+#Talk エリス
+#わた、し、は？
+#Talk 魔王龍也
+#ば、馬鹿、な
+#ふざけるな！あいつは、確かに、死…
+#Talk ティーナ
+#生き返らせました！
+#Talk 魔王龍也
+#なん、だと…
+#それじゃ、俺は一体、なんのために…なにを
+#end
 
 攻撃 涼子 バルバロス:
 Talk 涼子
