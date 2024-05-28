@@ -902,7 +902,7 @@ EN_Balbaloss.bmp, Ebil 4th Knight.mid
 切り払いLv2, 1, Lv3, 25, Lv4, 36, Lv5, 48, Lv6, 58
 140, 159, 150, 146, 175, 155, 普通
 ＳＰ, 72, 魅惑, 1, みがわり, 1, 集中, 3, 信頼, 12, 覚醒, 23, 復活, 35
-EN_Roalelay.bmp, Ebil 4th Knight.mid
+EN_Roalelay(2).bmp, Ebil 4th Knight.mid
 
 #魔族軍四魔将の一人。魅のローレライと呼ばれている。
 #外見は黒いストレートの髪が美しい女性。

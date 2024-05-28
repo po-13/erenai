@@ -109,6 +109,9 @@
 涼子(後半涙)
 涼子, EN_Ryouko(EXC).bmp
 
+涼子(お恥ずかし)
+涼子, EN_Ryouko(T2).bmp
+
 フレア(攻撃)
 フレア, EN_Flea(A).bmp
 
