@@ -236,8 +236,21 @@
 風迅炎舞・炎風絶破(4)(命中)(効果音), 30;ExplosionA@11St.wav
 風迅炎舞・炎風絶破(5)(命中)(効果音), 30;ExplosionA@11St.wav
 風迅炎舞・炎風絶破(6)(命中)(効果音), 30;ExplosionA@11St.wav
-
-
+伸転流星脚, 3;Whiz.wav
+伸転流星脚(命中), 3;Warship.wav
+銀河の慟哭, Beam(8Shot).wav
+星応炎舞・落月十六夜(1)(効果音), 3;Whiz.wav;3;Whiz.wav
+星応炎舞・落月十六夜(1)(命中)(効果音), 10;Bazooka(8Shot).wav
+星応炎舞・落月十六夜(2)(効果音), 3;Whiz.wav;3;Whiz.wav
+星応炎舞・落月十六夜(2)(命中)(効果音), 10;Bazooka(8Shot).wav
+星応炎舞・落月十六夜(3)(効果音), 3;Whiz.wav;3;Whiz.wav
+星応炎舞・落月十六夜(3)(命中)(効果音), 10;Bazooka(8Shot).wav
+星応炎舞・落月十六夜(4)(効果音), 3;Whiz.wav;3;Whiz.wav
+星応炎舞・落月十六夜(4)(命中)(効果音), 10;Bazooka(8Shot).wav
+星応炎舞・落月十六夜(5)(効果音),3;Whiz.wav;3;Whiz.wav
+星応炎舞・落月十六夜(5)(命中)(効果音), 10;Bazooka(8Shot).wav
+星応炎舞・落月十六夜(6)(効果音), 3;Whiz.wav;3;Whiz.wav
+星応炎舞・落月十六夜(6)(命中)(効果音), 10;Bazooka(8Shot).wav
 
 魔導兵器
 魔導砲, 2;Beep010@22.wav;3;Beep010@22.wav;12;MetalC@11.wav;Beam.wav
@@ -253,7 +266,7 @@
 
 超魔兵
 紅蓮の血飛沫, Whiz.wav
-紅蓮の血飛沫(命中), 2;crash.wav;20;Explode(nuclear)
+紅蓮の血飛沫(命中), 2;crash.wav;20;Explode(nuclear).wav
 スラッシュテンペスト, 20;wind.wav;10;storm.wav
 スラッシュテンペスト(命中), Warship.wav
 魔神岩圧破, 3;Whiz.wav;3;Whiz.wav;3;Whiz.wav
